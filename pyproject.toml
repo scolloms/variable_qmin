@@ -7,4 +7,4 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-write_to = "gwpopulation_additional_models/_version.py"
+write_to = "variable_qmin/_version.py"
