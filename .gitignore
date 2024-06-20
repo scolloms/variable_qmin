@@ -1,3 +1,16 @@
+#results files etc
+*.h5
+*.hdf5
+*.json
+*.png
+*.pkl
+*.pdf
+*.html
+*.pickle
+*hdf5.old
+*submit/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
