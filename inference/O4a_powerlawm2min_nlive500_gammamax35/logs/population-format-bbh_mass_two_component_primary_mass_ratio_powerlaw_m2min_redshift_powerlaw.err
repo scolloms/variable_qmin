@@ -1,0 +1,9 @@
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+07:41 bilby INFO    : Number of draws equals number of events, 158.
+07:41 bilby INFO    : Generating observed populations.
+07:41 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+07:41 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+07:41 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+  0%|          | 0/5000 [00:00<?, ?it/s]

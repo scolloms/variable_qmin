@@ -1,0 +1,335 @@
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+14:01 bilby INFO    : Loaded 85 posteriors
+14:01 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+14:01 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+14:01 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+14:01 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+14:01 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+14:01 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+14:01 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_allgammazeta/data/injections.pkl.
+14:01 bilby INFO    : Identified keys: zeta, mmin, sigpp, beta, gaussian_mass_maximum, mmax, lam, gamma, alpha, mpp, lamb
+14:01 bilby INFO    : Running for label 'bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_allgammazeta/result'
+14:01 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+14:01 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+14:01 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+14:01 bilby INFO    : Analysis priors:
+14:01 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+14:01 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+14:01 bilby INFO    : gamma=Uniform(minimum=-1, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+14:01 bilby INFO    : zeta=Uniform(minimum=-0.017094017094, maximum=0.017094017094, name='zeta', latex_label='$\\zeta_{q}$', unit=None, boundary=None)
+14:01 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+14:01 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+14:01 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+14:01 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+14:01 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+14:01 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+14:01 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+14:01 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+14:01 bilby INFO    : gaussian_mass_maximum=100.0
+14:01 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+14:01 bilby INFO    : Analysis likelihood noise evidence: nan
+14:01 bilby INFO    : Single likelihood evaluation took 2.510e-02 s
+14:01 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x148cc8775480>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+14:01 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:01 bilby INFO    : Using dynesty version 2.1.2
+14:01 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+14:01 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:01 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+14:01 bilby INFO    : Generating initial points from the prior
+14:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:23 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:33 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:28 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:40 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:51 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:14 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:35 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:47 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:58 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:43 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:25 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:38 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:51 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:28 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:40 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:51 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:52 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:40 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:40 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:52 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:49 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:51 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:28 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+05:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+05:49 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:34 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:52 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:34 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:07 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+09:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+09:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:25 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:14 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:35 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:47 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:18 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:48 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:18 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:36 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:33 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:56 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:47 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:56 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+05:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+05:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:43 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+09:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+09:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:56 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:49 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:14 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:40 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:49 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+01:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+02:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+03:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+04:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+05:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+05:33 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+06:35 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+07:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+09:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+09:38 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:25 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:18 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:51 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:58 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:36 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:43 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:34 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:33 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+00:33 bilby INFO    : Rejection sampling nested samples to obtain 3524 posterior samples
+00:33 bilby INFO    : Sampling time: 3 days, 10:25:56.617906
+00:33 bilby INFO    : Summary of results:
+nsamples: 3524
+ln_noise_evidence:    nan
+ln_evidence:    nan +/-  0.193
+ln_bayes_factor: -211.852 +/-  0.193
+
+00:33 bilby INFO    : Computing rate posterior
+00:33 bilby INFO    : Computing n effectives
+00:33 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
+00:33 bilby INFO    : Generating extra statistics
+00:35 bilby INFO    : Resampling single event posteriors
+  0%|          | 0/3524 [00:00<?, ?it/s]  4%|▎         | 130/3524 [00:00<00:02, 1294.27it/s]  7%|▋         | 260/3524 [00:00<00:02, 1140.41it/s] 11%|█         | 376/3524 [00:00<00:03, 932.75it/s]  13%|█▎        | 473/3524 [00:00<00:03, 870.32it/s] 16%|█▌        | 563/3524 [00:00<00:03, 842.25it/s] 18%|█▊        | 649/3524 [00:00<00:03, 825.47it/s] 21%|██        | 733/3524 [00:00<00:03, 814.11it/s] 23%|██▎       | 815/3524 [00:00<00:03, 806.42it/s] 25%|██▌       | 896/3524 [00:01<00:03, 801.05it/s] 28%|██▊       | 977/3524 [00:01<00:03, 796.75it/s] 30%|██▉       | 1057/3524 [00:01<00:03, 793.20it/s] 32%|███▏      | 1137/3524 [00:01<00:03, 791.45it/s] 35%|███▍      | 1217/3524 [00:01<00:02, 790.26it/s] 37%|███▋      | 1297/3524 [00:01<00:02, 789.45it/s] 39%|███▉      | 1376/3524 [00:01<00:02, 788.89it/s] 41%|████▏     | 1455/3524 [00:01<00:02, 788.40it/s] 44%|████▎     | 1534/3524 [00:01<00:02, 788.12it/s] 46%|████▌     | 1613/3524 [00:01<00:02, 787.88it/s] 48%|████▊     | 1692/3524 [00:02<00:02, 787.68it/s] 50%|█████     | 1771/3524 [00:02<00:02, 787.64it/s] 52%|█████▏    | 1850/3524 [00:02<00:02, 787.58it/s] 55%|█████▍    | 1929/3524 [00:02<00:02, 787.51it/s] 57%|█████▋    | 2008/3524 [00:02<00:01, 787.54it/s] 59%|█████▉    | 2087/3524 [00:02<00:01, 787.50it/s] 61%|██████▏   | 2166/3524 [00:02<00:01, 787.47it/s] 64%|██████▎   | 2245/3524 [00:02<00:01, 787.48it/s] 66%|██████▌   | 2324/3524 [00:02<00:01, 787.43it/s] 68%|██████▊   | 2403/3524 [00:02<00:01, 787.36it/s] 70%|███████   | 2482/3524 [00:03<00:01, 787.42it/s] 73%|███████▎  | 2561/3524 [00:03<00:01, 787.43it/s] 75%|███████▍  | 2640/3524 [00:03<00:01, 787.44it/s] 77%|███████▋  | 2719/3524 [00:03<00:01, 787.44it/s] 79%|███████▉  | 2798/3524 [00:03<00:00, 787.42it/s] 82%|████████▏ | 2877/3524 [00:03<00:00, 787.42it/s] 84%|████████▍ | 2956/3524 [00:03<00:00, 787.39it/s] 86%|████████▌ | 3035/3524 [00:03<00:00, 787.33it/s] 88%|████████▊ | 3114/3524 [00:03<00:00, 787.33it/s] 91%|█████████ | 3193/3524 [00:03<00:00, 787.33it/s] 93%|█████████▎| 3272/3524 [00:04<00:00, 787.31it/s] 95%|█████████▌| 3351/3524 [00:04<00:00, 787.36it/s] 97%|█████████▋| 3430/3524 [00:04<00:00, 787.31it/s]100%|█████████▉| 3509/3524 [00:04<00:00, 787.31it/s]100%|██████████| 3524/3524 [00:04<00:00, 804.60it/s]
+00:35 bilby INFO    : Resampling done, sum of weights for events are 0.0 0.0 0.2 0.0 0.4 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.7 0.1 0.0 0.3 1.2 0.0 0.5 0.0 0.0 0.0 0.1 0.0 0.1 0.0 0.0 0.0 0.9 3.5 0.0 0.0 0.0 0.5 0.8 1.2 0.0 0.1 0.9 0.0 1.2 0.1 0.5 0.0 0.4 0.0 0.0 0.0 0.0 0.0 1.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.1 0.1 0.0 0.4 0.5
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+08:09 bilby INFO    : Loaded 85 posteriors
+08:09 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+08:09 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:09 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:09 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+08:09 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:09 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:09 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_allgammazeta/data/injections.pkl.
+08:09 bilby INFO    : Identified keys: zeta, alpha, mmax, mmin, lam, gaussian_mass_maximum, beta, gamma, sigpp, mpp, lamb
+08:09 bilby INFO    : Running for label 'bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_allgammazeta/result'
+08:09 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+08:09 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+08:09 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+08:09 bilby INFO    : Analysis priors:
+08:09 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+08:09 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+08:09 bilby INFO    : gamma=Uniform(minimum=-1, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+08:09 bilby INFO    : zeta=Uniform(minimum=-0.017094017094, maximum=0.017094017094, name='zeta', latex_label='$\\zeta_{q}$', unit=None, boundary=None)
+08:09 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+08:09 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+08:09 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+08:09 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+08:09 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+08:09 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+08:09 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:09 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:09 bilby INFO    : gaussian_mass_maximum=100.0
+08:09 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+08:09 bilby INFO    : Analysis likelihood noise evidence: nan
+08:09 bilby INFO    : Single likelihood evaluation took 2.544e-02 s
+08:09 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x1518fee3c580>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+08:09 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+08:09 bilby INFO    : Using dynesty version 2.1.2
+08:09 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+08:09 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:09 bilby INFO    : Resume file successfully loaded.
+08:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+08:10 bilby INFO    : Rejection sampling nested samples to obtain 3483 posterior samples
+08:10 bilby INFO    : Sampling time: 3 days, 10:25:57.879022
+08:10 bilby INFO    : Summary of results:
+nsamples: 3483
+ln_noise_evidence:    nan
+ln_evidence:    nan +/-  0.193
+ln_bayes_factor: -211.852 +/-  0.193
+
+08:10 bilby INFO    : Computing rate posterior
+08:10 bilby INFO    : Computing n effectives
+08:10 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
+08:10 bilby INFO    : Generating extra statistics
+08:12 bilby INFO    : Resampling single event posteriors
+  0%|          | 0/3483 [00:00<?, ?it/s]  4%|▎         | 125/3483 [00:00<00:02, 1247.85it/s]  7%|▋         | 250/3483 [00:00<00:03, 987.87it/s]  10%|█         | 353/3483 [00:00<00:03, 814.02it/s] 13%|█▎        | 439/3483 [00:00<00:03, 762.66it/s] 15%|█▍        | 518/3483 [00:00<00:04, 737.71it/s] 17%|█▋        | 593/3483 [00:00<00:04, 721.81it/s] 19%|█▉        | 666/3483 [00:00<00:03, 711.00it/s] 21%|██        | 738/3483 [00:00<00:03, 703.51it/s] 23%|██▎       | 809/3483 [00:01<00:03, 698.22it/s] 25%|██▌       | 879/3483 [00:01<00:03, 694.49it/s] 27%|██▋       | 949/3483 [00:01<00:03, 691.84it/s] 29%|██▉       | 1019/3483 [00:01<00:03, 689.96it/s] 31%|███       | 1088/3483 [00:01<00:03, 688.67it/s] 33%|███▎      | 1157/3483 [00:01<00:03, 687.76it/s] 35%|███▌      | 1226/3483 [00:01<00:03, 687.09it/s] 37%|███▋      | 1295/3483 [00:01<00:03, 686.64it/s] 39%|███▉      | 1364/3483 [00:01<00:03, 686.31it/s] 41%|████      | 1433/3483 [00:01<00:02, 686.12it/s] 43%|████▎     | 1502/3483 [00:02<00:02, 685.95it/s] 45%|████▌     | 1571/3483 [00:02<00:02, 685.83it/s] 47%|████▋     | 1640/3483 [00:02<00:02, 685.74it/s] 49%|████▉     | 1709/3483 [00:02<00:02, 685.72it/s] 51%|█████     | 1778/3483 [00:02<00:02, 685.68it/s] 53%|█████▎    | 1847/3483 [00:02<00:02, 685.68it/s] 55%|█████▌    | 1916/3483 [00:02<00:02, 685.71it/s] 57%|█████▋    | 1985/3483 [00:02<00:02, 685.66it/s] 59%|█████▉    | 2054/3483 [00:02<00:02, 685.66it/s] 61%|██████    | 2123/3483 [00:02<00:01, 685.63it/s] 63%|██████▎   | 2192/3483 [00:03<00:01, 685.56it/s] 65%|██████▍   | 2261/3483 [00:03<00:01, 685.57it/s] 67%|██████▋   | 2330/3483 [00:03<00:01, 685.59it/s] 69%|██████▉   | 2399/3483 [00:03<00:01, 685.61it/s] 71%|███████   | 2468/3483 [00:03<00:01, 685.59it/s] 73%|███████▎  | 2537/3483 [00:03<00:01, 685.63it/s] 75%|███████▍  | 2606/3483 [00:03<00:01, 685.65it/s] 77%|███████▋  | 2675/3483 [00:03<00:01, 685.65it/s] 79%|███████▉  | 2744/3483 [00:03<00:01, 685.58it/s] 81%|████████  | 2813/3483 [00:03<00:00, 685.63it/s] 83%|████████▎ | 2882/3483 [00:04<00:00, 685.59it/s] 85%|████████▍ | 2951/3483 [00:04<00:00, 685.58it/s] 87%|████████▋ | 3020/3483 [00:04<00:00, 685.57it/s] 89%|████████▊ | 3089/3483 [00:04<00:00, 685.49it/s] 91%|█████████ | 3158/3483 [00:04<00:00, 685.45it/s] 93%|█████████▎| 3227/3483 [00:04<00:00, 685.53it/s] 95%|█████████▍| 3296/3483 [00:04<00:00, 685.52it/s] 97%|█████████▋| 3365/3483 [00:04<00:00, 685.48it/s] 99%|█████████▊| 3434/3483 [00:04<00:00, 685.51it/s]100%|██████████| 3483/3483 [00:04<00:00, 700.60it/s]
+08:12 bilby INFO    : Resampling done, sum of weights for events are 0.0 0.0 0.2 0.0 0.7 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.1 0.0 0.0 1.1 0.2 0.1 0.5 1.4 0.1 0.7 0.1 0.1 0.1 0.0 0.1 0.0 0.0 0.1 0.1 2.0 2.4 0.1 0.1 0.0 0.8 1.1 1.7 0.0 0.1 1.3 0.0 1.4 0.1 0.7 0.1 0.5 0.0 0.0 0.1 0.1 0.1 1.6 0.1 0.0 0.2 0.0 0.1 0.0 0.2 0.0 0.1 0.0 0.1 0.1 0.1 0.5 0.4

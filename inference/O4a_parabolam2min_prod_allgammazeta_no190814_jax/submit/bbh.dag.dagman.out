@@ -1,0 +1,1147 @@
+06/06/24 11:32:10 ******************************************************
+06/06/24 11:32:10 ** condor_scheduniv_exec.144820735.0 (CONDOR_DAGMAN) STARTING UP
+06/06/24 11:32:10 ** /usr/bin/condor_dagman
+06/06/24 11:32:10 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/06/24 11:32:10 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/06/24 11:32:10 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/06/24 11:32:10 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/06/24 11:32:10 ** PID = 3443163
+06/06/24 11:32:10 ** Log last touched time unavailable (No such file or directory)
+06/06/24 11:32:10 ******************************************************
+06/06/24 11:32:10 Using config source: /etc/condor/condor_config
+06/06/24 11:32:10 Using local config sources: 
+06/06/24 11:32:10    /etc/condor/config.d/00-htcondor-9.0.config
+06/06/24 11:32:10    /etc/condor/config.d/00-ldas
+06/06/24 11:32:10    /etc/condor/config.d/02-scheduler
+06/06/24 11:32:10    /etc/condor/config.d/10-security
+06/06/24 11:32:10    /etc/condor/config.d/10-stash-plugin.conf
+06/06/24 11:32:10    /etc/condor/config.d/15-dagman-default-append-vars
+06/06/24 11:32:10    /etc/condor/config.d/30-scratch-mount
+06/06/24 11:32:10    /etc/condor/config.d/40-vault-credmon.conf
+06/06/24 11:32:10    /etc/condor/config.d/50-transfer-limits
+06/06/24 11:32:10    /etc/condor/config.d/65-system-periodic-hold
+06/06/24 11:32:10    /etc/condor/config.d/93-dagman-use-direct
+06/06/24 11:32:10    /etc/condor/config.d/99-memory
+06/06/24 11:32:10    /etc/condor/config.d/99-request-disk
+06/06/24 11:32:10    /etc/condor/config.d/99-request-missing-units
+06/06/24 11:32:10    /etc/condor/config.d/99-shared-port-descriptor
+06/06/24 11:32:10    /etc/condor/config.d/99-transform
+06/06/24 11:32:10    /etc/condor/condor_config.local
+06/06/24 11:32:10 config Macros = 168, Sorted = 168, StringBytes = 7934, TablesBytes = 6216
+06/06/24 11:32:10 CLASSAD_CACHING is ENABLED
+06/06/24 11:32:10 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/06/24 11:32:10 DaemonCore: No command port requested.
+06/06/24 11:32:10 DAGMAN_USE_STRICT setting: 1
+06/06/24 11:32:10 DAGMAN_VERBOSITY setting: 3
+06/06/24 11:32:10 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/06/24 11:32:10 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/06/24 11:32:10 DAGMAN_SUBMIT_DELAY setting: 0
+06/06/24 11:32:10 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/06/24 11:32:10 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/06/24 11:32:10 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/06/24 11:32:10 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/06/24 11:32:10 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/06/24 11:32:10 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/06/24 11:32:10 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/06/24 11:32:10 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/06/24 11:32:10 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/06/24 11:32:10 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/06/24 11:32:10 DAGMAN_RETRY_NODE_FIRST setting: False
+06/06/24 11:32:10 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/06/24 11:32:10 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/06/24 11:32:10 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/06/24 11:32:10 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/06/24 11:32:10 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/06/24 11:32:10 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/06/24 11:32:10 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/06/24 11:32:10 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/06/24 11:32:10 DAGMAN_ALWAYS_RUN_POST setting: False
+06/06/24 11:32:10 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/06/24 11:32:10 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/06/24 11:32:10 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/06/24 11:32:10 DAGMAN_ABORT_DUPLICATES setting: True
+06/06/24 11:32:10 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/06/24 11:32:10 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/06/24 11:32:10 DAGMAN_AUTO_RESCUE setting: True
+06/06/24 11:32:10 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/06/24 11:32:10 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/06/24 11:32:10 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/06/24 11:32:10 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/06/24 11:32:10 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/06/24 11:32:10 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/06/24 11:32:10 ALL_DEBUG setting: 
+06/06/24 11:32:10 DAGMAN_DEBUG setting: 
+06/06/24 11:32:10 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/06/24 11:32:10 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/06/24 11:32:10 DAGMAN will adjust edges after parsing
+06/06/24 11:32:10 Enabling log line cache for increased NFS performance.
+06/06/24 11:32:10 argv[0] == "condor_scheduniv_exec.144820735.0"
+06/06/24 11:32:10 argv[1] == "-Lockfile"
+06/06/24 11:32:10 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock"
+06/06/24 11:32:10 argv[3] == "-Dag"
+06/06/24 11:32:10 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag"
+06/06/24 11:32:10 argv[5] == "-CsdVersion"
+06/06/24 11:32:10 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/06/24 11:32:10 argv[7] == "-dagman"
+06/06/24 11:32:10 argv[8] == "/usr/bin/condor_dagman"
+06/06/24 11:32:10 argv[9] == "-AutoRescue"
+06/06/24 11:32:10 argv[10] == "1"
+06/06/24 11:32:10 argv[11] == "-DoRescueFrom"
+06/06/24 11:32:10 argv[12] == "0"
+06/06/24 11:32:10 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:32:10 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:32:10 Workflow batch-id: <144820735.0>
+06/06/24 11:32:10 Workflow batch-name: <bbh.dag+144820735>
+06/06/24 11:32:10 Workflow accounting_group: <>
+06/06/24 11:32:10 Workflow accounting_group_user: <>
+06/06/24 11:32:10 Warning: failed to get attribute DAGNodeName
+06/06/24 11:32:10 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/06/24 11:32:10 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log>
+06/06/24 11:32:10 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock
+06/06/24 11:32:10 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag
+06/06/24 11:32:10 Parsing 1 dagfiles
+06/06/24 11:32:10 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag ...
+06/06/24 11:32:10 Adjusting edges
+06/06/24 11:32:10 Dag contains 4 total jobs
+06/06/24 11:32:10 Bootstrapping...
+06/06/24 11:32:10 Number of pre-completed nodes: 0
+06/06/24 11:32:10 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:32:10 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:32:10 Of 4 nodes total:
+06/06/24 11:32:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:32:10   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:32:10     0       0        0       0       1          3        0        0
+06/06/24 11:32:10 0 job proc(s) currently held
+06/06/24 11:32:10 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/06/24 11:32:10 Registering condor_event_timer...
+06/06/24 11:32:11 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job(s)...
+06/06/24 11:32:11 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:32:11 Masking the events recorded in the DAGMAN workflow log
+06/06/24 11:32:11 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 11:32:11 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a My.DAGManJobId=144820735 -a DAGManJobId=144820735 -batch-name bbh.dag+144820735 -batch-id 144820735.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a label=bbh DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection.sub
+06/06/24 11:32:11 From submit: Submitting job(s).
+06/06/24 11:32:11 From submit: 1 job(s) submitted to cluster 144820736.
+06/06/24 11:32:11 	assigned HTCondor ID (144820736.0.0)
+06/06/24 11:32:11 Just submitted 1 job this cycle...
+06/06/24 11:32:11 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:32:11 Of 4 nodes total:
+06/06/24 11:32:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:32:11   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:32:11     0       0        1       0       0          3        0        0
+06/06/24 11:32:11 0 job proc(s) currently held
+06/06/24 11:32:11 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03353118896484375; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03353118896484375; SubmitCycleTimeMin = 0.03353118896484375; SubmitCycleTimeStd = 0.03353118896484375; SubmitCycleTimeSum = 0.03353118896484375; ]
+06/06/24 11:32:16 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:32:16 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 from (144820736.0.0) to (144820736.0.0)
+06/06/24 11:32:16 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820736.0.0) {06/06/24 11:32:11}
+06/06/24 11:32:16 Number of idle job procs: 1
+06/06/24 11:32:41 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:32:41 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820736.0.0) {06/06/24 11:32:37}
+06/06/24 11:32:41 Number of idle job procs: 0
+06/06/24 11:32:46 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:32:46 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820736.0.0) {06/06/24 11:32:43}
+06/06/24 11:32:46 Number of idle job procs: 0
+06/06/24 11:32:46 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job proc (144820736.0.0) failed with status 1.
+06/06/24 11:32:46 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:32:46 Of 4 nodes total:
+06/06/24 11:32:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:32:46   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:32:46     0       0        0       0       0          0        1        3
+06/06/24 11:32:46 0 job proc(s) currently held
+06/06/24 11:32:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.004948343549455915; EventCycleTimeCount = 7.0; EventCycleTimeMax = 0.03366994857788086; EventCycleTimeMin = 3.314018249511719E-05; EventCycleTimeStd = 0.0126657467631787; EventCycleTimeSum = 0.03463840484619141; LogProcessCycleTimeAvg = 0.0002222855885823568; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003190040588378906; LogProcessCycleTimeMin = 0.0001189708709716797; LogProcessCycleTimeStd = 0.000100179598328988; LogProcessCycleTimeSum = 0.0006668567657470703; SleepCycleTimeAvg = 5.004730939865112; SleepCycleTimeCount = 7.0; SleepCycleTimeMax = 5.005107879638672; SleepCycleTimeMin = 5.0035719871521; SleepCycleTimeStd = 0.0005502464930119465; SleepCycleTimeSum = 35.03311657905579; SubmitCycleTimeAvg = 0.004210621118545532; SubmitCycleTimeCount = 8.0; SubmitCycleTimeMax = 0.03353118896484375; SubmitCycleTimeMin = 1.883506774902344E-05; SubmitCycleTimeStd = 0.01184729877660657; SubmitCycleTimeSum = 0.03368496894836426; ]
+06/06/24 11:32:46 ERROR: the following job(s) failed:
+06/06/24 11:32:46 ---------------------- Job ----------------------
+06/06/24 11:32:46       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0
+06/06/24 11:32:46            Noop: false
+06/06/24 11:32:46          NodeID: 0
+06/06/24 11:32:46     Node Status: STATUS_ERROR    
+06/06/24 11:32:46 Node return val: 1
+06/06/24 11:32:46           Error: Job proc (144820736.0.0) failed with status 1
+06/06/24 11:32:46 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection.sub
+06/06/24 11:32:46  HTCondor Job ID: (144820736.0.0)
+06/06/24 11:32:46 PARENTS:  WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0
+06/06/24 11:32:46 ---------------------------------------	<END>
+06/06/24 11:32:46 Aborting DAG...
+06/06/24 11:32:46 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue001...
+06/06/24 11:32:46 Removing submitted jobs...
+06/06/24 11:32:46 Removing any/all submitted HTCondor jobs...
+06/06/24 11:32:46 Running: /usr/bin/condor_rm -const DAGManJobId==144820735 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/06/24 11:32:46 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/06/24 11:32:46 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/06/24 11:32:46 Note: 0 total job deferrals because of node category throttles
+06/06/24 11:32:46 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/06/24 11:32:46 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/06/24 11:32:46 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/06/24 11:32:46 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:32:46 Of 4 nodes total:
+06/06/24 11:32:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:32:46   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:32:46     0       0        0       0       0          0        1        3
+06/06/24 11:32:46 0 job proc(s) currently held
+06/06/24 11:32:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.004948343549455915; EventCycleTimeCount = 7.0; EventCycleTimeMax = 0.03366994857788086; EventCycleTimeMin = 3.314018249511719E-05; EventCycleTimeStd = 0.0126657467631787; EventCycleTimeSum = 0.03463840484619141; LogProcessCycleTimeAvg = 0.0002222855885823568; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003190040588378906; LogProcessCycleTimeMin = 0.0001189708709716797; LogProcessCycleTimeStd = 0.000100179598328988; LogProcessCycleTimeSum = 0.0006668567657470703; SleepCycleTimeAvg = 5.004730939865112; SleepCycleTimeCount = 7.0; SleepCycleTimeMax = 5.005107879638672; SleepCycleTimeMin = 5.0035719871521; SleepCycleTimeStd = 0.0005502464930119465; SleepCycleTimeSum = 35.03311657905579; SubmitCycleTimeAvg = 0.004210621118545532; SubmitCycleTimeCount = 8.0; SubmitCycleTimeMax = 0.03353118896484375; SubmitCycleTimeMin = 1.883506774902344E-05; SubmitCycleTimeStd = 0.01184729877660657; SubmitCycleTimeSum = 0.03368496894836426; ]
+06/06/24 11:32:46 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.metrics.
+06/06/24 11:32:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.004948343549455915; EventCycleTimeCount = 7.0; EventCycleTimeMax = 0.03366994857788086; EventCycleTimeMin = 3.314018249511719E-05; EventCycleTimeStd = 0.0126657467631787; EventCycleTimeSum = 0.03463840484619141; LogProcessCycleTimeAvg = 0.0002222855885823568; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003190040588378906; LogProcessCycleTimeMin = 0.0001189708709716797; LogProcessCycleTimeStd = 0.000100179598328988; LogProcessCycleTimeSum = 0.0006668567657470703; SleepCycleTimeAvg = 5.004730939865112; SleepCycleTimeCount = 7.0; SleepCycleTimeMax = 5.005107879638672; SleepCycleTimeMin = 5.0035719871521; SleepCycleTimeStd = 0.0005502464930119465; SleepCycleTimeSum = 35.03311657905579; SubmitCycleTimeAvg = 0.004210621118545532; SubmitCycleTimeCount = 8.0; SubmitCycleTimeMax = 0.03353118896484375; SubmitCycleTimeMin = 1.883506774902344E-05; SubmitCycleTimeStd = 0.01184729877660657; SubmitCycleTimeSum = 0.03368496894836426; ]
+06/06/24 11:32:46 **** condor_scheduniv_exec.144820735.0 (condor_DAGMAN) pid 3443163 EXITING WITH STATUS 1
+06/06/24 11:34:14 ******************************************************
+06/06/24 11:34:14 ** condor_scheduniv_exec.144820812.0 (CONDOR_DAGMAN) STARTING UP
+06/06/24 11:34:14 ** /usr/bin/condor_dagman
+06/06/24 11:34:14 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/06/24 11:34:14 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/06/24 11:34:14 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/06/24 11:34:14 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/06/24 11:34:14 ** PID = 3451036
+06/06/24 11:34:14 ** Log last touched 6/6 11:32:46
+06/06/24 11:34:14 ******************************************************
+06/06/24 11:34:14 Using config source: /etc/condor/condor_config
+06/06/24 11:34:14 Using local config sources: 
+06/06/24 11:34:14    /etc/condor/config.d/00-htcondor-9.0.config
+06/06/24 11:34:14    /etc/condor/config.d/00-ldas
+06/06/24 11:34:14    /etc/condor/config.d/02-scheduler
+06/06/24 11:34:14    /etc/condor/config.d/10-security
+06/06/24 11:34:14    /etc/condor/config.d/10-stash-plugin.conf
+06/06/24 11:34:14    /etc/condor/config.d/15-dagman-default-append-vars
+06/06/24 11:34:14    /etc/condor/config.d/30-scratch-mount
+06/06/24 11:34:14    /etc/condor/config.d/40-vault-credmon.conf
+06/06/24 11:34:14    /etc/condor/config.d/50-transfer-limits
+06/06/24 11:34:14    /etc/condor/config.d/65-system-periodic-hold
+06/06/24 11:34:14    /etc/condor/config.d/93-dagman-use-direct
+06/06/24 11:34:14    /etc/condor/config.d/99-memory
+06/06/24 11:34:14    /etc/condor/config.d/99-request-disk
+06/06/24 11:34:14    /etc/condor/config.d/99-request-missing-units
+06/06/24 11:34:14    /etc/condor/config.d/99-shared-port-descriptor
+06/06/24 11:34:14    /etc/condor/config.d/99-transform
+06/06/24 11:34:14    /etc/condor/condor_config.local
+06/06/24 11:34:14 config Macros = 168, Sorted = 168, StringBytes = 7934, TablesBytes = 6216
+06/06/24 11:34:14 CLASSAD_CACHING is ENABLED
+06/06/24 11:34:14 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/06/24 11:34:14 DaemonCore: No command port requested.
+06/06/24 11:34:14 DAGMAN_USE_STRICT setting: 1
+06/06/24 11:34:14 DAGMAN_VERBOSITY setting: 3
+06/06/24 11:34:14 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/06/24 11:34:14 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/06/24 11:34:14 DAGMAN_SUBMIT_DELAY setting: 0
+06/06/24 11:34:14 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/06/24 11:34:14 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/06/24 11:34:14 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/06/24 11:34:14 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/06/24 11:34:14 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/06/24 11:34:14 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/06/24 11:34:14 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/06/24 11:34:14 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/06/24 11:34:14 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/06/24 11:34:14 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/06/24 11:34:14 DAGMAN_RETRY_NODE_FIRST setting: False
+06/06/24 11:34:14 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/06/24 11:34:14 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/06/24 11:34:14 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/06/24 11:34:14 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/06/24 11:34:14 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/06/24 11:34:14 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/06/24 11:34:14 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/06/24 11:34:14 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/06/24 11:34:14 DAGMAN_ALWAYS_RUN_POST setting: False
+06/06/24 11:34:14 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/06/24 11:34:14 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/06/24 11:34:14 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/06/24 11:34:14 DAGMAN_ABORT_DUPLICATES setting: True
+06/06/24 11:34:14 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/06/24 11:34:14 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/06/24 11:34:14 DAGMAN_AUTO_RESCUE setting: True
+06/06/24 11:34:14 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/06/24 11:34:14 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/06/24 11:34:14 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/06/24 11:34:14 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/06/24 11:34:14 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/06/24 11:34:14 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/06/24 11:34:14 ALL_DEBUG setting: 
+06/06/24 11:34:14 DAGMAN_DEBUG setting: 
+06/06/24 11:34:14 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/06/24 11:34:14 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/06/24 11:34:14 DAGMAN will adjust edges after parsing
+06/06/24 11:34:14 Enabling log line cache for increased NFS performance.
+06/06/24 11:34:14 argv[0] == "condor_scheduniv_exec.144820812.0"
+06/06/24 11:34:14 argv[1] == "-Lockfile"
+06/06/24 11:34:14 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock"
+06/06/24 11:34:14 argv[3] == "-Dag"
+06/06/24 11:34:14 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag"
+06/06/24 11:34:14 argv[5] == "-CsdVersion"
+06/06/24 11:34:14 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/06/24 11:34:14 argv[7] == "-dagman"
+06/06/24 11:34:14 argv[8] == "/usr/bin/condor_dagman"
+06/06/24 11:34:14 argv[9] == "-AutoRescue"
+06/06/24 11:34:14 argv[10] == "1"
+06/06/24 11:34:14 argv[11] == "-DoRescueFrom"
+06/06/24 11:34:14 argv[12] == "0"
+06/06/24 11:34:14 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:34:14 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:34:14 Workflow batch-id: <144820812.0>
+06/06/24 11:34:14 Workflow batch-name: <bbh.dag+144820812>
+06/06/24 11:34:14 Workflow accounting_group: <>
+06/06/24 11:34:14 Workflow accounting_group_user: <>
+06/06/24 11:34:14 Warning: failed to get attribute DAGNodeName
+06/06/24 11:34:14 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/06/24 11:34:14 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log>
+06/06/24 11:34:14 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock
+06/06/24 11:34:14 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag
+06/06/24 11:34:14 Parsing 1 dagfiles
+06/06/24 11:34:14 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag ...
+06/06/24 11:34:14 Adjusting edges
+06/06/24 11:34:14 Found rescue DAG number 1; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue001 in combination with normal DAG file
+06/06/24 11:34:14 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06/06/24 11:34:14 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue001
+06/06/24 11:34:14 Dag contains 4 total jobs
+06/06/24 11:34:14 Bootstrapping...
+06/06/24 11:34:14 Number of pre-completed nodes: 0
+06/06/24 11:34:14 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:34:14 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:34:14 Of 4 nodes total:
+06/06/24 11:34:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:34:14   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:34:14     0       0        0       0       1          3        0        0
+06/06/24 11:34:14 0 job proc(s) currently held
+06/06/24 11:34:14 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/06/24 11:34:14 Registering condor_event_timer...
+06/06/24 11:34:15 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job(s)...
+06/06/24 11:34:15 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:34:15 Masking the events recorded in the DAGMAN workflow log
+06/06/24 11:34:15 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 11:34:15 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a My.DAGManJobId=144820812 -a DAGManJobId=144820812 -batch-name bbh.dag+144820812 -batch-id 144820812.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a label=bbh DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection.sub
+06/06/24 11:34:15 From submit: Submitting job(s).
+06/06/24 11:34:15 From submit: 1 job(s) submitted to cluster 144820813.
+06/06/24 11:34:15 	assigned HTCondor ID (144820813.0.0)
+06/06/24 11:34:15 Just submitted 1 job this cycle...
+06/06/24 11:34:15 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:34:15 Of 4 nodes total:
+06/06/24 11:34:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:34:15   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:34:15     0       0        1       0       0          3        0        0
+06/06/24 11:34:15 0 job proc(s) currently held
+06/06/24 11:34:15 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03408098220825195; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03408098220825195; SubmitCycleTimeMin = 0.03408098220825195; SubmitCycleTimeStd = 0.03408098220825195; SubmitCycleTimeSum = 0.03408098220825195; ]
+06/06/24 11:34:20 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:34:20 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 from (144820813.0.0) to (144820813.0.0)
+06/06/24 11:34:20 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820813.0.0) {06/06/24 11:34:15}
+06/06/24 11:34:20 Number of idle job procs: 1
+06/06/24 11:35:35 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:35:35 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820813.0.0) {06/06/24 11:35:31}
+06/06/24 11:35:35 Number of idle job procs: 0
+06/06/24 11:35:35 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820813.0.0) {06/06/24 11:35:35}
+06/06/24 11:35:35 Number of idle job procs: 0
+06/06/24 11:35:35 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job proc (144820813.0.0) failed with status 1.
+06/06/24 11:35:35 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:35:35 Of 4 nodes total:
+06/06/24 11:35:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:35:35   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:35:35     0       0        0       0       0          0        1        3
+06/06/24 11:35:35 0 job proc(s) currently held
+06/06/24 11:35:35 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002194568514823914; EventCycleTimeCount = 16.0; EventCycleTimeMax = 0.03420805931091309; EventCycleTimeMin = 1.811981201171875E-05; EventCycleTimeStd = 0.008537267183399177; EventCycleTimeSum = 0.03511309623718262; LogProcessCycleTimeAvg = 0.0002194643020629883; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.0002279281616210938; LogProcessCycleTimeMin = 0.0002110004425048828; LogProcessCycleTimeStd = 1.196970497709391E-05; LogProcessCycleTimeSum = 0.0004389286041259766; SleepCycleTimeAvg = 5.00480443239212; SleepCycleTimeCount = 16.0; SleepCycleTimeMax = 5.005751848220825; SleepCycleTimeMin = 5.002925157546997; SleepCycleTimeStd = 0.0006199602641619419; SleepCycleTimeSum = 80.07687091827393; SubmitCycleTimeAvg = 0.002017526065602022; SubmitCycleTimeCount = 17.0; SubmitCycleTimeMax = 0.03408098220825195; SubmitCycleTimeMin = 8.106231689453125E-06; SubmitCycleTimeStd = 0.008262564835423128; SubmitCycleTimeSum = 0.03429794311523438; ]
+06/06/24 11:35:35 ERROR: the following job(s) failed:
+06/06/24 11:35:35 ---------------------- Job ----------------------
+06/06/24 11:35:35       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0
+06/06/24 11:35:35            Noop: false
+06/06/24 11:35:35          NodeID: 0
+06/06/24 11:35:35     Node Status: STATUS_ERROR    
+06/06/24 11:35:35 Node return val: 1
+06/06/24 11:35:35           Error: Job proc (144820813.0.0) failed with status 1
+06/06/24 11:35:35 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection.sub
+06/06/24 11:35:35  HTCondor Job ID: (144820813.0.0)
+06/06/24 11:35:35 PARENTS:  WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0
+06/06/24 11:35:35 ---------------------------------------	<END>
+06/06/24 11:35:35 Aborting DAG...
+06/06/24 11:35:35 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue002...
+06/06/24 11:35:35 Removing submitted jobs...
+06/06/24 11:35:35 Removing any/all submitted HTCondor jobs...
+06/06/24 11:35:35 Running: /usr/bin/condor_rm -const DAGManJobId==144820812 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/06/24 11:35:35 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/06/24 11:35:35 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/06/24 11:35:35 Note: 0 total job deferrals because of node category throttles
+06/06/24 11:35:35 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/06/24 11:35:35 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/06/24 11:35:35 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/06/24 11:35:35 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:35:35 Of 4 nodes total:
+06/06/24 11:35:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:35:35   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:35:35     0       0        0       0       0          0        1        3
+06/06/24 11:35:35 0 job proc(s) currently held
+06/06/24 11:35:35 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002194568514823914; EventCycleTimeCount = 16.0; EventCycleTimeMax = 0.03420805931091309; EventCycleTimeMin = 1.811981201171875E-05; EventCycleTimeStd = 0.008537267183399177; EventCycleTimeSum = 0.03511309623718262; LogProcessCycleTimeAvg = 0.0002194643020629883; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.0002279281616210938; LogProcessCycleTimeMin = 0.0002110004425048828; LogProcessCycleTimeStd = 1.196970497709391E-05; LogProcessCycleTimeSum = 0.0004389286041259766; SleepCycleTimeAvg = 5.00480443239212; SleepCycleTimeCount = 16.0; SleepCycleTimeMax = 5.005751848220825; SleepCycleTimeMin = 5.002925157546997; SleepCycleTimeStd = 0.0006199602641619419; SleepCycleTimeSum = 80.07687091827393; SubmitCycleTimeAvg = 0.002017526065602022; SubmitCycleTimeCount = 17.0; SubmitCycleTimeMax = 0.03408098220825195; SubmitCycleTimeMin = 8.106231689453125E-06; SubmitCycleTimeStd = 0.008262564835423128; SubmitCycleTimeSum = 0.03429794311523438; ]
+06/06/24 11:35:35 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.metrics.
+06/06/24 11:35:35 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002194568514823914; EventCycleTimeCount = 16.0; EventCycleTimeMax = 0.03420805931091309; EventCycleTimeMin = 1.811981201171875E-05; EventCycleTimeStd = 0.008537267183399177; EventCycleTimeSum = 0.03511309623718262; LogProcessCycleTimeAvg = 0.0002194643020629883; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.0002279281616210938; LogProcessCycleTimeMin = 0.0002110004425048828; LogProcessCycleTimeStd = 1.196970497709391E-05; LogProcessCycleTimeSum = 0.0004389286041259766; SleepCycleTimeAvg = 5.00480443239212; SleepCycleTimeCount = 16.0; SleepCycleTimeMax = 5.005751848220825; SleepCycleTimeMin = 5.002925157546997; SleepCycleTimeStd = 0.0006199602641619419; SleepCycleTimeSum = 80.07687091827393; SubmitCycleTimeAvg = 0.002017526065602022; SubmitCycleTimeCount = 17.0; SubmitCycleTimeMax = 0.03408098220825195; SubmitCycleTimeMin = 8.106231689453125E-06; SubmitCycleTimeStd = 0.008262564835423128; SubmitCycleTimeSum = 0.03429794311523438; ]
+06/06/24 11:35:35 **** condor_scheduniv_exec.144820812.0 (condor_DAGMAN) pid 3451036 EXITING WITH STATUS 1
+06/06/24 11:37:37 ******************************************************
+06/06/24 11:37:37 ** condor_scheduniv_exec.144820899.0 (CONDOR_DAGMAN) STARTING UP
+06/06/24 11:37:37 ** /usr/bin/condor_dagman
+06/06/24 11:37:37 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/06/24 11:37:37 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/06/24 11:37:37 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/06/24 11:37:37 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/06/24 11:37:37 ** PID = 3473397
+06/06/24 11:37:37 ** Log last touched 6/6 11:35:35
+06/06/24 11:37:37 ******************************************************
+06/06/24 11:37:37 Using config source: /etc/condor/condor_config
+06/06/24 11:37:37 Using local config sources: 
+06/06/24 11:37:37    /etc/condor/config.d/00-htcondor-9.0.config
+06/06/24 11:37:37    /etc/condor/config.d/00-ldas
+06/06/24 11:37:37    /etc/condor/config.d/02-scheduler
+06/06/24 11:37:37    /etc/condor/config.d/10-security
+06/06/24 11:37:37    /etc/condor/config.d/10-stash-plugin.conf
+06/06/24 11:37:37    /etc/condor/config.d/15-dagman-default-append-vars
+06/06/24 11:37:37    /etc/condor/config.d/30-scratch-mount
+06/06/24 11:37:37    /etc/condor/config.d/40-vault-credmon.conf
+06/06/24 11:37:37    /etc/condor/config.d/50-transfer-limits
+06/06/24 11:37:37    /etc/condor/config.d/65-system-periodic-hold
+06/06/24 11:37:37    /etc/condor/config.d/93-dagman-use-direct
+06/06/24 11:37:37    /etc/condor/config.d/99-memory
+06/06/24 11:37:37    /etc/condor/config.d/99-request-disk
+06/06/24 11:37:37    /etc/condor/config.d/99-request-missing-units
+06/06/24 11:37:37    /etc/condor/config.d/99-shared-port-descriptor
+06/06/24 11:37:37    /etc/condor/config.d/99-transform
+06/06/24 11:37:37    /etc/condor/condor_config.local
+06/06/24 11:37:37 config Macros = 168, Sorted = 168, StringBytes = 7934, TablesBytes = 6216
+06/06/24 11:37:37 CLASSAD_CACHING is ENABLED
+06/06/24 11:37:37 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/06/24 11:37:37 DaemonCore: No command port requested.
+06/06/24 11:37:37 DAGMAN_USE_STRICT setting: 1
+06/06/24 11:37:37 DAGMAN_VERBOSITY setting: 3
+06/06/24 11:37:37 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/06/24 11:37:37 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/06/24 11:37:37 DAGMAN_SUBMIT_DELAY setting: 0
+06/06/24 11:37:37 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/06/24 11:37:37 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/06/24 11:37:37 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/06/24 11:37:37 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/06/24 11:37:37 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/06/24 11:37:37 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/06/24 11:37:37 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/06/24 11:37:37 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/06/24 11:37:37 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/06/24 11:37:37 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/06/24 11:37:37 DAGMAN_RETRY_NODE_FIRST setting: False
+06/06/24 11:37:37 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/06/24 11:37:37 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/06/24 11:37:37 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/06/24 11:37:37 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/06/24 11:37:37 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/06/24 11:37:37 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/06/24 11:37:37 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/06/24 11:37:37 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/06/24 11:37:37 DAGMAN_ALWAYS_RUN_POST setting: False
+06/06/24 11:37:37 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/06/24 11:37:37 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/06/24 11:37:37 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/06/24 11:37:37 DAGMAN_ABORT_DUPLICATES setting: True
+06/06/24 11:37:37 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/06/24 11:37:37 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/06/24 11:37:37 DAGMAN_AUTO_RESCUE setting: True
+06/06/24 11:37:37 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/06/24 11:37:37 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/06/24 11:37:37 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/06/24 11:37:37 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/06/24 11:37:37 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/06/24 11:37:37 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/06/24 11:37:37 ALL_DEBUG setting: 
+06/06/24 11:37:37 DAGMAN_DEBUG setting: 
+06/06/24 11:37:37 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/06/24 11:37:37 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/06/24 11:37:37 DAGMAN will adjust edges after parsing
+06/06/24 11:37:37 Enabling log line cache for increased NFS performance.
+06/06/24 11:37:37 argv[0] == "condor_scheduniv_exec.144820899.0"
+06/06/24 11:37:37 argv[1] == "-Lockfile"
+06/06/24 11:37:37 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock"
+06/06/24 11:37:37 argv[3] == "-Dag"
+06/06/24 11:37:37 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag"
+06/06/24 11:37:37 argv[5] == "-CsdVersion"
+06/06/24 11:37:37 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/06/24 11:37:37 argv[7] == "-dagman"
+06/06/24 11:37:37 argv[8] == "/usr/bin/condor_dagman"
+06/06/24 11:37:37 argv[9] == "-AutoRescue"
+06/06/24 11:37:37 argv[10] == "1"
+06/06/24 11:37:37 argv[11] == "-DoRescueFrom"
+06/06/24 11:37:37 argv[12] == "0"
+06/06/24 11:37:37 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:37:37 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:37:37 Workflow batch-id: <144820899.0>
+06/06/24 11:37:37 Workflow batch-name: <bbh.dag+144820899>
+06/06/24 11:37:37 Workflow accounting_group: <>
+06/06/24 11:37:37 Workflow accounting_group_user: <>
+06/06/24 11:37:37 Warning: failed to get attribute DAGNodeName
+06/06/24 11:37:37 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/06/24 11:37:37 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log>
+06/06/24 11:37:37 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock
+06/06/24 11:37:37 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag
+06/06/24 11:37:37 Parsing 1 dagfiles
+06/06/24 11:37:37 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag ...
+06/06/24 11:37:37 Adjusting edges
+06/06/24 11:37:37 Found rescue DAG number 2; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue002 in combination with normal DAG file
+06/06/24 11:37:37 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06/06/24 11:37:37 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue002
+06/06/24 11:37:37 Dag contains 4 total jobs
+06/06/24 11:37:37 Bootstrapping...
+06/06/24 11:37:37 Number of pre-completed nodes: 0
+06/06/24 11:37:37 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:37:37 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:37:37 Of 4 nodes total:
+06/06/24 11:37:37  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:37:37   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:37:37     0       0        0       0       1          3        0        0
+06/06/24 11:37:37 0 job proc(s) currently held
+06/06/24 11:37:37 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/06/24 11:37:37 Registering condor_event_timer...
+06/06/24 11:37:38 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job(s)...
+06/06/24 11:37:38 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:37:38 Masking the events recorded in the DAGMAN workflow log
+06/06/24 11:37:38 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 11:37:38 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a My.DAGManJobId=144820899 -a DAGManJobId=144820899 -batch-name bbh.dag+144820899 -batch-id 144820899.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 -a label=bbh DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection.sub
+06/06/24 11:37:38 From submit: Submitting job(s).
+06/06/24 11:37:38 From submit: 1 job(s) submitted to cluster 144820901.
+06/06/24 11:37:38 	assigned HTCondor ID (144820901.0.0)
+06/06/24 11:37:38 Just submitted 1 job this cycle...
+06/06/24 11:37:38 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:37:38 Of 4 nodes total:
+06/06/24 11:37:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:37:38   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:37:38     0       0        1       0       0          3        0        0
+06/06/24 11:37:38 0 job proc(s) currently held
+06/06/24 11:37:38 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03540897369384766; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03540897369384766; SubmitCycleTimeMin = 0.03540897369384766; SubmitCycleTimeStd = 0.03540897369384766; SubmitCycleTimeSum = 0.03540897369384766; ]
+06/06/24 11:37:43 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:37:43 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 from (144820901.0.0) to (144820901.0.0)
+06/06/24 11:37:43 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820901.0.0) {06/06/24 11:37:38}
+06/06/24 11:37:43 Number of idle job procs: 1
+06/06/24 11:38:23 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:38:23 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820901.0.0) {06/06/24 11:38:20}
+06/06/24 11:38:23 Number of idle job procs: 0
+06/06/24 11:42:18 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:42:18 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 (144820901.0.0) {06/06/24 11:42:18}
+06/06/24 11:42:18 Number of idle job procs: 0
+06/06/24 11:42:18 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job proc (144820901.0.0) completed successfully.
+06/06/24 11:42:18 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 job completed
+06/06/24 11:42:18 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:42:18 Of 4 nodes total:
+06/06/24 11:42:18  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:42:18   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:42:18     1       0        0       0       1          2        0        0
+06/06/24 11:42:18 0 job proc(s) currently held
+06/06/24 11:42:18 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0009047176156725202; EventCycleTimeCount = 56.0; EventCycleTimeMax = 0.03552818298339844; EventCycleTimeMin = 2.288818359375E-05; EventCycleTimeStd = 0.004983382289989042; EventCycleTimeSum = 0.05066418647766113; LogProcessCycleTimeAvg = 0.0002173582712809245; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003740787506103516; LogProcessCycleTimeMin = 0.0001330375671386719; LogProcessCycleTimeStd = 0.0001358547335123883; LogProcessCycleTimeSum = 0.0006520748138427734; SleepCycleTimeAvg = 4.986863068171909; SleepCycleTimeCount = 56.0; SleepCycleTimeMax = 5.005545139312744; SleepCycleTimeMin = 4.003476858139038; SleepCycleTimeStd = 0.133801903124078; SleepCycleTimeSum = 279.264331817627; SubmitCycleTimeAvg = 0.0006853948559677392; SubmitCycleTimeCount = 57.0; SubmitCycleTimeMax = 0.03540897369384766; SubmitCycleTimeMin = 1.311302185058594E-05; SubmitCycleTimeStd = 0.00468935880652138; SubmitCycleTimeSum = 0.03906750679016113; ]
+06/06/24 11:42:23 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job(s)...
+06/06/24 11:42:23 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:42:23 Masking the events recorded in the DAGMAN workflow log
+06/06/24 11:42:23 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 11:42:23 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a My.DAGManJobId=144820899 -a DAGManJobId=144820899 -batch-name bbh.dag+144820899 -batch-id 144820899.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 11:42:23 From submit: Submitting job(s).
+06/06/24 11:42:23 From submit: 1 job(s) submitted to cluster 144821149.
+06/06/24 11:42:23 	assigned HTCondor ID (144821149.0.0)
+06/06/24 11:42:23 Just submitted 1 job this cycle...
+06/06/24 11:42:23 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:42:23 Of 4 nodes total:
+06/06/24 11:42:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:42:23   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:42:23     1       0        1       0       0          2        0        0
+06/06/24 11:42:23 0 job proc(s) currently held
+06/06/24 11:42:23 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.00089834029214424; EventCycleTimeCount = 57.0; EventCycleTimeMax = 0.03552818298339844; EventCycleTimeMin = 2.288818359375E-05; EventCycleTimeStd = 0.004938922068458017; EventCycleTimeSum = 0.05120539665222168; LogProcessCycleTimeAvg = 0.0002173582712809245; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003740787506103516; LogProcessCycleTimeMin = 0.0001330375671386719; LogProcessCycleTimeStd = 0.0001358547335123883; LogProcessCycleTimeSum = 0.0006520748138427734; SleepCycleTimeAvg = 4.987171821426927; SleepCycleTimeCount = 57.0; SleepCycleTimeMax = 5.005545139312744; SleepCycleTimeMin = 4.003476858139038; SleepCycleTimeStd = 0.1326223491173419; SleepCycleTimeSum = 284.2687938213348; SubmitCycleTimeAvg = 0.00137616437056969; SubmitCycleTimeCount = 58.0; SubmitCycleTimeMax = 0.04075002670288086; SubmitCycleTimeMin = 1.311302185058594E-05; SubmitCycleTimeStd = 0.007019951661311888; SubmitCycleTimeSum = 0.07981753349304199; ]
+06/06/24 11:42:28 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:42:28 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 from (144821149.0.0) to (144821149.0.0)
+06/06/24 11:42:28 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144821149.0.0) {06/06/24 11:42:23}
+06/06/24 11:42:28 Number of idle job procs: 1
+06/06/24 11:44:23 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:44:23 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144821149.0.0) {06/06/24 11:44:23}
+06/06/24 11:44:23 Number of idle job procs: 0
+06/06/24 11:44:38 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:44:38 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144821149.0.0) {06/06/24 11:44:36}
+06/06/24 11:44:38 Number of idle job procs: 0
+06/06/24 11:44:38 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job proc (144821149.0.0) failed with status 1.
+06/06/24 11:44:38 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:44:38 Of 4 nodes total:
+06/06/24 11:44:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:44:38   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:44:38     1       0        0       0       0          0        1        2
+06/06/24 11:44:38 0 job proc(s) currently held
+06/06/24 11:44:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001151269390469506; EventCycleTimeCount = 84.0; EventCycleTimeMax = 0.04089999198913574; EventCycleTimeMin = 2.002716064453125E-05; EventCycleTimeStd = 0.005993268113600062; EventCycleTimeSum = 0.09670662879943848; LogProcessCycleTimeAvg = 0.0002375443776448568; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001330375671386719; LogProcessCycleTimeStd = 0.0001134275899373475; LogProcessCycleTimeSum = 0.001425266265869141; SleepCycleTimeAvg = 4.992860601061866; SleepCycleTimeCount = 84.0; SleepCycleTimeMax = 5.005545139312744; SleepCycleTimeMin = 4.003476858139038; SleepCycleTimeStd = 0.1092530488690174; SleepCycleTimeSum = 419.4002904891968; SubmitCycleTimeAvg = 0.0009499605964211857; SubmitCycleTimeCount = 85.0; SubmitCycleTimeMax = 0.04075002670288086; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.005816848134308964; SubmitCycleTimeSum = 0.08074665069580078; ]
+06/06/24 11:44:38 ERROR: the following job(s) failed:
+06/06/24 11:44:38 ---------------------- Job ----------------------
+06/06/24 11:44:38       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0
+06/06/24 11:44:38            Noop: false
+06/06/24 11:44:38          NodeID: 1
+06/06/24 11:44:38     Node Status: STATUS_ERROR    
+06/06/24 11:44:38 Node return val: 1
+06/06/24 11:44:38           Error: Job proc (144821149.0.0) failed with status 1
+06/06/24 11:44:38 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 11:44:38  HTCondor Job ID: (144821149.0.0)
+06/06/24 11:44:38 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/common_format:0
+06/06/24 11:44:38 ---------------------------------------	<END>
+06/06/24 11:44:38 Aborting DAG...
+06/06/24 11:44:38 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue003...
+06/06/24 11:44:38 Removing submitted jobs...
+06/06/24 11:44:38 Removing any/all submitted HTCondor jobs...
+06/06/24 11:44:38 Running: /usr/bin/condor_rm -const DAGManJobId==144820899 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/06/24 11:44:38 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/06/24 11:44:38 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/06/24 11:44:38 Note: 0 total job deferrals because of node category throttles
+06/06/24 11:44:38 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/06/24 11:44:38 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/06/24 11:44:38 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/06/24 11:44:38 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:44:38 Of 4 nodes total:
+06/06/24 11:44:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:44:38   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:44:38     1       0        0       0       0          0        1        2
+06/06/24 11:44:38 0 job proc(s) currently held
+06/06/24 11:44:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001151269390469506; EventCycleTimeCount = 84.0; EventCycleTimeMax = 0.04089999198913574; EventCycleTimeMin = 2.002716064453125E-05; EventCycleTimeStd = 0.005993268113600062; EventCycleTimeSum = 0.09670662879943848; LogProcessCycleTimeAvg = 0.0002375443776448568; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001330375671386719; LogProcessCycleTimeStd = 0.0001134275899373475; LogProcessCycleTimeSum = 0.001425266265869141; SleepCycleTimeAvg = 4.992860601061866; SleepCycleTimeCount = 84.0; SleepCycleTimeMax = 5.005545139312744; SleepCycleTimeMin = 4.003476858139038; SleepCycleTimeStd = 0.1092530488690174; SleepCycleTimeSum = 419.4002904891968; SubmitCycleTimeAvg = 0.0009499605964211857; SubmitCycleTimeCount = 85.0; SubmitCycleTimeMax = 0.04075002670288086; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.005816848134308964; SubmitCycleTimeSum = 0.08074665069580078; ]
+06/06/24 11:44:38 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.metrics.
+06/06/24 11:44:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001151269390469506; EventCycleTimeCount = 84.0; EventCycleTimeMax = 0.04089999198913574; EventCycleTimeMin = 2.002716064453125E-05; EventCycleTimeStd = 0.005993268113600062; EventCycleTimeSum = 0.09670662879943848; LogProcessCycleTimeAvg = 0.0002375443776448568; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001330375671386719; LogProcessCycleTimeStd = 0.0001134275899373475; LogProcessCycleTimeSum = 0.001425266265869141; SleepCycleTimeAvg = 4.992860601061866; SleepCycleTimeCount = 84.0; SleepCycleTimeMax = 5.005545139312744; SleepCycleTimeMin = 4.003476858139038; SleepCycleTimeStd = 0.1092530488690174; SleepCycleTimeSum = 419.4002904891968; SubmitCycleTimeAvg = 0.0009499605964211857; SubmitCycleTimeCount = 85.0; SubmitCycleTimeMax = 0.04075002670288086; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.005816848134308964; SubmitCycleTimeSum = 0.08074665069580078; ]
+06/06/24 11:44:38 **** condor_scheduniv_exec.144820899.0 (condor_DAGMAN) pid 3473397 EXITING WITH STATUS 1
+06/06/24 11:53:20 ******************************************************
+06/06/24 11:53:20 ** condor_scheduniv_exec.144821708.0 (CONDOR_DAGMAN) STARTING UP
+06/06/24 11:53:20 ** /usr/bin/condor_dagman
+06/06/24 11:53:20 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/06/24 11:53:20 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/06/24 11:53:20 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/06/24 11:53:20 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/06/24 11:53:20 ** PID = 3556451
+06/06/24 11:53:20 ** Log last touched 6/6 11:44:38
+06/06/24 11:53:20 ******************************************************
+06/06/24 11:53:20 Using config source: /etc/condor/condor_config
+06/06/24 11:53:20 Using local config sources: 
+06/06/24 11:53:20    /etc/condor/config.d/00-htcondor-9.0.config
+06/06/24 11:53:20    /etc/condor/config.d/00-ldas
+06/06/24 11:53:20    /etc/condor/config.d/02-scheduler
+06/06/24 11:53:20    /etc/condor/config.d/10-security
+06/06/24 11:53:20    /etc/condor/config.d/10-stash-plugin.conf
+06/06/24 11:53:20    /etc/condor/config.d/15-dagman-default-append-vars
+06/06/24 11:53:20    /etc/condor/config.d/30-scratch-mount
+06/06/24 11:53:20    /etc/condor/config.d/40-vault-credmon.conf
+06/06/24 11:53:20    /etc/condor/config.d/50-transfer-limits
+06/06/24 11:53:20    /etc/condor/config.d/65-system-periodic-hold
+06/06/24 11:53:20    /etc/condor/config.d/93-dagman-use-direct
+06/06/24 11:53:20    /etc/condor/config.d/99-memory
+06/06/24 11:53:20    /etc/condor/config.d/99-request-disk
+06/06/24 11:53:20    /etc/condor/config.d/99-request-missing-units
+06/06/24 11:53:20    /etc/condor/config.d/99-shared-port-descriptor
+06/06/24 11:53:20    /etc/condor/config.d/99-transform
+06/06/24 11:53:20    /etc/condor/condor_config.local
+06/06/24 11:53:20 config Macros = 168, Sorted = 168, StringBytes = 7934, TablesBytes = 6216
+06/06/24 11:53:20 CLASSAD_CACHING is ENABLED
+06/06/24 11:53:20 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/06/24 11:53:20 DaemonCore: No command port requested.
+06/06/24 11:53:20 DAGMAN_USE_STRICT setting: 1
+06/06/24 11:53:20 DAGMAN_VERBOSITY setting: 3
+06/06/24 11:53:20 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/06/24 11:53:20 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/06/24 11:53:20 DAGMAN_SUBMIT_DELAY setting: 0
+06/06/24 11:53:20 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/06/24 11:53:20 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/06/24 11:53:20 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/06/24 11:53:20 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/06/24 11:53:20 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/06/24 11:53:20 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/06/24 11:53:20 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/06/24 11:53:20 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/06/24 11:53:20 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/06/24 11:53:20 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/06/24 11:53:20 DAGMAN_RETRY_NODE_FIRST setting: False
+06/06/24 11:53:20 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/06/24 11:53:20 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/06/24 11:53:20 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/06/24 11:53:20 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/06/24 11:53:20 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/06/24 11:53:20 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/06/24 11:53:20 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/06/24 11:53:20 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/06/24 11:53:20 DAGMAN_ALWAYS_RUN_POST setting: False
+06/06/24 11:53:20 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/06/24 11:53:20 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/06/24 11:53:20 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/06/24 11:53:20 DAGMAN_ABORT_DUPLICATES setting: True
+06/06/24 11:53:20 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/06/24 11:53:20 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/06/24 11:53:20 DAGMAN_AUTO_RESCUE setting: True
+06/06/24 11:53:20 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/06/24 11:53:20 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/06/24 11:53:20 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/06/24 11:53:20 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/06/24 11:53:20 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/06/24 11:53:20 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/06/24 11:53:20 ALL_DEBUG setting: 
+06/06/24 11:53:20 DAGMAN_DEBUG setting: 
+06/06/24 11:53:20 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/06/24 11:53:20 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/06/24 11:53:20 DAGMAN will adjust edges after parsing
+06/06/24 11:53:20 Enabling log line cache for increased NFS performance.
+06/06/24 11:53:20 argv[0] == "condor_scheduniv_exec.144821708.0"
+06/06/24 11:53:20 argv[1] == "-Lockfile"
+06/06/24 11:53:20 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock"
+06/06/24 11:53:20 argv[3] == "-Dag"
+06/06/24 11:53:20 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag"
+06/06/24 11:53:20 argv[5] == "-CsdVersion"
+06/06/24 11:53:20 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/06/24 11:53:20 argv[7] == "-dagman"
+06/06/24 11:53:20 argv[8] == "/usr/bin/condor_dagman"
+06/06/24 11:53:20 argv[9] == "-AutoRescue"
+06/06/24 11:53:20 argv[10] == "1"
+06/06/24 11:53:20 argv[11] == "-DoRescueFrom"
+06/06/24 11:53:20 argv[12] == "0"
+06/06/24 11:53:20 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:53:20 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 11:53:20 Workflow batch-id: <144821708.0>
+06/06/24 11:53:20 Workflow batch-name: <bbh.dag+144821708>
+06/06/24 11:53:20 Workflow accounting_group: <>
+06/06/24 11:53:20 Workflow accounting_group_user: <>
+06/06/24 11:53:20 Warning: failed to get attribute DAGNodeName
+06/06/24 11:53:20 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/06/24 11:53:20 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log>
+06/06/24 11:53:20 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock
+06/06/24 11:53:20 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag
+06/06/24 11:53:20 Parsing 1 dagfiles
+06/06/24 11:53:20 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag ...
+06/06/24 11:53:20 Adjusting edges
+06/06/24 11:53:20 Found rescue DAG number 3; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue003 in combination with normal DAG file
+06/06/24 11:53:20 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06/06/24 11:53:20 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue003
+06/06/24 11:53:20 Dag contains 4 total jobs
+06/06/24 11:53:20 Bootstrapping...
+06/06/24 11:53:20 Number of pre-completed nodes: 1
+06/06/24 11:53:20 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:53:20 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:53:20 Of 4 nodes total:
+06/06/24 11:53:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:53:20   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:53:20     1       0        0       0       1          2        0        0
+06/06/24 11:53:20 0 job proc(s) currently held
+06/06/24 11:53:20 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/06/24 11:53:20 Registering condor_event_timer...
+06/06/24 11:53:21 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job(s)...
+06/06/24 11:53:21 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 11:53:21 Masking the events recorded in the DAGMAN workflow log
+06/06/24 11:53:21 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 11:53:21 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a My.DAGManJobId=144821708 -a DAGManJobId=144821708 -batch-name bbh.dag+144821708 -batch-id 144821708.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 11:53:21 From submit: Submitting job(s).
+06/06/24 11:53:21 From submit: 1 job(s) submitted to cluster 144821710.
+06/06/24 11:53:21 	assigned HTCondor ID (144821710.0.0)
+06/06/24 11:53:21 Just submitted 1 job this cycle...
+06/06/24 11:53:21 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 11:53:21 Of 4 nodes total:
+06/06/24 11:53:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:53:21   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:53:21     1       0        1       0       0          2        0        0
+06/06/24 11:53:21 0 job proc(s) currently held
+06/06/24 11:53:21 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03919100761413574; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03919100761413574; SubmitCycleTimeMin = 0.03919100761413574; SubmitCycleTimeStd = 0.03919100761413574; SubmitCycleTimeSum = 0.03919100761413574; ]
+06/06/24 11:53:26 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:53:26 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 from (144821710.0.0) to (144821710.0.0)
+06/06/24 11:53:26 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144821710.0.0) {06/06/24 11:53:21}
+06/06/24 11:53:26 Number of idle job procs: 1
+06/06/24 11:54:46 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:54:46 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144821710.0.0) {06/06/24 11:54:45}
+06/06/24 11:54:46 Number of idle job procs: 0
+06/06/24 11:54:56 Currently monitoring 1 HTCondor log file(s)
+06/06/24 11:54:56 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144821710.0.0) {06/06/24 11:54:54}
+06/06/24 11:54:56 Number of idle job procs: 0
+06/06/24 11:54:56 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job proc (144821710.0.0) failed with status 1.
+06/06/24 11:54:56 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:54:56 Of 4 nodes total:
+06/06/24 11:54:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:54:56   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:54:56     1       0        0       0       0          0        1        2
+06/06/24 11:54:56 0 job proc(s) currently held
+06/06/24 11:54:56 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002132967898720189; EventCycleTimeCount = 19.0; EventCycleTimeMax = 0.03931188583374023; EventCycleTimeMin = 1.811981201171875E-05; EventCycleTimeStd = 0.009003786779183929; EventCycleTimeSum = 0.04052639007568359; LogProcessCycleTimeAvg = 0.0001800060272216797; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002050399780273438; LogProcessCycleTimeMin = 0.0001358985900878906; LogProcessCycleTimeStd = 3.831424398419427E-05; LogProcessCycleTimeSum = 0.0005400180816650391; SleepCycleTimeAvg = 5.004975344005384; SleepCycleTimeCount = 19.0; SleepCycleTimeMax = 5.00581693649292; SleepCycleTimeMin = 5.004683017730713; SleepCycleTimeStd = 0.0002300257939907484; SleepCycleTimeSum = 95.09453153610229; SubmitCycleTimeAvg = 0.001982927322387695; SubmitCycleTimeCount = 20.0; SubmitCycleTimeMax = 0.03919100761413574; SubmitCycleTimeMin = 1.001358032226562E-05; SubmitCycleTimeStd = 0.008757929633011492; SubmitCycleTimeSum = 0.03965854644775391; ]
+06/06/24 11:54:56 ERROR: the following job(s) failed:
+06/06/24 11:54:56 ---------------------- Job ----------------------
+06/06/24 11:54:56       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0
+06/06/24 11:54:56            Noop: false
+06/06/24 11:54:56          NodeID: 1
+06/06/24 11:54:56     Node Status: STATUS_ERROR    
+06/06/24 11:54:56 Node return val: 1
+06/06/24 11:54:56           Error: Job proc (144821710.0.0) failed with status 1
+06/06/24 11:54:56 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 11:54:56  HTCondor Job ID: (144821710.0.0)
+06/06/24 11:54:56 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/common_format:0
+06/06/24 11:54:56 ---------------------------------------	<END>
+06/06/24 11:54:56 Aborting DAG...
+06/06/24 11:54:56 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue004...
+06/06/24 11:54:56 Removing submitted jobs...
+06/06/24 11:54:56 Removing any/all submitted HTCondor jobs...
+06/06/24 11:54:56 Running: /usr/bin/condor_rm -const DAGManJobId==144821708 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/06/24 11:54:56 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/06/24 11:54:56 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/06/24 11:54:56 Note: 0 total job deferrals because of node category throttles
+06/06/24 11:54:56 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/06/24 11:54:56 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/06/24 11:54:56 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/06/24 11:54:56 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 11:54:56 Of 4 nodes total:
+06/06/24 11:54:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 11:54:56   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 11:54:56     1       0        0       0       0          0        1        2
+06/06/24 11:54:56 0 job proc(s) currently held
+06/06/24 11:54:56 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002132967898720189; EventCycleTimeCount = 19.0; EventCycleTimeMax = 0.03931188583374023; EventCycleTimeMin = 1.811981201171875E-05; EventCycleTimeStd = 0.009003786779183929; EventCycleTimeSum = 0.04052639007568359; LogProcessCycleTimeAvg = 0.0001800060272216797; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002050399780273438; LogProcessCycleTimeMin = 0.0001358985900878906; LogProcessCycleTimeStd = 3.831424398419427E-05; LogProcessCycleTimeSum = 0.0005400180816650391; SleepCycleTimeAvg = 5.004975344005384; SleepCycleTimeCount = 19.0; SleepCycleTimeMax = 5.00581693649292; SleepCycleTimeMin = 5.004683017730713; SleepCycleTimeStd = 0.0002300257939907484; SleepCycleTimeSum = 95.09453153610229; SubmitCycleTimeAvg = 0.001982927322387695; SubmitCycleTimeCount = 20.0; SubmitCycleTimeMax = 0.03919100761413574; SubmitCycleTimeMin = 1.001358032226562E-05; SubmitCycleTimeStd = 0.008757929633011492; SubmitCycleTimeSum = 0.03965854644775391; ]
+06/06/24 11:54:56 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.metrics.
+06/06/24 11:54:56 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002132967898720189; EventCycleTimeCount = 19.0; EventCycleTimeMax = 0.03931188583374023; EventCycleTimeMin = 1.811981201171875E-05; EventCycleTimeStd = 0.009003786779183929; EventCycleTimeSum = 0.04052639007568359; LogProcessCycleTimeAvg = 0.0001800060272216797; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002050399780273438; LogProcessCycleTimeMin = 0.0001358985900878906; LogProcessCycleTimeStd = 3.831424398419427E-05; LogProcessCycleTimeSum = 0.0005400180816650391; SleepCycleTimeAvg = 5.004975344005384; SleepCycleTimeCount = 19.0; SleepCycleTimeMax = 5.00581693649292; SleepCycleTimeMin = 5.004683017730713; SleepCycleTimeStd = 0.0002300257939907484; SleepCycleTimeSum = 95.09453153610229; SubmitCycleTimeAvg = 0.001982927322387695; SubmitCycleTimeCount = 20.0; SubmitCycleTimeMax = 0.03919100761413574; SubmitCycleTimeMin = 1.001358032226562E-05; SubmitCycleTimeStd = 0.008757929633011492; SubmitCycleTimeSum = 0.03965854644775391; ]
+06/06/24 11:54:56 **** condor_scheduniv_exec.144821708.0 (condor_DAGMAN) pid 3556451 EXITING WITH STATUS 1
+06/06/24 12:00:47 ******************************************************
+06/06/24 12:00:47 ** condor_scheduniv_exec.144822016.0 (CONDOR_DAGMAN) STARTING UP
+06/06/24 12:00:47 ** /usr/bin/condor_dagman
+06/06/24 12:00:47 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/06/24 12:00:47 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/06/24 12:00:47 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/06/24 12:00:47 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/06/24 12:00:47 ** PID = 3597831
+06/06/24 12:00:47 ** Log last touched 6/6 11:54:56
+06/06/24 12:00:47 ******************************************************
+06/06/24 12:00:47 Using config source: /etc/condor/condor_config
+06/06/24 12:00:47 Using local config sources: 
+06/06/24 12:00:47    /etc/condor/config.d/00-htcondor-9.0.config
+06/06/24 12:00:47    /etc/condor/config.d/00-ldas
+06/06/24 12:00:47    /etc/condor/config.d/02-scheduler
+06/06/24 12:00:47    /etc/condor/config.d/10-security
+06/06/24 12:00:47    /etc/condor/config.d/10-stash-plugin.conf
+06/06/24 12:00:47    /etc/condor/config.d/15-dagman-default-append-vars
+06/06/24 12:00:47    /etc/condor/config.d/30-scratch-mount
+06/06/24 12:00:47    /etc/condor/config.d/40-vault-credmon.conf
+06/06/24 12:00:47    /etc/condor/config.d/50-transfer-limits
+06/06/24 12:00:47    /etc/condor/config.d/65-system-periodic-hold
+06/06/24 12:00:47    /etc/condor/config.d/93-dagman-use-direct
+06/06/24 12:00:47    /etc/condor/config.d/99-memory
+06/06/24 12:00:47    /etc/condor/config.d/99-request-disk
+06/06/24 12:00:47    /etc/condor/config.d/99-request-missing-units
+06/06/24 12:00:47    /etc/condor/config.d/99-shared-port-descriptor
+06/06/24 12:00:47    /etc/condor/config.d/99-transform
+06/06/24 12:00:47    /etc/condor/condor_config.local
+06/06/24 12:00:47 config Macros = 168, Sorted = 168, StringBytes = 7934, TablesBytes = 6216
+06/06/24 12:00:47 CLASSAD_CACHING is ENABLED
+06/06/24 12:00:47 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/06/24 12:00:47 DaemonCore: No command port requested.
+06/06/24 12:00:47 DAGMAN_USE_STRICT setting: 1
+06/06/24 12:00:47 DAGMAN_VERBOSITY setting: 3
+06/06/24 12:00:47 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/06/24 12:00:47 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/06/24 12:00:47 DAGMAN_SUBMIT_DELAY setting: 0
+06/06/24 12:00:47 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/06/24 12:00:47 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/06/24 12:00:47 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/06/24 12:00:47 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/06/24 12:00:47 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/06/24 12:00:47 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/06/24 12:00:47 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/06/24 12:00:47 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/06/24 12:00:47 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/06/24 12:00:47 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/06/24 12:00:47 DAGMAN_RETRY_NODE_FIRST setting: False
+06/06/24 12:00:47 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/06/24 12:00:47 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/06/24 12:00:47 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/06/24 12:00:47 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/06/24 12:00:47 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/06/24 12:00:47 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/06/24 12:00:47 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/06/24 12:00:47 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/06/24 12:00:47 DAGMAN_ALWAYS_RUN_POST setting: False
+06/06/24 12:00:47 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/06/24 12:00:47 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/06/24 12:00:47 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/06/24 12:00:47 DAGMAN_ABORT_DUPLICATES setting: True
+06/06/24 12:00:47 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/06/24 12:00:47 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/06/24 12:00:47 DAGMAN_AUTO_RESCUE setting: True
+06/06/24 12:00:47 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/06/24 12:00:47 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/06/24 12:00:47 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/06/24 12:00:47 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/06/24 12:00:47 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/06/24 12:00:47 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/06/24 12:00:47 ALL_DEBUG setting: 
+06/06/24 12:00:47 DAGMAN_DEBUG setting: 
+06/06/24 12:00:47 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/06/24 12:00:47 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/06/24 12:00:47 DAGMAN will adjust edges after parsing
+06/06/24 12:00:47 Enabling log line cache for increased NFS performance.
+06/06/24 12:00:47 argv[0] == "condor_scheduniv_exec.144822016.0"
+06/06/24 12:00:47 argv[1] == "-Lockfile"
+06/06/24 12:00:47 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock"
+06/06/24 12:00:47 argv[3] == "-Dag"
+06/06/24 12:00:47 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag"
+06/06/24 12:00:47 argv[5] == "-CsdVersion"
+06/06/24 12:00:47 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/06/24 12:00:47 argv[7] == "-dagman"
+06/06/24 12:00:47 argv[8] == "/usr/bin/condor_dagman"
+06/06/24 12:00:47 argv[9] == "-AutoRescue"
+06/06/24 12:00:47 argv[10] == "1"
+06/06/24 12:00:47 argv[11] == "-DoRescueFrom"
+06/06/24 12:00:47 argv[12] == "0"
+06/06/24 12:00:47 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 12:00:47 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 12:00:47 Workflow batch-id: <144822016.0>
+06/06/24 12:00:47 Workflow batch-name: <bbh.dag+144822016>
+06/06/24 12:00:47 Workflow accounting_group: <>
+06/06/24 12:00:47 Workflow accounting_group_user: <>
+06/06/24 12:00:47 Warning: failed to get attribute DAGNodeName
+06/06/24 12:00:47 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/06/24 12:00:47 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log>
+06/06/24 12:00:47 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock
+06/06/24 12:00:47 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag
+06/06/24 12:00:47 Parsing 1 dagfiles
+06/06/24 12:00:47 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag ...
+06/06/24 12:00:47 Adjusting edges
+06/06/24 12:00:47 Found rescue DAG number 4; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue004 in combination with normal DAG file
+06/06/24 12:00:47 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06/06/24 12:00:47 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue004
+06/06/24 12:00:47 Dag contains 4 total jobs
+06/06/24 12:00:47 Bootstrapping...
+06/06/24 12:00:47 Number of pre-completed nodes: 1
+06/06/24 12:00:47 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 12:00:47 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 12:00:47 Of 4 nodes total:
+06/06/24 12:00:47  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:00:47   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:00:47     1       0        0       0       1          2        0        0
+06/06/24 12:00:47 0 job proc(s) currently held
+06/06/24 12:00:47 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/06/24 12:00:47 Registering condor_event_timer...
+06/06/24 12:00:48 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job(s)...
+06/06/24 12:00:48 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 12:00:48 Masking the events recorded in the DAGMAN workflow log
+06/06/24 12:00:48 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 12:00:48 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a My.DAGManJobId=144822016 -a DAGManJobId=144822016 -batch-name bbh.dag+144822016 -batch-id 144822016.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 12:00:48 From submit: Submitting job(s).
+06/06/24 12:00:48 From submit: 1 job(s) submitted to cluster 144822018.
+06/06/24 12:00:48 	assigned HTCondor ID (144822018.0.0)
+06/06/24 12:00:48 Just submitted 1 job this cycle...
+06/06/24 12:00:48 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 12:00:48 Of 4 nodes total:
+06/06/24 12:00:48  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:00:48   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:00:48     1       0        1       0       0          2        0        0
+06/06/24 12:00:48 0 job proc(s) currently held
+06/06/24 12:00:48 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03612303733825684; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03612303733825684; SubmitCycleTimeMin = 0.03612303733825684; SubmitCycleTimeStd = 0.03612303733825684; SubmitCycleTimeSum = 0.03612303733825684; ]
+06/06/24 12:00:53 Currently monitoring 1 HTCondor log file(s)
+06/06/24 12:00:53 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 from (144822018.0.0) to (144822018.0.0)
+06/06/24 12:00:53 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144822018.0.0) {06/06/24 12:00:48}
+06/06/24 12:00:53 Number of idle job procs: 1
+06/06/24 12:01:58 Currently monitoring 1 HTCondor log file(s)
+06/06/24 12:01:58 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144822018.0.0) {06/06/24 12:01:54}
+06/06/24 12:01:58 Number of idle job procs: 0
+06/06/24 12:02:03 Currently monitoring 1 HTCondor log file(s)
+06/06/24 12:02:03 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (144822018.0.0) {06/06/24 12:02:03}
+06/06/24 12:02:03 Number of idle job procs: 0
+06/06/24 12:02:03 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job proc (144822018.0.0) failed with status 1.
+06/06/24 12:02:03 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 12:02:03 Of 4 nodes total:
+06/06/24 12:02:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:02:03   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:02:03     1       0        0       0       0          0        1        2
+06/06/24 12:02:03 0 job proc(s) currently held
+06/06/24 12:02:03 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002463865280151367; EventCycleTimeCount = 15.0; EventCycleTimeMax = 0.03626394271850586; EventCycleTimeMin = 2.598762512207031E-05; EventCycleTimeStd = 0.009350627342234892; EventCycleTimeSum = 0.03695797920227051; LogProcessCycleTimeAvg = 0.0001436869303385417; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0001549720764160156; LogProcessCycleTimeMin = 0.0001239776611328125; LogProcessCycleTimeStd = 1.712856773191849E-05; LogProcessCycleTimeSum = 0.000431060791015625; SleepCycleTimeAvg = 5.004736264546712; SleepCycleTimeCount = 15.0; SleepCycleTimeMax = 5.005364894866943; SleepCycleTimeMin = 5.00185489654541; SleepCycleTimeStd = 0.000814984992265308; SleepCycleTimeSum = 75.07104396820068; SubmitCycleTimeAvg = 0.002274259924888611; SubmitCycleTimeCount = 16.0; SubmitCycleTimeMax = 0.03612303733825684; SubmitCycleTimeMin = 1.406669616699219E-05; SubmitCycleTimeStd = 0.009026340857624025; SubmitCycleTimeSum = 0.03638815879821777; ]
+06/06/24 12:02:03 ERROR: the following job(s) failed:
+06/06/24 12:02:03 ---------------------- Job ----------------------
+06/06/24 12:02:03       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0
+06/06/24 12:02:03            Noop: false
+06/06/24 12:02:03          NodeID: 1
+06/06/24 12:02:03     Node Status: STATUS_ERROR    
+06/06/24 12:02:03 Node return val: 1
+06/06/24 12:02:03           Error: Job proc (144822018.0.0) failed with status 1
+06/06/24 12:02:03 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 12:02:03  HTCondor Job ID: (144822018.0.0)
+06/06/24 12:02:03 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/common_format:0
+06/06/24 12:02:03 ---------------------------------------	<END>
+06/06/24 12:02:03 Aborting DAG...
+06/06/24 12:02:03 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue005...
+06/06/24 12:02:03 Removing submitted jobs...
+06/06/24 12:02:03 Removing any/all submitted HTCondor jobs...
+06/06/24 12:02:03 Running: /usr/bin/condor_rm -const DAGManJobId==144822016 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/06/24 12:02:03 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/06/24 12:02:03 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/06/24 12:02:03 Note: 0 total job deferrals because of node category throttles
+06/06/24 12:02:03 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/06/24 12:02:03 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/06/24 12:02:03 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/06/24 12:02:03 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 12:02:03 Of 4 nodes total:
+06/06/24 12:02:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:02:03   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:02:03     1       0        0       0       0          0        1        2
+06/06/24 12:02:03 0 job proc(s) currently held
+06/06/24 12:02:03 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002463865280151367; EventCycleTimeCount = 15.0; EventCycleTimeMax = 0.03626394271850586; EventCycleTimeMin = 2.598762512207031E-05; EventCycleTimeStd = 0.009350627342234892; EventCycleTimeSum = 0.03695797920227051; LogProcessCycleTimeAvg = 0.0001436869303385417; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0001549720764160156; LogProcessCycleTimeMin = 0.0001239776611328125; LogProcessCycleTimeStd = 1.712856773191849E-05; LogProcessCycleTimeSum = 0.000431060791015625; SleepCycleTimeAvg = 5.004736264546712; SleepCycleTimeCount = 15.0; SleepCycleTimeMax = 5.005364894866943; SleepCycleTimeMin = 5.00185489654541; SleepCycleTimeStd = 0.000814984992265308; SleepCycleTimeSum = 75.07104396820068; SubmitCycleTimeAvg = 0.002274259924888611; SubmitCycleTimeCount = 16.0; SubmitCycleTimeMax = 0.03612303733825684; SubmitCycleTimeMin = 1.406669616699219E-05; SubmitCycleTimeStd = 0.009026340857624025; SubmitCycleTimeSum = 0.03638815879821777; ]
+06/06/24 12:02:03 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.metrics.
+06/06/24 12:02:03 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002463865280151367; EventCycleTimeCount = 15.0; EventCycleTimeMax = 0.03626394271850586; EventCycleTimeMin = 2.598762512207031E-05; EventCycleTimeStd = 0.009350627342234892; EventCycleTimeSum = 0.03695797920227051; LogProcessCycleTimeAvg = 0.0001436869303385417; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0001549720764160156; LogProcessCycleTimeMin = 0.0001239776611328125; LogProcessCycleTimeStd = 1.712856773191849E-05; LogProcessCycleTimeSum = 0.000431060791015625; SleepCycleTimeAvg = 5.004736264546712; SleepCycleTimeCount = 15.0; SleepCycleTimeMax = 5.005364894866943; SleepCycleTimeMin = 5.00185489654541; SleepCycleTimeStd = 0.000814984992265308; SleepCycleTimeSum = 75.07104396820068; SubmitCycleTimeAvg = 0.002274259924888611; SubmitCycleTimeCount = 16.0; SubmitCycleTimeMax = 0.03612303733825684; SubmitCycleTimeMin = 1.406669616699219E-05; SubmitCycleTimeStd = 0.009026340857624025; SubmitCycleTimeSum = 0.03638815879821777; ]
+06/06/24 12:02:03 **** condor_scheduniv_exec.144822016.0 (condor_DAGMAN) pid 3597831 EXITING WITH STATUS 1
+06/06/24 12:08:45 ******************************************************
+06/06/24 12:08:45 ** condor_scheduniv_exec.19152979.0 (CONDOR_DAGMAN) STARTING UP
+06/06/24 12:08:45 ** /usr/bin/condor_dagman
+06/06/24 12:08:45 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/06/24 12:08:45 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/06/24 12:08:45 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/06/24 12:08:45 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/06/24 12:08:45 ** PID = 946293
+06/06/24 12:08:45 ** Log last touched 6/6 12:02:03
+06/06/24 12:08:45 ******************************************************
+06/06/24 12:08:45 Using config source: /etc/condor/condor_config
+06/06/24 12:08:45 Using local config sources: 
+06/06/24 12:08:45    /etc/condor/config.d/00-htcondor-9.0.config
+06/06/24 12:08:45    /etc/condor/config.d/00-ldas
+06/06/24 12:08:45    /etc/condor/config.d/02-scheduler
+06/06/24 12:08:45    /etc/condor/config.d/10-security
+06/06/24 12:08:45    /etc/condor/config.d/10-stash-plugin.conf
+06/06/24 12:08:45    /etc/condor/config.d/15-dagman-default-append-vars
+06/06/24 12:08:45    /etc/condor/config.d/30-scratch-mount
+06/06/24 12:08:45    /etc/condor/config.d/40-vault-credmon.conf
+06/06/24 12:08:45    /etc/condor/config.d/50-transfer-limits
+06/06/24 12:08:45    /etc/condor/config.d/65-system-periodic-hold
+06/06/24 12:08:45    /etc/condor/config.d/93-dagman-use-direct
+06/06/24 12:08:45    /etc/condor/config.d/99-memory
+06/06/24 12:08:45    /etc/condor/config.d/99-request-disk
+06/06/24 12:08:45    /etc/condor/config.d/99-request-missing-units
+06/06/24 12:08:45    /etc/condor/config.d/99-shared-port-descriptor
+06/06/24 12:08:45    /etc/condor/config.d/99-transform
+06/06/24 12:08:45    /etc/condor/condor_config.local
+06/06/24 12:08:45 config Macros = 169, Sorted = 169, StringBytes = 7984, TablesBytes = 6252
+06/06/24 12:08:45 CLASSAD_CACHING is ENABLED
+06/06/24 12:08:45 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/06/24 12:08:45 DaemonCore: No command port requested.
+06/06/24 12:08:45 DAGMAN_USE_STRICT setting: 1
+06/06/24 12:08:45 DAGMAN_VERBOSITY setting: 3
+06/06/24 12:08:45 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/06/24 12:08:45 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/06/24 12:08:45 DAGMAN_SUBMIT_DELAY setting: 0
+06/06/24 12:08:45 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/06/24 12:08:45 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/06/24 12:08:45 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/06/24 12:08:45 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/06/24 12:08:45 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/06/24 12:08:45 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/06/24 12:08:45 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/06/24 12:08:45 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/06/24 12:08:45 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/06/24 12:08:45 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/06/24 12:08:45 DAGMAN_RETRY_NODE_FIRST setting: False
+06/06/24 12:08:45 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/06/24 12:08:45 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/06/24 12:08:45 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/06/24 12:08:45 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/06/24 12:08:45 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/06/24 12:08:45 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/06/24 12:08:45 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/06/24 12:08:45 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/06/24 12:08:45 DAGMAN_ALWAYS_RUN_POST setting: False
+06/06/24 12:08:45 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/06/24 12:08:45 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/06/24 12:08:45 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/06/24 12:08:45 DAGMAN_ABORT_DUPLICATES setting: True
+06/06/24 12:08:45 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/06/24 12:08:45 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/06/24 12:08:45 DAGMAN_AUTO_RESCUE setting: True
+06/06/24 12:08:45 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/06/24 12:08:45 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/06/24 12:08:45 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/06/24 12:08:45 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/06/24 12:08:45 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/06/24 12:08:45 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/06/24 12:08:45 ALL_DEBUG setting: 
+06/06/24 12:08:45 DAGMAN_DEBUG setting: 
+06/06/24 12:08:45 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/06/24 12:08:45 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/06/24 12:08:45 DAGMAN will adjust edges after parsing
+06/06/24 12:08:45 Enabling log line cache for increased NFS performance.
+06/06/24 12:08:45 argv[0] == "condor_scheduniv_exec.19152979.0"
+06/06/24 12:08:45 argv[1] == "-Lockfile"
+06/06/24 12:08:45 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock"
+06/06/24 12:08:45 argv[3] == "-Dag"
+06/06/24 12:08:45 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag"
+06/06/24 12:08:45 argv[5] == "-CsdVersion"
+06/06/24 12:08:45 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/06/24 12:08:45 argv[7] == "-dagman"
+06/06/24 12:08:45 argv[8] == "/usr/bin/condor_dagman"
+06/06/24 12:08:45 argv[9] == "-AutoRescue"
+06/06/24 12:08:45 argv[10] == "1"
+06/06/24 12:08:45 argv[11] == "-DoRescueFrom"
+06/06/24 12:08:45 argv[12] == "0"
+06/06/24 12:08:45 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 12:08:45 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/06/24 12:08:45 Workflow batch-id: <19152979.0>
+06/06/24 12:08:45 Workflow batch-name: <bbh.dag+19152979>
+06/06/24 12:08:45 Workflow accounting_group: <>
+06/06/24 12:08:45 Workflow accounting_group_user: <>
+06/06/24 12:08:45 Warning: failed to get attribute DAGNodeName
+06/06/24 12:08:45 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/06/24 12:08:45 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log>
+06/06/24 12:08:45 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.lock
+06/06/24 12:08:45 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag
+06/06/24 12:08:45 Parsing 1 dagfiles
+06/06/24 12:08:45 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag ...
+06/06/24 12:08:45 Adjusting edges
+06/06/24 12:08:45 Found rescue DAG number 5; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue005 in combination with normal DAG file
+06/06/24 12:08:45 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06/06/24 12:08:45 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue005
+06/06/24 12:08:45 Dag contains 4 total jobs
+06/06/24 12:08:45 Bootstrapping...
+06/06/24 12:08:45 Number of pre-completed nodes: 1
+06/06/24 12:08:45 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 12:08:45 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 12:08:45 Of 4 nodes total:
+06/06/24 12:08:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:08:45   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:08:45     1       0        0       0       1          2        0        0
+06/06/24 12:08:45 0 job proc(s) currently held
+06/06/24 12:08:45 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/06/24 12:08:45 Registering condor_event_timer...
+06/06/24 12:08:46 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job(s)...
+06/06/24 12:08:46 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log
+06/06/24 12:08:46 Masking the events recorded in the DAGMAN workflow log
+06/06/24 12:08:46 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/06/24 12:08:46 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a My.DAGManJobId=19152979 -a DAGManJobId=19152979 -batch-name bbh.dag+19152979 -batch-id 19152979.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 12:08:46 From submit: Submitting job(s).
+06/06/24 12:08:46 From submit: 1 job(s) submitted to cluster 19152984.
+06/06/24 12:08:46 	assigned HTCondor ID (19152984.0.0)
+06/06/24 12:08:46 Just submitted 1 job this cycle...
+06/06/24 12:08:46 DAG status: 0 (DAG_STATUS_OK)
+06/06/24 12:08:46 Of 4 nodes total:
+06/06/24 12:08:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:08:46   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:08:46     1       0        1       0       0          2        0        0
+06/06/24 12:08:46 0 job proc(s) currently held
+06/06/24 12:08:46 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.09005403518676758; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.09005403518676758; SubmitCycleTimeMin = 0.09005403518676758; SubmitCycleTimeStd = 0.09005403518676758; SubmitCycleTimeSum = 0.09005403518676758; ]
+06/06/24 12:08:51 Currently monitoring 1 HTCondor log file(s)
+06/06/24 12:08:51 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 from (19152984.0.0) to (19152984.0.0)
+06/06/24 12:08:51 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (19152984.0.0) {06/06/24 12:08:46}
+06/06/24 12:08:51 Number of idle job procs: 1
+06/06/24 12:09:36 Currently monitoring 1 HTCondor log file(s)
+06/06/24 12:09:36 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (19152984.0.0) {06/06/24 12:09:35}
+06/06/24 12:09:36 Number of idle job procs: 0
+06/06/24 12:09:46 Currently monitoring 1 HTCondor log file(s)
+06/06/24 12:09:46 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 (19152984.0.0) {06/06/24 12:09:45}
+06/06/24 12:09:46 Number of idle job procs: 0
+06/06/24 12:09:46 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0 job proc (19152984.0.0) failed with status 1.
+06/06/24 12:09:46 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 12:09:46 Of 4 nodes total:
+06/06/24 12:09:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:09:46   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:09:46     1       0        0       0       0          0        1        2
+06/06/24 12:09:46 0 job proc(s) currently held
+06/06/24 12:09:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.007649242877960205; EventCycleTimeCount = 12.0; EventCycleTimeMax = 0.09021711349487305; EventCycleTimeMin = 2.503395080566406E-05; EventCycleTimeStd = 0.02600263630703868; EventCycleTimeSum = 0.09179091453552246; LogProcessCycleTimeAvg = 0.0002360343933105469; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002992153167724609; LogProcessCycleTimeMin = 0.0001718997955322266; LogProcessCycleTimeStd = 6.366311811555002E-05; LogProcessCycleTimeSum = 0.0007081031799316406; SleepCycleTimeAvg = 5.005072255929311; SleepCycleTimeCount = 12.0; SleepCycleTimeMax = 5.005388021469116; SleepCycleTimeMin = 5.005028963088989; SleepCycleTimeStd = 0.0001000577190768399; SleepCycleTimeSum = 60.06086707115173; SubmitCycleTimeAvg = 0.006964261715228741; SubmitCycleTimeCount = 13.0; SubmitCycleTimeMax = 0.09005403518676758; SubmitCycleTimeMin = 1.287460327148438E-05; SubmitCycleTimeStd = 0.0249655006693183; SubmitCycleTimeSum = 0.09053540229797363; ]
+06/06/24 12:09:46 ERROR: the following job(s) failed:
+06/06/24 12:09:46 ---------------------- Job ----------------------
+06/06/24 12:09:46       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis:0
+06/06/24 12:09:46            Noop: false
+06/06/24 12:09:46          NodeID: 1
+06/06/24 12:09:46     Node Status: STATUS_ERROR    
+06/06/24 12:09:46 Node return val: 1
+06/06/24 12:09:46           Error: Job proc (19152984.0.0) failed with status 1
+06/06/24 12:09:46 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/analysis.sub
+06/06/24 12:09:46  HTCondor Job ID: (19152984.0.0)
+06/06/24 12:09:46 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/common_format:0
+06/06/24 12:09:46 ---------------------------------------	<END>
+06/06/24 12:09:46 Aborting DAG...
+06/06/24 12:09:46 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.rescue006...
+06/06/24 12:09:46 Removing submitted jobs...
+06/06/24 12:09:46 Removing any/all submitted HTCondor jobs...
+06/06/24 12:09:46 Running: /usr/bin/condor_rm -const DAGManJobId==19152979 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/06/24 12:09:46 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/06/24 12:09:46 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/06/24 12:09:46 Note: 0 total job deferrals because of node category throttles
+06/06/24 12:09:46 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/06/24 12:09:46 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/06/24 12:09:46 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/06/24 12:09:46 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/06/24 12:09:46 Of 4 nodes total:
+06/06/24 12:09:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/06/24 12:09:46   ===     ===      ===     ===     ===        ===      ===      ===
+06/06/24 12:09:46     1       0        0       0       0          0        1        2
+06/06/24 12:09:46 0 job proc(s) currently held
+06/06/24 12:09:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.007649242877960205; EventCycleTimeCount = 12.0; EventCycleTimeMax = 0.09021711349487305; EventCycleTimeMin = 2.503395080566406E-05; EventCycleTimeStd = 0.02600263630703868; EventCycleTimeSum = 0.09179091453552246; LogProcessCycleTimeAvg = 0.0002360343933105469; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002992153167724609; LogProcessCycleTimeMin = 0.0001718997955322266; LogProcessCycleTimeStd = 6.366311811555002E-05; LogProcessCycleTimeSum = 0.0007081031799316406; SleepCycleTimeAvg = 5.005072255929311; SleepCycleTimeCount = 12.0; SleepCycleTimeMax = 5.005388021469116; SleepCycleTimeMin = 5.005028963088989; SleepCycleTimeStd = 0.0001000577190768399; SleepCycleTimeSum = 60.06086707115173; SubmitCycleTimeAvg = 0.006964261715228741; SubmitCycleTimeCount = 13.0; SubmitCycleTimeMax = 0.09005403518676758; SubmitCycleTimeMin = 1.287460327148438E-05; SubmitCycleTimeStd = 0.0249655006693183; SubmitCycleTimeSum = 0.09053540229797363; ]
+06/06/24 12:09:46 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814_jax/submit/bbh.dag.metrics.
+06/06/24 12:09:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.007649242877960205; EventCycleTimeCount = 12.0; EventCycleTimeMax = 0.09021711349487305; EventCycleTimeMin = 2.503395080566406E-05; EventCycleTimeStd = 0.02600263630703868; EventCycleTimeSum = 0.09179091453552246; LogProcessCycleTimeAvg = 0.0002360343933105469; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002992153167724609; LogProcessCycleTimeMin = 0.0001718997955322266; LogProcessCycleTimeStd = 6.366311811555002E-05; LogProcessCycleTimeSum = 0.0007081031799316406; SleepCycleTimeAvg = 5.005072255929311; SleepCycleTimeCount = 12.0; SleepCycleTimeMax = 5.005388021469116; SleepCycleTimeMin = 5.005028963088989; SleepCycleTimeStd = 0.0001000577190768399; SleepCycleTimeSum = 60.06086707115173; SubmitCycleTimeAvg = 0.006964261715228741; SubmitCycleTimeCount = 13.0; SubmitCycleTimeMax = 0.09005403518676758; SubmitCycleTimeMin = 1.287460327148438E-05; SubmitCycleTimeStd = 0.0249655006693183; SubmitCycleTimeSum = 0.09053540229797363; ]
+06/06/24 12:09:46 **** condor_scheduniv_exec.19152979.0 (condor_DAGMAN) pid 946293 EXITING WITH STATUS 1

@@ -1,0 +1,53 @@
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+21:00 bilby INFO    : Number of draws equals number of events, 84.
+21:00 bilby INFO    : Generating observed populations.
+21:00 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+21:00 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+21:00 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+  0%|          | 0/2526 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/local/condor/execute/dir_154026/gwpopulation_pipe_to_common_format", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/common_format.py", line 109, in main
+    observed_dataset = resample_events_per_population_sample(
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/common_format.py", line 288, in resample_events_per_population_sample
+    [extract_choices(point, seed) for point, seed in tqdm(inputs)]
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/common_format.py", line 288, in <listcomp>
+    [extract_choices(point, seed) for point, seed in tqdm(inputs)]
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/common_format.py", line 268, in extract_choices
+    choices = [
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/common_format.py", line 269, in <listcomp>
+    random.choice(
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/random/_sample.py", line 190, in choice
+    return rs.choice(a, size, replace, p)
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/random/_generator.py", line 1102, in choice
+    if not (p >= 0).all():
+  File "cupy/_core/core.pyx", line 1169, in cupy._core.core._ndarray_base.all
+  File "cupy/_core/core.pyx", line 1171, in cupy._core.core._ndarray_base.all
+  File "cupy/_core/_routines_logic.pyx", line 8, in cupy._core._routines_logic._ndarray_all
+  File "cupy/_core/_reduction.pyx", line 618, in cupy._core._reduction._SimpleReductionKernel.__call__
+  File "cupy/_core/_reduction.pyx", line 370, in cupy._core._reduction._AbstractReductionKernel._call
+  File "cupy/_core/_cub_reduction.pyx", line 689, in cupy._core._cub_reduction._try_to_call_cub_reduction
+  File "cupy/_core/_cub_reduction.pyx", line 526, in cupy._core._cub_reduction._launch_cub
+  File "cupy/_core/_cub_reduction.pyx", line 461, in cupy._core._cub_reduction._cub_two_pass_launch
+  File "cupy/_util.pyx", line 64, in cupy._util.memoize.decorator.ret
+  File "cupy/_core/_cub_reduction.pyx", line 240, in cupy._core._cub_reduction._SimpleCubReductionKernel_get_cached_function
+  File "cupy/_core/_cub_reduction.pyx", line 223, in cupy._core._cub_reduction._create_cub_reduction_function
+  File "cupy/_core/core.pyx", line 2254, in cupy._core.core.compile_with_cache
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 484, in _compile_module_with_cache
+    return _compile_with_cache_cuda(
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 562, in _compile_with_cache_cuda
+    ptx, mapping = compile_using_nvrtc(
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 319, in compile_using_nvrtc
+    return _compile(source, options, cu_path,
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 284, in _compile
+    options, headers, include_names = _jitify_prep(
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 233, in _jitify_prep
+    jitify._init_module()
+  File "cupy/cuda/jitify.pyx", line 212, in cupy.cuda.jitify._init_module
+  File "cupy/cuda/jitify.pyx", line 233, in cupy.cuda.jitify._init_module
+  File "cupy/cuda/jitify.pyx", line 209, in cupy.cuda.jitify._init_cupy_headers
+  File "cupy/cuda/jitify.pyx", line 192, in cupy.cuda.jitify._init_cupy_headers_from_scratch
+  File "cupy/cuda/jitify.pyx", line 264, in cupy.cuda.jitify.jitify
+RuntimeError: Runtime compilation failed
+  0%|          | 0/2526 [02:22<?, ?it/s]

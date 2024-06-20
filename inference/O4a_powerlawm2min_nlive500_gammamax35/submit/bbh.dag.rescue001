@@ -1,0 +1,13 @@
+# Rescue DAG file, created after running
+#   the /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min_nlive500_gammamax35/submit/bbh.dag DAG file
+# Created 5/10/2024 21:30:38 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 4
+# Nodes premarked DONE: 3
+# Nodes that failed: 0
+#   <ENDLIST>
+
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min_nlive500_gammamax35/submit/collection:0
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min_nlive500_gammamax35/submit/analysis:0
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min_nlive500_gammamax35/submit/plot:0

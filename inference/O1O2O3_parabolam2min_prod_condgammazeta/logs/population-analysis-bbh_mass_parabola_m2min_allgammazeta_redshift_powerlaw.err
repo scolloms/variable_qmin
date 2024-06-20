@@ -1,0 +1,202 @@
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_1991539/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
+    set_backend(args.backend)
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/backend.py", line 112, in set_backend
+    xp, scs = _load_numpy_and_scipy(backend)
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/backend.py", line 82, in _load_numpy_and_scipy
+    xp = import_module(_np_module[backend])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/__init__.py", line 37, in <module>
+    import jax.core as _core
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/core.py", line 18, in <module>
+    from jax._src.core import (
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/core.py", line 39, in <module>
+    from jax._src import dtypes
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/dtypes.py", line 33, in <module>
+    from jax._src import config
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/config.py", line 27, in <module>
+    from jax._src import lib
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/lib/__init__.py", line 84, in <module>
+    cpu_feature_guard.check_cpu_features()
+RuntimeError: This version of jaxlib was built using AVX instructions, which your CPU and/or operating system do not support. You may be able work around this issue by building jaxlib from source.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_1991623/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
+    set_backend(args.backend)
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/backend.py", line 112, in set_backend
+    xp, scs = _load_numpy_and_scipy(backend)
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/backend.py", line 82, in _load_numpy_and_scipy
+    xp = import_module(_np_module[backend])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/__init__.py", line 37, in <module>
+    import jax.core as _core
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/core.py", line 18, in <module>
+    from jax._src.core import (
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/core.py", line 39, in <module>
+    from jax._src import dtypes
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/dtypes.py", line 33, in <module>
+    from jax._src import config
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/config.py", line 27, in <module>
+    from jax._src import lib
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/lib/__init__.py", line 84, in <module>
+    cpu_feature_guard.check_cpu_features()
+RuntimeError: This version of jaxlib was built using AVX instructions, which your CPU and/or operating system do not support. You may be able work around this issue by building jaxlib from source.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+10:05 bilby INFO    : Loaded 158 posteriors
+10:05 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+10:05 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+10:05 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+10:05 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+10:05 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+10:05 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+10:05 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta/data/injections.pkl.
+10:05 bilby INFO    : Identified keys: gaussian_mass_maximum, mpp, alpha, lam, mmin, beta, mmax, zeta, gamma, sigpp, lamb
+10:05 bilby INFO    : Running for label 'bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta/result'
+10:05 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+10:05 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+10:05 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+10:06 bilby INFO    : Analysis priors:
+10:06 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+10:06 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+10:06 bilby INFO    : gamma=Uniform(minimum=-1, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+10:06 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+10:06 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+10:06 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+10:06 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+10:06 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+10:06 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+10:06 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+10:06 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+10:06 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+10:06 bilby INFO    : gaussian_mass_maximum=100.0
+10:06 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+10:06 bilby INFO    : Analysis likelihood noise evidence: nan
+10:06 bilby INFO    : Single likelihood evaluation took 1.495e-02 s
+10:06 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x1546adc52710>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+10:06 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+10:06 bilby INFO    : Using dynesty version 2.1.2
+10:06 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+10:06 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:06 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+10:06 bilby INFO    : Generating initial points from the prior
+10:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:16 bilby WARNING : singular matrix
+10:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+10:16 bilby WARNING : singular matrix
+10:16 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+10:16 bilby WARNING : singular matrix
+10:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:47 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+10:58 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:30 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+11:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:36 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:47 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+12:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:10 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+13:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+14:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:43 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+15:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+16:52 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:48 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+17:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+18:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:18 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+19:52 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+20:51 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:38 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+21:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:23 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+22:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:07 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_resume.pickle
+23:07 bilby INFO    : Rejection sampling nested samples to obtain 2978 posterior samples
+23:07 bilby INFO    : Sampling time: 12:59:25.510603
+23:07 bilby INFO    : Summary of results:
+nsamples: 2978
+ln_noise_evidence:    nan
+ln_evidence:    nan +/-  0.218
+ln_bayes_factor: -441.048 +/-  0.218
+
+23:07 bilby INFO    : Computing rate posterior
+23:08 bilby INFO    : Computing n effectives
+23:08 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
+23:08 bilby INFO    : Generating extra statistics
+23:09 bilby INFO    : Resampling single event posteriors
+  0%|          | 0/2978 [00:00<?, ?it/s]  0%|          | 1/2978 [00:00<47:14,  1.05it/s]  5%|▌         | 163/2978 [00:01<00:13, 212.28it/s] 11%|█         | 327/2978 [00:01<00:06, 436.20it/s] 16%|█▋        | 491/2978 [00:01<00:03, 656.10it/s] 22%|██▏       | 654/2978 [00:01<00:02, 857.10it/s] 27%|██▋       | 817/2978 [00:01<00:02, 1033.50it/s] 33%|███▎      | 981/2978 [00:01<00:01, 1182.52it/s] 38%|███▊      | 1146/2978 [00:01<00:01, 1302.01it/s] 44%|████▍     | 1311/2978 [00:01<00:01, 1394.17it/s] 50%|████▉     | 1476/2978 [00:01<00:01, 1463.30it/s] 55%|█████▌    | 1640/2978 [00:01<00:00, 1513.15it/s] 61%|██████    | 1805/2978 [00:02<00:00, 1550.39it/s] 66%|██████▌   | 1969/2978 [00:02<00:00, 1576.30it/s] 72%|███████▏  | 2134/2978 [00:02<00:00, 1595.61it/s] 77%|███████▋  | 2299/2978 [00:02<00:00, 1609.54it/s] 83%|████████▎ | 2463/2978 [00:02<00:00, 1618.14it/s] 88%|████████▊ | 2627/2978 [00:02<00:00, 1624.07it/s] 94%|█████████▎| 2791/2978 [00:02<00:00, 1627.91it/s] 99%|█████████▉| 2956/2978 [00:02<00:00, 1631.52it/s]100%|██████████| 2978/2978 [00:02<00:00, 1074.47it/s]
+23:09 bilby INFO    : Resampling done, sum of weights for events are 0.0 0.0 0.1 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.3 0.1 0.0 0.2 0.5 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.8 1.0 0.0 0.0 0.0 0.2 0.4 0.5 0.0 0.0 0.5 0.0 0.4 0.0 0.2 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.4 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.2 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.8 0.0 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.2 0.3 16.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.4 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.2 0.0 0.0 0.0 0.2 0.0 0.0 0.0 0.4 0.0 0.0 0.2 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 0.0 0.0

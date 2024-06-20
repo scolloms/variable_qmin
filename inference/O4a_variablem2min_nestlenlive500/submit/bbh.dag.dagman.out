@@ -1,0 +1,1844 @@
+05/03/24 11:28:28 ******************************************************
+05/03/24 11:28:28 ** condor_scheduniv_exec.140446466.0 (CONDOR_DAGMAN) STARTING UP
+05/03/24 11:28:28 ** /usr/bin/condor_dagman
+05/03/24 11:28:28 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+05/03/24 11:28:28 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+05/03/24 11:28:28 ** $CondorVersion: 23.5.2 2024-03-14 BuildID: 720591 PackageID: 23.5.2-1 GitSHA: af5f6620 $
+05/03/24 11:28:28 ** $CondorPlatform: x86_64_AlmaLinux8 $
+05/03/24 11:28:28 ** PID = 3062273
+05/03/24 11:28:28 ** Log last touched time unavailable (No such file or directory)
+05/03/24 11:28:28 ******************************************************
+05/03/24 11:28:28 Using config source: /etc/condor/condor_config
+05/03/24 11:28:28 Using local config sources: 
+05/03/24 11:28:28    /etc/condor/config.d/00-htcondor-9.0.config
+05/03/24 11:28:28    /etc/condor/config.d/00-ldas
+05/03/24 11:28:28    /etc/condor/config.d/02-scheduler
+05/03/24 11:28:28    /etc/condor/config.d/10-security
+05/03/24 11:28:28    /etc/condor/config.d/10-stash-plugin.conf
+05/03/24 11:28:28    /etc/condor/config.d/15-dagman-default-append-vars
+05/03/24 11:28:28    /etc/condor/config.d/30-scratch-mount
+05/03/24 11:28:28    /etc/condor/config.d/40-vault-credmon.conf
+05/03/24 11:28:28    /etc/condor/config.d/50-transfer-limits
+05/03/24 11:28:28    /etc/condor/config.d/65-system-periodic-hold
+05/03/24 11:28:28    /etc/condor/config.d/93-dagman-use-direct
+05/03/24 11:28:28    /etc/condor/config.d/99-memory
+05/03/24 11:28:28    /etc/condor/config.d/99-request-disk
+05/03/24 11:28:28    /etc/condor/config.d/99-request-missing-units
+05/03/24 11:28:28    /etc/condor/config.d/99-shared-port-descriptor
+05/03/24 11:28:28    /etc/condor/config.d/99-transform
+05/03/24 11:28:28    /etc/condor/condor_config.local
+05/03/24 11:28:28 config Macros = 167, Sorted = 167, StringBytes = 7893, TablesBytes = 6180
+05/03/24 11:28:28 CLASSAD_CACHING is ENABLED
+05/03/24 11:28:28 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+05/03/24 11:28:28 DaemonCore: No command port requested.
+05/03/24 11:28:28 DAGMAN_USE_STRICT setting: 1
+05/03/24 11:28:28 DAGMAN_VERBOSITY setting: 3
+05/03/24 11:28:28 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+05/03/24 11:28:28 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+05/03/24 11:28:28 DAGMAN_SUBMIT_DELAY setting: 0
+05/03/24 11:28:28 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+05/03/24 11:28:28 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+05/03/24 11:28:28 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+05/03/24 11:28:28 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+05/03/24 11:28:28 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+05/03/24 11:28:28 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+05/03/24 11:28:28 DAGMAN_DEFAULT_PRIORITY setting: 0
+05/03/24 11:28:28 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+05/03/24 11:28:28 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+05/03/24 11:28:28 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+05/03/24 11:28:28 DAGMAN_RETRY_NODE_FIRST setting: False
+05/03/24 11:28:28 DAGMAN_MAX_JOBS_IDLE setting: 1000
+05/03/24 11:28:28 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+05/03/24 11:28:28 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+05/03/24 11:28:28 DAGMAN_MAX_POST_SCRIPTS setting: 20
+05/03/24 11:28:28 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+05/03/24 11:28:28 DAGMAN_MUNGE_NODE_NAMES setting: True
+05/03/24 11:28:28 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+05/03/24 11:28:28 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+05/03/24 11:28:28 DAGMAN_ALWAYS_RUN_POST setting: False
+05/03/24 11:28:28 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+05/03/24 11:28:28 DAGMAN_USE_DIRECT_SUBMIT setting: False
+05/03/24 11:28:28 DAGMAN_DEFAULT_APPEND_VARS setting: True
+05/03/24 11:28:28 DAGMAN_ABORT_DUPLICATES setting: True
+05/03/24 11:28:28 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+05/03/24 11:28:28 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+05/03/24 11:28:28 DAGMAN_AUTO_RESCUE setting: True
+05/03/24 11:28:28 DAGMAN_MAX_RESCUE_NUM setting: 100
+05/03/24 11:28:28 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+05/03/24 11:28:28 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+05/03/24 11:28:28 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+05/03/24 11:28:28 DAGMAN_MAX_JOB_HOLDS setting: 100
+05/03/24 11:28:28 DAGMAN_HOLD_CLAIM_TIME setting: 20
+05/03/24 11:28:28 ALL_DEBUG setting: 
+05/03/24 11:28:28 DAGMAN_DEBUG setting: 
+05/03/24 11:28:28 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+05/03/24 11:28:28 DAGMAN_REMOVE_NODE_JOBS setting: True
+05/03/24 11:28:28 DAGMAN will adjust edges after parsing
+05/03/24 11:28:28 Enabling log line cache for increased NFS performance.
+05/03/24 11:28:28 argv[0] == "condor_scheduniv_exec.140446466.0"
+05/03/24 11:28:28 argv[1] == "-Lockfile"
+05/03/24 11:28:28 argv[2] == "/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.lock"
+05/03/24 11:28:28 argv[3] == "-Dag"
+05/03/24 11:28:28 argv[4] == "/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag"
+05/03/24 11:28:28 argv[5] == "-CsdVersion"
+05/03/24 11:28:28 argv[6] == "$CondorVersion: 23.5.2 2024-03-14 BuildID: 720591 PackageID: 23.5.2-1 GitSHA: af5f6620 $"
+05/03/24 11:28:28 argv[7] == "-dagman"
+05/03/24 11:28:28 argv[8] == "/usr/bin/condor_dagman"
+05/03/24 11:28:28 argv[9] == "-AutoRescue"
+05/03/24 11:28:28 argv[10] == "1"
+05/03/24 11:28:28 argv[11] == "-DoRescueFrom"
+05/03/24 11:28:28 argv[12] == "0"
+05/03/24 11:28:28 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/03/24 11:28:28 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/03/24 11:28:28 Workflow batch-id: <140446466.0>
+05/03/24 11:28:28 Workflow batch-name: <bbh.dag+140446466>
+05/03/24 11:28:28 Workflow accounting_group: <>
+05/03/24 11:28:28 Workflow accounting_group_user: <>
+05/03/24 11:28:28 Warning: failed to get attribute DAGNodeName
+05/03/24 11:28:28 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+05/03/24 11:28:28 Default node log file is: </home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log>
+05/03/24 11:28:28 DAG Lockfile will be written to /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.lock
+05/03/24 11:28:28 DAG Input file is /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag
+05/03/24 11:28:28 Parsing 1 dagfiles
+05/03/24 11:28:28 Parsing /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag ...
+05/03/24 11:28:28 Adjusting edges
+05/03/24 11:28:28 Dag contains 5 total jobs
+05/03/24 11:28:28 Bootstrapping...
+05/03/24 11:28:28 Number of pre-completed nodes: 0
+05/03/24 11:28:28 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log
+05/03/24 11:28:28 DAG status: 0 (DAG_STATUS_OK)
+05/03/24 11:28:28 Of 5 nodes total:
+05/03/24 11:28:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/03/24 11:28:28   ===     ===      ===     ===     ===        ===      ===      ===
+05/03/24 11:28:28     0       0        0       0       1          4        0        0
+05/03/24 11:28:28 0 job proc(s) currently held
+05/03/24 11:28:28 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+05/03/24 11:28:28 Registering condor_event_timer...
+05/03/24 11:28:29 Submitting HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 job(s)...
+05/03/24 11:28:29 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log
+05/03/24 11:28:29 Masking the events recorded in the DAGMAN workflow log
+05/03/24 11:28:29 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/03/24 11:28:29 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 -a My.DAGManJobId=140446466 -a DAGManJobId=140446466 -batch-name bbh.dag+140446466 -batch-id 140446466.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 -a dagman_log=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 -a label=bbh DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 -a notification=never My.DAGParentNodeNames="" /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection.sub
+05/03/24 11:28:29 From submit: Submitting job(s).
+05/03/24 11:28:29 From submit: 1 job(s) submitted to cluster 140446467.
+05/03/24 11:28:29 	assigned HTCondor ID (140446467.0.0)
+05/03/24 11:28:29 Just submitted 1 job this cycle...
+05/03/24 11:28:29 DAG status: 0 (DAG_STATUS_OK)
+05/03/24 11:28:29 Of 5 nodes total:
+05/03/24 11:28:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/03/24 11:28:29   ===     ===      ===     ===     ===        ===      ===      ===
+05/03/24 11:28:29     0       0        1       0       0          4        0        0
+05/03/24 11:28:29 0 job proc(s) currently held
+05/03/24 11:28:29 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03444504737854004; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03444504737854004; SubmitCycleTimeMin = 0.03444504737854004; SubmitCycleTimeStd = 0.03444504737854004; SubmitCycleTimeSum = 0.03444504737854004; ]
+05/03/24 11:28:34 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:28:34 Reassigning the id of job /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 from (140446467.0.0) to (140446467.0.0)
+05/03/24 11:28:34 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 (140446467.0.0) {05/03/24 11:28:29}
+05/03/24 11:28:34 Number of idle job procs: 1
+05/03/24 11:29:59 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:29:59 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 (140446467.0.0) {05/03/24 11:29:55}
+05/03/24 11:29:59 Number of idle job procs: 0
+05/03/24 11:37:45 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:37:45 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 (140446467.0.0) {05/03/24 11:37:44}
+05/03/24 11:37:45 Number of idle job procs: 0
+05/03/24 11:37:45 Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 job proc (140446467.0.0) completed successfully.
+05/03/24 11:37:45 Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0 job completed
+05/03/24 11:37:45 DAG status: 0 (DAG_STATUS_OK)
+05/03/24 11:37:45 Of 5 nodes total:
+05/03/24 11:37:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/03/24 11:37:45   ===     ===      ===     ===     ===        ===      ===      ===
+05/03/24 11:37:45     1       0        0       0       1          3        0        0
+05/03/24 11:37:45 0 job proc(s) currently held
+05/03/24 11:37:45 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0004283307908891557; EventCycleTimeCount = 111.0; EventCycleTimeMax = 0.03456401824951172; EventCycleTimeMin = 1.788139343261719E-05; EventCycleTimeStd = 0.003279131989338056; EventCycleTimeSum = 0.04754471778869629; LogProcessCycleTimeAvg = 0.0002883275349934896; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003910064697265625; LogProcessCycleTimeMin = 0.0001900196075439453; LogProcessCycleTimeStd = 0.0001005647004222063; LogProcessCycleTimeSum = 0.0008649826049804688; SleepCycleTimeAvg = 5.005034670099482; SleepCycleTimeCount = 111.0; SleepCycleTimeMax = 5.005783081054688; SleepCycleTimeMin = 5.001914978027344; SleepCycleTimeStd = 0.0004603210497028973; SleepCycleTimeSum = 555.5588483810425; SubmitCycleTimeAvg = 0.0003571978637150356; SubmitCycleTimeCount = 112.0; SubmitCycleTimeMax = 0.03444504737854004; SubmitCycleTimeMin = 9.059906005859375E-06; SubmitCycleTimeStd = 0.003251731844418616; SubmitCycleTimeSum = 0.04000616073608398; ]
+05/03/24 11:37:50 Submitting HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 job(s)...
+05/03/24 11:37:50 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log
+05/03/24 11:37:50 Masking the events recorded in the DAGMAN workflow log
+05/03/24 11:37:50 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/03/24 11:37:50 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 -a My.DAGManJobId=140446466 -a DAGManJobId=140446466 -batch-name bbh.dag+140446466 -batch-id 140446466.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 -a label=bbh_mass_two_component_primary_mass_ratio_variable_qmin_redshift_powerlaw -a models=--models' 'mass:variable_qmin.variable_qmin.two_component_primary_mass_ratio_variable_qmin' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.variable_qmin.two_component_primary_mass_ratio_variable_qmin' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 -a notification=never My.DAGParentNodeNames="/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0" /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis.sub
+05/03/24 11:37:50 From submit: Submitting job(s).
+05/03/24 11:37:50 From submit: 1 job(s) submitted to cluster 140446571.
+05/03/24 11:37:50 	assigned HTCondor ID (140446571.0.0)
+05/03/24 11:37:50 Just submitted 1 job this cycle...
+05/03/24 11:37:50 DAG status: 0 (DAG_STATUS_OK)
+05/03/24 11:37:50 Of 5 nodes total:
+05/03/24 11:37:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/03/24 11:37:50   ===     ===      ===     ===     ===        ===      ===      ===
+05/03/24 11:37:50     1       0        1       0       0          3        0        0
+05/03/24 11:37:50 0 job proc(s) currently held
+05/03/24 11:37:50 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0004291576998574393; EventCycleTimeCount = 112.0; EventCycleTimeMax = 0.03456401824951172; EventCycleTimeMin = 1.788139343261719E-05; EventCycleTimeStd = 0.003264339436398041; EventCycleTimeSum = 0.0480656623840332; LogProcessCycleTimeAvg = 0.0002883275349934896; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003910064697265625; LogProcessCycleTimeMin = 0.0001900196075439453; LogProcessCycleTimeStd = 0.0001005647004222063; LogProcessCycleTimeSum = 0.0008649826049804688; SleepCycleTimeAvg = 5.005034923553467; SleepCycleTimeCount = 112.0; SleepCycleTimeMax = 5.005783081054688; SleepCycleTimeMin = 5.001914978027344; SleepCycleTimeStd = 0.0004582506897249019; SleepCycleTimeSum = 560.5639114379883; SubmitCycleTimeAvg = 0.002152409173746025; SubmitCycleTimeCount = 113.0; SubmitCycleTimeMax = 0.2032160758972168; SubmitCycleTimeMin = 9.059906005859375E-06; SubmitCycleTimeStd = 0.01935597849767931; SubmitCycleTimeSum = 0.2432222366333008; ]
+05/03/24 11:37:55 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:37:55 Reassigning the id of job /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 from (140446571.0.0) to (140446571.0.0)
+05/03/24 11:37:55 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/03/24 11:37:50}
+05/03/24 11:37:55 Number of idle job procs: 1
+05/03/24 11:39:40 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:39:40 Event: ULOG_SHADOW_EXCEPTION for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/03/24 11:39:39}
+05/03/24 11:39:40 Number of idle job procs: 1
+05/03/24 11:39:40 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/03/24 11:39:39}
+05/03/24 11:39:40   Hold reason: Transfer input files failure at access point ldas-pcdev2 while sending files to execution point slot1_5@node1355.cluster.ldas.cit. Details: Error from slot1_5@node1355.cluster.ldas.cit: SHADOW at 10.14.0.160 failed to send file(s) to <10.14.6.105:35545>: |Error: reading from file /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/result/bbh_mass_two_component_primary_mass_ratio_variable_qmin_redshift_powerlaw_dynesty.pickle: (errno 2) No such file or directory; STARTER failed to receive file(s) from <10.14.0.160:9618>
+05/03/24 11:39:40 Number of idle job procs: 1
+05/03/24 11:39:40 DAG status: 0 (DAG_STATUS_OK)
+05/03/24 11:39:40 Of 5 nodes total:
+05/03/24 11:39:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/03/24 11:39:40   ===     ===      ===     ===     ===        ===      ===      ===
+05/03/24 11:39:40     1       0        1       0       0          3        0        0
+05/03/24 11:39:40 1 job proc(s) currently held
+05/03/24 11:39:40 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001910862637989557; EventCycleTimeCount = 134.0; EventCycleTimeMax = 0.2033660411834717; EventCycleTimeMin = 1.788139343261719E-05; EventCycleTimeStd = 0.01778707725111011; EventCycleTimeSum = 0.2560555934906006; LogProcessCycleTimeAvg = 0.0002619743347167969; LogProcessCycleTimeCount = 5.0; LogProcessCycleTimeMax = 0.0003910064697265625; LogProcessCycleTimeMin = 0.0001769065856933594; LogProcessCycleTimeStd = 8.599798137909184E-05; LogProcessCycleTimeSum = 0.001309871673583984; SleepCycleTimeAvg = 5.005001100141611; SleepCycleTimeCount = 134.0; SleepCycleTimeMax = 5.005783081054688; SleepCycleTimeMin = 5.000787973403931; SleepCycleTimeStd = 0.0005697439372653986; SleepCycleTimeSum = 670.6701474189758; SubmitCycleTimeAvg = 0.001813044371428313; SubmitCycleTimeCount = 135.0; SubmitCycleTimeMax = 0.2032160758972168; SubmitCycleTimeMin = 9.059906005859375E-06; SubmitCycleTimeStd = 0.01771276955313113; SubmitCycleTimeSum = 0.2447609901428223; ]
+05/03/24 11:48:11 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:48:11 Event: ULOG_JOB_RELEASED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/03/24 11:48:10}
+05/03/24 11:48:11 DAG status: 0 (DAG_STATUS_OK)
+05/03/24 11:48:11 Of 5 nodes total:
+05/03/24 11:48:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/03/24 11:48:11   ===     ===      ===     ===     ===        ===      ===      ===
+05/03/24 11:48:11     1       0        1       0       0          3        0        0
+05/03/24 11:48:11 0 job proc(s) currently held
+05/03/24 11:48:11 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.00113380561440678; EventCycleTimeCount = 236.0; EventCycleTimeMax = 0.2033660411834717; EventCycleTimeMin = 1.788139343261719E-05; EventCycleTimeStd = 0.01341244074590079; EventCycleTimeSum = 0.267578125; LogProcessCycleTimeAvg = 0.0002334515253702799; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003910064697265625; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001039125890310189; LogProcessCycleTimeSum = 0.00140070915222168; SleepCycleTimeAvg = 5.004993694313502; SleepCycleTimeCount = 236.0; SleepCycleTimeMax = 5.005783081054688; SleepCycleTimeMin = 5.000787973403931; SleepCycleTimeStd = 0.0005065328863060895; SleepCycleTimeSum = 1181.178511857986; SubmitCycleTimeAvg = 0.001055749659799825; SubmitCycleTimeCount = 237.0; SubmitCycleTimeMax = 0.2032160758972168; SubmitCycleTimeMin = 9.059906005859375E-06; SubmitCycleTimeStd = 0.01337570988212966; SubmitCycleTimeSum = 0.2502126693725586; ]
+05/03/24 11:50:16 Currently monitoring 1 HTCondor log file(s)
+05/03/24 11:50:16 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/03/24 11:50:13}
+05/03/24 11:50:16 Number of idle job procs: 0
+05/03/24 12:00:16 600 seconds since last log event
+05/03/24 12:00:16 Pending DAG nodes:
+05/03/24 12:00:16   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 12:10:17 1201 seconds since last log event
+05/03/24 12:10:17 Pending DAG nodes:
+05/03/24 12:10:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 12:20:17 1801 seconds since last log event
+05/03/24 12:20:17 Pending DAG nodes:
+05/03/24 12:20:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 12:30:18 2402 seconds since last log event
+05/03/24 12:30:18 Pending DAG nodes:
+05/03/24 12:30:18   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 12:40:19 3003 seconds since last log event
+05/03/24 12:40:19 Pending DAG nodes:
+05/03/24 12:40:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 12:50:19 3603 seconds since last log event
+05/03/24 12:50:19 Pending DAG nodes:
+05/03/24 12:50:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 13:00:20 4204 seconds since last log event
+05/03/24 13:00:20 Pending DAG nodes:
+05/03/24 13:00:20   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 13:10:21 4805 seconds since last log event
+05/03/24 13:10:21 Pending DAG nodes:
+05/03/24 13:10:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 13:20:21 5405 seconds since last log event
+05/03/24 13:20:21 Pending DAG nodes:
+05/03/24 13:20:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 13:30:22 6006 seconds since last log event
+05/03/24 13:30:22 Pending DAG nodes:
+05/03/24 13:30:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 13:40:22 6606 seconds since last log event
+05/03/24 13:40:22 Pending DAG nodes:
+05/03/24 13:40:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 13:50:23 7207 seconds since last log event
+05/03/24 13:50:23 Pending DAG nodes:
+05/03/24 13:50:23   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 14:00:24 7808 seconds since last log event
+05/03/24 14:00:24 Pending DAG nodes:
+05/03/24 14:00:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 14:10:24 8408 seconds since last log event
+05/03/24 14:10:24 Pending DAG nodes:
+05/03/24 14:10:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 14:20:25 9009 seconds since last log event
+05/03/24 14:20:25 Pending DAG nodes:
+05/03/24 14:20:25   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 14:30:25 9609 seconds since last log event
+05/03/24 14:30:25 Pending DAG nodes:
+05/03/24 14:30:25   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 14:40:26 10210 seconds since last log event
+05/03/24 14:40:26 Pending DAG nodes:
+05/03/24 14:40:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 14:50:26 10810 seconds since last log event
+05/03/24 14:50:26 Pending DAG nodes:
+05/03/24 14:50:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 15:00:27 11411 seconds since last log event
+05/03/24 15:00:27 Pending DAG nodes:
+05/03/24 15:00:27   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 15:10:28 12012 seconds since last log event
+05/03/24 15:10:28 Pending DAG nodes:
+05/03/24 15:10:28   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 15:20:28 12612 seconds since last log event
+05/03/24 15:20:28 Pending DAG nodes:
+05/03/24 15:20:28   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 15:30:29 13213 seconds since last log event
+05/03/24 15:30:29 Pending DAG nodes:
+05/03/24 15:30:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 15:40:30 13814 seconds since last log event
+05/03/24 15:40:30 Pending DAG nodes:
+05/03/24 15:40:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 15:50:30 14414 seconds since last log event
+05/03/24 15:50:30 Pending DAG nodes:
+05/03/24 15:50:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 16:00:31 15015 seconds since last log event
+05/03/24 16:00:31 Pending DAG nodes:
+05/03/24 16:00:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 16:10:31 15615 seconds since last log event
+05/03/24 16:10:31 Pending DAG nodes:
+05/03/24 16:10:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 16:20:32 16216 seconds since last log event
+05/03/24 16:20:32 Pending DAG nodes:
+05/03/24 16:20:32   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 16:30:33 16817 seconds since last log event
+05/03/24 16:30:33 Pending DAG nodes:
+05/03/24 16:30:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 16:40:33 17417 seconds since last log event
+05/03/24 16:40:33 Pending DAG nodes:
+05/03/24 16:40:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 16:50:34 18018 seconds since last log event
+05/03/24 16:50:34 Pending DAG nodes:
+05/03/24 16:50:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 17:00:34 18618 seconds since last log event
+05/03/24 17:00:34 Pending DAG nodes:
+05/03/24 17:00:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 17:10:35 19219 seconds since last log event
+05/03/24 17:10:35 Pending DAG nodes:
+05/03/24 17:10:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 17:20:36 19820 seconds since last log event
+05/03/24 17:20:36 Pending DAG nodes:
+05/03/24 17:20:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 17:30:36 20420 seconds since last log event
+05/03/24 17:30:36 Pending DAG nodes:
+05/03/24 17:30:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 17:40:37 21021 seconds since last log event
+05/03/24 17:40:37 Pending DAG nodes:
+05/03/24 17:40:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 17:50:37 21621 seconds since last log event
+05/03/24 17:50:37 Pending DAG nodes:
+05/03/24 17:50:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 18:00:37 22221 seconds since last log event
+05/03/24 18:00:37 Pending DAG nodes:
+05/03/24 18:00:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 18:10:38 22822 seconds since last log event
+05/03/24 18:10:38 Pending DAG nodes:
+05/03/24 18:10:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 18:20:38 23422 seconds since last log event
+05/03/24 18:20:38 Pending DAG nodes:
+05/03/24 18:20:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 18:30:39 24023 seconds since last log event
+05/03/24 18:30:39 Pending DAG nodes:
+05/03/24 18:30:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 18:40:39 24623 seconds since last log event
+05/03/24 18:40:39 Pending DAG nodes:
+05/03/24 18:40:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 18:50:40 25224 seconds since last log event
+05/03/24 18:50:40 Pending DAG nodes:
+05/03/24 18:50:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 19:00:41 25825 seconds since last log event
+05/03/24 19:00:41 Pending DAG nodes:
+05/03/24 19:00:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 19:10:41 26425 seconds since last log event
+05/03/24 19:10:41 Pending DAG nodes:
+05/03/24 19:10:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 19:20:42 27026 seconds since last log event
+05/03/24 19:20:42 Pending DAG nodes:
+05/03/24 19:20:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 19:30:42 27626 seconds since last log event
+05/03/24 19:30:42 Pending DAG nodes:
+05/03/24 19:30:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 19:40:43 28227 seconds since last log event
+05/03/24 19:40:43 Pending DAG nodes:
+05/03/24 19:40:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 19:50:44 28828 seconds since last log event
+05/03/24 19:50:44 Pending DAG nodes:
+05/03/24 19:50:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 20:00:44 29428 seconds since last log event
+05/03/24 20:00:44 Pending DAG nodes:
+05/03/24 20:00:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 20:10:45 30029 seconds since last log event
+05/03/24 20:10:45 Pending DAG nodes:
+05/03/24 20:10:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 20:20:45 30629 seconds since last log event
+05/03/24 20:20:45 Pending DAG nodes:
+05/03/24 20:20:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 20:30:46 31230 seconds since last log event
+05/03/24 20:30:46 Pending DAG nodes:
+05/03/24 20:30:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 20:40:47 31831 seconds since last log event
+05/03/24 20:40:47 Pending DAG nodes:
+05/03/24 20:40:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 20:50:47 32431 seconds since last log event
+05/03/24 20:50:47 Pending DAG nodes:
+05/03/24 20:50:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 21:00:48 33032 seconds since last log event
+05/03/24 21:00:48 Pending DAG nodes:
+05/03/24 21:00:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 21:10:48 33632 seconds since last log event
+05/03/24 21:10:48 Pending DAG nodes:
+05/03/24 21:10:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 21:20:49 34233 seconds since last log event
+05/03/24 21:20:49 Pending DAG nodes:
+05/03/24 21:20:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 21:30:50 34834 seconds since last log event
+05/03/24 21:30:50 Pending DAG nodes:
+05/03/24 21:30:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 21:40:50 35434 seconds since last log event
+05/03/24 21:40:50 Pending DAG nodes:
+05/03/24 21:40:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 21:50:51 36035 seconds since last log event
+05/03/24 21:50:51 Pending DAG nodes:
+05/03/24 21:50:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 22:00:52 36636 seconds since last log event
+05/03/24 22:00:52 Pending DAG nodes:
+05/03/24 22:00:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 22:10:52 37236 seconds since last log event
+05/03/24 22:10:52 Pending DAG nodes:
+05/03/24 22:10:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 22:20:53 37837 seconds since last log event
+05/03/24 22:20:53 Pending DAG nodes:
+05/03/24 22:20:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 22:30:53 38437 seconds since last log event
+05/03/24 22:30:53 Pending DAG nodes:
+05/03/24 22:30:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 22:40:54 39038 seconds since last log event
+05/03/24 22:40:54 Pending DAG nodes:
+05/03/24 22:40:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 22:50:55 39639 seconds since last log event
+05/03/24 22:50:55 Pending DAG nodes:
+05/03/24 22:50:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 23:00:55 40239 seconds since last log event
+05/03/24 23:00:55 Pending DAG nodes:
+05/03/24 23:00:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 23:10:56 40840 seconds since last log event
+05/03/24 23:10:56 Pending DAG nodes:
+05/03/24 23:10:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 23:20:57 41441 seconds since last log event
+05/03/24 23:20:57 Pending DAG nodes:
+05/03/24 23:20:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 23:30:57 42041 seconds since last log event
+05/03/24 23:30:57 Pending DAG nodes:
+05/03/24 23:30:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 23:40:58 42642 seconds since last log event
+05/03/24 23:40:58 Pending DAG nodes:
+05/03/24 23:40:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/03/24 23:50:58 43242 seconds since last log event
+05/03/24 23:50:58 Pending DAG nodes:
+05/03/24 23:50:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 00:00:59 43843 seconds since last log event
+05/04/24 00:00:59 Pending DAG nodes:
+05/04/24 00:00:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 00:11:00 44444 seconds since last log event
+05/04/24 00:11:00 Pending DAG nodes:
+05/04/24 00:11:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 00:21:00 45044 seconds since last log event
+05/04/24 00:21:00 Pending DAG nodes:
+05/04/24 00:21:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 00:31:01 45645 seconds since last log event
+05/04/24 00:31:01 Pending DAG nodes:
+05/04/24 00:31:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 00:41:02 46246 seconds since last log event
+05/04/24 00:41:02 Pending DAG nodes:
+05/04/24 00:41:02   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 00:51:02 46846 seconds since last log event
+05/04/24 00:51:02 Pending DAG nodes:
+05/04/24 00:51:02   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 01:01:03 47447 seconds since last log event
+05/04/24 01:01:03 Pending DAG nodes:
+05/04/24 01:01:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 01:11:03 48047 seconds since last log event
+05/04/24 01:11:03 Pending DAG nodes:
+05/04/24 01:11:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 01:21:04 48648 seconds since last log event
+05/04/24 01:21:04 Pending DAG nodes:
+05/04/24 01:21:04   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 01:31:04 49248 seconds since last log event
+05/04/24 01:31:04 Pending DAG nodes:
+05/04/24 01:31:04   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 01:41:04 49848 seconds since last log event
+05/04/24 01:41:04 Pending DAG nodes:
+05/04/24 01:41:04   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 01:51:05 50449 seconds since last log event
+05/04/24 01:51:05 Pending DAG nodes:
+05/04/24 01:51:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 02:01:05 51049 seconds since last log event
+05/04/24 02:01:05 Pending DAG nodes:
+05/04/24 02:01:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 02:11:06 51650 seconds since last log event
+05/04/24 02:11:06 Pending DAG nodes:
+05/04/24 02:11:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 02:21:06 52250 seconds since last log event
+05/04/24 02:21:06 Pending DAG nodes:
+05/04/24 02:21:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 02:31:06 52850 seconds since last log event
+05/04/24 02:31:06 Pending DAG nodes:
+05/04/24 02:31:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 02:41:07 53451 seconds since last log event
+05/04/24 02:41:07 Pending DAG nodes:
+05/04/24 02:41:07   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 02:51:08 54052 seconds since last log event
+05/04/24 02:51:08 Pending DAG nodes:
+05/04/24 02:51:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 03:01:08 54652 seconds since last log event
+05/04/24 03:01:08 Pending DAG nodes:
+05/04/24 03:01:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 03:11:08 55252 seconds since last log event
+05/04/24 03:11:08 Pending DAG nodes:
+05/04/24 03:11:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 03:21:08 55852 seconds since last log event
+05/04/24 03:21:08 Pending DAG nodes:
+05/04/24 03:21:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 03:31:08 56452 seconds since last log event
+05/04/24 03:31:08 Pending DAG nodes:
+05/04/24 03:31:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 03:41:09 57053 seconds since last log event
+05/04/24 03:41:09 Pending DAG nodes:
+05/04/24 03:41:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 03:51:09 57653 seconds since last log event
+05/04/24 03:51:09 Pending DAG nodes:
+05/04/24 03:51:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 04:01:10 58254 seconds since last log event
+05/04/24 04:01:10 Pending DAG nodes:
+05/04/24 04:01:10   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 04:11:10 58854 seconds since last log event
+05/04/24 04:11:10 Pending DAG nodes:
+05/04/24 04:11:10   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 04:21:11 59455 seconds since last log event
+05/04/24 04:21:11 Pending DAG nodes:
+05/04/24 04:21:11   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 04:22:46 Currently monitoring 1 HTCondor log file(s)
+05/04/24 04:22:46 Event: ULOG_SHADOW_EXCEPTION for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/04/24 04:22:44}
+05/04/24 04:22:46 Number of idle job procs: 1
+05/04/24 04:22:46 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/04/24 04:22:44}
+05/04/24 04:22:46   Hold reason: Error from slot1_9@node1986.cluster.ldas.cit: Job has gone over cgroup memory limit of 1024 megabytes. Peak usage: 1024 megabytes.  Consider resubmitting with a higher request_memory.
+05/04/24 04:22:46 Number of idle job procs: 1
+05/04/24 04:22:46 DAG status: 0 (DAG_STATUS_OK)
+05/04/24 04:22:46 Of 5 nodes total:
+05/04/24 04:22:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/04/24 04:22:46   ===     ===      ===     ===     ===        ===      ===      ===
+05/04/24 04:22:46     1       0        1       0       0          3        0        0
+05/04/24 04:22:46 1 job proc(s) currently held
+05/04/24 04:22:46 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.01586731682711162; EventCycleTimeCount = 12122.0; EventCycleTimeMax = 189.7694718837738; EventCycleTimeMin = 9.775161743164062E-06; EventCycleTimeStd = 1.723611238208262; EventCycleTimeSum = 192.3436145782471; LogProcessCycleTimeAvg = 0.0002543032169342041; LogProcessCycleTimeCount = 8.0; LogProcessCycleTimeMax = 0.0004878044128417969; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.00013248682764657; LogProcessCycleTimeSum = 0.002034425735473633; SleepCycleTimeAvg = 5.004514585586098; SleepCycleTimeCount = 12122.0; SleepCycleTimeMax = 5.017391920089722; SleepCycleTimeMin = 4.003381967544556; SleepCycleTimeStd = 0.02033959514496445; SleepCycleTimeSum = 60664.72580647469; SubmitCycleTimeAvg = 9.127317320186392E-05; SubmitCycleTimeCount = 12123.0; SubmitCycleTimeMax = 0.2032160758972168; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.001881671951615748; SubmitCycleTimeSum = 1.106504678726196; ]
+05/04/24 04:32:47 601 seconds since last log event
+05/04/24 04:32:47 Pending DAG nodes:
+05/04/24 04:32:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 04:42:47 1201 seconds since last log event
+05/04/24 04:42:47 Pending DAG nodes:
+05/04/24 04:42:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 04:52:48 1802 seconds since last log event
+05/04/24 04:52:48 Pending DAG nodes:
+05/04/24 04:52:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 05:02:49 2403 seconds since last log event
+05/04/24 05:02:49 Pending DAG nodes:
+05/04/24 05:02:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 05:12:49 3003 seconds since last log event
+05/04/24 05:12:49 Pending DAG nodes:
+05/04/24 05:12:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 05:22:49 3603 seconds since last log event
+05/04/24 05:22:49 Pending DAG nodes:
+05/04/24 05:22:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 05:32:49 4203 seconds since last log event
+05/04/24 05:32:49 Pending DAG nodes:
+05/04/24 05:32:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 05:42:50 4804 seconds since last log event
+05/04/24 05:42:50 Pending DAG nodes:
+05/04/24 05:42:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 05:52:51 5405 seconds since last log event
+05/04/24 05:52:51 Pending DAG nodes:
+05/04/24 05:52:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 06:02:51 6005 seconds since last log event
+05/04/24 06:02:51 Pending DAG nodes:
+05/04/24 06:02:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 06:12:52 6606 seconds since last log event
+05/04/24 06:12:52 Pending DAG nodes:
+05/04/24 06:12:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 06:22:53 7207 seconds since last log event
+05/04/24 06:22:53 Pending DAG nodes:
+05/04/24 06:22:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 06:32:53 7807 seconds since last log event
+05/04/24 06:32:53 Pending DAG nodes:
+05/04/24 06:32:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 06:42:54 8408 seconds since last log event
+05/04/24 06:42:54 Pending DAG nodes:
+05/04/24 06:42:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 06:52:54 9008 seconds since last log event
+05/04/24 06:52:54 Pending DAG nodes:
+05/04/24 06:52:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 07:02:55 9609 seconds since last log event
+05/04/24 07:02:55 Pending DAG nodes:
+05/04/24 07:02:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 07:12:56 10210 seconds since last log event
+05/04/24 07:12:56 Pending DAG nodes:
+05/04/24 07:12:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 07:22:56 10810 seconds since last log event
+05/04/24 07:22:56 Pending DAG nodes:
+05/04/24 07:22:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 07:32:57 11411 seconds since last log event
+05/04/24 07:32:57 Pending DAG nodes:
+05/04/24 07:32:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 07:42:57 12011 seconds since last log event
+05/04/24 07:42:57 Pending DAG nodes:
+05/04/24 07:42:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 07:52:58 12612 seconds since last log event
+05/04/24 07:52:58 Pending DAG nodes:
+05/04/24 07:52:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 08:02:59 13213 seconds since last log event
+05/04/24 08:02:59 Pending DAG nodes:
+05/04/24 08:02:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 08:12:59 13813 seconds since last log event
+05/04/24 08:12:59 Pending DAG nodes:
+05/04/24 08:12:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 08:23:00 14414 seconds since last log event
+05/04/24 08:23:00 Pending DAG nodes:
+05/04/24 08:23:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 08:33:01 15015 seconds since last log event
+05/04/24 08:33:01 Pending DAG nodes:
+05/04/24 08:33:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 08:43:01 15615 seconds since last log event
+05/04/24 08:43:01 Pending DAG nodes:
+05/04/24 08:43:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 08:53:01 16215 seconds since last log event
+05/04/24 08:53:01 Pending DAG nodes:
+05/04/24 08:53:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 09:03:01 16815 seconds since last log event
+05/04/24 09:03:01 Pending DAG nodes:
+05/04/24 09:03:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 09:28:29 18343 seconds since last log event
+05/04/24 09:28:29 Pending DAG nodes:
+05/04/24 09:28:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 09:38:29 18943 seconds since last log event
+05/04/24 09:38:29 Pending DAG nodes:
+05/04/24 09:38:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 09:48:33 19547 seconds since last log event
+05/04/24 09:48:33 Pending DAG nodes:
+05/04/24 09:48:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 09:58:33 20147 seconds since last log event
+05/04/24 09:58:33 Pending DAG nodes:
+05/04/24 09:58:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 10:08:34 20748 seconds since last log event
+05/04/24 10:08:34 Pending DAG nodes:
+05/04/24 10:08:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 10:18:35 21349 seconds since last log event
+05/04/24 10:18:35 Pending DAG nodes:
+05/04/24 10:18:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 10:28:35 21949 seconds since last log event
+05/04/24 10:28:35 Pending DAG nodes:
+05/04/24 10:28:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 10:38:35 22549 seconds since last log event
+05/04/24 10:38:35 Pending DAG nodes:
+05/04/24 10:38:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 10:48:35 23149 seconds since last log event
+05/04/24 10:48:35 Pending DAG nodes:
+05/04/24 10:48:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 10:58:35 23749 seconds since last log event
+05/04/24 10:58:35 Pending DAG nodes:
+05/04/24 10:58:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 11:08:36 24350 seconds since last log event
+05/04/24 11:08:36 Pending DAG nodes:
+05/04/24 11:08:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 11:18:36 24950 seconds since last log event
+05/04/24 11:18:36 Pending DAG nodes:
+05/04/24 11:18:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 11:28:37 25551 seconds since last log event
+05/04/24 11:28:37 Pending DAG nodes:
+05/04/24 11:28:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 11:28:47 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/04/24 11:28:47 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/04/24 11:38:38 26152 seconds since last log event
+05/04/24 11:38:38 Pending DAG nodes:
+05/04/24 11:38:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 11:48:38 26752 seconds since last log event
+05/04/24 11:48:38 Pending DAG nodes:
+05/04/24 11:48:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 11:58:39 27353 seconds since last log event
+05/04/24 11:58:39 Pending DAG nodes:
+05/04/24 11:58:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 12:08:39 27953 seconds since last log event
+05/04/24 12:08:39 Pending DAG nodes:
+05/04/24 12:08:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 12:18:40 28554 seconds since last log event
+05/04/24 12:18:40 Pending DAG nodes:
+05/04/24 12:18:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 12:28:41 29155 seconds since last log event
+05/04/24 12:28:41 Pending DAG nodes:
+05/04/24 12:28:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 12:38:41 29755 seconds since last log event
+05/04/24 12:38:41 Pending DAG nodes:
+05/04/24 12:38:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 12:48:42 30356 seconds since last log event
+05/04/24 12:48:42 Pending DAG nodes:
+05/04/24 12:48:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 12:58:43 30957 seconds since last log event
+05/04/24 12:58:43 Pending DAG nodes:
+05/04/24 12:58:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 13:08:43 31557 seconds since last log event
+05/04/24 13:08:43 Pending DAG nodes:
+05/04/24 13:08:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 13:18:44 32158 seconds since last log event
+05/04/24 13:18:44 Pending DAG nodes:
+05/04/24 13:18:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 13:28:44 32758 seconds since last log event
+05/04/24 13:28:44 Pending DAG nodes:
+05/04/24 13:28:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 13:38:45 33359 seconds since last log event
+05/04/24 13:38:45 Pending DAG nodes:
+05/04/24 13:38:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 13:48:46 33960 seconds since last log event
+05/04/24 13:48:46 Pending DAG nodes:
+05/04/24 13:48:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 13:58:46 34560 seconds since last log event
+05/04/24 13:58:46 Pending DAG nodes:
+05/04/24 13:58:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 14:08:47 35161 seconds since last log event
+05/04/24 14:08:47 Pending DAG nodes:
+05/04/24 14:08:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 14:18:48 35762 seconds since last log event
+05/04/24 14:18:48 Pending DAG nodes:
+05/04/24 14:18:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 14:28:48 36362 seconds since last log event
+05/04/24 14:28:48 Pending DAG nodes:
+05/04/24 14:28:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 14:38:49 36963 seconds since last log event
+05/04/24 14:38:49 Pending DAG nodes:
+05/04/24 14:38:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 14:48:49 37563 seconds since last log event
+05/04/24 14:48:49 Pending DAG nodes:
+05/04/24 14:48:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 14:58:49 38163 seconds since last log event
+05/04/24 14:58:49 Pending DAG nodes:
+05/04/24 14:58:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 15:08:50 38764 seconds since last log event
+05/04/24 15:08:50 Pending DAG nodes:
+05/04/24 15:08:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 15:18:50 39364 seconds since last log event
+05/04/24 15:18:50 Pending DAG nodes:
+05/04/24 15:18:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 15:36:53 40447 seconds since last log event
+05/04/24 15:36:53 Pending DAG nodes:
+05/04/24 15:36:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 15:46:57 41051 seconds since last log event
+05/04/24 15:46:57 Pending DAG nodes:
+05/04/24 15:46:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 15:56:58 41652 seconds since last log event
+05/04/24 15:56:58 Pending DAG nodes:
+05/04/24 15:56:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 16:06:58 42252 seconds since last log event
+05/04/24 16:06:58 Pending DAG nodes:
+05/04/24 16:06:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 16:16:59 42853 seconds since last log event
+05/04/24 16:16:59 Pending DAG nodes:
+05/04/24 16:16:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 16:27:00 43454 seconds since last log event
+05/04/24 16:27:00 Pending DAG nodes:
+05/04/24 16:27:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 16:37:00 44054 seconds since last log event
+05/04/24 16:37:00 Pending DAG nodes:
+05/04/24 16:37:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 16:47:01 44655 seconds since last log event
+05/04/24 16:47:01 Pending DAG nodes:
+05/04/24 16:47:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 16:57:02 45256 seconds since last log event
+05/04/24 16:57:02 Pending DAG nodes:
+05/04/24 16:57:02   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 17:07:02 45856 seconds since last log event
+05/04/24 17:07:02 Pending DAG nodes:
+05/04/24 17:07:02   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 17:17:03 46457 seconds since last log event
+05/04/24 17:17:03 Pending DAG nodes:
+05/04/24 17:17:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 17:27:03 47057 seconds since last log event
+05/04/24 17:27:03 Pending DAG nodes:
+05/04/24 17:27:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 17:37:04 47658 seconds since last log event
+05/04/24 17:37:04 Pending DAG nodes:
+05/04/24 17:37:04   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 17:47:05 48259 seconds since last log event
+05/04/24 17:47:05 Pending DAG nodes:
+05/04/24 17:47:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 17:57:05 48859 seconds since last log event
+05/04/24 17:57:05 Pending DAG nodes:
+05/04/24 17:57:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 18:07:06 49460 seconds since last log event
+05/04/24 18:07:06 Pending DAG nodes:
+05/04/24 18:07:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 18:17:06 50060 seconds since last log event
+05/04/24 18:17:06 Pending DAG nodes:
+05/04/24 18:17:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 18:27:07 50661 seconds since last log event
+05/04/24 18:27:07 Pending DAG nodes:
+05/04/24 18:27:07   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 18:37:08 51262 seconds since last log event
+05/04/24 18:37:08 Pending DAG nodes:
+05/04/24 18:37:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 18:47:08 51862 seconds since last log event
+05/04/24 18:47:08 Pending DAG nodes:
+05/04/24 18:47:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 18:57:08 52462 seconds since last log event
+05/04/24 18:57:08 Pending DAG nodes:
+05/04/24 18:57:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 19:07:09 53063 seconds since last log event
+05/04/24 19:07:09 Pending DAG nodes:
+05/04/24 19:07:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 19:17:09 53663 seconds since last log event
+05/04/24 19:17:09 Pending DAG nodes:
+05/04/24 19:17:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 19:27:10 54264 seconds since last log event
+05/04/24 19:27:10 Pending DAG nodes:
+05/04/24 19:27:10   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 19:37:11 54865 seconds since last log event
+05/04/24 19:37:11 Pending DAG nodes:
+05/04/24 19:37:11   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 19:47:11 55465 seconds since last log event
+05/04/24 19:47:11 Pending DAG nodes:
+05/04/24 19:47:11   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 19:57:12 56066 seconds since last log event
+05/04/24 19:57:12 Pending DAG nodes:
+05/04/24 19:57:12   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 20:07:13 56667 seconds since last log event
+05/04/24 20:07:13 Pending DAG nodes:
+05/04/24 20:07:13   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 20:17:13 57267 seconds since last log event
+05/04/24 20:17:13 Pending DAG nodes:
+05/04/24 20:17:13   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 20:27:14 57868 seconds since last log event
+05/04/24 20:27:14 Pending DAG nodes:
+05/04/24 20:27:14   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 20:37:15 58469 seconds since last log event
+05/04/24 20:37:15 Pending DAG nodes:
+05/04/24 20:37:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 20:47:15 59069 seconds since last log event
+05/04/24 20:47:15 Pending DAG nodes:
+05/04/24 20:47:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 20:57:16 59670 seconds since last log event
+05/04/24 20:57:16 Pending DAG nodes:
+05/04/24 20:57:16   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 21:07:16 60270 seconds since last log event
+05/04/24 21:07:16 Pending DAG nodes:
+05/04/24 21:07:16   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 21:17:17 60871 seconds since last log event
+05/04/24 21:17:17 Pending DAG nodes:
+05/04/24 21:17:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 21:27:18 61472 seconds since last log event
+05/04/24 21:27:18 Pending DAG nodes:
+05/04/24 21:27:18   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 21:37:18 62072 seconds since last log event
+05/04/24 21:37:18 Pending DAG nodes:
+05/04/24 21:37:18   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 21:47:19 62673 seconds since last log event
+05/04/24 21:47:19 Pending DAG nodes:
+05/04/24 21:47:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 21:57:19 63273 seconds since last log event
+05/04/24 21:57:19 Pending DAG nodes:
+05/04/24 21:57:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 22:07:20 63874 seconds since last log event
+05/04/24 22:07:20 Pending DAG nodes:
+05/04/24 22:07:20   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 22:17:21 64475 seconds since last log event
+05/04/24 22:17:21 Pending DAG nodes:
+05/04/24 22:17:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 22:27:21 65075 seconds since last log event
+05/04/24 22:27:21 Pending DAG nodes:
+05/04/24 22:27:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 22:37:22 65676 seconds since last log event
+05/04/24 22:37:22 Pending DAG nodes:
+05/04/24 22:37:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 22:47:23 66277 seconds since last log event
+05/04/24 22:47:23 Pending DAG nodes:
+05/04/24 22:47:23   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 22:57:23 66877 seconds since last log event
+05/04/24 22:57:23 Pending DAG nodes:
+05/04/24 22:57:23   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 23:07:24 67478 seconds since last log event
+05/04/24 23:07:24 Pending DAG nodes:
+05/04/24 23:07:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 23:17:25 68079 seconds since last log event
+05/04/24 23:17:25 Pending DAG nodes:
+05/04/24 23:17:25   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 23:27:25 68679 seconds since last log event
+05/04/24 23:27:25 Pending DAG nodes:
+05/04/24 23:27:25   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 23:37:26 69280 seconds since last log event
+05/04/24 23:37:26 Pending DAG nodes:
+05/04/24 23:37:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 23:47:26 69880 seconds since last log event
+05/04/24 23:47:26 Pending DAG nodes:
+05/04/24 23:47:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/04/24 23:57:27 70481 seconds since last log event
+05/04/24 23:57:27 Pending DAG nodes:
+05/04/24 23:57:27   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 00:07:28 71082 seconds since last log event
+05/05/24 00:07:28 Pending DAG nodes:
+05/05/24 00:07:28   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 00:17:28 71682 seconds since last log event
+05/05/24 00:17:28 Pending DAG nodes:
+05/05/24 00:17:28   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 00:27:29 72283 seconds since last log event
+05/05/24 00:27:29 Pending DAG nodes:
+05/05/24 00:27:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 00:37:29 72883 seconds since last log event
+05/05/24 00:37:29 Pending DAG nodes:
+05/05/24 00:37:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 00:47:30 73484 seconds since last log event
+05/05/24 00:47:30 Pending DAG nodes:
+05/05/24 00:47:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 00:57:31 74085 seconds since last log event
+05/05/24 00:57:31 Pending DAG nodes:
+05/05/24 00:57:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 01:07:31 74685 seconds since last log event
+05/05/24 01:07:31 Pending DAG nodes:
+05/05/24 01:07:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 01:17:32 75286 seconds since last log event
+05/05/24 01:17:32 Pending DAG nodes:
+05/05/24 01:17:32   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 01:27:33 75887 seconds since last log event
+05/05/24 01:27:33 Pending DAG nodes:
+05/05/24 01:27:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 01:37:33 76487 seconds since last log event
+05/05/24 01:37:33 Pending DAG nodes:
+05/05/24 01:37:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 01:47:34 77088 seconds since last log event
+05/05/24 01:47:34 Pending DAG nodes:
+05/05/24 01:47:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 01:57:34 77688 seconds since last log event
+05/05/24 01:57:34 Pending DAG nodes:
+05/05/24 01:57:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 02:07:35 78289 seconds since last log event
+05/05/24 02:07:35 Pending DAG nodes:
+05/05/24 02:07:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 02:17:36 78890 seconds since last log event
+05/05/24 02:17:36 Pending DAG nodes:
+05/05/24 02:17:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 02:27:36 79490 seconds since last log event
+05/05/24 02:27:36 Pending DAG nodes:
+05/05/24 02:27:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 02:37:37 80091 seconds since last log event
+05/05/24 02:37:37 Pending DAG nodes:
+05/05/24 02:37:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 02:47:38 80692 seconds since last log event
+05/05/24 02:47:38 Pending DAG nodes:
+05/05/24 02:47:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 02:57:38 81292 seconds since last log event
+05/05/24 02:57:38 Pending DAG nodes:
+05/05/24 02:57:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 03:07:39 81893 seconds since last log event
+05/05/24 03:07:39 Pending DAG nodes:
+05/05/24 03:07:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 03:17:39 82493 seconds since last log event
+05/05/24 03:17:39 Pending DAG nodes:
+05/05/24 03:17:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 03:27:40 83094 seconds since last log event
+05/05/24 03:27:40 Pending DAG nodes:
+05/05/24 03:27:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 03:37:41 83695 seconds since last log event
+05/05/24 03:37:41 Pending DAG nodes:
+05/05/24 03:37:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 03:47:41 84295 seconds since last log event
+05/05/24 03:47:41 Pending DAG nodes:
+05/05/24 03:47:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 03:57:41 84895 seconds since last log event
+05/05/24 03:57:41 Pending DAG nodes:
+05/05/24 03:57:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 04:07:41 85495 seconds since last log event
+05/05/24 04:07:41 Pending DAG nodes:
+05/05/24 04:07:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 04:17:42 86096 seconds since last log event
+05/05/24 04:17:42 Pending DAG nodes:
+05/05/24 04:17:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 04:27:43 86697 seconds since last log event
+05/05/24 04:27:43 Pending DAG nodes:
+05/05/24 04:27:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 04:37:43 87297 seconds since last log event
+05/05/24 04:37:43 Pending DAG nodes:
+05/05/24 04:37:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 04:47:44 87898 seconds since last log event
+05/05/24 04:47:44 Pending DAG nodes:
+05/05/24 04:47:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 04:57:45 88499 seconds since last log event
+05/05/24 04:57:45 Pending DAG nodes:
+05/05/24 04:57:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 05:07:45 89099 seconds since last log event
+05/05/24 05:07:45 Pending DAG nodes:
+05/05/24 05:07:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 05:17:46 89700 seconds since last log event
+05/05/24 05:17:46 Pending DAG nodes:
+05/05/24 05:17:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 05:27:46 90300 seconds since last log event
+05/05/24 05:27:46 Pending DAG nodes:
+05/05/24 05:27:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 05:37:46 90900 seconds since last log event
+05/05/24 05:37:46 Pending DAG nodes:
+05/05/24 05:37:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 05:47:47 91501 seconds since last log event
+05/05/24 05:47:47 Pending DAG nodes:
+05/05/24 05:47:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 05:57:47 92101 seconds since last log event
+05/05/24 05:57:47 Pending DAG nodes:
+05/05/24 05:57:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 06:07:48 92702 seconds since last log event
+05/05/24 06:07:48 Pending DAG nodes:
+05/05/24 06:07:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 06:17:48 93302 seconds since last log event
+05/05/24 06:17:48 Pending DAG nodes:
+05/05/24 06:17:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 06:27:49 93903 seconds since last log event
+05/05/24 06:27:49 Pending DAG nodes:
+05/05/24 06:27:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 06:37:50 94504 seconds since last log event
+05/05/24 06:37:50 Pending DAG nodes:
+05/05/24 06:37:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 06:47:50 95104 seconds since last log event
+05/05/24 06:47:50 Pending DAG nodes:
+05/05/24 06:47:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 06:57:51 95705 seconds since last log event
+05/05/24 06:57:51 Pending DAG nodes:
+05/05/24 06:57:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 07:07:52 96306 seconds since last log event
+05/05/24 07:07:52 Pending DAG nodes:
+05/05/24 07:07:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 07:17:52 96906 seconds since last log event
+05/05/24 07:17:52 Pending DAG nodes:
+05/05/24 07:17:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 07:27:53 97507 seconds since last log event
+05/05/24 07:27:53 Pending DAG nodes:
+05/05/24 07:27:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 07:37:53 98107 seconds since last log event
+05/05/24 07:37:53 Pending DAG nodes:
+05/05/24 07:37:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 07:47:54 98708 seconds since last log event
+05/05/24 07:47:54 Pending DAG nodes:
+05/05/24 07:47:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 07:57:55 99309 seconds since last log event
+05/05/24 07:57:55 Pending DAG nodes:
+05/05/24 07:57:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 08:07:55 99909 seconds since last log event
+05/05/24 08:07:55 Pending DAG nodes:
+05/05/24 08:07:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 08:17:56 100510 seconds since last log event
+05/05/24 08:17:56 Pending DAG nodes:
+05/05/24 08:17:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 08:27:56 101110 seconds since last log event
+05/05/24 08:27:56 Pending DAG nodes:
+05/05/24 08:27:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 08:37:57 101711 seconds since last log event
+05/05/24 08:37:57 Pending DAG nodes:
+05/05/24 08:37:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 08:47:58 102312 seconds since last log event
+05/05/24 08:47:58 Pending DAG nodes:
+05/05/24 08:47:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 08:57:58 102912 seconds since last log event
+05/05/24 08:57:58 Pending DAG nodes:
+05/05/24 08:57:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 09:07:59 103513 seconds since last log event
+05/05/24 09:07:59 Pending DAG nodes:
+05/05/24 09:07:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 09:18:00 104114 seconds since last log event
+05/05/24 09:18:00 Pending DAG nodes:
+05/05/24 09:18:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 09:28:00 104714 seconds since last log event
+05/05/24 09:28:00 Pending DAG nodes:
+05/05/24 09:28:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 09:38:01 105315 seconds since last log event
+05/05/24 09:38:01 Pending DAG nodes:
+05/05/24 09:38:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 09:48:02 105916 seconds since last log event
+05/05/24 09:48:02 Pending DAG nodes:
+05/05/24 09:48:02   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 09:58:03 106517 seconds since last log event
+05/05/24 09:58:03 Pending DAG nodes:
+05/05/24 09:58:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 10:08:05 107119 seconds since last log event
+05/05/24 10:08:05 Pending DAG nodes:
+05/05/24 10:08:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 10:18:06 107720 seconds since last log event
+05/05/24 10:18:06 Pending DAG nodes:
+05/05/24 10:18:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 10:28:07 108321 seconds since last log event
+05/05/24 10:28:07 Pending DAG nodes:
+05/05/24 10:28:07   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 10:38:09 108923 seconds since last log event
+05/05/24 10:38:09 Pending DAG nodes:
+05/05/24 10:38:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 10:48:10 109524 seconds since last log event
+05/05/24 10:48:10 Pending DAG nodes:
+05/05/24 10:48:10   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 10:58:12 110126 seconds since last log event
+05/05/24 10:58:12 Pending DAG nodes:
+05/05/24 10:58:12   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 11:08:12 110726 seconds since last log event
+05/05/24 11:08:12 Pending DAG nodes:
+05/05/24 11:08:12   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 11:18:13 111327 seconds since last log event
+05/05/24 11:18:13 Pending DAG nodes:
+05/05/24 11:18:13   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 11:28:14 111928 seconds since last log event
+05/05/24 11:28:14 Pending DAG nodes:
+05/05/24 11:28:14   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 11:33:34 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/05/24 11:33:34 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/05/24 11:38:14 112528 seconds since last log event
+05/05/24 11:38:14 Pending DAG nodes:
+05/05/24 11:38:14   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 11:48:15 113129 seconds since last log event
+05/05/24 11:48:15 Pending DAG nodes:
+05/05/24 11:48:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 11:58:16 113730 seconds since last log event
+05/05/24 11:58:16 Pending DAG nodes:
+05/05/24 11:58:16   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 12:08:16 114330 seconds since last log event
+05/05/24 12:08:16 Pending DAG nodes:
+05/05/24 12:08:16   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 12:18:17 114931 seconds since last log event
+05/05/24 12:18:17 Pending DAG nodes:
+05/05/24 12:18:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 12:28:17 115531 seconds since last log event
+05/05/24 12:28:17 Pending DAG nodes:
+05/05/24 12:28:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 12:38:18 116132 seconds since last log event
+05/05/24 12:38:18 Pending DAG nodes:
+05/05/24 12:38:18   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 12:48:19 116733 seconds since last log event
+05/05/24 12:48:19 Pending DAG nodes:
+05/05/24 12:48:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 12:58:19 117333 seconds since last log event
+05/05/24 12:58:19 Pending DAG nodes:
+05/05/24 12:58:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 13:08:20 117934 seconds since last log event
+05/05/24 13:08:20 Pending DAG nodes:
+05/05/24 13:08:20   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 13:18:21 118535 seconds since last log event
+05/05/24 13:18:21 Pending DAG nodes:
+05/05/24 13:18:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 13:28:21 119135 seconds since last log event
+05/05/24 13:28:21 Pending DAG nodes:
+05/05/24 13:28:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 13:38:22 119736 seconds since last log event
+05/05/24 13:38:22 Pending DAG nodes:
+05/05/24 13:38:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 13:48:22 120336 seconds since last log event
+05/05/24 13:48:22 Pending DAG nodes:
+05/05/24 13:48:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 13:58:23 120937 seconds since last log event
+05/05/24 13:58:23 Pending DAG nodes:
+05/05/24 13:58:23   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 14:08:24 121538 seconds since last log event
+05/05/24 14:08:24 Pending DAG nodes:
+05/05/24 14:08:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 14:18:24 122138 seconds since last log event
+05/05/24 14:18:24 Pending DAG nodes:
+05/05/24 14:18:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 14:28:25 122739 seconds since last log event
+05/05/24 14:28:25 Pending DAG nodes:
+05/05/24 14:28:25   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 14:38:26 123340 seconds since last log event
+05/05/24 14:38:26 Pending DAG nodes:
+05/05/24 14:38:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 14:48:26 123940 seconds since last log event
+05/05/24 14:48:26 Pending DAG nodes:
+05/05/24 14:48:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 14:58:27 124541 seconds since last log event
+05/05/24 14:58:27 Pending DAG nodes:
+05/05/24 14:58:27   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 15:08:27 125141 seconds since last log event
+05/05/24 15:08:27 Pending DAG nodes:
+05/05/24 15:08:27   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 15:18:28 125742 seconds since last log event
+05/05/24 15:18:28 Pending DAG nodes:
+05/05/24 15:18:28   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 15:28:29 126343 seconds since last log event
+05/05/24 15:28:29 Pending DAG nodes:
+05/05/24 15:28:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 15:38:29 126943 seconds since last log event
+05/05/24 15:38:29 Pending DAG nodes:
+05/05/24 15:38:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 15:48:30 127544 seconds since last log event
+05/05/24 15:48:30 Pending DAG nodes:
+05/05/24 15:48:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 15:58:30 128144 seconds since last log event
+05/05/24 15:58:30 Pending DAG nodes:
+05/05/24 15:58:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 16:08:31 128745 seconds since last log event
+05/05/24 16:08:31 Pending DAG nodes:
+05/05/24 16:08:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 16:18:32 129346 seconds since last log event
+05/05/24 16:18:32 Pending DAG nodes:
+05/05/24 16:18:32   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 16:28:32 129946 seconds since last log event
+05/05/24 16:28:32 Pending DAG nodes:
+05/05/24 16:28:32   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 16:38:33 130547 seconds since last log event
+05/05/24 16:38:33 Pending DAG nodes:
+05/05/24 16:38:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 16:48:33 131147 seconds since last log event
+05/05/24 16:48:33 Pending DAG nodes:
+05/05/24 16:48:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 16:58:33 131747 seconds since last log event
+05/05/24 16:58:33 Pending DAG nodes:
+05/05/24 16:58:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 17:08:33 132347 seconds since last log event
+05/05/24 17:08:33 Pending DAG nodes:
+05/05/24 17:08:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 17:18:34 132948 seconds since last log event
+05/05/24 17:18:34 Pending DAG nodes:
+05/05/24 17:18:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 17:28:34 133548 seconds since last log event
+05/05/24 17:28:34 Pending DAG nodes:
+05/05/24 17:28:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 17:38:35 134149 seconds since last log event
+05/05/24 17:38:35 Pending DAG nodes:
+05/05/24 17:38:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 17:48:36 134750 seconds since last log event
+05/05/24 17:48:36 Pending DAG nodes:
+05/05/24 17:48:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 17:58:36 135350 seconds since last log event
+05/05/24 17:58:36 Pending DAG nodes:
+05/05/24 17:58:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 18:08:36 135950 seconds since last log event
+05/05/24 18:08:36 Pending DAG nodes:
+05/05/24 18:08:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 18:18:37 136551 seconds since last log event
+05/05/24 18:18:37 Pending DAG nodes:
+05/05/24 18:18:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 18:28:37 137151 seconds since last log event
+05/05/24 18:28:37 Pending DAG nodes:
+05/05/24 18:28:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 18:38:38 137752 seconds since last log event
+05/05/24 18:38:38 Pending DAG nodes:
+05/05/24 18:38:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 18:48:38 138352 seconds since last log event
+05/05/24 18:48:38 Pending DAG nodes:
+05/05/24 18:48:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 18:57:09 Currently monitoring 1 HTCondor log file(s)
+05/05/24 18:57:09 Event: ULOG_JOB_RELEASED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/05/24 18:57:08}
+05/05/24 18:57:09 DAG status: 0 (DAG_STATUS_OK)
+05/05/24 18:57:09 Of 5 nodes total:
+05/05/24 18:57:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/05/24 18:57:09   ===     ===      ===     ===     ===        ===      ===      ===
+05/05/24 18:57:09     1       0        1       0       0          3        0        0
+05/05/24 18:57:09 0 job proc(s) currently held
+05/05/24 18:57:09 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.03381202116763538; EventCycleTimeCount = 39533.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 5.05602989923985; EventCycleTimeSum = 1336.690632820129; LogProcessCycleTimeAvg = 0.0002643797132703993; LogProcessCycleTimeCount = 9.0; LogProcessCycleTimeMax = 0.0004878044128417969; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001275636569250452; LogProcessCycleTimeSum = 0.002379417419433594; SleepCycleTimeAvg = 5.018169368609722; SleepCycleTimeCount = 39533.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.003381967544556; SleepCycleTimeStd = 2.701067111604752; SleepCycleTimeSum = 198383.2896492481; SubmitCycleTimeAvg = 0.0001740266865830492; SubmitCycleTimeCount = 39534.0; SubmitCycleTimeMax = 0.2032160758972168; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.001971118987633436; SubmitCycleTimeSum = 6.879971027374268; ]
+05/05/24 18:59:29 Currently monitoring 1 HTCondor log file(s)
+05/05/24 18:59:29 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/05/24 18:59:28}
+05/05/24 18:59:29 Number of idle job procs: 0
+05/05/24 19:09:29 600 seconds since last log event
+05/05/24 19:09:29 Pending DAG nodes:
+05/05/24 19:09:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 19:19:30 1201 seconds since last log event
+05/05/24 19:19:30 Pending DAG nodes:
+05/05/24 19:19:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 19:29:31 1802 seconds since last log event
+05/05/24 19:29:31 Pending DAG nodes:
+05/05/24 19:29:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 19:39:31 2402 seconds since last log event
+05/05/24 19:39:31 Pending DAG nodes:
+05/05/24 19:39:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 19:49:32 3003 seconds since last log event
+05/05/24 19:49:32 Pending DAG nodes:
+05/05/24 19:49:32   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 19:59:33 3604 seconds since last log event
+05/05/24 19:59:33 Pending DAG nodes:
+05/05/24 19:59:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 20:09:33 4204 seconds since last log event
+05/05/24 20:09:33 Pending DAG nodes:
+05/05/24 20:09:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 20:19:34 4805 seconds since last log event
+05/05/24 20:19:34 Pending DAG nodes:
+05/05/24 20:19:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 20:29:35 5406 seconds since last log event
+05/05/24 20:29:35 Pending DAG nodes:
+05/05/24 20:29:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 20:39:35 6006 seconds since last log event
+05/05/24 20:39:35 Pending DAG nodes:
+05/05/24 20:39:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 20:49:36 6607 seconds since last log event
+05/05/24 20:49:36 Pending DAG nodes:
+05/05/24 20:49:36   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 20:59:37 7208 seconds since last log event
+05/05/24 20:59:37 Pending DAG nodes:
+05/05/24 20:59:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 21:09:38 7809 seconds since last log event
+05/05/24 21:09:38 Pending DAG nodes:
+05/05/24 21:09:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 21:19:38 8409 seconds since last log event
+05/05/24 21:19:38 Pending DAG nodes:
+05/05/24 21:19:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 21:29:39 9010 seconds since last log event
+05/05/24 21:29:39 Pending DAG nodes:
+05/05/24 21:29:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 21:39:40 9611 seconds since last log event
+05/05/24 21:39:40 Pending DAG nodes:
+05/05/24 21:39:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 21:49:40 10211 seconds since last log event
+05/05/24 21:49:40 Pending DAG nodes:
+05/05/24 21:49:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 21:59:41 10812 seconds since last log event
+05/05/24 21:59:41 Pending DAG nodes:
+05/05/24 21:59:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 22:09:42 11413 seconds since last log event
+05/05/24 22:09:42 Pending DAG nodes:
+05/05/24 22:09:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 22:19:42 12013 seconds since last log event
+05/05/24 22:19:42 Pending DAG nodes:
+05/05/24 22:19:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 22:29:43 12614 seconds since last log event
+05/05/24 22:29:43 Pending DAG nodes:
+05/05/24 22:29:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 22:39:43 13214 seconds since last log event
+05/05/24 22:39:43 Pending DAG nodes:
+05/05/24 22:39:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 22:49:44 13815 seconds since last log event
+05/05/24 22:49:44 Pending DAG nodes:
+05/05/24 22:49:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 22:59:45 14416 seconds since last log event
+05/05/24 22:59:45 Pending DAG nodes:
+05/05/24 22:59:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 23:09:45 15016 seconds since last log event
+05/05/24 23:09:45 Pending DAG nodes:
+05/05/24 23:09:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 23:19:46 15617 seconds since last log event
+05/05/24 23:19:46 Pending DAG nodes:
+05/05/24 23:19:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 23:29:47 16218 seconds since last log event
+05/05/24 23:29:47 Pending DAG nodes:
+05/05/24 23:29:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 23:39:48 16819 seconds since last log event
+05/05/24 23:39:48 Pending DAG nodes:
+05/05/24 23:39:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 23:49:48 17419 seconds since last log event
+05/05/24 23:49:48 Pending DAG nodes:
+05/05/24 23:49:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/05/24 23:59:49 18020 seconds since last log event
+05/05/24 23:59:49 Pending DAG nodes:
+05/05/24 23:59:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 00:09:50 18621 seconds since last log event
+05/06/24 00:09:50 Pending DAG nodes:
+05/06/24 00:09:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 00:19:50 19221 seconds since last log event
+05/06/24 00:19:50 Pending DAG nodes:
+05/06/24 00:19:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 00:29:51 19822 seconds since last log event
+05/06/24 00:29:51 Pending DAG nodes:
+05/06/24 00:29:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 00:39:52 20423 seconds since last log event
+05/06/24 00:39:52 Pending DAG nodes:
+05/06/24 00:39:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 00:49:52 21023 seconds since last log event
+05/06/24 00:49:52 Pending DAG nodes:
+05/06/24 00:49:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 00:59:53 21624 seconds since last log event
+05/06/24 00:59:53 Pending DAG nodes:
+05/06/24 00:59:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 01:09:54 22225 seconds since last log event
+05/06/24 01:09:54 Pending DAG nodes:
+05/06/24 01:09:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 01:19:54 22825 seconds since last log event
+05/06/24 01:19:54 Pending DAG nodes:
+05/06/24 01:19:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 01:29:55 23426 seconds since last log event
+05/06/24 01:29:55 Pending DAG nodes:
+05/06/24 01:29:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 01:39:56 24027 seconds since last log event
+05/06/24 01:39:56 Pending DAG nodes:
+05/06/24 01:39:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 01:49:56 24627 seconds since last log event
+05/06/24 01:49:56 Pending DAG nodes:
+05/06/24 01:49:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 01:59:57 25228 seconds since last log event
+05/06/24 01:59:57 Pending DAG nodes:
+05/06/24 01:59:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 02:09:58 25829 seconds since last log event
+05/06/24 02:09:58 Pending DAG nodes:
+05/06/24 02:09:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 02:19:58 26429 seconds since last log event
+05/06/24 02:19:58 Pending DAG nodes:
+05/06/24 02:19:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 02:29:59 27030 seconds since last log event
+05/06/24 02:29:59 Pending DAG nodes:
+05/06/24 02:29:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 02:40:00 27631 seconds since last log event
+05/06/24 02:40:00 Pending DAG nodes:
+05/06/24 02:40:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 02:50:00 28231 seconds since last log event
+05/06/24 02:50:00 Pending DAG nodes:
+05/06/24 02:50:00   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 03:00:01 28832 seconds since last log event
+05/06/24 03:00:01 Pending DAG nodes:
+05/06/24 03:00:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 03:10:01 29432 seconds since last log event
+05/06/24 03:10:01 Pending DAG nodes:
+05/06/24 03:10:01   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 03:20:02 30033 seconds since last log event
+05/06/24 03:20:02 Pending DAG nodes:
+05/06/24 03:20:02   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 03:30:03 30634 seconds since last log event
+05/06/24 03:30:03 Pending DAG nodes:
+05/06/24 03:30:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 03:40:03 31234 seconds since last log event
+05/06/24 03:40:03 Pending DAG nodes:
+05/06/24 03:40:03   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 03:50:04 31835 seconds since last log event
+05/06/24 03:50:04 Pending DAG nodes:
+05/06/24 03:50:04   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 04:00:05 32436 seconds since last log event
+05/06/24 04:00:05 Pending DAG nodes:
+05/06/24 04:00:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 04:10:05 33036 seconds since last log event
+05/06/24 04:10:05 Pending DAG nodes:
+05/06/24 04:10:05   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 04:20:06 33637 seconds since last log event
+05/06/24 04:20:06 Pending DAG nodes:
+05/06/24 04:20:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 04:30:06 34237 seconds since last log event
+05/06/24 04:30:06 Pending DAG nodes:
+05/06/24 04:30:06   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 04:40:07 34838 seconds since last log event
+05/06/24 04:40:07 Pending DAG nodes:
+05/06/24 04:40:07   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 04:50:08 35439 seconds since last log event
+05/06/24 04:50:08 Pending DAG nodes:
+05/06/24 04:50:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 05:00:08 36039 seconds since last log event
+05/06/24 05:00:08 Pending DAG nodes:
+05/06/24 05:00:08   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 05:10:09 36640 seconds since last log event
+05/06/24 05:10:09 Pending DAG nodes:
+05/06/24 05:10:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 05:20:09 37240 seconds since last log event
+05/06/24 05:20:09 Pending DAG nodes:
+05/06/24 05:20:09   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 05:30:10 37841 seconds since last log event
+05/06/24 05:30:10 Pending DAG nodes:
+05/06/24 05:30:10   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 05:40:11 38442 seconds since last log event
+05/06/24 05:40:11 Pending DAG nodes:
+05/06/24 05:40:11   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 05:50:11 39042 seconds since last log event
+05/06/24 05:50:11 Pending DAG nodes:
+05/06/24 05:50:11   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 06:00:12 39643 seconds since last log event
+05/06/24 06:00:12 Pending DAG nodes:
+05/06/24 06:00:12   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 06:10:13 40244 seconds since last log event
+05/06/24 06:10:13 Pending DAG nodes:
+05/06/24 06:10:13   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 06:20:13 40844 seconds since last log event
+05/06/24 06:20:13 Pending DAG nodes:
+05/06/24 06:20:13   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 06:30:14 41445 seconds since last log event
+05/06/24 06:30:14 Pending DAG nodes:
+05/06/24 06:30:14   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 06:40:15 42046 seconds since last log event
+05/06/24 06:40:15 Pending DAG nodes:
+05/06/24 06:40:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 06:50:15 42646 seconds since last log event
+05/06/24 06:50:15 Pending DAG nodes:
+05/06/24 06:50:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 07:00:15 43246 seconds since last log event
+05/06/24 07:00:15 Pending DAG nodes:
+05/06/24 07:00:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 07:10:15 43846 seconds since last log event
+05/06/24 07:10:15 Pending DAG nodes:
+05/06/24 07:10:15   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 07:20:16 44447 seconds since last log event
+05/06/24 07:20:16 Pending DAG nodes:
+05/06/24 07:20:16   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 07:30:17 45048 seconds since last log event
+05/06/24 07:30:17 Pending DAG nodes:
+05/06/24 07:30:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 07:40:17 45648 seconds since last log event
+05/06/24 07:40:17 Pending DAG nodes:
+05/06/24 07:40:17   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 07:50:18 46249 seconds since last log event
+05/06/24 07:50:18 Pending DAG nodes:
+05/06/24 07:50:18   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 08:00:19 46850 seconds since last log event
+05/06/24 08:00:19 Pending DAG nodes:
+05/06/24 08:00:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 08:10:19 47450 seconds since last log event
+05/06/24 08:10:19 Pending DAG nodes:
+05/06/24 08:10:19   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 08:20:20 48051 seconds since last log event
+05/06/24 08:20:20 Pending DAG nodes:
+05/06/24 08:20:20   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 08:30:20 48651 seconds since last log event
+05/06/24 08:30:20 Pending DAG nodes:
+05/06/24 08:30:20   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 08:40:20 49251 seconds since last log event
+05/06/24 08:40:20 Pending DAG nodes:
+05/06/24 08:40:20   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 08:50:21 49852 seconds since last log event
+05/06/24 08:50:21 Pending DAG nodes:
+05/06/24 08:50:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 09:00:21 50452 seconds since last log event
+05/06/24 09:00:21 Pending DAG nodes:
+05/06/24 09:00:21   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 09:10:22 51053 seconds since last log event
+05/06/24 09:10:22 Pending DAG nodes:
+05/06/24 09:10:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 09:20:22 51653 seconds since last log event
+05/06/24 09:20:22 Pending DAG nodes:
+05/06/24 09:20:22   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 09:30:23 52254 seconds since last log event
+05/06/24 09:30:23 Pending DAG nodes:
+05/06/24 09:30:23   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 09:40:24 52855 seconds since last log event
+05/06/24 09:40:24 Pending DAG nodes:
+05/06/24 09:40:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 09:50:24 53455 seconds since last log event
+05/06/24 09:50:24 Pending DAG nodes:
+05/06/24 09:50:24   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 10:00:25 54056 seconds since last log event
+05/06/24 10:00:25 Pending DAG nodes:
+05/06/24 10:00:25   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 10:10:26 54657 seconds since last log event
+05/06/24 10:10:26 Pending DAG nodes:
+05/06/24 10:10:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 10:20:26 55257 seconds since last log event
+05/06/24 10:20:26 Pending DAG nodes:
+05/06/24 10:20:26   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 10:30:27 55858 seconds since last log event
+05/06/24 10:30:27 Pending DAG nodes:
+05/06/24 10:30:27   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 10:40:27 56458 seconds since last log event
+05/06/24 10:40:27 Pending DAG nodes:
+05/06/24 10:40:27   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 10:50:28 57059 seconds since last log event
+05/06/24 10:50:28 Pending DAG nodes:
+05/06/24 10:50:28   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 11:00:29 57660 seconds since last log event
+05/06/24 11:00:29 Pending DAG nodes:
+05/06/24 11:00:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 11:10:29 58260 seconds since last log event
+05/06/24 11:10:29 Pending DAG nodes:
+05/06/24 11:10:29   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 11:20:30 58861 seconds since last log event
+05/06/24 11:20:30 Pending DAG nodes:
+05/06/24 11:20:30   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 11:30:31 59462 seconds since last log event
+05/06/24 11:30:31 Pending DAG nodes:
+05/06/24 11:30:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 11:35:31 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/06/24 11:35:31 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/06/24 11:40:31 60062 seconds since last log event
+05/06/24 11:40:31 Pending DAG nodes:
+05/06/24 11:40:31   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 11:50:32 60663 seconds since last log event
+05/06/24 11:50:32 Pending DAG nodes:
+05/06/24 11:50:32   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 12:00:33 61264 seconds since last log event
+05/06/24 12:00:33 Pending DAG nodes:
+05/06/24 12:00:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 12:10:33 61864 seconds since last log event
+05/06/24 12:10:33 Pending DAG nodes:
+05/06/24 12:10:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 12:20:33 62464 seconds since last log event
+05/06/24 12:20:33 Pending DAG nodes:
+05/06/24 12:20:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 12:30:33 63064 seconds since last log event
+05/06/24 12:30:33 Pending DAG nodes:
+05/06/24 12:30:33   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 12:40:34 63665 seconds since last log event
+05/06/24 12:40:34 Pending DAG nodes:
+05/06/24 12:40:34   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 12:50:35 64266 seconds since last log event
+05/06/24 12:50:35 Pending DAG nodes:
+05/06/24 12:50:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 13:00:35 64866 seconds since last log event
+05/06/24 13:00:35 Pending DAG nodes:
+05/06/24 13:00:35   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0, HTCondor ID 140446571, status STATUS_SUBMITTED
+05/06/24 13:07:21 Currently monitoring 1 HTCondor log file(s)
+05/06/24 13:07:21 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 (140446571.0.0) {05/06/24 13:07:19}
+05/06/24 13:07:21 Number of idle job procs: 0
+05/06/24 13:07:21 Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 job proc (140446571.0.0) completed successfully.
+05/06/24 13:07:21 Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 job completed
+05/06/24 13:07:21 DAG status: 0 (DAG_STATUS_OK)
+05/06/24 13:07:21 Of 5 nodes total:
+05/06/24 13:07:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 13:07:21   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 13:07:21     2       0        0       0       3          0        0        0
+05/06/24 13:07:21 0 job proc(s) currently held
+05/06/24 13:07:21 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02550797159964311; EventCycleTimeCount = 52602.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.383181214407656; EventCycleTimeSum = 1341.770322084427; LogProcessCycleTimeAvg = 0.0002944902940229936; LogProcessCycleTimeCount = 11.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001837232846705116; LogProcessCycleTimeSum = 0.00323939323425293; SleepCycleTimeAvg = 5.014824478804197; SleepCycleTimeCount = 52602.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.34162385986924; SleepCycleTimeSum = 263789.7972340584; SubmitCycleTimeAvg = 0.0001771047383055629; SubmitCycleTimeCount = 52603.0; SubmitCycleTimeMax = 0.2032160758972168; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.001799454248074279; SubmitCycleTimeSum = 9.316240549087524; ]
+05/06/24 13:07:26 Submitting HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 job(s)...
+05/06/24 13:07:26 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log
+05/06/24 13:07:26 Masking the events recorded in the DAGMAN workflow log
+05/06/24 13:07:26 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/06/24 13:07:26 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 -a My.DAGManJobId=140446466 -a DAGManJobId=140446466 -batch-name bbh.dag+140446466 -batch-id 140446466.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 -a dagman_log=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 -a label=bbh_mass_two_component_primary_mass_ratio_variable_qmin_redshift_powerlaw DAG_STATUS=0 FAILED_COUNT=0 -a notification=never My.DAGParentNodeNames="/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0" /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot.sub
+05/06/24 13:07:26 From submit: Submitting job(s).
+05/06/24 13:07:26 From submit: 1 job(s) submitted to cluster 140488794.
+05/06/24 13:07:26 	assigned HTCondor ID (140488794.0.0)
+05/06/24 13:07:26 Submitting HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 job(s)...
+05/06/24 13:07:26 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log
+05/06/24 13:07:26 Masking the events recorded in the DAGMAN workflow log
+05/06/24 13:07:26 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/06/24 13:07:26 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 -a My.DAGManJobId=140446466 -a DAGManJobId=140446466 -batch-name bbh.dag+140446466 -batch-id 140446466.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 -a dagman_log=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 DAG_STATUS=0 FAILED_COUNT=0 -a notification=never My.DAGParentNodeNames="/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0" /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary.sub
+05/06/24 13:07:26 From submit: Submitting job(s).
+05/06/24 13:07:26 From submit: 1 job(s) submitted to cluster 140488795.
+05/06/24 13:07:26 	assigned HTCondor ID (140488795.0.0)
+05/06/24 13:07:26 Submitting HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 job(s)...
+05/06/24 13:07:26 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log
+05/06/24 13:07:26 Masking the events recorded in the DAGMAN workflow log
+05/06/24 13:07:26 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/06/24 13:07:26 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 -a My.DAGManJobId=140446466 -a DAGManJobId=140446466 -batch-name bbh.dag+140446466 -batch-id 140446466.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 -a dagman_log=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 -a label=bbh_mass_two_component_primary_mass_ratio_variable_qmin_redshift_powerlaw DAG_STATUS=0 FAILED_COUNT=0 -a notification=never My.DAGParentNodeNames="/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0" /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format.sub
+05/06/24 13:07:26 From submit: Submitting job(s).
+05/06/24 13:07:26 From submit: 1 job(s) submitted to cluster 140488796.
+05/06/24 13:07:26 	assigned HTCondor ID (140488796.0.0)
+05/06/24 13:07:26 Just submitted 3 jobs this cycle...
+05/06/24 13:07:26 DAG status: 0 (DAG_STATUS_OK)
+05/06/24 13:07:26 Of 5 nodes total:
+05/06/24 13:07:26  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 13:07:26   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 13:07:26     2       0        3       0       0          0        0        0
+05/06/24 13:07:26 0 job proc(s) currently held
+05/06/24 13:07:26 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0255075044564697; EventCycleTimeCount = 52603.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.383139551882609; EventCycleTimeSum = 1341.771256923676; LogProcessCycleTimeAvg = 0.0002944902940229936; LogProcessCycleTimeCount = 11.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001837232846705116; LogProcessCycleTimeSum = 0.00323939323425293; SleepCycleTimeAvg = 5.01482429329534; SleepCycleTimeCount = 52603.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.341601602214368; SleepCycleTimeSum = 263794.8023002148; SubmitCycleTimeAvg = 0.0001820544173677433; SubmitCycleTimeCount = 52604.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002127612843625536; SubmitCycleTimeSum = 9.576790571212769; ]
+05/06/24 13:07:31 Currently monitoring 1 HTCondor log file(s)
+05/06/24 13:07:31 Reassigning the id of job /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 from (140488794.0.0) to (140488794.0.0)
+05/06/24 13:07:31 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 (140488794.0.0) {05/06/24 13:07:26}
+05/06/24 13:07:31 Number of idle job procs: 1
+05/06/24 13:07:31 Reassigning the id of job /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 from (140488795.0.0) to (140488795.0.0)
+05/06/24 13:07:31 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 (140488795.0.0) {05/06/24 13:07:26}
+05/06/24 13:07:31 Number of idle job procs: 2
+05/06/24 13:07:31 Reassigning the id of job /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 from (140488796.0.0) to (140488796.0.0)
+05/06/24 13:07:31 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 (140488796.0.0) {05/06/24 13:07:26}
+05/06/24 13:07:31 Number of idle job procs: 3
+05/06/24 13:08:11 Currently monitoring 1 HTCondor log file(s)
+05/06/24 13:08:11 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 (140488796.0.0) {05/06/24 13:08:06}
+05/06/24 13:08:11   Hold reason: Disk usage 275000 > Disk requested 204800.
+05/06/24 13:08:11 Number of idle job procs: 3
+05/06/24 13:08:11 DAG status: 0 (DAG_STATUS_OK)
+05/06/24 13:08:11 Of 5 nodes total:
+05/06/24 13:08:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 13:08:11   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 13:08:11     2       0        3       0       0          0        0        0
+05/06/24 13:08:11 1 job proc(s) currently held
+05/06/24 13:08:11 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02550810778502647; EventCycleTimeCount = 52612.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.382764761993159; EventCycleTimeSum = 1342.032566785812; LogProcessCycleTimeAvg = 0.0002867808708777794; LogProcessCycleTimeCount = 13.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001714100489685789; LogProcessCycleTimeSum = 0.003728151321411133; SleepCycleTimeAvg = 5.014822640469217; SleepCycleTimeCount = 52612.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.341401311810306; SleepCycleTimeSum = 263839.8487603664; SubmitCycleTimeAvg = 0.0001820269048428075; SubmitCycleTimeCount = 52613.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002127431897628371; SubmitCycleTimeSum = 9.576981544494629; ]
+05/06/24 13:09:06 Currently monitoring 1 HTCondor log file(s)
+05/06/24 13:09:06 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 (140488795.0.0) {05/06/24 13:09:02}
+05/06/24 13:09:06 Number of idle job procs: 2
+05/06/24 13:09:06 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 (140488794.0.0) {05/06/24 13:09:04}
+05/06/24 13:09:06 Number of idle job procs: 1
+05/06/24 13:09:36 Currently monitoring 1 HTCondor log file(s)
+05/06/24 13:09:36 Event: ULOG_SHADOW_EXCEPTION for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 (140488795.0.0) {05/06/24 13:09:34}
+05/06/24 13:09:36 Number of idle job procs: 2
+05/06/24 13:09:36 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 (140488795.0.0) {05/06/24 13:09:34}
+05/06/24 13:09:36   Hold reason: Error from slot1_17@node2283.cluster.ldas.cit: Job has gone over cgroup memory limit of 1024 megabytes. Peak usage: 1024 megabytes.  Consider resubmitting with a higher request_memory.
+05/06/24 13:09:36 Number of idle job procs: 2
+05/06/24 13:09:36 DAG status: 0 (DAG_STATUS_OK)
+05/06/24 13:09:36 Of 5 nodes total:
+05/06/24 13:09:36  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 13:09:36   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 13:09:36     2       0        3       0       0          0        0        0
+05/06/24 13:09:36 2 job proc(s) currently held
+05/06/24 13:09:36 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02549990486628915; EventCycleTimeCount = 52629.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.382056863938343; EventCycleTimeSum = 1342.034493207932; LogProcessCycleTimeAvg = 0.0002722263336181641; LogProcessCycleTimeCount = 15.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001634439960971379; LogProcessCycleTimeSum = 0.004083395004272461; SleepCycleTimeAvg = 5.014819356263489; SleepCycleTimeCount = 52629.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.34102312644617; SleepCycleTimeSum = 263924.9279007912; SubmitCycleTimeAvg = 0.0001819889332073486; SubmitCycleTimeCount = 52630.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002127090441332604; SubmitCycleTimeSum = 9.578077554702759; ]
+05/06/24 13:19:37 601 seconds since last log event
+05/06/24 13:19:37 Pending DAG nodes:
+05/06/24 13:19:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 13:19:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 13:19:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0, HTCondor ID 140488794, status STATUS_SUBMITTED
+05/06/24 13:29:37 1201 seconds since last log event
+05/06/24 13:29:37 Pending DAG nodes:
+05/06/24 13:29:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 13:29:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 13:29:37   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0, HTCondor ID 140488794, status STATUS_SUBMITTED
+05/06/24 13:33:38 Currently monitoring 1 HTCondor log file(s)
+05/06/24 13:33:38 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 (140488794.0.0) {05/06/24 13:33:33}
+05/06/24 13:33:38 Number of idle job procs: 2
+05/06/24 13:33:38 Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 job proc (140488794.0.0) completed successfully.
+05/06/24 13:33:38 Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0 job completed
+05/06/24 13:33:38 DAG status: 0 (DAG_STATUS_OK)
+05/06/24 13:33:38 Of 5 nodes total:
+05/06/24 13:33:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 13:33:38   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 13:33:38     3       0        2       0       0          0        0        0
+05/06/24 13:33:38 2 job proc(s) currently held
+05/06/24 13:33:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02536204055109079; EventCycleTimeCount = 52917.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.370116125995434; EventCycleTimeSum = 1342.083099842072; LogProcessCycleTimeAvg = 0.0002729594707489014; LogProcessCycleTimeCount = 16.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001579291308689668; LogProcessCycleTimeSum = 0.004367351531982422; SleepCycleTimeAvg = 5.014766032358262; SleepCycleTimeCount = 52917.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.33464393371229; SleepCycleTimeSum = 265366.3741343021; SubmitCycleTimeAvg = 0.0001814223240506663; SubmitCycleTimeCount = 52918.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002121334987841682; SubmitCycleTimeSum = 9.600506544113159; ]
+05/06/24 13:43:38 600 seconds since last log event
+05/06/24 13:43:38 Pending DAG nodes:
+05/06/24 13:43:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 13:43:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 13:53:38 1200 seconds since last log event
+05/06/24 13:53:38 Pending DAG nodes:
+05/06/24 13:53:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 13:53:38   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 14:03:39 1801 seconds since last log event
+05/06/24 14:03:39 Pending DAG nodes:
+05/06/24 14:03:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 14:03:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 14:13:39 2401 seconds since last log event
+05/06/24 14:13:39 Pending DAG nodes:
+05/06/24 14:13:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 14:13:39   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 14:23:40 3002 seconds since last log event
+05/06/24 14:23:40 Pending DAG nodes:
+05/06/24 14:23:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 14:23:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 14:33:40 3602 seconds since last log event
+05/06/24 14:33:40 Pending DAG nodes:
+05/06/24 14:33:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 14:33:40   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 14:43:41 4203 seconds since last log event
+05/06/24 14:43:41 Pending DAG nodes:
+05/06/24 14:43:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 14:43:41   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 14:53:42 4804 seconds since last log event
+05/06/24 14:53:42 Pending DAG nodes:
+05/06/24 14:53:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 14:53:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 15:03:42 5404 seconds since last log event
+05/06/24 15:03:42 Pending DAG nodes:
+05/06/24 15:03:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 15:03:42   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 15:13:43 6005 seconds since last log event
+05/06/24 15:13:43 Pending DAG nodes:
+05/06/24 15:13:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 15:13:43   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 15:23:44 6606 seconds since last log event
+05/06/24 15:23:44 Pending DAG nodes:
+05/06/24 15:23:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 15:23:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 15:33:44 7206 seconds since last log event
+05/06/24 15:33:44 Pending DAG nodes:
+05/06/24 15:33:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 15:33:44   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 15:43:45 7807 seconds since last log event
+05/06/24 15:43:45 Pending DAG nodes:
+05/06/24 15:43:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 15:43:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 15:53:45 8407 seconds since last log event
+05/06/24 15:53:45 Pending DAG nodes:
+05/06/24 15:53:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 15:53:45   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 16:03:46 9008 seconds since last log event
+05/06/24 16:03:46 Pending DAG nodes:
+05/06/24 16:03:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 16:03:46   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 16:13:47 9609 seconds since last log event
+05/06/24 16:13:47 Pending DAG nodes:
+05/06/24 16:13:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 16:13:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 16:23:47 10209 seconds since last log event
+05/06/24 16:23:47 Pending DAG nodes:
+05/06/24 16:23:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 16:23:47   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 16:33:48 10810 seconds since last log event
+05/06/24 16:33:48 Pending DAG nodes:
+05/06/24 16:33:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 16:33:48   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 16:43:49 11411 seconds since last log event
+05/06/24 16:43:49 Pending DAG nodes:
+05/06/24 16:43:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 16:43:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 16:53:49 12011 seconds since last log event
+05/06/24 16:53:49 Pending DAG nodes:
+05/06/24 16:53:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 16:53:49   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 17:03:50 12612 seconds since last log event
+05/06/24 17:03:50 Pending DAG nodes:
+05/06/24 17:03:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 17:03:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 17:13:50 13212 seconds since last log event
+05/06/24 17:13:50 Pending DAG nodes:
+05/06/24 17:13:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 17:13:50   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 17:23:51 13813 seconds since last log event
+05/06/24 17:23:51 Pending DAG nodes:
+05/06/24 17:23:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 17:23:51   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 17:33:52 14414 seconds since last log event
+05/06/24 17:33:52 Pending DAG nodes:
+05/06/24 17:33:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 17:33:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 17:43:52 15014 seconds since last log event
+05/06/24 17:43:52 Pending DAG nodes:
+05/06/24 17:43:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 17:43:52   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 17:53:53 15615 seconds since last log event
+05/06/24 17:53:53 Pending DAG nodes:
+05/06/24 17:53:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 17:53:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 18:03:53 16215 seconds since last log event
+05/06/24 18:03:53 Pending DAG nodes:
+05/06/24 18:03:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 18:03:53   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 18:13:54 16816 seconds since last log event
+05/06/24 18:13:54 Pending DAG nodes:
+05/06/24 18:13:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 18:13:54   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 18:23:55 17417 seconds since last log event
+05/06/24 18:23:55 Pending DAG nodes:
+05/06/24 18:23:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 18:23:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 18:33:55 18017 seconds since last log event
+05/06/24 18:33:55 Pending DAG nodes:
+05/06/24 18:33:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 18:33:55   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 18:43:56 18618 seconds since last log event
+05/06/24 18:43:56 Pending DAG nodes:
+05/06/24 18:43:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 18:43:56   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 18:53:57 19219 seconds since last log event
+05/06/24 18:53:57 Pending DAG nodes:
+05/06/24 18:53:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 18:53:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 19:03:57 19819 seconds since last log event
+05/06/24 19:03:57 Pending DAG nodes:
+05/06/24 19:03:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 19:03:57   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 19:13:58 20420 seconds since last log event
+05/06/24 19:13:58 Pending DAG nodes:
+05/06/24 19:13:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 19:13:58   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 19:23:59 21021 seconds since last log event
+05/06/24 19:23:59 Pending DAG nodes:
+05/06/24 19:23:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 19:23:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 19:33:59 21621 seconds since last log event
+05/06/24 19:33:59 Pending DAG nodes:
+05/06/24 19:33:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0, HTCondor ID 140488796, status STATUS_SUBMITTED
+05/06/24 19:33:59   Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0, HTCondor ID 140488795, status STATUS_SUBMITTED
+05/06/24 19:40:40 Currently monitoring 1 HTCondor log file(s)
+05/06/24 19:40:40 Event: ULOG_JOB_ABORTED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0 (140488795.0.0) {05/06/24 19:40:39}
+05/06/24 19:40:40 Number of idle job procs: 1
+05/06/24 19:40:40 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/06/24 19:40:40 Of 5 nodes total:
+05/06/24 19:40:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 19:40:40   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 19:40:40     3       0        1       0       0          0        1        0
+05/06/24 19:40:40 1 job proc(s) currently held
+05/06/24 19:40:40 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02343759212373766; EventCycleTimeCount = 57317.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.199031202303921; EventCycleTimeSum = 1343.372467756271; LogProcessCycleTimeAvg = 0.0002856675316305722; LogProcessCycleTimeCount = 17.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001616421093706442; LogProcessCycleTimeSum = 0.004856348037719727; SleepCycleTimeAvg = 5.013999469989422; SleepCycleTimeCount = 57317.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.24324797235449; SleepCycleTimeSum = 287387.4076213837; SubmitCycleTimeAvg = 0.0001772597253794713; SubmitCycleTimeCount = 57318.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002054521636530835; SubmitCycleTimeSum = 10.16017293930054; ]
+05/06/24 19:40:55 Currently monitoring 1 HTCondor log file(s)
+05/06/24 19:40:55 Event: ULOG_JOB_ABORTED for HTCondor Node /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0 (140488796.0.0) {05/06/24 19:40:51}
+05/06/24 19:40:55 Number of idle job procs: 0
+05/06/24 19:40:55 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/06/24 19:40:55 Of 5 nodes total:
+05/06/24 19:40:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 19:40:55   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 19:40:55     3       0        0       0       0          0        2        0
+05/06/24 19:40:55 0 job proc(s) currently held
+05/06/24 19:40:55 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02343638490648928; EventCycleTimeCount = 57320.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.198921318336311; EventCycleTimeSum = 1343.373582839966; LogProcessCycleTimeAvg = 0.0002794663111368815; LogProcessCycleTimeCount = 18.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001590075869158709; LogProcessCycleTimeSum = 0.005030393600463867; SleepCycleTimeAvg = 5.01399900208215; SleepCycleTimeCount = 57320.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.243189268215466; SleepCycleTimeSum = 287402.4227993488; SubmitCycleTimeAvg = 0.0001772570989795803; SubmitCycleTimeCount = 57321.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002054468214479301; SubmitCycleTimeSum = 10.16055417060852; ]
+05/06/24 19:40:55 ERROR: the following job(s) failed:
+05/06/24 19:40:55 ---------------------- Job ----------------------
+05/06/24 19:40:55       Node Name: /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0
+05/06/24 19:40:55            Noop: false
+05/06/24 19:40:55          NodeID: 2
+05/06/24 19:40:55     Node Status: STATUS_ERROR    
+05/06/24 19:40:55 Node return val: -1002
+05/06/24 19:40:55           Error: HTCondor reported ULOG_JOB_ABORTED event for job proc (140488796.0.0)
+05/06/24 19:40:55 Job Submit File: /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format.sub
+05/06/24 19:40:55  HTCondor Job ID: (140488796.0.0)
+05/06/24 19:40:55 PARENTS: /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 WAITING: 0 CHILDREN: 
+05/06/24 19:40:55 ---------------------- Job ----------------------
+05/06/24 19:40:55       Node Name: /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0
+05/06/24 19:40:55            Noop: false
+05/06/24 19:40:55          NodeID: 3
+05/06/24 19:40:55     Node Status: STATUS_ERROR    
+05/06/24 19:40:55 Node return val: -1002
+05/06/24 19:40:55           Error: HTCondor reported ULOG_JOB_ABORTED event for job proc (140488795.0.0)
+05/06/24 19:40:55 Job Submit File: /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary.sub
+05/06/24 19:40:55  HTCondor Job ID: (140488795.0.0)
+05/06/24 19:40:55 PARENTS: /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0 WAITING: 0 CHILDREN: 
+05/06/24 19:40:55 ---------------------------------------	<END>
+05/06/24 19:40:55 Aborting DAG...
+05/06/24 19:40:55 Writing Rescue DAG to /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.rescue001...
+05/06/24 19:40:55 Removing submitted jobs...
+05/06/24 19:40:55 Removing any/all submitted HTCondor jobs...
+05/06/24 19:40:55 Running: /usr/bin/condor_rm -const DAGManJobId==140446466 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+05/06/24 19:40:55 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+05/06/24 19:40:55 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+05/06/24 19:40:55 Note: 0 total job deferrals because of node category throttles
+05/06/24 19:40:55 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+05/06/24 19:40:55 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+05/06/24 19:40:55 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+05/06/24 19:40:55 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/06/24 19:40:55 Of 5 nodes total:
+05/06/24 19:40:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/06/24 19:40:55   ===     ===      ===     ===     ===        ===      ===      ===
+05/06/24 19:40:55     3       0        0       0       0          0        2        0
+05/06/24 19:40:55 0 job proc(s) currently held
+05/06/24 19:40:55 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02343638490648928; EventCycleTimeCount = 57320.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.198921318336311; EventCycleTimeSum = 1343.373582839966; LogProcessCycleTimeAvg = 0.0002794663111368815; LogProcessCycleTimeCount = 18.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001590075869158709; LogProcessCycleTimeSum = 0.005030393600463867; SleepCycleTimeAvg = 5.01399900208215; SleepCycleTimeCount = 57320.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.243189268215466; SleepCycleTimeSum = 287402.4227993488; SubmitCycleTimeAvg = 0.0001772570989795803; SubmitCycleTimeCount = 57321.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002054468214479301; SubmitCycleTimeSum = 10.16055417060852; ]
+05/06/24 19:40:55 Wrote metrics file /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag.metrics.
+05/06/24 19:40:55 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.02343638490648928; EventCycleTimeCount = 57320.0; EventCycleTimeMax = 976.6830699443817; EventCycleTimeMin = 8.821487426757812E-06; EventCycleTimeStd = 4.198921318336311; EventCycleTimeSum = 1343.373582839966; LogProcessCycleTimeAvg = 0.0002794663111368815; LogProcessCycleTimeCount = 18.0; LogProcessCycleTimeMax = 0.0007150173187255859; LogProcessCycleTimeMin = 9.083747863769531E-05; LogProcessCycleTimeStd = 0.0001590075869158709; LogProcessCycleTimeSum = 0.005030393600463867; SleepCycleTimeAvg = 5.01399900208215; SleepCycleTimeCount = 57320.0; SleepCycleTimeMax = 542.0393750667572; SleepCycleTimeMin = 4.002597093582153; SleepCycleTimeStd = 2.243189268215466; SleepCycleTimeSum = 287402.4227993488; SubmitCycleTimeAvg = 0.0001772570989795803; SubmitCycleTimeCount = 57321.0; SubmitCycleTimeMax = 0.2605500221252441; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002054468214479301; SubmitCycleTimeSum = 10.16055417060852; ]
+05/06/24 19:40:55 **** condor_scheduniv_exec.140446466.0 (condor_DAGMAN) pid 3062273 EXITING WITH STATUS 1

@@ -1,0 +1,222 @@
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+12:48 bilby INFO    : Loaded 158 posteriors
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_2365160/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
+    model = load_model(args)
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
+    _model = getattr(import_module(module), function)
+AttributeError: module 'variable_qmin' has no attribute 'parabola_m2min_allgammazeta'
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+14:56 bilby INFO    : Loaded 158 posteriors
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_3128115/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
+    model = load_model(args)
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
+    _model = getattr(import_module(module), function)
+AttributeError: module 'variable_qmin' has no attribute 'parabola_m2min_allgammazeta'
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_482884/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
+    set_backend(args.backend)
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/backend.py", line 112, in set_backend
+    xp, scs = _load_numpy_and_scipy(backend)
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/backend.py", line 82, in _load_numpy_and_scipy
+    xp = import_module(_np_module[backend])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/__init__.py", line 37, in <module>
+    import jax.core as _core
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/core.py", line 18, in <module>
+    from jax._src.core import (
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/core.py", line 39, in <module>
+    from jax._src import dtypes
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/dtypes.py", line 33, in <module>
+    from jax._src import config
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/config.py", line 27, in <module>
+    from jax._src import lib
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/jax/_src/lib/__init__.py", line 84, in <module>
+    cpu_feature_guard.check_cpu_features()
+RuntimeError: This version of jaxlib was built using AVX instructions, which your CPU and/or operating system do not support. You may be able work around this issue by building jaxlib from source.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+09:00 bilby INFO    : Loaded 158 posteriors
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_483247/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
+    model = load_model(args)
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
+    _model = getattr(import_module(module), function)
+AttributeError: module 'variable_qmin.variable_qmin' has no attribute 'parabola_m2min_allgammazeta'
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+09:13 bilby INFO    : Loaded 158 posteriors
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_483318/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
+    model = load_model(args)
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
+    model = cls([_load_model(model, args) for model in args.models.values()])
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
+    _model = getattr(import_module(module), function)
+AttributeError: module 'variable_qmin.variable_qmin' has no attribute 'parabola_m2min_allgammazeta'
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+09:25 bilby INFO    : Loaded 158 posteriors
+09:25 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+09:25 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:25 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:25 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+09:25 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:25 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:25 bilby INFO    : Loading VT data from O4a_parabolam2min_nlive500_allgammazeta/data/injections.pkl.
+09:25 bilby INFO    : Identified keys: gaussian_mass_maximum, beta, alpha, sigpp, lam, mpp, zeta, mmin, mmax, gamma, lamb
+Traceback (most recent call last):
+  File "/local/condor/execute/dir_483497/gwpopulation_pipe_analysis", line 8, in <module>
+    sys.exit(main())
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 462, in main
+    likelihood.log_likelihood_ratio()
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/hyperpe.py", line 143, in log_likelihood_ratio
+    ln_l, variance = self.ln_likelihood_and_variance()
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/hyperpe.py", line 133, in ln_likelihood_and_variance
+    ln_bayes_factors, variances = self._compute_per_event_ln_bayes_factors()
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/hyperpe.py", line 160, in _compute_per_event_ln_bayes_factors
+    weights = self.hyper_prior.prob(self.data) / self.sampling_prior
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/bilby/hyper/model.py", line 50, in prob
+    function_parameters = self._get_function_parameters(function)
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/bilby/hyper/model.py", line 75, in _get_function_parameters
+    parameters = {key: self.parameters[key] for key in param_keys}
+  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/bilby/hyper/model.py", line 75, in <dictcomp>
+    parameters = {key: self.parameters[key] for key in param_keys}
+KeyError: 'alpha'
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+09:29 bilby INFO    : Loaded 158 posteriors
+09:29 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+09:29 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:29 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:29 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+09:29 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:29 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:29 bilby INFO    : Loading VT data from O4a_parabolam2min_nlive500_allgammazeta/data/injections.pkl.
+09:29 bilby INFO    : Identified keys: zeta, alpha, mmax, mpp, beta, gamma, gaussian_mass_maximum, lam, sigpp, mmin, lamb
+09:30 bilby INFO    : Running for label 'bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw', output will be saved to 'O4a_parabolam2min_nlive500_allgammazeta/result'
+09:30 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+09:30 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+09:30 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+09:30 bilby INFO    : Analysis priors:
+09:30 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+09:30 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+09:30 bilby INFO    : gamma=Uniform(minimum=-1, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+09:30 bilby INFO    : zeta=Uniform(minimum=-0.017094017094, maximum=0.017094017094, name='zeta', latex_label='$\\zeta_{q}$', unit=None, boundary=None)
+09:30 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+09:30 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+09:30 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+09:30 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+09:30 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+09:30 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+09:30 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:30 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:30 bilby INFO    : gaussian_mass_maximum=100.0
+09:30 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+09:30 bilby INFO    : Analysis likelihood noise evidence: nan
+09:30 bilby INFO    : Single likelihood evaluation took 4.596e-02 s
+09:30 bilby WARNING : Supplied argument 'nact' not an argument of 'Nestle', removing.
+09:30 bilby INFO    : Using sampler Nestle with kwargs {'method': 'multi', 'npoints': 500, 'update_interval': None, 'npdim': None, 'maxiter': None, 'maxcall': None, 'dlogz': None, 'decline_factor': None, 'rstate': None, 'callback': <function print_progress at 0x154e65f6e3b0>, 'steps': 5, 'enlarge': 1.2}
+10:35 bilby INFO    : Sampling time: 1:05:14.567316
+10:35 bilby INFO    : Summary of results:
+nsamples: 24354
+ln_noise_evidence:    nan
+ln_evidence:    nan +/-  0.295
+ln_bayes_factor: -640.350 +/-  0.295
+
+10:35 bilby INFO    : Computing rate posterior
+10:39 bilby INFO    : Computing n effectives
+10:39 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
+10:39 bilby INFO    : Generating extra statistics
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+11:30 bilby INFO    : Loaded 158 posteriors
+11:30 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+11:30 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+11:30 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+11:30 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+11:30 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+11:30 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+11:30 bilby INFO    : Loading VT data from O4a_parabolam2min_nlive500_allgammazeta/data/injections.pkl.
+11:30 bilby INFO    : Identified keys: mmin, mpp, gaussian_mass_maximum, lam, zeta, alpha, sigpp, beta, gamma, mmax, lamb
+11:30 bilby INFO    : Running for label 'bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw', output will be saved to 'O4a_parabolam2min_nlive500_allgammazeta/result'
+11:30 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+11:30 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+11:30 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+11:30 bilby INFO    : Analysis priors:
+11:30 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+11:30 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+11:30 bilby INFO    : gamma=Uniform(minimum=-1, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+11:30 bilby INFO    : zeta=Uniform(minimum=-0.017094017094, maximum=0.017094017094, name='zeta', latex_label='$\\zeta_{q}$', unit=None, boundary=None)
+11:30 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+11:30 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+11:30 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+11:30 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+11:30 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+11:30 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+11:30 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+11:30 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+11:30 bilby INFO    : gaussian_mass_maximum=100.0
+11:30 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+11:30 bilby INFO    : Analysis likelihood noise evidence: nan
+11:31 bilby INFO    : Single likelihood evaluation took 4.597e-02 s
+11:31 bilby WARNING : Supplied argument 'nact' not an argument of 'Nestle', removing.
+11:31 bilby INFO    : Using sampler Nestle with kwargs {'method': 'multi', 'npoints': 500, 'update_interval': None, 'npdim': None, 'maxiter': None, 'maxcall': None, 'dlogz': None, 'decline_factor': None, 'rstate': None, 'callback': <function print_progress at 0x146d661ea3b0>, 'steps': 5, 'enlarge': 1.2}
+12:21 bilby INFO    : Sampling time: 0:50:00.707466
+12:21 bilby INFO    : Summary of results:
+nsamples: 20822
+ln_noise_evidence:    nan
+ln_evidence:    nan +/-  0.269
+ln_bayes_factor: -631.855 +/-  0.269
+
+12:21 bilby INFO    : Computing rate posterior
+12:25 bilby INFO    : Computing n effectives
+12:25 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
+12:25 bilby INFO    : Generating extra statistics
+12:36 bilby INFO    : Resampling single event posteriors
+  0%|          | 0/20822 [00:00<?, ?it/s]  0%|          | 1/20822 [00:01<6:00:59,  1.04s/it]  1%|          | 156/20822 [00:01<01:49, 187.98it/s]  1%|▏         | 312/20822 [00:01<00:52, 389.63it/s]  2%|▏         | 468/20822 [00:01<00:34, 592.56it/s]  3%|▎         | 625/20822 [00:01<00:25, 786.20it/s]  4%|▍         | 783/20822 [00:01<00:20, 960.73it/s]  5%|▍         | 941/20822 [00:01<00:17, 1108.33it/s]  5%|▌         | 1098/20822 [00:01<00:16, 1225.72it/s]  6%|▌         | 1255/20822 [00:01<00:14, 1316.46it/s]  7%|▋         | 1412/20822 [00:01<00:14, 1385.27it/s]  8%|▊         | 1569/20822 [00:02<00:13, 1435.96it/s]  8%|▊         | 1726/20822 [00:02<00:12, 1473.36it/s]  9%|▉         | 1883/20822 [00:02<00:12, 1500.73it/s] 10%|▉         | 2040/20822 [00:02<00:12, 1519.98it/s] 11%|█         | 2197/20822 [00:02<00:12, 1533.60it/s] 11%|█▏        | 2354/20822 [00:02<00:11, 1543.15it/s] 12%|█▏        | 2511/20822 [00:02<00:11, 1549.59it/s] 13%|█▎        | 2668/20822 [00:02<00:11, 1553.31it/s] 14%|█▎        | 2825/20822 [00:02<00:11, 1557.13it/s] 14%|█▍        | 2982/20822 [00:02<00:11, 1559.77it/s] 15%|█▌        | 3139/20822 [00:03<00:11, 1560.75it/s] 16%|█▌        | 3296/20822 [00:03<00:11, 1562.33it/s] 17%|█▋        | 3453/20822 [00:03<00:11, 1563.44it/s] 17%|█▋        | 3610/20822 [00:03<00:11, 1564.29it/s] 18%|█▊        | 3767/20822 [00:03<00:10, 1564.91it/s] 19%|█▉        | 3924/20822 [00:03<00:10, 1565.37it/s] 20%|█▉        | 4081/20822 [00:03<00:10, 1566.08it/s] 20%|██        | 4238/20822 [00:03<00:10, 1565.62it/s] 21%|██        | 4395/20822 [00:03<00:10, 1566.72it/s] 22%|██▏       | 4552/20822 [00:03<00:10, 1566.56it/s] 23%|██▎       | 4709/20822 [00:04<00:10, 1566.24it/s] 23%|██▎       | 4866/20822 [00:04<00:10, 1565.93it/s] 24%|██▍       | 5023/20822 [00:04<00:10, 1566.06it/s] 25%|██▍       | 5180/20822 [00:04<00:09, 1565.71it/s] 26%|██▌       | 5337/20822 [00:04<00:09, 1565.61it/s] 26%|██▋       | 5494/20822 [00:04<00:09, 1565.01it/s] 27%|██▋       | 5651/20822 [00:04<00:09, 1563.89it/s] 28%|██▊       | 5808/20822 [00:04<00:09, 1563.70it/s] 29%|██▊       | 5965/20822 [00:04<00:09, 1565.08it/s] 29%|██▉       | 6122/20822 [00:04<00:09, 1565.67it/s] 30%|███       | 6279/20822 [00:05<00:09, 1564.75it/s] 31%|███       | 6436/20822 [00:05<00:09, 1564.66it/s] 32%|███▏      | 6593/20822 [00:05<00:09, 1565.41it/s] 32%|███▏      | 6750/20822 [00:05<00:08, 1565.11it/s] 33%|███▎      | 6907/20822 [00:05<00:08, 1565.46it/s] 34%|███▍      | 7064/20822 [00:05<00:08, 1565.13it/s] 35%|███▍      | 7221/20822 [00:05<00:08, 1564.12it/s] 35%|███▌      | 7378/20822 [00:05<00:08, 1564.98it/s] 36%|███▌      | 7535/20822 [00:05<00:08, 1565.14it/s] 37%|███▋      | 7692/20822 [00:05<00:08, 1565.71it/s] 38%|███▊      | 7849/20822 [00:06<00:08, 1565.59it/s] 38%|███▊      | 8006/20822 [00:06<00:08, 1565.82it/s] 39%|███▉      | 8163/20822 [00:06<00:08, 1566.17it/s] 40%|███▉      | 8320/20822 [00:06<00:07, 1565.80it/s] 41%|████      | 8477/20822 [00:06<00:07, 1566.44it/s] 41%|████▏     | 8634/20822 [00:06<00:07, 1566.33it/s] 42%|████▏     | 8791/20822 [00:06<00:07, 1565.57it/s] 43%|████▎     | 8948/20822 [00:06<00:07, 1565.72it/s] 44%|████▎     | 9105/20822 [00:06<00:07, 1565.77it/s] 44%|████▍     | 9262/20822 [00:06<00:07, 1566.03it/s] 45%|████▌     | 9419/20822 [00:07<00:07, 1565.12it/s] 46%|████▌     | 9576/20822 [00:07<00:07, 1565.58it/s] 47%|████▋     | 9733/20822 [00:07<00:07, 1565.37it/s] 47%|████▋     | 9890/20822 [00:07<00:06, 1565.62it/s] 48%|████▊     | 10047/20822 [00:07<00:06, 1566.01it/s] 49%|████▉     | 10204/20822 [00:07<00:06, 1566.51it/s] 50%|████▉     | 10361/20822 [00:07<00:06, 1565.45it/s] 51%|█████     | 10518/20822 [00:07<00:06, 1565.84it/s] 51%|█████▏    | 10675/20822 [00:07<00:06, 1566.31it/s] 52%|█████▏    | 10832/20822 [00:07<00:06, 1567.06it/s] 53%|█████▎    | 10990/20822 [00:08<00:06, 1568.64it/s] 54%|█████▎    | 11148/20822 [00:08<00:06, 1569.44it/s] 54%|█████▍    | 11306/20822 [00:08<00:06, 1569.85it/s] 55%|█████▌    | 11464/20822 [00:08<00:05, 1570.95it/s] 56%|█████▌    | 11622/20822 [00:08<00:05, 1571.65it/s] 57%|█████▋    | 11780/20822 [00:08<00:05, 1572.31it/s] 57%|█████▋    | 11938/20822 [00:08<00:05, 1570.52it/s] 58%|█████▊    | 12096/20822 [00:08<00:05, 1557.78it/s] 59%|█████▉    | 12254/20822 [00:08<00:05, 1561.75it/s] 60%|█████▉    | 12412/20822 [00:08<00:05, 1564.93it/s] 60%|██████    | 12570/20822 [00:09<00:05, 1566.68it/s] 61%|██████    | 12728/20822 [00:09<00:05, 1569.27it/s] 62%|██████▏   | 12886/20822 [00:09<00:05, 1571.64it/s] 63%|██████▎   | 13044/20822 [00:09<00:04, 1571.48it/s] 63%|██████▎   | 13202/20822 [00:09<00:04, 1572.42it/s] 64%|██████▍   | 13360/20822 [00:09<00:04, 1572.92it/s] 65%|██████▍   | 13518/20822 [00:09<00:04, 1571.66it/s] 66%|██████▌   | 13676/20822 [00:09<00:04, 1572.55it/s] 66%|██████▋   | 13834/20822 [00:09<00:04, 1573.04it/s] 67%|██████▋   | 13992/20822 [00:09<00:04, 1574.14it/s] 68%|██████▊   | 14150/20822 [00:10<00:04, 1573.56it/s] 69%|██████▊   | 14308/20822 [00:10<00:04, 1573.75it/s] 69%|██████▉   | 14466/20822 [00:10<00:04, 1573.63it/s] 70%|███████   | 14624/20822 [00:10<00:03, 1573.81it/s] 71%|███████   | 14782/20822 [00:10<00:03, 1574.56it/s] 72%|███████▏  | 14940/20822 [00:10<00:03, 1574.49it/s] 73%|███████▎  | 15098/20822 [00:10<00:03, 1573.79it/s] 73%|███████▎  | 15256/20822 [00:10<00:03, 1574.08it/s] 74%|███████▍  | 15414/20822 [00:10<00:03, 1574.50it/s] 75%|███████▍  | 15572/20822 [00:10<00:03, 1574.72it/s] 76%|███████▌  | 15730/20822 [00:11<00:03, 1572.20it/s] 76%|███████▋  | 15888/20822 [00:11<00:03, 1572.86it/s] 77%|███████▋  | 16046/20822 [00:11<00:03, 1572.85it/s] 78%|███████▊  | 16204/20822 [00:11<00:02, 1573.53it/s] 79%|███████▊  | 16362/20822 [00:11<00:02, 1573.50it/s] 79%|███████▉  | 16520/20822 [00:11<00:02, 1573.45it/s] 80%|████████  | 16678/20822 [00:11<00:02, 1572.18it/s] 81%|████████  | 16836/20822 [00:11<00:02, 1573.28it/s] 82%|████████▏ | 16994/20822 [00:11<00:02, 1573.62it/s] 82%|████████▏ | 17152/20822 [00:11<00:02, 1573.12it/s] 83%|████████▎ | 17310/20822 [00:12<00:02, 1573.37it/s] 84%|████████▍ | 17468/20822 [00:12<00:02, 1573.74it/s] 85%|████████▍ | 17626/20822 [00:12<00:02, 1574.11it/s] 85%|████████▌ | 17784/20822 [00:12<00:01, 1574.37it/s] 86%|████████▌ | 17942/20822 [00:12<00:01, 1574.00it/s] 87%|████████▋ | 18100/20822 [00:12<00:01, 1573.31it/s] 88%|████████▊ | 18258/20822 [00:12<00:01, 1575.19it/s] 88%|████████▊ | 18419/20822 [00:12<00:01, 1583.34it/s] 89%|████████▉ | 18580/20822 [00:12<00:01, 1589.68it/s] 90%|█████████ | 18741/20822 [00:12<00:01, 1593.50it/s] 91%|█████████ | 18901/20822 [00:13<00:01, 1595.40it/s] 92%|█████████▏| 19062/20822 [00:13<00:01, 1597.42it/s] 92%|█████████▏| 19223/20822 [00:13<00:00, 1599.34it/s] 93%|█████████▎| 19384/20822 [00:13<00:00, 1599.91it/s] 94%|█████████▍| 19545/20822 [00:13<00:00, 1600.71it/s] 95%|█████████▍| 19706/20822 [00:13<00:00, 1601.51it/s] 95%|█████████▌| 19867/20822 [00:13<00:00, 1601.06it/s] 96%|█████████▌| 20028/20822 [00:13<00:00, 1601.36it/s] 97%|█████████▋| 20189/20822 [00:13<00:00, 1602.17it/s] 98%|█████████▊| 20350/20822 [00:13<00:00, 1602.44it/s] 99%|█████████▊| 20511/20822 [00:14<00:00, 1601.56it/s] 99%|█████████▉| 20672/20822 [00:14<00:00, 1602.17it/s]100%|██████████| 20822/20822 [00:14<00:00, 1457.71it/s]
+12:37 bilby INFO    : Resampling done, sum of weights for events are 0.1 0.2 1.7 0.1 4.1 0.0 0.1 0.1 0.1 0.1 0.0 0.5 0.0 0.4 0.1 0.1 0.0 0.1 0.6 0.2 0.3 0.1 0.0 0.0 0.0 0.3 0.0 0.0 0.1 0.0 0.0 7.5 1.3 0.5 3.5 8.7 0.2 4.9 0.2 0.3 0.4 0.0 0.3 0.5 0.1 0.3 0.4 13.7 14.6 0.7 0.4 0.0 5.3 7.3 11.4 0.0 0.5 9.2 0.1 9.1 0.7 4.7 0.7 3.8 0.1 0.1 0.1 0.2 0.1 9.7 0.1 0.3 0.4 0.1 0.3 0.0 0.5 0.1 1.1 0.1 0.6 0.3 0.1 3.8 1.7 0.0 1.1 0.1 0.0 0.2 0.4 14.2 0.1 0.1 8.5 0.1 0.2 0.1 0.0 0.0 0.1 1.2 0.1 4.1 6.5 200.6 0.2 0.1 0.1 0.1 0.0 0.0 0.0 0.0 0.0 0.2 0.1 7.1 0.2 0.0 0.2 0.2 0.0 0.0 0.3 0.4 0.1 0.0 0.3 0.0 0.5 0.0 0.1 0.8 3.8 0.0 0.0 0.0 4.3 0.5 0.8 0.0 7.9 0.2 0.1 3.4 0.7 0.1 0.1 0.2 0.1 0.2 0.1 9.6 0.0 0.4 0.0 0.2

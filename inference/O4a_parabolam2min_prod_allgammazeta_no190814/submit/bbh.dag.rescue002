@@ -1,0 +1,13 @@
+# Rescue DAG file, created after running
+#   the /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814/submit/bbh.dag DAG file
+# Created 6/14/2024 20:20:26 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 4
+# Nodes premarked DONE: 3
+# Nodes that failed: 1
+#   /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814/submit/common_format:0,<ENDLIST>
+
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814/submit/collection:0
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814/submit/analysis:0
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta_no190814/submit/plot:0

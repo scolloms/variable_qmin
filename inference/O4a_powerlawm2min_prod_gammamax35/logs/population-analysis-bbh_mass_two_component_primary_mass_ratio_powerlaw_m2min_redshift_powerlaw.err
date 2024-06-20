@@ -1,0 +1,370 @@
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+09:31 bilby INFO    : Loaded 158 posteriors
+09:31 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+09:31 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:31 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:31 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+09:31 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:31 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:31 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+09:31 bilby INFO    : Identified keys: gamma, sigpp, mmin, alpha, beta, mpp, gaussian_mass_maximum, lam, mmax, lamb
+09:31 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+09:31 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+09:31 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+09:31 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+09:31 bilby INFO    : Analysis priors:
+09:31 bilby INFO    : alpha=Uniform(minimum=1, maximum=5, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+09:31 bilby INFO    : beta=Uniform(minimum=-2, maximum=4, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+09:31 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+09:31 bilby INFO    : mmax=Uniform(minimum=82, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+09:31 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+09:31 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+09:31 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+09:31 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+09:31 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+09:31 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:31 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:31 bilby INFO    : gaussian_mass_maximum=100.0
+09:31 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+09:31 bilby INFO    : Analysis likelihood noise evidence: nan
+09:31 bilby INFO    : Single likelihood evaluation took 4.551e-02 s
+09:31 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x153de0c7b820>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+09:31 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+09:31 bilby INFO    : Using dynesty version 2.1.2
+09:31 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+09:31 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+09:31 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+09:31 bilby INFO    : Generating initial points from the prior
+14:33 bilby INFO    : Run interrupted by signal 15: checkpoint and exit on 130
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+15:25 bilby INFO    : Loaded 158 posteriors
+15:25 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+15:25 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+15:25 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+15:25 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+15:25 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+15:25 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+15:25 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+15:25 bilby INFO    : Identified keys: alpha, mmin, mpp, mmax, lam, sigpp, gaussian_mass_maximum, beta, gamma, lamb
+15:25 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+15:25 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+15:25 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+15:25 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+15:25 bilby INFO    : Analysis priors:
+15:25 bilby INFO    : alpha=Uniform(minimum=1, maximum=5, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+15:25 bilby INFO    : beta=Uniform(minimum=-2, maximum=4, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+15:25 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+15:25 bilby INFO    : mmax=Uniform(minimum=82, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+15:25 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+15:25 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+15:25 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+15:25 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+15:25 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+15:25 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+15:25 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+15:25 bilby INFO    : gaussian_mass_maximum=100.0
+15:25 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+15:25 bilby INFO    : Analysis likelihood noise evidence: nan
+15:25 bilby INFO    : Single likelihood evaluation took 4.408e-02 s
+15:25 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14ae5b788a30>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+15:25 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+15:25 bilby INFO    : Using dynesty version 2.1.2
+15:25 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+15:25 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+15:25 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+15:25 bilby INFO    : Generating initial points from the prior
+15:25 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+15:25 bilby INFO    : Generating initial points from the prior
+15:25 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+15:25 bilby INFO    : Generating initial points from the prior
+07:33 bilby INFO    : Run interrupted by signal 15: checkpoint and exit on 130
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+08:46 bilby INFO    : Loaded 158 posteriors
+08:46 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+08:46 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:46 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:46 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+08:46 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:46 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:46 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+08:46 bilby INFO    : Identified keys: gaussian_mass_maximum, mpp, sigpp, alpha, mmin, mmax, gamma, lam, beta, lamb
+08:46 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+08:46 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+08:46 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+08:46 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+08:46 bilby INFO    : Analysis priors:
+08:46 bilby INFO    : alpha=Uniform(minimum=1, maximum=5, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+08:46 bilby INFO    : beta=Uniform(minimum=-2, maximum=4, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+08:46 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+08:46 bilby INFO    : mmax=Uniform(minimum=82, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+08:46 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+08:46 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+08:46 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:46 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:46 bilby INFO    : gaussian_mass_maximum=100.0
+08:46 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+08:46 bilby INFO    : Analysis likelihood noise evidence: nan
+08:46 bilby INFO    : Single likelihood evaluation took 4.608e-02 s
+08:46 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x145e88926860>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+08:46 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+08:46 bilby INFO    : Using dynesty version 2.1.2
+08:46 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+08:46 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+08:46 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+08:46 bilby INFO    : Generating initial points from the prior
+08:46 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+08:46 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+07:11 bilby INFO    : Loaded 158 posteriors
+07:11 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+07:11 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+07:11 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+07:11 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+07:11 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+07:11 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+07:11 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+07:11 bilby INFO    : Identified keys: gaussian_mass_maximum, mmin, sigpp, mmax, alpha, mpp, lam, gamma, beta, lamb
+07:11 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+07:11 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+07:11 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+07:11 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+07:12 bilby INFO    : Analysis priors:
+07:12 bilby INFO    : alpha=Uniform(minimum=1, maximum=5, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+07:12 bilby INFO    : beta=Uniform(minimum=-2, maximum=4, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+07:12 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+07:12 bilby INFO    : mmax=Uniform(minimum=82, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+07:12 bilby INFO    : mmin=Uniform(minimum=1.5, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+07:12 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+07:12 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+07:12 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+07:12 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+07:12 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+07:12 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+07:12 bilby INFO    : gaussian_mass_maximum=100.0
+07:12 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+07:12 bilby INFO    : Analysis likelihood noise evidence: nan
+07:12 bilby INFO    : Single likelihood evaluation took 4.569e-02 s
+07:12 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14801488f7f0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+07:12 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+07:12 bilby INFO    : Using dynesty version 2.1.2
+07:12 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+07:12 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+07:12 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+07:12 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+10:47 bilby INFO    : Loaded 158 posteriors
+10:47 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+10:47 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+10:47 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+10:47 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+10:47 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+10:47 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+10:47 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+10:48 bilby INFO    : Identified keys: gamma, mmin, mmax, sigpp, beta, lam, gaussian_mass_maximum, alpha, mpp, lamb
+10:48 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+10:48 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+10:48 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+10:48 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+10:48 bilby INFO    : Analysis priors:
+10:48 bilby INFO    : alpha=Uniform(minimum=1, maximum=5, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+10:48 bilby INFO    : beta=Uniform(minimum=-2, maximum=4, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+10:48 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+10:48 bilby INFO    : mmax=Uniform(minimum=64, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+10:48 bilby INFO    : mmin=Uniform(minimum=1.5, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+10:48 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+10:48 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+10:48 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+10:48 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+10:48 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+10:48 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+10:48 bilby INFO    : gaussian_mass_maximum=100.0
+10:48 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+10:48 bilby INFO    : Analysis likelihood noise evidence: nan
+10:48 bilby INFO    : Single likelihood evaluation took 4.577e-02 s
+10:48 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14b784a8b400>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+10:48 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+10:48 bilby INFO    : Using dynesty version 2.1.2
+10:48 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+10:48 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+10:48 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+10:48 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+13:28 bilby INFO    : Loaded 158 posteriors
+13:28 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+13:28 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+13:28 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+13:28 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+13:28 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+13:28 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+13:28 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+13:28 bilby INFO    : Identified keys: gamma, beta, gaussian_mass_maximum, mmin, mmax, lam, mpp, sigpp, alpha, lamb
+13:28 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+13:28 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+13:28 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+13:28 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+13:28 bilby INFO    : Analysis priors:
+13:28 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+13:28 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+13:28 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+13:28 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+13:28 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+13:28 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+13:28 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+13:28 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+13:28 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+13:28 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+13:28 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+13:28 bilby INFO    : gaussian_mass_maximum=100.0
+13:28 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+13:28 bilby INFO    : Analysis likelihood noise evidence: nan
+13:28 bilby INFO    : Single likelihood evaluation took 4.575e-02 s
+13:28 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x154c5e130b50>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+13:28 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+13:28 bilby INFO    : Using dynesty version 2.1.2
+13:28 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+13:28 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+13:28 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+13:28 bilby INFO    : Generating initial points from the prior
+13:45 bilby INFO    : Run interrupted by signal 15: checkpoint and exit on 130
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+14:33 bilby INFO    : Loaded 158 posteriors
+14:33 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+14:33 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+14:33 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+14:33 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+14:33 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+14:33 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+14:33 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+14:33 bilby INFO    : Identified keys: beta, sigpp, mmin, gamma, gaussian_mass_maximum, lam, mmax, mpp, alpha, lamb
+14:33 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+14:33 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+14:33 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+14:33 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+14:33 bilby INFO    : Analysis priors:
+14:33 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+14:33 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+14:33 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+14:33 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+14:33 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+14:33 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+14:33 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+14:33 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+14:33 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+14:33 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+14:33 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+14:33 bilby INFO    : gaussian_mass_maximum=100.0
+14:33 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+14:33 bilby INFO    : Analysis likelihood noise evidence: nan
+14:33 bilby INFO    : Single likelihood evaluation took 4.613e-02 s
+14:33 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x1459c50dbf70>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+14:33 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:33 bilby INFO    : Using dynesty version 2.1.2
+14:33 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+14:33 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+14:33 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+14:33 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+15:39 bilby INFO    : Loaded 158 posteriors
+15:39 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+15:39 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+15:39 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+15:39 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+15:39 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+15:39 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+15:39 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+15:39 bilby INFO    : Identified keys: lam, gaussian_mass_maximum, alpha, mmax, gamma, sigpp, mpp, mmin, beta, lamb
+15:39 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+15:39 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+15:39 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+15:39 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+15:39 bilby INFO    : Analysis priors:
+15:39 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+15:39 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+15:39 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+15:39 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+15:39 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+15:39 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+15:39 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+15:39 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+15:39 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+15:39 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+15:39 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+15:39 bilby INFO    : gaussian_mass_maximum=100.0
+15:39 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+15:39 bilby INFO    : Analysis likelihood noise evidence: nan
+15:39 bilby INFO    : Single likelihood evaluation took 4.624e-02 s
+15:39 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14f617a3d5a0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+15:39 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+15:39 bilby INFO    : Using dynesty version 2.1.2
+15:39 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+15:39 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+15:39 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+15:39 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+17:02 bilby INFO    : Loaded 158 posteriors
+17:02 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+17:02 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+17:02 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+17:02 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
+17:02 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+17:02 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+17:02 bilby INFO    : Loading VT data from O4a_powerlawm2min_prod_gammamax35/data/injections.pkl.
+17:02 bilby INFO    : Identified keys: mmin, beta, mpp, mmax, gamma, alpha, sigpp, gaussian_mass_maximum, lam, lamb
+17:02 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O4a_powerlawm2min_prod_gammamax35/result'
+17:02 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
+17:02 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
+17:02 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
+/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+17:02 bilby INFO    : Analysis priors:
+17:02 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+17:02 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+17:02 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+17:02 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+17:02 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
+17:02 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+17:02 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+17:02 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+17:02 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+17:02 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+17:02 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+17:02 bilby INFO    : gaussian_mass_maximum=100.0
+17:02 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
+17:02 bilby INFO    : Analysis likelihood noise evidence: nan
+17:02 bilby INFO    : Single likelihood evaluation took 4.628e-02 s
+17:02 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x152ccf6607f0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+17:02 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+17:02 bilby INFO    : Using dynesty version 2.1.2
+17:02 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+17:02 bilby INFO    : Reading resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
+17:02 bilby WARNING : The resume file O4a_powerlawm2min_prod_gammamax35/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+17:02 bilby INFO    : Generating initial points from the prior
+09:31 bilby INFO    : Run interrupted by signal 15: checkpoint and exit on 130

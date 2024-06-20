@@ -1,0 +1,808 @@
+06/13/24 14:27:08 ******************************************************
+06/13/24 14:27:08 ** condor_scheduniv_exec.145125238.0 (CONDOR_DAGMAN) STARTING UP
+06/13/24 14:27:08 ** /usr/bin/condor_dagman
+06/13/24 14:27:08 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/13/24 14:27:08 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/13/24 14:27:08 ** $CondorVersion: 23.7.2 2024-05-16 BuildID: 733409 PackageID: 23.7.2-1 GitSHA: 585ec167 $
+06/13/24 14:27:08 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/13/24 14:27:08 ** PID = 7667
+06/13/24 14:27:08 ** Log last touched time unavailable (No such file or directory)
+06/13/24 14:27:08 ******************************************************
+06/13/24 14:27:08 Using config source: /etc/condor/condor_config
+06/13/24 14:27:08 Using local config sources: 
+06/13/24 14:27:08    /etc/condor/config.d/00-htcondor-9.0.config
+06/13/24 14:27:08    /etc/condor/config.d/00-ldas
+06/13/24 14:27:08    /etc/condor/config.d/02-scheduler
+06/13/24 14:27:08    /etc/condor/config.d/10-security
+06/13/24 14:27:08    /etc/condor/config.d/10-stash-plugin.conf
+06/13/24 14:27:08    /etc/condor/config.d/15-dagman-default-append-vars
+06/13/24 14:27:08    /etc/condor/config.d/30-scratch-mount
+06/13/24 14:27:08    /etc/condor/config.d/40-vault-credmon.conf
+06/13/24 14:27:08    /etc/condor/config.d/50-transfer-limits
+06/13/24 14:27:08    /etc/condor/config.d/65-system-periodic-hold
+06/13/24 14:27:08    /etc/condor/config.d/93-dagman-use-direct
+06/13/24 14:27:08    /etc/condor/config.d/99-memory
+06/13/24 14:27:08    /etc/condor/config.d/99-request-disk
+06/13/24 14:27:08    /etc/condor/config.d/99-request-missing-units
+06/13/24 14:27:08    /etc/condor/config.d/99-shared-port-descriptor
+06/13/24 14:27:08    /etc/condor/config.d/99-transform
+06/13/24 14:27:08    /etc/condor/condor_config.local
+06/13/24 14:27:08 config Macros = 168, Sorted = 168, StringBytes = 7882, TablesBytes = 6216
+06/13/24 14:27:08 CLASSAD_CACHING is ENABLED
+06/13/24 14:27:08 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/13/24 14:27:08 DaemonCore: No command port requested.
+06/13/24 14:27:08 DAGMAN_USE_STRICT setting: 1
+06/13/24 14:27:08 DAGMAN_VERBOSITY setting: 3
+06/13/24 14:27:08 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/13/24 14:27:08 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/13/24 14:27:08 DAGMAN_SUBMIT_DELAY setting: 0
+06/13/24 14:27:08 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/13/24 14:27:08 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/13/24 14:27:08 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/13/24 14:27:08 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/13/24 14:27:08 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/13/24 14:27:08 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/13/24 14:27:08 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/13/24 14:27:08 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/13/24 14:27:08 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/13/24 14:27:08 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/13/24 14:27:08 DAGMAN_RETRY_NODE_FIRST setting: False
+06/13/24 14:27:08 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/13/24 14:27:08 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/13/24 14:27:08 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/13/24 14:27:08 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/13/24 14:27:08 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/13/24 14:27:08 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/13/24 14:27:08 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/13/24 14:27:08 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/13/24 14:27:08 DAGMAN_ALWAYS_RUN_POST setting: False
+06/13/24 14:27:08 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/13/24 14:27:08 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/13/24 14:27:08 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/13/24 14:27:08 DAGMAN_ABORT_DUPLICATES setting: True
+06/13/24 14:27:08 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/13/24 14:27:08 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/13/24 14:27:08 DAGMAN_CHECK_QUEUE_INTERVAL setting: 0
+06/13/24 14:27:08 DAGMAN_AUTO_RESCUE setting: True
+06/13/24 14:27:08 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/13/24 14:27:08 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/13/24 14:27:08 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/13/24 14:27:08 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/13/24 14:27:08 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/13/24 14:27:08 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/13/24 14:27:08 ALL_DEBUG setting: 
+06/13/24 14:27:08 DAGMAN_DEBUG setting: 
+06/13/24 14:27:08 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/13/24 14:27:08 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/13/24 14:27:08 DAGMAN will adjust edges after parsing
+06/13/24 14:27:08 Enabling log line cache for increased NFS performance.
+06/13/24 14:27:08 argv[0] == "condor_scheduniv_exec.145125238.0"
+06/13/24 14:27:08 argv[1] == "-Lockfile"
+06/13/24 14:27:08 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.lock"
+06/13/24 14:27:08 argv[3] == "-Dag"
+06/13/24 14:27:08 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag"
+06/13/24 14:27:08 argv[5] == "-CsdVersion"
+06/13/24 14:27:08 argv[6] == "$CondorVersion: 23.7.2 2024-05-16 BuildID: 733409 PackageID: 23.7.2-1 GitSHA: 585ec167 $"
+06/13/24 14:27:08 argv[7] == "-dagman"
+06/13/24 14:27:08 argv[8] == "/usr/bin/condor_dagman"
+06/13/24 14:27:08 argv[9] == "-AutoRescue"
+06/13/24 14:27:08 argv[10] == "1"
+06/13/24 14:27:08 argv[11] == "-DoRescueFrom"
+06/13/24 14:27:08 argv[12] == "0"
+06/13/24 14:27:08 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/13/24 14:27:08 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/13/24 14:27:08 Workflow batch-id: <145125238.0>
+06/13/24 14:27:08 Workflow batch-name: <bbh.dag+145125238>
+06/13/24 14:27:08 Workflow accounting_group: <>
+06/13/24 14:27:08 Workflow accounting_group_user: <>
+06/13/24 14:27:08 Warning: failed to get attribute DAGNodeName
+06/13/24 14:27:08 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/13/24 14:27:08 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log>
+06/13/24 14:27:08 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.lock
+06/13/24 14:27:08 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag
+06/13/24 14:27:08 Parsing 1 dagfiles
+06/13/24 14:27:08 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag ...
+06/13/24 14:27:08 Adjusting edges
+06/13/24 14:27:08 Dag contains 4 total jobs
+06/13/24 14:27:08 Bootstrapping...
+06/13/24 14:27:08 Number of pre-completed nodes: 0
+06/13/24 14:27:08 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log
+06/13/24 14:27:08 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 14:27:08 Of 4 nodes total:
+06/13/24 14:27:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 14:27:08   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 14:27:08     0       0        0       0       1          3        0        0
+06/13/24 14:27:08 0 job proc(s) currently held
+06/13/24 14:27:08 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/13/24 14:27:08 Registering condor_event_timer...
+06/13/24 14:27:09 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 job(s)...
+06/13/24 14:27:09 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log
+06/13/24 14:27:09 Masking the events recorded in the DAGMAN workflow log
+06/13/24 14:27:09 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/13/24 14:27:09 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 -a My.DAGManJobId=145125238 -a DAGManJobId=145125238 -batch-name bbh.dag+145125238 -batch-id 145125238.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 -a label=bbh DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="" /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection.sub
+06/13/24 14:27:09 From submit: Submitting job(s).
+06/13/24 14:27:09 From submit: 1 job(s) submitted to cluster 145125240.
+06/13/24 14:27:09 	assigned HTCondor ID (145125240.0.0)
+06/13/24 14:27:09 Just submitted 1 job this cycle...
+06/13/24 14:27:09 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 14:27:09 Of 4 nodes total:
+06/13/24 14:27:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 14:27:09   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 14:27:09     0       0        1       0       0          3        0        0
+06/13/24 14:27:09 0 job proc(s) currently held
+06/13/24 14:27:09 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03350996971130371; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03350996971130371; SubmitCycleTimeMin = 0.03350996971130371; SubmitCycleTimeStd = 0.03350996971130371; SubmitCycleTimeSum = 0.03350996971130371; ]
+06/13/24 14:27:14 Currently monitoring 1 HTCondor log file(s)
+06/13/24 14:27:14 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 from (145125240.0.0) to (145125240.0.0)
+06/13/24 14:27:14 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 (145125240.0.0) {06/13/24 14:27:09}
+06/13/24 14:27:14 Number of idle job procs: 1
+06/13/24 14:28:29 Currently monitoring 1 HTCondor log file(s)
+06/13/24 14:28:29 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 (145125240.0.0) {06/13/24 14:28:24}
+06/13/24 14:28:29 Number of idle job procs: 0
+06/13/24 14:30:59 Currently monitoring 1 HTCondor log file(s)
+06/13/24 14:30:59 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 (145125240.0.0) {06/13/24 14:30:58}
+06/13/24 14:30:59 Number of idle job procs: 0
+06/13/24 14:30:59 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 job proc (145125240.0.0) completed successfully.
+06/13/24 14:30:59 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0 job completed
+06/13/24 14:30:59 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 14:30:59 Of 4 nodes total:
+06/13/24 14:30:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 14:30:59   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 14:30:59     1       0        0       0       1          2        0        0
+06/13/24 14:30:59 0 job proc(s) currently held
+06/13/24 14:30:59 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.000961713168932044; EventCycleTimeCount = 46.0; EventCycleTimeMax = 0.03364109992980957; EventCycleTimeMin = 2.408027648925781E-05; EventCycleTimeStd = 0.005003306895228856; EventCycleTimeSum = 0.04423880577087402; LogProcessCycleTimeAvg = 0.0002789497375488281; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0002050399780273438; LogProcessCycleTimeStd = 0.0001047900511122694; LogProcessCycleTimeSum = 0.0008368492126464844; SleepCycleTimeAvg = 5.005030787509421; SleepCycleTimeCount = 46.0; SleepCycleTimeMax = 5.011357069015503; SleepCycleTimeMin = 5.001856803894043; SleepCycleTimeStd = 0.001157513972671232; SleepCycleTimeSum = 230.2314162254333; SubmitCycleTimeAvg = 0.0007192581257921584; SubmitCycleTimeCount = 47.0; SubmitCycleTimeMax = 0.03350996971130371; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.004886995794267036; SubmitCycleTimeSum = 0.03380513191223145; ]
+06/13/24 14:31:04 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 job(s)...
+06/13/24 14:31:04 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log
+06/13/24 14:31:04 Masking the events recorded in the DAGMAN workflow log
+06/13/24 14:31:04 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/13/24 14:31:04 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 -a My.DAGManJobId=145125238 -a DAGManJobId=145125238 -batch-name bbh.dag+145125238 -batch-id 145125238.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 -a label=bbh_mass_two_component_primary_mass_ratio_redshift_powerlaw -a models=--models' 'mass:two_component_primary_mass_ratio' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:two_component_primary_mass_ratio' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis.sub
+06/13/24 14:31:04 From submit: Submitting job(s).
+06/13/24 14:31:04 From submit: 1 job(s) submitted to cluster 145125376.
+06/13/24 14:31:04 	assigned HTCondor ID (145125376.0.0)
+06/13/24 14:31:04 Just submitted 1 job this cycle...
+06/13/24 14:31:04 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 14:31:04 Of 4 nodes total:
+06/13/24 14:31:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 14:31:04   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 14:31:04     1       0        1       0       0          2        0        0
+06/13/24 14:31:04 0 job proc(s) currently held
+06/13/24 14:31:04 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0009492305999106549; EventCycleTimeCount = 47.0; EventCycleTimeMax = 0.03364109992980957; EventCycleTimeMin = 2.408027648925781E-05; EventCycleTimeStd = 0.004949364179554681; EventCycleTimeSum = 0.04461383819580078; LogProcessCycleTimeAvg = 0.0002789497375488281; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0002050399780273438; LogProcessCycleTimeStd = 0.0001047900511122694; LogProcessCycleTimeSum = 0.0008368492126464844; SleepCycleTimeAvg = 5.005031108856201; SleepCycleTimeCount = 47.0; SleepCycleTimeMax = 5.011357069015503; SleepCycleTimeMin = 5.001856803894043; SleepCycleTimeStd = 0.001144865286766359; SleepCycleTimeSum = 235.2364621162415; SubmitCycleTimeAvg = 0.001431167125701904; SubmitCycleTimeCount = 48.0; SubmitCycleTimeMax = 0.03489089012145996; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.006906640073569778; SubmitCycleTimeSum = 0.06869602203369141; ]
+06/13/24 14:31:09 Currently monitoring 1 HTCondor log file(s)
+06/13/24 14:31:09 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 from (145125376.0.0) to (145125376.0.0)
+06/13/24 14:31:09 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 (145125376.0.0) {06/13/24 14:31:04}
+06/13/24 14:31:09 Number of idle job procs: 1
+06/13/24 14:32:14 Currently monitoring 1 HTCondor log file(s)
+06/13/24 14:32:14 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 (145125376.0.0) {06/13/24 14:32:13}
+06/13/24 14:32:14 Number of idle job procs: 0
+06/13/24 14:42:15 601 seconds since last log event
+06/13/24 14:42:15 Pending DAG nodes:
+06/13/24 14:42:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 14:52:15 1201 seconds since last log event
+06/13/24 14:52:15 Pending DAG nodes:
+06/13/24 14:52:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 15:02:16 1802 seconds since last log event
+06/13/24 15:02:16 Pending DAG nodes:
+06/13/24 15:02:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 15:12:17 2403 seconds since last log event
+06/13/24 15:12:17 Pending DAG nodes:
+06/13/24 15:12:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 15:22:17 3003 seconds since last log event
+06/13/24 15:22:17 Pending DAG nodes:
+06/13/24 15:22:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 15:32:18 3604 seconds since last log event
+06/13/24 15:32:18 Pending DAG nodes:
+06/13/24 15:32:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 15:42:19 4205 seconds since last log event
+06/13/24 15:42:19 Pending DAG nodes:
+06/13/24 15:42:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 15:52:19 4805 seconds since last log event
+06/13/24 15:52:19 Pending DAG nodes:
+06/13/24 15:52:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:02:20 5406 seconds since last log event
+06/13/24 16:02:20 Pending DAG nodes:
+06/13/24 16:02:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:12:20 6006 seconds since last log event
+06/13/24 16:12:20 Pending DAG nodes:
+06/13/24 16:12:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:22:21 6607 seconds since last log event
+06/13/24 16:22:21 Pending DAG nodes:
+06/13/24 16:22:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:32:22 7208 seconds since last log event
+06/13/24 16:32:22 Pending DAG nodes:
+06/13/24 16:32:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:42:22 7808 seconds since last log event
+06/13/24 16:42:22 Pending DAG nodes:
+06/13/24 16:42:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:52:23 8409 seconds since last log event
+06/13/24 16:52:23 Pending DAG nodes:
+06/13/24 16:52:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0, HTCondor ID 145125376, status STATUS_SUBMITTED
+06/13/24 16:59:23 Currently monitoring 1 HTCondor log file(s)
+06/13/24 16:59:23 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 (145125376.0.0) {06/13/24 16:59:20}
+06/13/24 16:59:23 Number of idle job procs: 0
+06/13/24 16:59:23 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 job proc (145125376.0.0) completed successfully.
+06/13/24 16:59:23 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0 job completed
+06/13/24 16:59:23 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 16:59:23 Of 4 nodes total:
+06/13/24 16:59:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 16:59:23   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 16:59:23     2       0        0       0       2          0        0        0
+06/13/24 16:59:23 0 job proc(s) currently held
+06/13/24 16:59:23 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002198609913865181; EventCycleTimeCount = 1825.0; EventCycleTimeMax = 0.0532071590423584; EventCycleTimeMin = 1.502037048339844E-05; EventCycleTimeStd = 0.001847989214232059; EventCycleTimeSum = 0.4012463092803955; LogProcessCycleTimeAvg = 0.0002283255259195963; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 9.195043524765978E-05; LogProcessCycleTimeSum = 0.001369953155517578; SleepCycleTimeAvg = 5.004911119382675; SleepCycleTimeCount = 1825.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 5.000102043151855; SleepCycleTimeStd = 0.0008181081472494668; SleepCycleTimeSum = 9133.962792873383; SubmitCycleTimeAvg = 4.405129256149242E-05; SubmitCycleTimeCount = 1826.0; SubmitCycleTimeMax = 0.03489089012145996; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.001131572672934753; SubmitCycleTimeSum = 0.08043766021728516; ]
+06/13/24 16:59:28 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 job(s)...
+06/13/24 16:59:28 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log
+06/13/24 16:59:28 Masking the events recorded in the DAGMAN workflow log
+06/13/24 16:59:28 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/13/24 16:59:28 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 -a My.DAGManJobId=145125238 -a DAGManJobId=145125238 -batch-name bbh.dag+145125238 -batch-id 145125238.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 -a label=bbh_mass_two_component_primary_mass_ratio_redshift_powerlaw DAG_STATUS=0 FAILED_COUNT=0 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot.sub
+06/13/24 16:59:28 From submit: Submitting job(s).
+06/13/24 16:59:28 From submit: 1 job(s) submitted to cluster 145132838.
+06/13/24 16:59:28 	assigned HTCondor ID (145132838.0.0)
+06/13/24 16:59:28 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 job(s)...
+06/13/24 16:59:28 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log
+06/13/24 16:59:28 Masking the events recorded in the DAGMAN workflow log
+06/13/24 16:59:28 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/13/24 16:59:28 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 -a My.DAGManJobId=145125238 -a DAGManJobId=145125238 -batch-name bbh.dag+145125238 -batch-id 145125238.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 -a label=bbh_mass_two_component_primary_mass_ratio_redshift_powerlaw DAG_STATUS=0 FAILED_COUNT=0 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/analysis:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format.sub
+06/13/24 16:59:28 From submit: Submitting job(s).
+06/13/24 16:59:28 From submit: 1 job(s) submitted to cluster 145132839.
+06/13/24 16:59:28 	assigned HTCondor ID (145132839.0.0)
+06/13/24 16:59:28 Just submitted 2 jobs this cycle...
+06/13/24 16:59:28 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 16:59:28 Of 4 nodes total:
+06/13/24 16:59:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 16:59:28   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 16:59:28     2       0        2       0       0          0        0        0
+06/13/24 16:59:28 0 job proc(s) currently held
+06/13/24 16:59:28 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002199190730985911; EventCycleTimeCount = 1826.0; EventCycleTimeMax = 0.0532071590423584; EventCycleTimeMin = 1.502037048339844E-05; EventCycleTimeStd = 0.001847484513570401; EventCycleTimeSum = 0.4015722274780273; LogProcessCycleTimeAvg = 0.0002283255259195963; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 9.195043524765978E-05; LogProcessCycleTimeSum = 0.001369953155517578; SleepCycleTimeAvg = 5.0049112495953; SleepCycleTimeCount = 1826.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 5.000102043151855; SleepCycleTimeStd = 0.0008179029025863165; SleepCycleTimeSum = 9138.967941761017; SubmitCycleTimeAvg = 8.330086769141587E-05; SubmitCycleTimeCount = 1827.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002023438220314636; SubmitCycleTimeSum = 0.1521906852722168; ]
+06/13/24 16:59:33 Currently monitoring 1 HTCondor log file(s)
+06/13/24 16:59:33 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 from (145132838.0.0) to (145132838.0.0)
+06/13/24 16:59:33 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/13/24 16:59:28}
+06/13/24 16:59:33 Number of idle job procs: 1
+06/13/24 16:59:33 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 from (145132839.0.0) to (145132839.0.0)
+06/13/24 16:59:33 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/13/24 16:59:28}
+06/13/24 16:59:33 Number of idle job procs: 2
+06/13/24 17:00:13 Currently monitoring 1 HTCondor log file(s)
+06/13/24 17:00:13 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/13/24 17:00:13}
+06/13/24 17:00:13 Number of idle job procs: 1
+06/13/24 17:00:18 Currently monitoring 1 HTCondor log file(s)
+06/13/24 17:00:18 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/13/24 17:00:15}
+06/13/24 17:00:18 Number of idle job procs: 0
+06/13/24 17:00:38 Currently monitoring 1 HTCondor log file(s)
+06/13/24 17:00:38 Event: ULOG_SHADOW_EXCEPTION for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/13/24 17:00:37}
+06/13/24 17:00:38 Number of idle job procs: 1
+06/13/24 17:00:38 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/13/24 17:00:37}
+06/13/24 17:00:38   Hold reason: Error from slot1_1@node2231.cluster.ldas.cit: Job has gone over cgroup memory limit of 1024 megabytes. Peak usage: 1024 megabytes.  Consider resubmitting with a higher request_memory.
+06/13/24 17:00:38 Number of idle job procs: 1
+06/13/24 17:00:38 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 17:00:38 Of 4 nodes total:
+06/13/24 17:00:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 17:00:38   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 17:00:38     2       0        2       0       0          0        0        0
+06/13/24 17:00:38 1 job proc(s) currently held
+06/13/24 17:00:38 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002578941376312919; EventCycleTimeCount = 1840.0; EventCycleTimeMax = 0.07191705703735352; EventCycleTimeMin = 1.502037048339844E-05; EventCycleTimeStd = 0.00248620317677165; EventCycleTimeSum = 0.4745252132415771; LogProcessCycleTimeAvg = 0.0002073764801025391; LogProcessCycleTimeCount = 10.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.653370905902514E-05; LogProcessCycleTimeSum = 0.002073764801025391; SleepCycleTimeAvg = 5.004911671643672; SleepCycleTimeCount = 1840.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 5.000102043151855; SleepCycleTimeStd = 0.0008154988919891218; SleepCycleTimeSum = 9209.037475824356; SubmitCycleTimeAvg = 8.272062754384983E-05; SubmitCycleTimeCount = 1841.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.00201573656563071; SubmitCycleTimeSum = 0.1522886753082275; ]
+06/13/24 17:01:18 Currently monitoring 1 HTCondor log file(s)
+06/13/24 17:01:18 Event: ULOG_SHADOW_EXCEPTION for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/13/24 17:01:15}
+06/13/24 17:01:18 Number of idle job procs: 2
+06/13/24 17:01:18 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/13/24 17:01:15}
+06/13/24 17:01:18   Hold reason: Error from slot1_1@node2236.cluster.ldas.cit: Job has gone over cgroup memory limit of 1024 megabytes. Peak usage: 1024 megabytes.  Consider resubmitting with a higher request_memory.
+06/13/24 17:01:18 Number of idle job procs: 2
+06/13/24 17:01:18 DAG status: 0 (DAG_STATUS_OK)
+06/13/24 17:01:18 Of 4 nodes total:
+06/13/24 17:01:18  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/13/24 17:01:18   ===     ===      ===     ===     ===        ===      ===      ===
+06/13/24 17:01:18     2       0        2       0       0          0        0        0
+06/13/24 17:01:18 2 job proc(s) currently held
+06/13/24 17:01:18 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002571672072142234; EventCycleTimeCount = 1848.0; EventCycleTimeMax = 0.07191705703735352; EventCycleTimeMin = 1.502037048339844E-05; EventCycleTimeStd = 0.002480849838331376; EventCycleTimeSum = 0.4752449989318848; LogProcessCycleTimeAvg = 0.0002111738378351385; LogProcessCycleTimeCount = 11.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.369048068333529E-05; LogProcessCycleTimeSum = 0.002322912216186523; SleepCycleTimeAvg = 5.004912067672391; SleepCycleTimeCount = 1848.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 5.000102043151855; SleepCycleTimeStd = 0.0008141801684748786; SleepCycleTimeSum = 9249.077501058578; SubmitCycleTimeAvg = 8.239611991358293E-05; SubmitCycleTimeCount = 1849.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.002011374795859749; SubmitCycleTimeSum = 0.1523504257202148; ]
+06/13/24 17:11:19 601 seconds since last log event
+06/13/24 17:11:19 Pending DAG nodes:
+06/13/24 17:11:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 17:11:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 17:21:20 1202 seconds since last log event
+06/13/24 17:21:20 Pending DAG nodes:
+06/13/24 17:21:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 17:21:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 17:31:20 1802 seconds since last log event
+06/13/24 17:31:20 Pending DAG nodes:
+06/13/24 17:31:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 17:31:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 17:41:21 2403 seconds since last log event
+06/13/24 17:41:21 Pending DAG nodes:
+06/13/24 17:41:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 17:41:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 17:51:22 3004 seconds since last log event
+06/13/24 17:51:22 Pending DAG nodes:
+06/13/24 17:51:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 17:51:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 18:01:22 3604 seconds since last log event
+06/13/24 18:01:22 Pending DAG nodes:
+06/13/24 18:01:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 18:01:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 18:11:23 4205 seconds since last log event
+06/13/24 18:11:23 Pending DAG nodes:
+06/13/24 18:11:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 18:11:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 18:21:23 4805 seconds since last log event
+06/13/24 18:21:23 Pending DAG nodes:
+06/13/24 18:21:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 18:21:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 18:31:24 5406 seconds since last log event
+06/13/24 18:31:24 Pending DAG nodes:
+06/13/24 18:31:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 18:31:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 18:41:25 6007 seconds since last log event
+06/13/24 18:41:25 Pending DAG nodes:
+06/13/24 18:41:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 18:41:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 18:51:25 6607 seconds since last log event
+06/13/24 18:51:25 Pending DAG nodes:
+06/13/24 18:51:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 18:51:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 19:01:26 7208 seconds since last log event
+06/13/24 19:01:26 Pending DAG nodes:
+06/13/24 19:01:26   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 19:01:26   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 19:11:27 7809 seconds since last log event
+06/13/24 19:11:27 Pending DAG nodes:
+06/13/24 19:11:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 19:11:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 19:21:27 8409 seconds since last log event
+06/13/24 19:21:27 Pending DAG nodes:
+06/13/24 19:21:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 19:21:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 19:31:28 9010 seconds since last log event
+06/13/24 19:31:28 Pending DAG nodes:
+06/13/24 19:31:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 19:31:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 19:41:28 9610 seconds since last log event
+06/13/24 19:41:28 Pending DAG nodes:
+06/13/24 19:41:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 19:41:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 19:51:29 10211 seconds since last log event
+06/13/24 19:51:29 Pending DAG nodes:
+06/13/24 19:51:29   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 19:51:29   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 20:01:30 10812 seconds since last log event
+06/13/24 20:01:30 Pending DAG nodes:
+06/13/24 20:01:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 20:01:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 20:11:30 11412 seconds since last log event
+06/13/24 20:11:30 Pending DAG nodes:
+06/13/24 20:11:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 20:11:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 20:21:30 12012 seconds since last log event
+06/13/24 20:21:30 Pending DAG nodes:
+06/13/24 20:21:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 20:21:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 20:31:30 12612 seconds since last log event
+06/13/24 20:31:30 Pending DAG nodes:
+06/13/24 20:31:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 20:31:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 20:41:31 13213 seconds since last log event
+06/13/24 20:41:31 Pending DAG nodes:
+06/13/24 20:41:31   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 20:41:31   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 20:51:32 13814 seconds since last log event
+06/13/24 20:51:32 Pending DAG nodes:
+06/13/24 20:51:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 20:51:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 21:01:32 14414 seconds since last log event
+06/13/24 21:01:32 Pending DAG nodes:
+06/13/24 21:01:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 21:01:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 21:11:33 15015 seconds since last log event
+06/13/24 21:11:33 Pending DAG nodes:
+06/13/24 21:11:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 21:11:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 21:21:33 15615 seconds since last log event
+06/13/24 21:21:33 Pending DAG nodes:
+06/13/24 21:21:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 21:21:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 21:31:34 16216 seconds since last log event
+06/13/24 21:31:34 Pending DAG nodes:
+06/13/24 21:31:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 21:31:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 21:41:35 16817 seconds since last log event
+06/13/24 21:41:35 Pending DAG nodes:
+06/13/24 21:41:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 21:41:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 21:51:35 17417 seconds since last log event
+06/13/24 21:51:35 Pending DAG nodes:
+06/13/24 21:51:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 21:51:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 22:01:36 18018 seconds since last log event
+06/13/24 22:01:36 Pending DAG nodes:
+06/13/24 22:01:36   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 22:01:36   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 22:11:37 18619 seconds since last log event
+06/13/24 22:11:37 Pending DAG nodes:
+06/13/24 22:11:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 22:11:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 22:21:37 19219 seconds since last log event
+06/13/24 22:21:37 Pending DAG nodes:
+06/13/24 22:21:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 22:21:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 22:31:38 19820 seconds since last log event
+06/13/24 22:31:38 Pending DAG nodes:
+06/13/24 22:31:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 22:31:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 22:41:38 20420 seconds since last log event
+06/13/24 22:41:38 Pending DAG nodes:
+06/13/24 22:41:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 22:41:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 22:51:39 21021 seconds since last log event
+06/13/24 22:51:39 Pending DAG nodes:
+06/13/24 22:51:39   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 22:51:39   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 23:01:40 21622 seconds since last log event
+06/13/24 23:01:40 Pending DAG nodes:
+06/13/24 23:01:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 23:01:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 23:11:40 22222 seconds since last log event
+06/13/24 23:11:40 Pending DAG nodes:
+06/13/24 23:11:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 23:11:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 23:21:40 22822 seconds since last log event
+06/13/24 23:21:40 Pending DAG nodes:
+06/13/24 23:21:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 23:21:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 23:31:40 23422 seconds since last log event
+06/13/24 23:31:40 Pending DAG nodes:
+06/13/24 23:31:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 23:31:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 23:41:41 24023 seconds since last log event
+06/13/24 23:41:41 Pending DAG nodes:
+06/13/24 23:41:41   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 23:41:41   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/13/24 23:51:42 24624 seconds since last log event
+06/13/24 23:51:42 Pending DAG nodes:
+06/13/24 23:51:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/13/24 23:51:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 00:01:42 25224 seconds since last log event
+06/14/24 00:01:42 Pending DAG nodes:
+06/14/24 00:01:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 00:01:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 00:11:43 25825 seconds since last log event
+06/14/24 00:11:43 Pending DAG nodes:
+06/14/24 00:11:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 00:11:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 00:21:43 26425 seconds since last log event
+06/14/24 00:21:43 Pending DAG nodes:
+06/14/24 00:21:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 00:21:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 00:31:44 27026 seconds since last log event
+06/14/24 00:31:44 Pending DAG nodes:
+06/14/24 00:31:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 00:31:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 00:41:45 27627 seconds since last log event
+06/14/24 00:41:45 Pending DAG nodes:
+06/14/24 00:41:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 00:41:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 00:51:45 28227 seconds since last log event
+06/14/24 00:51:45 Pending DAG nodes:
+06/14/24 00:51:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 00:51:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 01:01:46 28828 seconds since last log event
+06/14/24 01:01:46 Pending DAG nodes:
+06/14/24 01:01:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 01:01:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 01:11:46 29428 seconds since last log event
+06/14/24 01:11:46 Pending DAG nodes:
+06/14/24 01:11:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 01:11:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 01:21:47 30029 seconds since last log event
+06/14/24 01:21:47 Pending DAG nodes:
+06/14/24 01:21:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 01:21:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 01:31:48 30630 seconds since last log event
+06/14/24 01:31:48 Pending DAG nodes:
+06/14/24 01:31:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 01:31:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 01:41:48 31230 seconds since last log event
+06/14/24 01:41:48 Pending DAG nodes:
+06/14/24 01:41:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 01:41:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 01:51:49 31831 seconds since last log event
+06/14/24 01:51:49 Pending DAG nodes:
+06/14/24 01:51:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 01:51:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 02:01:49 32431 seconds since last log event
+06/14/24 02:01:49 Pending DAG nodes:
+06/14/24 02:01:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 02:01:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 02:11:50 33032 seconds since last log event
+06/14/24 02:11:50 Pending DAG nodes:
+06/14/24 02:11:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 02:11:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 02:21:51 33633 seconds since last log event
+06/14/24 02:21:51 Pending DAG nodes:
+06/14/24 02:21:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 02:21:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 02:31:51 34233 seconds since last log event
+06/14/24 02:31:51 Pending DAG nodes:
+06/14/24 02:31:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 02:31:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 02:41:52 34834 seconds since last log event
+06/14/24 02:41:52 Pending DAG nodes:
+06/14/24 02:41:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 02:41:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 02:51:53 35435 seconds since last log event
+06/14/24 02:51:53 Pending DAG nodes:
+06/14/24 02:51:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 02:51:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 03:01:53 36035 seconds since last log event
+06/14/24 03:01:53 Pending DAG nodes:
+06/14/24 03:01:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 03:01:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 03:11:54 36636 seconds since last log event
+06/14/24 03:11:54 Pending DAG nodes:
+06/14/24 03:11:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 03:11:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 03:21:54 37236 seconds since last log event
+06/14/24 03:21:54 Pending DAG nodes:
+06/14/24 03:21:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 03:21:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 03:31:55 37837 seconds since last log event
+06/14/24 03:31:55 Pending DAG nodes:
+06/14/24 03:31:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 03:31:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 03:41:56 38438 seconds since last log event
+06/14/24 03:41:56 Pending DAG nodes:
+06/14/24 03:41:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 03:41:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 03:51:56 39038 seconds since last log event
+06/14/24 03:51:56 Pending DAG nodes:
+06/14/24 03:51:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 03:51:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 04:01:56 39638 seconds since last log event
+06/14/24 04:01:56 Pending DAG nodes:
+06/14/24 04:01:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 04:01:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 04:11:57 40239 seconds since last log event
+06/14/24 04:11:57 Pending DAG nodes:
+06/14/24 04:11:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 04:11:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 04:21:57 40839 seconds since last log event
+06/14/24 04:21:57 Pending DAG nodes:
+06/14/24 04:21:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 04:21:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 04:31:57 41439 seconds since last log event
+06/14/24 04:31:57 Pending DAG nodes:
+06/14/24 04:31:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 04:31:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 04:41:57 42039 seconds since last log event
+06/14/24 04:41:57 Pending DAG nodes:
+06/14/24 04:41:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 04:41:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 04:51:58 42640 seconds since last log event
+06/14/24 04:51:58 Pending DAG nodes:
+06/14/24 04:51:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 04:51:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 05:01:59 43241 seconds since last log event
+06/14/24 05:01:59 Pending DAG nodes:
+06/14/24 05:01:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 05:01:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 05:11:59 43841 seconds since last log event
+06/14/24 05:11:59 Pending DAG nodes:
+06/14/24 05:11:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 05:11:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 05:22:00 44442 seconds since last log event
+06/14/24 05:22:00 Pending DAG nodes:
+06/14/24 05:22:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 05:22:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 05:32:00 45042 seconds since last log event
+06/14/24 05:32:00 Pending DAG nodes:
+06/14/24 05:32:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 05:32:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 05:42:01 45643 seconds since last log event
+06/14/24 05:42:01 Pending DAG nodes:
+06/14/24 05:42:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 05:42:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 05:52:02 46244 seconds since last log event
+06/14/24 05:52:02 Pending DAG nodes:
+06/14/24 05:52:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 05:52:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 06:02:02 46844 seconds since last log event
+06/14/24 06:02:02 Pending DAG nodes:
+06/14/24 06:02:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 06:02:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 06:12:03 47445 seconds since last log event
+06/14/24 06:12:03 Pending DAG nodes:
+06/14/24 06:12:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 06:12:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 06:22:04 48046 seconds since last log event
+06/14/24 06:22:04 Pending DAG nodes:
+06/14/24 06:22:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 06:22:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 06:32:04 48646 seconds since last log event
+06/14/24 06:32:04 Pending DAG nodes:
+06/14/24 06:32:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 06:32:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 06:42:05 49247 seconds since last log event
+06/14/24 06:42:05 Pending DAG nodes:
+06/14/24 06:42:05   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 06:42:05   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 06:52:05 49847 seconds since last log event
+06/14/24 06:52:05 Pending DAG nodes:
+06/14/24 06:52:05   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 06:52:05   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 07:02:06 50448 seconds since last log event
+06/14/24 07:02:06 Pending DAG nodes:
+06/14/24 07:02:06   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 07:02:06   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 07:12:07 51049 seconds since last log event
+06/14/24 07:12:07 Pending DAG nodes:
+06/14/24 07:12:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 07:12:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 07:22:07 51649 seconds since last log event
+06/14/24 07:22:07 Pending DAG nodes:
+06/14/24 07:22:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 07:22:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 07:32:08 52250 seconds since last log event
+06/14/24 07:32:08 Pending DAG nodes:
+06/14/24 07:32:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 07:32:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 07:42:08 52850 seconds since last log event
+06/14/24 07:42:08 Pending DAG nodes:
+06/14/24 07:42:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 07:42:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 07:52:09 53451 seconds since last log event
+06/14/24 07:52:09 Pending DAG nodes:
+06/14/24 07:52:09   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 07:52:09   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 08:02:10 54052 seconds since last log event
+06/14/24 08:02:10 Pending DAG nodes:
+06/14/24 08:02:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 08:02:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 08:12:10 54652 seconds since last log event
+06/14/24 08:12:10 Pending DAG nodes:
+06/14/24 08:12:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 08:12:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 08:22:11 55253 seconds since last log event
+06/14/24 08:22:11 Pending DAG nodes:
+06/14/24 08:22:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 08:22:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 08:32:11 55853 seconds since last log event
+06/14/24 08:32:11 Pending DAG nodes:
+06/14/24 08:32:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 08:32:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 08:42:12 56454 seconds since last log event
+06/14/24 08:42:12 Pending DAG nodes:
+06/14/24 08:42:12   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 08:42:12   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 08:52:13 57055 seconds since last log event
+06/14/24 08:52:13 Pending DAG nodes:
+06/14/24 08:52:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 08:52:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 09:02:13 57655 seconds since last log event
+06/14/24 09:02:13 Pending DAG nodes:
+06/14/24 09:02:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 09:02:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 09:12:14 58256 seconds since last log event
+06/14/24 09:12:14 Pending DAG nodes:
+06/14/24 09:12:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 09:12:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 09:22:14 58856 seconds since last log event
+06/14/24 09:22:14 Pending DAG nodes:
+06/14/24 09:22:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 09:22:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 09:32:15 59457 seconds since last log event
+06/14/24 09:32:15 Pending DAG nodes:
+06/14/24 09:32:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 09:32:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 09:42:16 60058 seconds since last log event
+06/14/24 09:42:16 Pending DAG nodes:
+06/14/24 09:42:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 09:42:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 09:52:16 60658 seconds since last log event
+06/14/24 09:52:16 Pending DAG nodes:
+06/14/24 09:52:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 09:52:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 10:02:17 61259 seconds since last log event
+06/14/24 10:02:17 Pending DAG nodes:
+06/14/24 10:02:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 10:02:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 10:12:18 61860 seconds since last log event
+06/14/24 10:12:18 Pending DAG nodes:
+06/14/24 10:12:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 10:12:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 10:22:18 62460 seconds since last log event
+06/14/24 10:22:18 Pending DAG nodes:
+06/14/24 10:22:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 10:22:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 10:32:19 63061 seconds since last log event
+06/14/24 10:32:19 Pending DAG nodes:
+06/14/24 10:32:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 10:32:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 10:42:19 63661 seconds since last log event
+06/14/24 10:42:19 Pending DAG nodes:
+06/14/24 10:42:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 10:42:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 10:52:20 64262 seconds since last log event
+06/14/24 10:52:20 Pending DAG nodes:
+06/14/24 10:52:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 10:52:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 11:02:21 64863 seconds since last log event
+06/14/24 11:02:21 Pending DAG nodes:
+06/14/24 11:02:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 11:02:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 11:12:21 65463 seconds since last log event
+06/14/24 11:12:21 Pending DAG nodes:
+06/14/24 11:12:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 11:12:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 11:22:21 66063 seconds since last log event
+06/14/24 11:22:21 Pending DAG nodes:
+06/14/24 11:22:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 11:22:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 11:32:21 66663 seconds since last log event
+06/14/24 11:32:21 Pending DAG nodes:
+06/14/24 11:32:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 11:32:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 11:42:22 67264 seconds since last log event
+06/14/24 11:42:22 Pending DAG nodes:
+06/14/24 11:42:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 11:42:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 11:52:23 67865 seconds since last log event
+06/14/24 11:52:23 Pending DAG nodes:
+06/14/24 11:52:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 11:52:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 12:02:23 68465 seconds since last log event
+06/14/24 12:02:23 Pending DAG nodes:
+06/14/24 12:02:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 12:02:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 12:12:24 69066 seconds since last log event
+06/14/24 12:12:24 Pending DAG nodes:
+06/14/24 12:12:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0, HTCondor ID 145132839, status STATUS_SUBMITTED
+06/14/24 12:12:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0, HTCondor ID 145132838, status STATUS_SUBMITTED
+06/14/24 12:14:59 Currently monitoring 1 HTCondor log file(s)
+06/14/24 12:14:59 Event: ULOG_JOB_RELEASED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/14/24 12:14:58}
+06/14/24 12:14:59 Event: ULOG_JOB_RELEASED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/14/24 12:14:58}
+06/14/24 12:14:59 DAG status: 0 (DAG_STATUS_OK)
+06/14/24 12:14:59 Of 4 nodes total:
+06/14/24 12:14:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/14/24 12:14:59   ===     ===      ===     ===     ===        ===      ===      ===
+06/14/24 12:14:59     2       0        2       0       0          0        0        0
+06/14/24 12:14:59 0 job proc(s) currently held
+06/14/24 12:14:59 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002024509642332349; EventCycleTimeCount = 15679.0; EventCycleTimeMax = 0.174468994140625; EventCycleTimeMin = 1.406669616699219E-05; EventCycleTimeStd = 0.002397018697800732; EventCycleTimeSum = 3.174228668212891; LogProcessCycleTimeAvg = 0.0002163251241048177; LogProcessCycleTimeCount = 12.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.249174778367948E-05; LogProcessCycleTimeSum = 0.002595901489257812; SleepCycleTimeAvg = 5.004594648406703; SleepCycleTimeCount = 15679.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 4.003992080688477; SleepCycleTimeStd = 0.01788248288598676; SleepCycleTimeSum = 78467.0394923687; SubmitCycleTimeAvg = 1.606076043479297E-05; SubmitCycleTimeCount = 15680.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.0006909617214193852; SubmitCycleTimeSum = 0.2518327236175537; ]
+06/14/24 12:17:19 Currently monitoring 1 HTCondor log file(s)
+06/14/24 12:17:19 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/14/24 12:17:15}
+06/14/24 12:17:19 Number of idle job procs: 1
+06/14/24 12:17:19 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/14/24 12:17:18}
+06/14/24 12:17:19 Number of idle job procs: 0
+06/14/24 12:18:34 Currently monitoring 1 HTCondor log file(s)
+06/14/24 12:18:34 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 (145132838.0.0) {06/14/24 12:18:33}
+06/14/24 12:18:34 Number of idle job procs: 0
+06/14/24 12:18:34 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 job proc (145132838.0.0) completed successfully.
+06/14/24 12:18:34 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/plot:0 job completed
+06/14/24 12:18:34 DAG status: 0 (DAG_STATUS_OK)
+06/14/24 12:18:34 Of 4 nodes total:
+06/14/24 12:18:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/14/24 12:18:34   ===     ===      ===     ===     ===        ===      ===      ===
+06/14/24 12:18:34     3       0        1       0       0          0        0        0
+06/14/24 12:18:34 0 job proc(s) currently held
+06/14/24 12:18:34 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002021644273463619; EventCycleTimeCount = 15722.0; EventCycleTimeMax = 0.174468994140625; EventCycleTimeMin = 1.406669616699219E-05; EventCycleTimeStd = 0.002393752913333349; EventCycleTimeSum = 3.178429126739502; LogProcessCycleTimeAvg = 0.0002205712454659598; LogProcessCycleTimeCount = 14.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.151248134357448E-05; LogProcessCycleTimeSum = 0.003087997436523438; SleepCycleTimeAvg = 5.004595743292025; SleepCycleTimeCount = 15722.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 4.003992080688477; SleepCycleTimeStd = 0.01785802546607767; SleepCycleTimeSum = 78682.25427603722; SubmitCycleTimeAvg = 1.60358216420905E-05; SubmitCycleTimeCount = 15723.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.0006900163499881924; SubmitCycleTimeSum = 0.2521312236785889; ]
+06/14/24 12:21:25 Currently monitoring 1 HTCondor log file(s)
+06/14/24 12:21:25 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 (145132839.0.0) {06/14/24 12:21:20}
+06/14/24 12:21:25 Number of idle job procs: 0
+06/14/24 12:21:25 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 job proc (145132839.0.0) completed successfully.
+06/14/24 12:21:25 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/common_format:0 job completed
+06/14/24 12:21:25 DAG status: 0 (DAG_STATUS_OK)
+06/14/24 12:21:25 Of 4 nodes total:
+06/14/24 12:21:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/14/24 12:21:25   ===     ===      ===     ===     ===        ===      ===      ===
+06/14/24 12:21:25     4       0        0       0       0          0        0        0
+06/14/24 12:21:25 0 job proc(s) currently held
+06/14/24 12:21:25 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002020680532143122; EventCycleTimeCount = 15756.0; EventCycleTimeMax = 0.174468994140625; EventCycleTimeMin = 1.406669616699219E-05; EventCycleTimeStd = 0.002391251675385305; EventCycleTimeSum = 3.183784246444702; LogProcessCycleTimeAvg = 0.0002156734466552734; LogProcessCycleTimeCount = 15.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.147428399320971E-05; LogProcessCycleTimeSum = 0.003235101699829102; SleepCycleTimeAvg = 5.004596408716644; SleepCycleTimeCount = 15756.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 4.003992080688477; SleepCycleTimeStd = 0.0178387587585623; SleepCycleTimeSum = 78852.42101573944; SubmitCycleTimeAvg = 1.601547337564908E-05; SubmitCycleTimeCount = 15757.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.0006892715960707064; SubmitCycleTimeSum = 0.2523558139801025; ]
+06/14/24 12:21:25 All jobs Completed!
+06/14/24 12:21:25 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/14/24 12:21:25 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/14/24 12:21:25 Note: 0 total job deferrals because of node category throttles
+06/14/24 12:21:25 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/14/24 12:21:25 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/14/24 12:21:25 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/14/24 12:21:25 DAG status: 0 (DAG_STATUS_OK)
+06/14/24 12:21:25 Of 4 nodes total:
+06/14/24 12:21:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/14/24 12:21:25   ===     ===      ===     ===     ===        ===      ===      ===
+06/14/24 12:21:25     4       0        0       0       0          0        0        0
+06/14/24 12:21:25 0 job proc(s) currently held
+06/14/24 12:21:25 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002020680532143122; EventCycleTimeCount = 15756.0; EventCycleTimeMax = 0.174468994140625; EventCycleTimeMin = 1.406669616699219E-05; EventCycleTimeStd = 0.002391251675385305; EventCycleTimeSum = 3.183784246444702; LogProcessCycleTimeAvg = 0.0002156734466552734; LogProcessCycleTimeCount = 15.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.147428399320971E-05; LogProcessCycleTimeSum = 0.003235101699829102; SleepCycleTimeAvg = 5.004596408716644; SleepCycleTimeCount = 15756.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 4.003992080688477; SleepCycleTimeStd = 0.0178387587585623; SleepCycleTimeSum = 78852.42101573944; SubmitCycleTimeAvg = 1.601547337564908E-05; SubmitCycleTimeCount = 15757.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.0006892715960707064; SubmitCycleTimeSum = 0.2523558139801025; ]
+06/14/24 12:21:25 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP/submit/bbh.dag.metrics.
+06/14/24 12:21:25 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002020680532143122; EventCycleTimeCount = 15756.0; EventCycleTimeMax = 0.174468994140625; EventCycleTimeMin = 1.406669616699219E-05; EventCycleTimeStd = 0.002391251675385305; EventCycleTimeSum = 3.183784246444702; LogProcessCycleTimeAvg = 0.0002156734466552734; LogProcessCycleTimeCount = 15.0; LogProcessCycleTimeMax = 0.0003988742828369141; LogProcessCycleTimeMin = 0.0001230239868164062; LogProcessCycleTimeStd = 7.147428399320971E-05; LogProcessCycleTimeSum = 0.003235101699829102; SleepCycleTimeAvg = 5.004596408716644; SleepCycleTimeCount = 15756.0; SleepCycleTimeMax = 5.017954111099243; SleepCycleTimeMin = 4.003992080688477; SleepCycleTimeStd = 0.0178387587585623; SleepCycleTimeSum = 78852.42101573944; SubmitCycleTimeAvg = 1.601547337564908E-05; SubmitCycleTimeCount = 15757.0; SubmitCycleTimeMax = 0.07175302505493164; SubmitCycleTimeMin = 3.814697265625E-06; SubmitCycleTimeStd = 0.0006892715960707064; SubmitCycleTimeSum = 0.2523558139801025; ]
+06/14/24 12:21:25 **** condor_scheduniv_exec.145125238.0 (condor_DAGMAN) pid 7667 EXITING WITH STATUS 0

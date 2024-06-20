@@ -1,0 +1,6 @@
+09:15 bilby INFO    : Number of draws equals number of events, 85.
+09:15 bilby INFO    : Generating observed populations.
+09:15 bilby INFO    : Using parabola_m2min_allgammazeta from variable_qmin.
+09:15 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:15 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+  0%|          | 0/3905 [00:00<?, ?it/s]

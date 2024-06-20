@@ -1,0 +1,24 @@
+universe = vanilla
+initialdir = /home/storm.colloms/O4a_population/variable_qmin_inference
+executable = /home/storm.colloms/.conda/envs/O4apop/bin/gwpopulation_pipe_plot
+output = /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min/logs/population-plot-$(label).out
+error = /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min/logs/population-plot-$(label).err
+log = /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_powerlawm2min/logs/population-plot-$(label).log
+request_cpus = 1
+request_gpus = 0
+request_memory = 1GB
+request_disk = 1GB
+accounting_group = ligo.dev.o4.cbc.bayesianpopulations.parametric
+accounting_group_user = storm.colloms
+notification = error
+arguments = O4a_powerlawm2min/bbh_config_complete.ini --run-dir O4a_powerlawm2min --result-file O4a_powerlawm2min/result/$(label)_result.hdf5 --samples O4a_powerlawm2min/result/$(label)_samples.pkl 
+checkpoint_exit_code = 130
+should_transfer_files = YES
+transfer_input_files = O4a_powerlawm2min/bbh_config_complete.ini,O4a_powerlawm2min/result/$(label)_result.hdf5,O4a_powerlawm2min/result/$(label)_samples.pkl,O4a_powerlawm2min/data/injections.pkl
+transfer_output_files = O4a_powerlawm2min/result
+when_to_transfer_output = ON_EXIT_OR_EVICT
+preserve_relative_paths = True
+stream_error = True
+stream_output = True
+
+queue

@@ -1,0 +1,1891 @@
+05/31/24 12:35:20 ******************************************************
+05/31/24 12:35:20 ** condor_scheduniv_exec.144567162.0 (CONDOR_DAGMAN) STARTING UP
+05/31/24 12:35:20 ** /usr/bin/condor_dagman
+05/31/24 12:35:20 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+05/31/24 12:35:20 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+05/31/24 12:35:20 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+05/31/24 12:35:20 ** $CondorPlatform: x86_64_AlmaLinux8 $
+05/31/24 12:35:20 ** PID = 292575
+05/31/24 12:35:20 ** Log last touched time unavailable (No such file or directory)
+05/31/24 12:35:20 ******************************************************
+05/31/24 12:35:20 Using config source: /etc/condor/condor_config
+05/31/24 12:35:20 Using local config sources: 
+05/31/24 12:35:20    /etc/condor/config.d/00-htcondor-9.0.config
+05/31/24 12:35:20    /etc/condor/config.d/00-ldas
+05/31/24 12:35:20    /etc/condor/config.d/02-scheduler
+05/31/24 12:35:20    /etc/condor/config.d/10-security
+05/31/24 12:35:20    /etc/condor/config.d/10-stash-plugin.conf
+05/31/24 12:35:20    /etc/condor/config.d/15-dagman-default-append-vars
+05/31/24 12:35:20    /etc/condor/config.d/30-scratch-mount
+05/31/24 12:35:20    /etc/condor/config.d/40-vault-credmon.conf
+05/31/24 12:35:20    /etc/condor/config.d/50-transfer-limits
+05/31/24 12:35:20    /etc/condor/config.d/65-system-periodic-hold
+05/31/24 12:35:20    /etc/condor/config.d/93-dagman-use-direct
+05/31/24 12:35:20    /etc/condor/config.d/99-memory
+05/31/24 12:35:20    /etc/condor/config.d/99-request-disk
+05/31/24 12:35:20    /etc/condor/config.d/99-request-missing-units
+05/31/24 12:35:20    /etc/condor/config.d/99-shared-port-descriptor
+05/31/24 12:35:20    /etc/condor/config.d/99-transform
+05/31/24 12:35:20    /etc/condor/condor_config.local
+05/31/24 12:35:20 config Macros = 168, Sorted = 168, StringBytes = 7919, TablesBytes = 6216
+05/31/24 12:35:20 CLASSAD_CACHING is ENABLED
+05/31/24 12:35:20 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+05/31/24 12:35:20 DaemonCore: No command port requested.
+05/31/24 12:35:20 DAGMAN_USE_STRICT setting: 1
+05/31/24 12:35:20 DAGMAN_VERBOSITY setting: 3
+05/31/24 12:35:20 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+05/31/24 12:35:20 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+05/31/24 12:35:20 DAGMAN_SUBMIT_DELAY setting: 0
+05/31/24 12:35:20 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+05/31/24 12:35:20 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+05/31/24 12:35:20 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+05/31/24 12:35:20 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+05/31/24 12:35:20 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+05/31/24 12:35:20 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+05/31/24 12:35:20 DAGMAN_DEFAULT_PRIORITY setting: 0
+05/31/24 12:35:20 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+05/31/24 12:35:20 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+05/31/24 12:35:20 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+05/31/24 12:35:20 DAGMAN_RETRY_NODE_FIRST setting: False
+05/31/24 12:35:20 DAGMAN_MAX_JOBS_IDLE setting: 1000
+05/31/24 12:35:20 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+05/31/24 12:35:20 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+05/31/24 12:35:20 DAGMAN_MAX_POST_SCRIPTS setting: 20
+05/31/24 12:35:20 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+05/31/24 12:35:20 DAGMAN_MUNGE_NODE_NAMES setting: True
+05/31/24 12:35:20 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+05/31/24 12:35:20 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+05/31/24 12:35:20 DAGMAN_ALWAYS_RUN_POST setting: False
+05/31/24 12:35:20 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+05/31/24 12:35:20 DAGMAN_USE_DIRECT_SUBMIT setting: False
+05/31/24 12:35:20 DAGMAN_DEFAULT_APPEND_VARS setting: True
+05/31/24 12:35:20 DAGMAN_ABORT_DUPLICATES setting: True
+05/31/24 12:35:20 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+05/31/24 12:35:20 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+05/31/24 12:35:20 DAGMAN_AUTO_RESCUE setting: True
+05/31/24 12:35:20 DAGMAN_MAX_RESCUE_NUM setting: 100
+05/31/24 12:35:20 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+05/31/24 12:35:20 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+05/31/24 12:35:20 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+05/31/24 12:35:20 DAGMAN_MAX_JOB_HOLDS setting: 100
+05/31/24 12:35:20 DAGMAN_HOLD_CLAIM_TIME setting: 20
+05/31/24 12:35:20 ALL_DEBUG setting: 
+05/31/24 12:35:20 DAGMAN_DEBUG setting: 
+05/31/24 12:35:20 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+05/31/24 12:35:20 DAGMAN_REMOVE_NODE_JOBS setting: True
+05/31/24 12:35:20 DAGMAN will adjust edges after parsing
+05/31/24 12:35:20 Enabling log line cache for increased NFS performance.
+05/31/24 12:35:20 argv[0] == "condor_scheduniv_exec.144567162.0"
+05/31/24 12:35:20 argv[1] == "-Lockfile"
+05/31/24 12:35:20 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock"
+05/31/24 12:35:20 argv[3] == "-Dag"
+05/31/24 12:35:20 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag"
+05/31/24 12:35:20 argv[5] == "-CsdVersion"
+05/31/24 12:35:20 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+05/31/24 12:35:20 argv[7] == "-dagman"
+05/31/24 12:35:20 argv[8] == "/usr/bin/condor_dagman"
+05/31/24 12:35:20 argv[9] == "-AutoRescue"
+05/31/24 12:35:20 argv[10] == "1"
+05/31/24 12:35:20 argv[11] == "-DoRescueFrom"
+05/31/24 12:35:20 argv[12] == "0"
+05/31/24 12:35:20 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 12:35:20 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 12:35:20 Workflow batch-id: <144567162.0>
+05/31/24 12:35:20 Workflow batch-name: <bbh.dag+144567162>
+05/31/24 12:35:20 Workflow accounting_group: <>
+05/31/24 12:35:20 Workflow accounting_group_user: <>
+05/31/24 12:35:20 Warning: failed to get attribute DAGNodeName
+05/31/24 12:35:20 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+05/31/24 12:35:20 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log>
+05/31/24 12:35:20 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock
+05/31/24 12:35:20 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag
+05/31/24 12:35:20 Parsing 1 dagfiles
+05/31/24 12:35:20 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag ...
+05/31/24 12:35:20 Adjusting edges
+05/31/24 12:35:20 Dag contains 4 total jobs
+05/31/24 12:35:20 Bootstrapping...
+05/31/24 12:35:20 Number of pre-completed nodes: 0
+05/31/24 12:35:20 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 12:35:20 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 12:35:20 Of 4 nodes total:
+05/31/24 12:35:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:35:20   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:35:20     0       0        0       0       1          3        0        0
+05/31/24 12:35:20 0 job proc(s) currently held
+05/31/24 12:35:20 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+05/31/24 12:35:20 Registering condor_event_timer...
+05/31/24 12:35:21 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 job(s)...
+05/31/24 12:35:21 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 12:35:21 Masking the events recorded in the DAGMAN workflow log
+05/31/24 12:35:21 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/31/24 12:35:21 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 -a My.DAGManJobId=144567162 -a DAGManJobId=144567162 -batch-name bbh.dag+144567162 -batch-id 144567162.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 -a label=bbh DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection.sub
+05/31/24 12:35:21 From submit: Submitting job(s).
+05/31/24 12:35:21 From submit: 1 job(s) submitted to cluster 144567163.
+05/31/24 12:35:21 	assigned HTCondor ID (144567163.0.0)
+05/31/24 12:35:21 Just submitted 1 job this cycle...
+05/31/24 12:35:21 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 12:35:21 Of 4 nodes total:
+05/31/24 12:35:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:35:21   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:35:21     0       0        1       0       0          3        0        0
+05/31/24 12:35:21 0 job proc(s) currently held
+05/31/24 12:35:21 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03424286842346191; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03424286842346191; SubmitCycleTimeMin = 0.03424286842346191; SubmitCycleTimeStd = 0.03424286842346191; SubmitCycleTimeSum = 0.03424286842346191; ]
+05/31/24 12:35:26 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:35:26 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 from (144567163.0.0) to (144567163.0.0)
+05/31/24 12:35:26 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 (144567163.0.0) {05/31/24 12:35:21}
+05/31/24 12:35:26 Number of idle job procs: 1
+05/31/24 12:36:26 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:36:26 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 (144567163.0.0) {05/31/24 12:36:22}
+05/31/24 12:36:26 Number of idle job procs: 0
+05/31/24 12:38:01 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:38:01 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 (144567163.0.0) {05/31/24 12:37:58}
+05/31/24 12:38:01 Number of idle job procs: 0
+05/31/24 12:38:01 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 job proc (144567163.0.0) completed successfully.
+05/31/24 12:38:01 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 job completed
+05/31/24 12:38:01 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 12:38:01 Of 4 nodes total:
+05/31/24 12:38:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:38:01   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:38:01     1       0        0       0       1          2        0        0
+05/31/24 12:38:01 0 job proc(s) currently held
+05/31/24 12:38:01 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001171126961708069; EventCycleTimeCount = 32.0; EventCycleTimeMax = 0.03444910049438477; EventCycleTimeMin = 2.408027648925781E-05; EventCycleTimeStd = 0.006073899109556538; EventCycleTimeSum = 0.0374760627746582; LogProcessCycleTimeAvg = 0.0002607504526774089; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001790523529052734; LogProcessCycleTimeStd = 0.0001063449317261499; LogProcessCycleTimeSum = 0.0007822513580322266; SleepCycleTimeAvg = 5.004882901906967; SleepCycleTimeCount = 32.0; SleepCycleTimeMax = 5.00539493560791; SleepCycleTimeMin = 5.003093004226685; SleepCycleTimeStd = 0.0004339801849812456; SleepCycleTimeSum = 160.1562528610229; SubmitCycleTimeAvg = 0.001070549993804007; SubmitCycleTimeCount = 33.0; SubmitCycleTimeMax = 0.03424286842346191; SubmitCycleTimeMin = 1.311302185058594E-05; SubmitCycleTimeStd = 0.005955336759029654; SubmitCycleTimeSum = 0.03532814979553223; ]
+05/31/24 12:38:06 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job(s)...
+05/31/24 12:38:06 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 12:38:06 Masking the events recorded in the DAGMAN workflow log
+05/31/24 12:38:06 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/31/24 12:38:06 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a My.DAGManJobId=144567162 -a DAGManJobId=144567162 -batch-name bbh.dag+144567162 -batch-id 144567162.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 12:38:06 From submit: Submitting job(s).
+05/31/24 12:38:06 From submit: 1 job(s) submitted to cluster 144567289.
+05/31/24 12:38:06 	assigned HTCondor ID (144567289.0.0)
+05/31/24 12:38:06 Just submitted 1 job this cycle...
+05/31/24 12:38:06 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 12:38:06 Of 4 nodes total:
+05/31/24 12:38:06  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:38:06   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:38:06     1       0        1       0       0          2        0        0
+05/31/24 12:38:06 0 job proc(s) currently held
+05/31/24 12:38:06 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001151518388227983; EventCycleTimeCount = 33.0; EventCycleTimeMax = 0.03444910049438477; EventCycleTimeMin = 2.408027648925781E-05; EventCycleTimeStd = 0.005979302295533125; EventCycleTimeSum = 0.03800010681152344; LogProcessCycleTimeAvg = 0.0002607504526774089; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001790523529052734; LogProcessCycleTimeStd = 0.0001063449317261499; LogProcessCycleTimeSum = 0.0007822513580322266; SleepCycleTimeAvg = 5.004887812065355; SleepCycleTimeCount = 33.0; SleepCycleTimeMax = 5.00539493560791; SleepCycleTimeMin = 5.003093004226685; SleepCycleTimeStd = 0.0004280757327818249; SleepCycleTimeSum = 165.1612977981567; SubmitCycleTimeAvg = 0.005926770322463091; SubmitCycleTimeCount = 34.0; SubmitCycleTimeMax = 0.1661820411682129; SubmitCycleTimeMin = 1.311302185058594E-05; SubmitCycleTimeStd = 0.02891728008455871; SubmitCycleTimeSum = 0.2015101909637451; ]
+05/31/24 12:38:11 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:38:11 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 from (144567289.0.0) to (144567289.0.0)
+05/31/24 12:38:11 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567289.0.0) {05/31/24 12:38:06}
+05/31/24 12:38:11 Number of idle job procs: 1
+05/31/24 12:39:41 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:39:41 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567289.0.0) {05/31/24 12:39:36}
+05/31/24 12:39:41 Number of idle job procs: 0
+05/31/24 12:41:11 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:41:11 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567289.0.0) {05/31/24 12:41:08}
+05/31/24 12:41:11 Number of idle job procs: 0
+05/31/24 12:41:11 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job proc (144567289.0.0) failed with status 1.
+05/31/24 12:41:11 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 12:41:11 Of 4 nodes total:
+05/31/24 12:41:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:41:11   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:41:11     1       0        0       0       0          0        1        2
+05/31/24 12:41:11 0 job proc(s) currently held
+05/31/24 12:41:11 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002998876571655274; EventCycleTimeCount = 70.0; EventCycleTimeMax = 0.1663501262664795; EventCycleTimeMin = 2.217292785644531E-05; EventCycleTimeStd = 0.02023003059171167; EventCycleTimeSum = 0.2099213600158691; LogProcessCycleTimeAvg = 0.0002173582712809245; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001299381256103516; LogProcessCycleTimeStd = 8.674750051718583E-05; LogProcessCycleTimeSum = 0.001304149627685547; SleepCycleTimeAvg = 5.004954825128828; SleepCycleTimeCount = 70.0; SleepCycleTimeMax = 5.006201982498169; SleepCycleTimeMin = 5.003093004226685; SleepCycleTimeStd = 0.0004105249233712276; SleepCycleTimeSum = 350.3468377590179; SubmitCycleTimeAvg = 0.002862372868497607; SubmitCycleTimeCount = 71.0; SubmitCycleTimeMax = 0.1661820411682129; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.02007412945630607; SubmitCycleTimeSum = 0.2032284736633301; ]
+05/31/24 12:41:11 ERROR: the following job(s) failed:
+05/31/24 12:41:11 ---------------------- Job ----------------------
+05/31/24 12:41:11       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0
+05/31/24 12:41:11            Noop: false
+05/31/24 12:41:11          NodeID: 1
+05/31/24 12:41:11     Node Status: STATUS_ERROR    
+05/31/24 12:41:11 Node return val: 1
+05/31/24 12:41:11           Error: Job proc (144567289.0.0) failed with status 1
+05/31/24 12:41:11 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 12:41:11  HTCondor Job ID: (144567289.0.0)
+05/31/24 12:41:11 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0
+05/31/24 12:41:11 ---------------------------------------	<END>
+05/31/24 12:41:11 Aborting DAG...
+05/31/24 12:41:11 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue001...
+05/31/24 12:41:11 Removing submitted jobs...
+05/31/24 12:41:11 Removing any/all submitted HTCondor jobs...
+05/31/24 12:41:11 Running: /usr/bin/condor_rm -const DAGManJobId==144567162 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+05/31/24 12:41:11 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+05/31/24 12:41:11 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+05/31/24 12:41:11 Note: 0 total job deferrals because of node category throttles
+05/31/24 12:41:11 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+05/31/24 12:41:11 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+05/31/24 12:41:11 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+05/31/24 12:41:11 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 12:41:11 Of 4 nodes total:
+05/31/24 12:41:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:41:11   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:41:11     1       0        0       0       0          0        1        2
+05/31/24 12:41:11 0 job proc(s) currently held
+05/31/24 12:41:11 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002998876571655274; EventCycleTimeCount = 70.0; EventCycleTimeMax = 0.1663501262664795; EventCycleTimeMin = 2.217292785644531E-05; EventCycleTimeStd = 0.02023003059171167; EventCycleTimeSum = 0.2099213600158691; LogProcessCycleTimeAvg = 0.0002173582712809245; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001299381256103516; LogProcessCycleTimeStd = 8.674750051718583E-05; LogProcessCycleTimeSum = 0.001304149627685547; SleepCycleTimeAvg = 5.004954825128828; SleepCycleTimeCount = 70.0; SleepCycleTimeMax = 5.006201982498169; SleepCycleTimeMin = 5.003093004226685; SleepCycleTimeStd = 0.0004105249233712276; SleepCycleTimeSum = 350.3468377590179; SubmitCycleTimeAvg = 0.002862372868497607; SubmitCycleTimeCount = 71.0; SubmitCycleTimeMax = 0.1661820411682129; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.02007412945630607; SubmitCycleTimeSum = 0.2032284736633301; ]
+05/31/24 12:41:11 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.metrics.
+05/31/24 12:41:11 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.002998876571655274; EventCycleTimeCount = 70.0; EventCycleTimeMax = 0.1663501262664795; EventCycleTimeMin = 2.217292785644531E-05; EventCycleTimeStd = 0.02023003059171167; EventCycleTimeSum = 0.2099213600158691; LogProcessCycleTimeAvg = 0.0002173582712809245; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0003809928894042969; LogProcessCycleTimeMin = 0.0001299381256103516; LogProcessCycleTimeStd = 8.674750051718583E-05; LogProcessCycleTimeSum = 0.001304149627685547; SleepCycleTimeAvg = 5.004954825128828; SleepCycleTimeCount = 70.0; SleepCycleTimeMax = 5.006201982498169; SleepCycleTimeMin = 5.003093004226685; SleepCycleTimeStd = 0.0004105249233712276; SleepCycleTimeSum = 350.3468377590179; SubmitCycleTimeAvg = 0.002862372868497607; SubmitCycleTimeCount = 71.0; SubmitCycleTimeMax = 0.1661820411682129; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.02007412945630607; SubmitCycleTimeSum = 0.2032284736633301; ]
+05/31/24 12:41:11 **** condor_scheduniv_exec.144567162.0 (condor_DAGMAN) pid 292575 EXITING WITH STATUS 1
+05/31/24 12:46:11 ******************************************************
+05/31/24 12:46:11 ** condor_scheduniv_exec.144567316.0 (CONDOR_DAGMAN) STARTING UP
+05/31/24 12:46:11 ** /usr/bin/condor_dagman
+05/31/24 12:46:11 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+05/31/24 12:46:11 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+05/31/24 12:46:11 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+05/31/24 12:46:11 ** $CondorPlatform: x86_64_AlmaLinux8 $
+05/31/24 12:46:11 ** PID = 336747
+05/31/24 12:46:11 ** Log last touched 5/31 12:41:11
+05/31/24 12:46:11 ******************************************************
+05/31/24 12:46:11 Using config source: /etc/condor/condor_config
+05/31/24 12:46:11 Using local config sources: 
+05/31/24 12:46:11    /etc/condor/config.d/00-htcondor-9.0.config
+05/31/24 12:46:11    /etc/condor/config.d/00-ldas
+05/31/24 12:46:11    /etc/condor/config.d/02-scheduler
+05/31/24 12:46:11    /etc/condor/config.d/10-security
+05/31/24 12:46:11    /etc/condor/config.d/10-stash-plugin.conf
+05/31/24 12:46:11    /etc/condor/config.d/15-dagman-default-append-vars
+05/31/24 12:46:11    /etc/condor/config.d/30-scratch-mount
+05/31/24 12:46:11    /etc/condor/config.d/40-vault-credmon.conf
+05/31/24 12:46:11    /etc/condor/config.d/50-transfer-limits
+05/31/24 12:46:11    /etc/condor/config.d/65-system-periodic-hold
+05/31/24 12:46:11    /etc/condor/config.d/93-dagman-use-direct
+05/31/24 12:46:11    /etc/condor/config.d/99-memory
+05/31/24 12:46:11    /etc/condor/config.d/99-request-disk
+05/31/24 12:46:11    /etc/condor/config.d/99-request-missing-units
+05/31/24 12:46:11    /etc/condor/config.d/99-shared-port-descriptor
+05/31/24 12:46:11    /etc/condor/config.d/99-transform
+05/31/24 12:46:11    /etc/condor/condor_config.local
+05/31/24 12:46:11 config Macros = 168, Sorted = 168, StringBytes = 7919, TablesBytes = 6216
+05/31/24 12:46:11 CLASSAD_CACHING is ENABLED
+05/31/24 12:46:11 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+05/31/24 12:46:11 DaemonCore: No command port requested.
+05/31/24 12:46:16 WARNING: Saw slow DNS query, which may impact entire system: getaddrinfo(gridmon) took 5.005040 seconds.
+05/31/24 12:46:16 DAGMAN_USE_STRICT setting: 1
+05/31/24 12:46:16 DAGMAN_VERBOSITY setting: 3
+05/31/24 12:46:16 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+05/31/24 12:46:16 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+05/31/24 12:46:16 DAGMAN_SUBMIT_DELAY setting: 0
+05/31/24 12:46:16 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+05/31/24 12:46:16 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+05/31/24 12:46:16 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+05/31/24 12:46:16 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+05/31/24 12:46:16 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+05/31/24 12:46:16 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+05/31/24 12:46:16 DAGMAN_DEFAULT_PRIORITY setting: 0
+05/31/24 12:46:16 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+05/31/24 12:46:16 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+05/31/24 12:46:16 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+05/31/24 12:46:16 DAGMAN_RETRY_NODE_FIRST setting: False
+05/31/24 12:46:16 DAGMAN_MAX_JOBS_IDLE setting: 1000
+05/31/24 12:46:16 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+05/31/24 12:46:16 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+05/31/24 12:46:16 DAGMAN_MAX_POST_SCRIPTS setting: 20
+05/31/24 12:46:16 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+05/31/24 12:46:16 DAGMAN_MUNGE_NODE_NAMES setting: True
+05/31/24 12:46:16 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+05/31/24 12:46:16 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+05/31/24 12:46:16 DAGMAN_ALWAYS_RUN_POST setting: False
+05/31/24 12:46:16 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+05/31/24 12:46:16 DAGMAN_USE_DIRECT_SUBMIT setting: False
+05/31/24 12:46:16 DAGMAN_DEFAULT_APPEND_VARS setting: True
+05/31/24 12:46:16 DAGMAN_ABORT_DUPLICATES setting: True
+05/31/24 12:46:16 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+05/31/24 12:46:16 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+05/31/24 12:46:16 DAGMAN_AUTO_RESCUE setting: True
+05/31/24 12:46:16 DAGMAN_MAX_RESCUE_NUM setting: 100
+05/31/24 12:46:16 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+05/31/24 12:46:16 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+05/31/24 12:46:16 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+05/31/24 12:46:16 DAGMAN_MAX_JOB_HOLDS setting: 100
+05/31/24 12:46:16 DAGMAN_HOLD_CLAIM_TIME setting: 20
+05/31/24 12:46:16 ALL_DEBUG setting: 
+05/31/24 12:46:16 DAGMAN_DEBUG setting: 
+05/31/24 12:46:16 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+05/31/24 12:46:16 DAGMAN_REMOVE_NODE_JOBS setting: True
+05/31/24 12:46:16 DAGMAN will adjust edges after parsing
+05/31/24 12:46:16 Enabling log line cache for increased NFS performance.
+05/31/24 12:46:16 argv[0] == "condor_scheduniv_exec.144567316.0"
+05/31/24 12:46:16 argv[1] == "-Lockfile"
+05/31/24 12:46:16 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock"
+05/31/24 12:46:16 argv[3] == "-Dag"
+05/31/24 12:46:16 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag"
+05/31/24 12:46:16 argv[5] == "-CsdVersion"
+05/31/24 12:46:16 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+05/31/24 12:46:16 argv[7] == "-dagman"
+05/31/24 12:46:16 argv[8] == "/usr/bin/condor_dagman"
+05/31/24 12:46:16 argv[9] == "-AutoRescue"
+05/31/24 12:46:16 argv[10] == "1"
+05/31/24 12:46:16 argv[11] == "-DoRescueFrom"
+05/31/24 12:46:16 argv[12] == "0"
+05/31/24 12:46:16 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 12:46:16 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 12:46:16 Workflow batch-id: <144567316.0>
+05/31/24 12:46:16 Workflow batch-name: <bbh.dag+144567316>
+05/31/24 12:46:16 Workflow accounting_group: <>
+05/31/24 12:46:16 Workflow accounting_group_user: <>
+05/31/24 12:46:16 Warning: failed to get attribute DAGNodeName
+05/31/24 12:46:16 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+05/31/24 12:46:16 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log>
+05/31/24 12:46:16 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock
+05/31/24 12:46:16 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag
+05/31/24 12:46:16 Parsing 1 dagfiles
+05/31/24 12:46:16 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag ...
+05/31/24 12:46:16 Adjusting edges
+05/31/24 12:46:16 Found rescue DAG number 1; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue001 in combination with normal DAG file
+05/31/24 12:46:16 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+05/31/24 12:46:16 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue001
+05/31/24 12:46:16 Dag contains 4 total jobs
+05/31/24 12:46:16 Bootstrapping...
+05/31/24 12:46:16 Number of pre-completed nodes: 1
+05/31/24 12:46:16 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 12:46:16 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 12:46:16 Of 4 nodes total:
+05/31/24 12:46:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:46:16   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:46:16     1       0        0       0       1          2        0        0
+05/31/24 12:46:16 0 job proc(s) currently held
+05/31/24 12:46:16 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+05/31/24 12:46:16 Registering condor_event_timer...
+05/31/24 12:46:17 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job(s)...
+05/31/24 12:46:17 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 12:46:17 Masking the events recorded in the DAGMAN workflow log
+05/31/24 12:46:17 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/31/24 12:46:17 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a My.DAGManJobId=144567316 -a DAGManJobId=144567316 -batch-name bbh.dag+144567316 -batch-id 144567316.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 12:46:17 From submit: Submitting job(s).
+05/31/24 12:46:17 From submit: 1 job(s) submitted to cluster 144567319.
+05/31/24 12:46:17 	assigned HTCondor ID (144567319.0.0)
+05/31/24 12:46:17 Just submitted 1 job this cycle...
+05/31/24 12:46:17 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 12:46:17 Of 4 nodes total:
+05/31/24 12:46:17  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:46:17   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:46:17     1       0        1       0       0          2        0        0
+05/31/24 12:46:17 0 job proc(s) currently held
+05/31/24 12:46:17 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.252079963684082; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.252079963684082; SubmitCycleTimeMin = 0.252079963684082; SubmitCycleTimeStd = 0.252079963684082; SubmitCycleTimeSum = 0.252079963684082; ]
+05/31/24 12:46:22 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:46:22 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 from (144567319.0.0) to (144567319.0.0)
+05/31/24 12:46:22 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567319.0.0) {05/31/24 12:46:17}
+05/31/24 12:46:22 Number of idle job procs: 1
+05/31/24 12:47:32 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:47:32 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567319.0.0) {05/31/24 12:47:30}
+05/31/24 12:47:32 Number of idle job procs: 0
+05/31/24 12:47:47 Currently monitoring 1 HTCondor log file(s)
+05/31/24 12:47:47 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567319.0.0) {05/31/24 12:47:44}
+05/31/24 12:47:47 Number of idle job procs: 0
+05/31/24 12:47:47 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job proc (144567319.0.0) failed with status 1.
+05/31/24 12:47:47 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 12:47:47 Of 4 nodes total:
+05/31/24 12:47:47  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:47:47   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:47:47     1       0        0       0       0          0        1        2
+05/31/24 12:47:47 0 job proc(s) currently held
+05/31/24 12:47:47 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.01406297418806288; EventCycleTimeCount = 18.0; EventCycleTimeMax = 0.252216100692749; EventCycleTimeMin = 2.09808349609375E-05; EventCycleTimeStd = 0.05943521939568087; EventCycleTimeSum = 0.2531335353851318; LogProcessCycleTimeAvg = 0.0001897017161051432; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002288818359375; LogProcessCycleTimeMin = 0.0001420974731445312; LogProcessCycleTimeStd = 4.400120219045623E-05; LogProcessCycleTimeSum = 0.0005691051483154297; SleepCycleTimeAvg = 5.004724131690131; SleepCycleTimeCount = 18.0; SleepCycleTimeMax = 5.005123853683472; SleepCycleTimeMin = 5.000633001327515; SleepCycleTimeStd = 0.001030476793322036; SleepCycleTimeSum = 90.08503437042236; SubmitCycleTimeAvg = 0.01328512241965846; SubmitCycleTimeCount = 19.0; SubmitCycleTimeMax = 0.252079963684082; SubmitCycleTimeMin = 1.287460327148438E-05; SubmitCycleTimeStd = 0.05782681017624369; SubmitCycleTimeSum = 0.2524173259735107; ]
+05/31/24 12:47:47 ERROR: the following job(s) failed:
+05/31/24 12:47:47 ---------------------- Job ----------------------
+05/31/24 12:47:47       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0
+05/31/24 12:47:47            Noop: false
+05/31/24 12:47:47          NodeID: 1
+05/31/24 12:47:47     Node Status: STATUS_ERROR    
+05/31/24 12:47:47 Node return val: 1
+05/31/24 12:47:47           Error: Job proc (144567319.0.0) failed with status 1
+05/31/24 12:47:47 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 12:47:47  HTCondor Job ID: (144567319.0.0)
+05/31/24 12:47:47 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0
+05/31/24 12:47:47 ---------------------------------------	<END>
+05/31/24 12:47:47 Aborting DAG...
+05/31/24 12:47:47 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue002...
+05/31/24 12:47:47 Removing submitted jobs...
+05/31/24 12:47:47 Removing any/all submitted HTCondor jobs...
+05/31/24 12:47:47 Running: /usr/bin/condor_rm -const DAGManJobId==144567316 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+05/31/24 12:47:47 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+05/31/24 12:47:47 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+05/31/24 12:47:47 Note: 0 total job deferrals because of node category throttles
+05/31/24 12:47:47 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+05/31/24 12:47:47 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+05/31/24 12:47:47 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+05/31/24 12:47:47 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 12:47:47 Of 4 nodes total:
+05/31/24 12:47:47  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 12:47:47   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 12:47:47     1       0        0       0       0          0        1        2
+05/31/24 12:47:47 0 job proc(s) currently held
+05/31/24 12:47:47 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.01406297418806288; EventCycleTimeCount = 18.0; EventCycleTimeMax = 0.252216100692749; EventCycleTimeMin = 2.09808349609375E-05; EventCycleTimeStd = 0.05943521939568087; EventCycleTimeSum = 0.2531335353851318; LogProcessCycleTimeAvg = 0.0001897017161051432; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002288818359375; LogProcessCycleTimeMin = 0.0001420974731445312; LogProcessCycleTimeStd = 4.400120219045623E-05; LogProcessCycleTimeSum = 0.0005691051483154297; SleepCycleTimeAvg = 5.004724131690131; SleepCycleTimeCount = 18.0; SleepCycleTimeMax = 5.005123853683472; SleepCycleTimeMin = 5.000633001327515; SleepCycleTimeStd = 0.001030476793322036; SleepCycleTimeSum = 90.08503437042236; SubmitCycleTimeAvg = 0.01328512241965846; SubmitCycleTimeCount = 19.0; SubmitCycleTimeMax = 0.252079963684082; SubmitCycleTimeMin = 1.287460327148438E-05; SubmitCycleTimeStd = 0.05782681017624369; SubmitCycleTimeSum = 0.2524173259735107; ]
+05/31/24 12:47:47 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.metrics.
+05/31/24 12:47:47 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.01406297418806288; EventCycleTimeCount = 18.0; EventCycleTimeMax = 0.252216100692749; EventCycleTimeMin = 2.09808349609375E-05; EventCycleTimeStd = 0.05943521939568087; EventCycleTimeSum = 0.2531335353851318; LogProcessCycleTimeAvg = 0.0001897017161051432; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002288818359375; LogProcessCycleTimeMin = 0.0001420974731445312; LogProcessCycleTimeStd = 4.400120219045623E-05; LogProcessCycleTimeSum = 0.0005691051483154297; SleepCycleTimeAvg = 5.004724131690131; SleepCycleTimeCount = 18.0; SleepCycleTimeMax = 5.005123853683472; SleepCycleTimeMin = 5.000633001327515; SleepCycleTimeStd = 0.001030476793322036; SleepCycleTimeSum = 90.08503437042236; SubmitCycleTimeAvg = 0.01328512241965846; SubmitCycleTimeCount = 19.0; SubmitCycleTimeMax = 0.252079963684082; SubmitCycleTimeMin = 1.287460327148438E-05; SubmitCycleTimeStd = 0.05782681017624369; SubmitCycleTimeSum = 0.2524173259735107; ]
+05/31/24 12:47:47 **** condor_scheduniv_exec.144567316.0 (condor_DAGMAN) pid 336747 EXITING WITH STATUS 1
+05/31/24 14:24:27 ******************************************************
+05/31/24 14:24:27 ** condor_scheduniv_exec.144567556.0 (CONDOR_DAGMAN) STARTING UP
+05/31/24 14:24:27 ** /usr/bin/condor_dagman
+05/31/24 14:24:27 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+05/31/24 14:24:27 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+05/31/24 14:24:27 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+05/31/24 14:24:27 ** $CondorPlatform: x86_64_AlmaLinux8 $
+05/31/24 14:24:27 ** PID = 619628
+05/31/24 14:24:27 ** Log last touched 5/31 12:47:47
+05/31/24 14:24:27 ******************************************************
+05/31/24 14:24:27 Using config source: /etc/condor/condor_config
+05/31/24 14:24:27 Using local config sources: 
+05/31/24 14:24:27    /etc/condor/config.d/00-htcondor-9.0.config
+05/31/24 14:24:27    /etc/condor/config.d/00-ldas
+05/31/24 14:24:27    /etc/condor/config.d/02-scheduler
+05/31/24 14:24:27    /etc/condor/config.d/10-security
+05/31/24 14:24:27    /etc/condor/config.d/10-stash-plugin.conf
+05/31/24 14:24:27    /etc/condor/config.d/15-dagman-default-append-vars
+05/31/24 14:24:27    /etc/condor/config.d/30-scratch-mount
+05/31/24 14:24:27    /etc/condor/config.d/40-vault-credmon.conf
+05/31/24 14:24:27    /etc/condor/config.d/50-transfer-limits
+05/31/24 14:24:27    /etc/condor/config.d/65-system-periodic-hold
+05/31/24 14:24:27    /etc/condor/config.d/93-dagman-use-direct
+05/31/24 14:24:27    /etc/condor/config.d/99-memory
+05/31/24 14:24:27    /etc/condor/config.d/99-request-disk
+05/31/24 14:24:27    /etc/condor/config.d/99-request-missing-units
+05/31/24 14:24:27    /etc/condor/config.d/99-shared-port-descriptor
+05/31/24 14:24:27    /etc/condor/config.d/99-transform
+05/31/24 14:24:27    /etc/condor/condor_config.local
+05/31/24 14:24:27 config Macros = 168, Sorted = 168, StringBytes = 7919, TablesBytes = 6216
+05/31/24 14:24:27 CLASSAD_CACHING is ENABLED
+05/31/24 14:24:27 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+05/31/24 14:24:27 DaemonCore: No command port requested.
+05/31/24 14:24:27 DAGMAN_USE_STRICT setting: 1
+05/31/24 14:24:27 DAGMAN_VERBOSITY setting: 3
+05/31/24 14:24:27 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+05/31/24 14:24:27 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+05/31/24 14:24:27 DAGMAN_SUBMIT_DELAY setting: 0
+05/31/24 14:24:27 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+05/31/24 14:24:27 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+05/31/24 14:24:27 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+05/31/24 14:24:27 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+05/31/24 14:24:27 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+05/31/24 14:24:27 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+05/31/24 14:24:27 DAGMAN_DEFAULT_PRIORITY setting: 0
+05/31/24 14:24:27 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+05/31/24 14:24:27 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+05/31/24 14:24:27 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+05/31/24 14:24:27 DAGMAN_RETRY_NODE_FIRST setting: False
+05/31/24 14:24:27 DAGMAN_MAX_JOBS_IDLE setting: 1000
+05/31/24 14:24:27 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+05/31/24 14:24:27 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+05/31/24 14:24:27 DAGMAN_MAX_POST_SCRIPTS setting: 20
+05/31/24 14:24:27 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+05/31/24 14:24:27 DAGMAN_MUNGE_NODE_NAMES setting: True
+05/31/24 14:24:27 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+05/31/24 14:24:27 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+05/31/24 14:24:27 DAGMAN_ALWAYS_RUN_POST setting: False
+05/31/24 14:24:27 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+05/31/24 14:24:27 DAGMAN_USE_DIRECT_SUBMIT setting: False
+05/31/24 14:24:27 DAGMAN_DEFAULT_APPEND_VARS setting: True
+05/31/24 14:24:27 DAGMAN_ABORT_DUPLICATES setting: True
+05/31/24 14:24:27 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+05/31/24 14:24:27 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+05/31/24 14:24:27 DAGMAN_AUTO_RESCUE setting: True
+05/31/24 14:24:27 DAGMAN_MAX_RESCUE_NUM setting: 100
+05/31/24 14:24:27 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+05/31/24 14:24:27 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+05/31/24 14:24:27 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+05/31/24 14:24:27 DAGMAN_MAX_JOB_HOLDS setting: 100
+05/31/24 14:24:27 DAGMAN_HOLD_CLAIM_TIME setting: 20
+05/31/24 14:24:27 ALL_DEBUG setting: 
+05/31/24 14:24:27 DAGMAN_DEBUG setting: 
+05/31/24 14:24:27 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+05/31/24 14:24:27 DAGMAN_REMOVE_NODE_JOBS setting: True
+05/31/24 14:24:27 DAGMAN will adjust edges after parsing
+05/31/24 14:24:27 Enabling log line cache for increased NFS performance.
+05/31/24 14:24:27 argv[0] == "condor_scheduniv_exec.144567556.0"
+05/31/24 14:24:27 argv[1] == "-Lockfile"
+05/31/24 14:24:27 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock"
+05/31/24 14:24:27 argv[3] == "-Dag"
+05/31/24 14:24:27 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag"
+05/31/24 14:24:27 argv[5] == "-CsdVersion"
+05/31/24 14:24:27 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+05/31/24 14:24:27 argv[7] == "-dagman"
+05/31/24 14:24:27 argv[8] == "/usr/bin/condor_dagman"
+05/31/24 14:24:27 argv[9] == "-AutoRescue"
+05/31/24 14:24:27 argv[10] == "1"
+05/31/24 14:24:27 argv[11] == "-DoRescueFrom"
+05/31/24 14:24:27 argv[12] == "0"
+05/31/24 14:24:27 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 14:24:27 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 14:24:27 Workflow batch-id: <144567556.0>
+05/31/24 14:24:27 Workflow batch-name: <bbh.dag+144567556>
+05/31/24 14:24:27 Workflow accounting_group: <>
+05/31/24 14:24:27 Workflow accounting_group_user: <>
+05/31/24 14:24:27 Warning: failed to get attribute DAGNodeName
+05/31/24 14:24:27 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+05/31/24 14:24:27 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log>
+05/31/24 14:24:27 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock
+05/31/24 14:24:27 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag
+05/31/24 14:24:27 Parsing 1 dagfiles
+05/31/24 14:24:27 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag ...
+05/31/24 14:24:27 Adjusting edges
+05/31/24 14:24:27 Found rescue DAG number 2; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue002 in combination with normal DAG file
+05/31/24 14:24:27 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+05/31/24 14:24:27 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue002
+05/31/24 14:24:27 Dag contains 4 total jobs
+05/31/24 14:24:27 Bootstrapping...
+05/31/24 14:24:27 Number of pre-completed nodes: 1
+05/31/24 14:24:27 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 14:24:27 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 14:24:27 Of 4 nodes total:
+05/31/24 14:24:27  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:24:27   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:24:27     1       0        0       0       1          2        0        0
+05/31/24 14:24:27 0 job proc(s) currently held
+05/31/24 14:24:27 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+05/31/24 14:24:27 Registering condor_event_timer...
+05/31/24 14:24:28 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job(s)...
+05/31/24 14:24:28 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 14:24:28 Masking the events recorded in the DAGMAN workflow log
+05/31/24 14:24:28 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/31/24 14:24:28 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a My.DAGManJobId=144567556 -a DAGManJobId=144567556 -batch-name bbh.dag+144567556 -batch-id 144567556.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 14:24:28 From submit: Submitting job(s).
+05/31/24 14:24:28 From submit: 1 job(s) submitted to cluster 144567557.
+05/31/24 14:24:28 	assigned HTCondor ID (144567557.0.0)
+05/31/24 14:24:28 Just submitted 1 job this cycle...
+05/31/24 14:24:28 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 14:24:28 Of 4 nodes total:
+05/31/24 14:24:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:24:28   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:24:28     1       0        1       0       0          2        0        0
+05/31/24 14:24:28 0 job proc(s) currently held
+05/31/24 14:24:28 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03695201873779297; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03695201873779297; SubmitCycleTimeMin = 0.03695201873779297; SubmitCycleTimeStd = 0.03695201873779297; SubmitCycleTimeSum = 0.03695201873779297; ]
+05/31/24 14:24:33 Currently monitoring 1 HTCondor log file(s)
+05/31/24 14:24:33 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 from (144567557.0.0) to (144567557.0.0)
+05/31/24 14:24:33 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567557.0.0) {05/31/24 14:24:28}
+05/31/24 14:24:33 Number of idle job procs: 1
+05/31/24 14:34:34 601 seconds since last log event
+05/31/24 14:34:34 Pending DAG nodes:
+05/31/24 14:34:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144567557, status STATUS_SUBMITTED
+05/31/24 14:44:34 1201 seconds since last log event
+05/31/24 14:44:34 Pending DAG nodes:
+05/31/24 14:44:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144567557, status STATUS_SUBMITTED
+05/31/24 14:46:45 Currently monitoring 1 HTCondor log file(s)
+05/31/24 14:46:45 Event: ULOG_JOB_ABORTED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567557.0.0) {05/31/24 14:46:43}
+05/31/24 14:46:45 Number of idle job procs: 0
+05/31/24 14:46:45 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 14:46:45 Of 4 nodes total:
+05/31/24 14:46:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:46:45   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:46:45     1       0        0       0       0          0        1        2
+05/31/24 14:46:45 0 job proc(s) currently held
+05/31/24 14:46:45 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002585939700237374; EventCycleTimeCount = 267.0; EventCycleTimeMax = 0.03707790374755859; EventCycleTimeMin = 2.09808349609375E-05; EventCycleTimeStd = 0.002296644608668493; EventCycleTimeSum = 0.06904458999633789; LogProcessCycleTimeAvg = 0.0002498626708984375; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.0003778934478759766; LogProcessCycleTimeMin = 0.0001218318939208984; LogProcessCycleTimeStd = 0.0001810628612028008; LogProcessCycleTimeSum = 0.000499725341796875; SleepCycleTimeAvg = 5.004853762044442; SleepCycleTimeCount = 267.0; SleepCycleTimeMax = 5.005998134613037; SleepCycleTimeMin = 5.000165939331055; SleepCycleTimeStd = 0.0006781234055045892; SleepCycleTimeSum = 1336.295954465866; SubmitCycleTimeAvg = 0.0001878311384969683; SubmitCycleTimeCount = 268.0; SubmitCycleTimeMax = 0.03695201873779297; SubmitCycleTimeMin = 1.192092895507812E-05; SubmitCycleTimeStd = 0.002256256522362811; SubmitCycleTimeSum = 0.0503387451171875; ]
+05/31/24 14:46:45 ERROR: the following job(s) failed:
+05/31/24 14:46:45 ---------------------- Job ----------------------
+05/31/24 14:46:45       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0
+05/31/24 14:46:45            Noop: false
+05/31/24 14:46:45          NodeID: 1
+05/31/24 14:46:45     Node Status: STATUS_ERROR    
+05/31/24 14:46:45 Node return val: -1002
+05/31/24 14:46:45           Error: HTCondor reported ULOG_JOB_ABORTED event for job proc (144567557.0.0)
+05/31/24 14:46:45 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 14:46:45  HTCondor Job ID: (144567557.0.0)
+05/31/24 14:46:45 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0
+05/31/24 14:46:45 ---------------------------------------	<END>
+05/31/24 14:46:45 Aborting DAG...
+05/31/24 14:46:45 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue003...
+05/31/24 14:46:45 Removing submitted jobs...
+05/31/24 14:46:45 Removing any/all submitted HTCondor jobs...
+05/31/24 14:46:45 Running: /usr/bin/condor_rm -const DAGManJobId==144567556 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+05/31/24 14:46:45 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+05/31/24 14:46:45 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+05/31/24 14:46:45 Note: 0 total job deferrals because of node category throttles
+05/31/24 14:46:45 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+05/31/24 14:46:45 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+05/31/24 14:46:45 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+05/31/24 14:46:45 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 14:46:45 Of 4 nodes total:
+05/31/24 14:46:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:46:45   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:46:45     1       0        0       0       0          0        1        2
+05/31/24 14:46:45 0 job proc(s) currently held
+05/31/24 14:46:45 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002585939700237374; EventCycleTimeCount = 267.0; EventCycleTimeMax = 0.03707790374755859; EventCycleTimeMin = 2.09808349609375E-05; EventCycleTimeStd = 0.002296644608668493; EventCycleTimeSum = 0.06904458999633789; LogProcessCycleTimeAvg = 0.0002498626708984375; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.0003778934478759766; LogProcessCycleTimeMin = 0.0001218318939208984; LogProcessCycleTimeStd = 0.0001810628612028008; LogProcessCycleTimeSum = 0.000499725341796875; SleepCycleTimeAvg = 5.004853762044442; SleepCycleTimeCount = 267.0; SleepCycleTimeMax = 5.005998134613037; SleepCycleTimeMin = 5.000165939331055; SleepCycleTimeStd = 0.0006781234055045892; SleepCycleTimeSum = 1336.295954465866; SubmitCycleTimeAvg = 0.0001878311384969683; SubmitCycleTimeCount = 268.0; SubmitCycleTimeMax = 0.03695201873779297; SubmitCycleTimeMin = 1.192092895507812E-05; SubmitCycleTimeStd = 0.002256256522362811; SubmitCycleTimeSum = 0.0503387451171875; ]
+05/31/24 14:46:45 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.metrics.
+05/31/24 14:46:45 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0002585939700237374; EventCycleTimeCount = 267.0; EventCycleTimeMax = 0.03707790374755859; EventCycleTimeMin = 2.09808349609375E-05; EventCycleTimeStd = 0.002296644608668493; EventCycleTimeSum = 0.06904458999633789; LogProcessCycleTimeAvg = 0.0002498626708984375; LogProcessCycleTimeCount = 2.0; LogProcessCycleTimeMax = 0.0003778934478759766; LogProcessCycleTimeMin = 0.0001218318939208984; LogProcessCycleTimeStd = 0.0001810628612028008; LogProcessCycleTimeSum = 0.000499725341796875; SleepCycleTimeAvg = 5.004853762044442; SleepCycleTimeCount = 267.0; SleepCycleTimeMax = 5.005998134613037; SleepCycleTimeMin = 5.000165939331055; SleepCycleTimeStd = 0.0006781234055045892; SleepCycleTimeSum = 1336.295954465866; SubmitCycleTimeAvg = 0.0001878311384969683; SubmitCycleTimeCount = 268.0; SubmitCycleTimeMax = 0.03695201873779297; SubmitCycleTimeMin = 1.192092895507812E-05; SubmitCycleTimeStd = 0.002256256522362811; SubmitCycleTimeSum = 0.0503387451171875; ]
+05/31/24 14:46:45 **** condor_scheduniv_exec.144567556.0 (condor_DAGMAN) pid 619628 EXITING WITH STATUS 1
+05/31/24 14:49:24 ******************************************************
+05/31/24 14:49:24 ** condor_scheduniv_exec.144567628.0 (CONDOR_DAGMAN) STARTING UP
+05/31/24 14:49:24 ** /usr/bin/condor_dagman
+05/31/24 14:49:24 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+05/31/24 14:49:24 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+05/31/24 14:49:24 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+05/31/24 14:49:24 ** $CondorPlatform: x86_64_AlmaLinux8 $
+05/31/24 14:49:24 ** PID = 739845
+05/31/24 14:49:24 ** Log last touched 5/31 14:46:45
+05/31/24 14:49:24 ******************************************************
+05/31/24 14:49:24 Using config source: /etc/condor/condor_config
+05/31/24 14:49:24 Using local config sources: 
+05/31/24 14:49:24    /etc/condor/config.d/00-htcondor-9.0.config
+05/31/24 14:49:24    /etc/condor/config.d/00-ldas
+05/31/24 14:49:24    /etc/condor/config.d/02-scheduler
+05/31/24 14:49:24    /etc/condor/config.d/10-security
+05/31/24 14:49:24    /etc/condor/config.d/10-stash-plugin.conf
+05/31/24 14:49:24    /etc/condor/config.d/15-dagman-default-append-vars
+05/31/24 14:49:24    /etc/condor/config.d/30-scratch-mount
+05/31/24 14:49:24    /etc/condor/config.d/40-vault-credmon.conf
+05/31/24 14:49:24    /etc/condor/config.d/50-transfer-limits
+05/31/24 14:49:24    /etc/condor/config.d/65-system-periodic-hold
+05/31/24 14:49:24    /etc/condor/config.d/93-dagman-use-direct
+05/31/24 14:49:24    /etc/condor/config.d/99-memory
+05/31/24 14:49:24    /etc/condor/config.d/99-request-disk
+05/31/24 14:49:24    /etc/condor/config.d/99-request-missing-units
+05/31/24 14:49:24    /etc/condor/config.d/99-shared-port-descriptor
+05/31/24 14:49:24    /etc/condor/config.d/99-transform
+05/31/24 14:49:24    /etc/condor/condor_config.local
+05/31/24 14:49:24 config Macros = 168, Sorted = 168, StringBytes = 7919, TablesBytes = 6216
+05/31/24 14:49:24 CLASSAD_CACHING is ENABLED
+05/31/24 14:49:24 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+05/31/24 14:49:24 DaemonCore: No command port requested.
+05/31/24 14:49:24 DAGMAN_USE_STRICT setting: 1
+05/31/24 14:49:24 DAGMAN_VERBOSITY setting: 3
+05/31/24 14:49:24 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+05/31/24 14:49:24 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+05/31/24 14:49:24 DAGMAN_SUBMIT_DELAY setting: 0
+05/31/24 14:49:24 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+05/31/24 14:49:24 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+05/31/24 14:49:24 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+05/31/24 14:49:24 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+05/31/24 14:49:24 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+05/31/24 14:49:24 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+05/31/24 14:49:24 DAGMAN_DEFAULT_PRIORITY setting: 0
+05/31/24 14:49:24 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+05/31/24 14:49:24 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+05/31/24 14:49:24 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+05/31/24 14:49:24 DAGMAN_RETRY_NODE_FIRST setting: False
+05/31/24 14:49:24 DAGMAN_MAX_JOBS_IDLE setting: 1000
+05/31/24 14:49:24 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+05/31/24 14:49:24 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+05/31/24 14:49:24 DAGMAN_MAX_POST_SCRIPTS setting: 20
+05/31/24 14:49:24 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+05/31/24 14:49:24 DAGMAN_MUNGE_NODE_NAMES setting: True
+05/31/24 14:49:24 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+05/31/24 14:49:24 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+05/31/24 14:49:24 DAGMAN_ALWAYS_RUN_POST setting: False
+05/31/24 14:49:24 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+05/31/24 14:49:24 DAGMAN_USE_DIRECT_SUBMIT setting: False
+05/31/24 14:49:24 DAGMAN_DEFAULT_APPEND_VARS setting: True
+05/31/24 14:49:24 DAGMAN_ABORT_DUPLICATES setting: True
+05/31/24 14:49:24 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+05/31/24 14:49:24 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+05/31/24 14:49:24 DAGMAN_AUTO_RESCUE setting: True
+05/31/24 14:49:24 DAGMAN_MAX_RESCUE_NUM setting: 100
+05/31/24 14:49:24 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+05/31/24 14:49:24 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+05/31/24 14:49:24 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+05/31/24 14:49:24 DAGMAN_MAX_JOB_HOLDS setting: 100
+05/31/24 14:49:24 DAGMAN_HOLD_CLAIM_TIME setting: 20
+05/31/24 14:49:24 ALL_DEBUG setting: 
+05/31/24 14:49:24 DAGMAN_DEBUG setting: 
+05/31/24 14:49:24 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+05/31/24 14:49:24 DAGMAN_REMOVE_NODE_JOBS setting: True
+05/31/24 14:49:24 DAGMAN will adjust edges after parsing
+05/31/24 14:49:24 Enabling log line cache for increased NFS performance.
+05/31/24 14:49:24 argv[0] == "condor_scheduniv_exec.144567628.0"
+05/31/24 14:49:24 argv[1] == "-Lockfile"
+05/31/24 14:49:24 argv[2] == "O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock"
+05/31/24 14:49:24 argv[3] == "-Dag"
+05/31/24 14:49:24 argv[4] == "O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag"
+05/31/24 14:49:24 argv[5] == "-CsdVersion"
+05/31/24 14:49:24 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+05/31/24 14:49:24 argv[7] == "-dagman"
+05/31/24 14:49:24 argv[8] == "/usr/bin/condor_dagman"
+05/31/24 14:49:24 argv[9] == "-AutoRescue"
+05/31/24 14:49:24 argv[10] == "1"
+05/31/24 14:49:24 argv[11] == "-DoRescueFrom"
+05/31/24 14:49:24 argv[12] == "0"
+05/31/24 14:49:24 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 14:49:24 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+05/31/24 14:49:24 Workflow batch-id: <144567628.0>
+05/31/24 14:49:24 Workflow batch-name: <bbh.dag+144567628>
+05/31/24 14:49:24 Workflow accounting_group: <>
+05/31/24 14:49:24 Workflow accounting_group_user: <>
+05/31/24 14:49:24 Warning: failed to get attribute DAGNodeName
+05/31/24 14:49:24 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+05/31/24 14:49:24 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log>
+05/31/24 14:49:24 DAG Lockfile will be written to O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock
+05/31/24 14:49:24 DAG Input file is O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag
+05/31/24 14:49:24 Parsing 1 dagfiles
+05/31/24 14:49:24 Parsing O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag ...
+05/31/24 14:49:24 Adjusting edges
+05/31/24 14:49:24 Found rescue DAG number 3; running O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue003 in combination with normal DAG file
+05/31/24 14:49:24 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+05/31/24 14:49:24 USING RESCUE DAG O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue003
+05/31/24 14:49:24 Dag contains 4 total jobs
+05/31/24 14:49:24 Bootstrapping...
+05/31/24 14:49:24 Number of pre-completed nodes: 1
+05/31/24 14:49:24 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 14:49:24 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 14:49:24 Of 4 nodes total:
+05/31/24 14:49:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:49:24   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:49:24     1       0        0       0       1          2        0        0
+05/31/24 14:49:24 0 job proc(s) currently held
+05/31/24 14:49:24 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+05/31/24 14:49:24 Registering condor_event_timer...
+05/31/24 14:49:25 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job(s)...
+05/31/24 14:49:25 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+05/31/24 14:49:25 Masking the events recorded in the DAGMAN workflow log
+05/31/24 14:49:25 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+05/31/24 14:49:25 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a My.DAGManJobId=144567628 -a DAGManJobId=144567628 -batch-name bbh.dag+144567628 -batch-id 144567628.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 14:49:25 From submit: Submitting job(s).
+05/31/24 14:49:25 From submit: 1 job(s) submitted to cluster 144567629.
+05/31/24 14:49:25 	assigned HTCondor ID (144567629.0.0)
+05/31/24 14:49:25 Just submitted 1 job this cycle...
+05/31/24 14:49:25 DAG status: 0 (DAG_STATUS_OK)
+05/31/24 14:49:25 Of 4 nodes total:
+05/31/24 14:49:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:49:25   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:49:25     1       0        1       0       0          2        0        0
+05/31/24 14:49:25 0 job proc(s) currently held
+05/31/24 14:49:25 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.03565502166748047; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.03565502166748047; SubmitCycleTimeMin = 0.03565502166748047; SubmitCycleTimeStd = 0.03565502166748047; SubmitCycleTimeSum = 0.03565502166748047; ]
+05/31/24 14:49:30 Currently monitoring 1 HTCondor log file(s)
+05/31/24 14:49:30 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 from (144567629.0.0) to (144567629.0.0)
+05/31/24 14:49:30 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567629.0.0) {05/31/24 14:49:25}
+05/31/24 14:49:30 Number of idle job procs: 1
+05/31/24 14:56:35 Currently monitoring 1 HTCondor log file(s)
+05/31/24 14:56:35 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567629.0.0) {05/31/24 14:56:30}
+05/31/24 14:56:35 Number of idle job procs: 0
+05/31/24 14:57:20 Currently monitoring 1 HTCondor log file(s)
+05/31/24 14:57:20 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144567629.0.0) {05/31/24 14:57:17}
+05/31/24 14:57:20 Number of idle job procs: 0
+05/31/24 14:57:20 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job proc (144567629.0.0) failed with status 1.
+05/31/24 14:57:20 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 14:57:20 Of 4 nodes total:
+05/31/24 14:57:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:57:20   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:57:20     1       0        0       0       0          0        1        2
+05/31/24 14:57:20 0 job proc(s) currently held
+05/31/24 14:57:20 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0004603160055060136; EventCycleTimeCount = 95.0; EventCycleTimeMax = 0.03577804565429688; EventCycleTimeMin = 1.9073486328125E-05; EventCycleTimeStd = 0.003674374275605328; EventCycleTimeSum = 0.04373002052307129; LogProcessCycleTimeAvg = 0.000192721684773763; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002050399780273438; LogProcessCycleTimeMin = 0.00018310546875; LogProcessCycleTimeStd = 1.1214124590283E-05; LogProcessCycleTimeSum = 0.0005781650543212891; SleepCycleTimeAvg = 4.99440279006958; SleepCycleTimeCount = 95.0; SleepCycleTimeMax = 5.00584602355957; SleepCycleTimeMin = 4.003822803497314; SleepCycleTimeStd = 0.1027130487501405; SleepCycleTimeSum = 474.4682650566101; SubmitCycleTimeAvg = 0.0004001632332801819; SubmitCycleTimeCount = 96.0; SubmitCycleTimeMax = 0.03565502166748047; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.003636532440793076; SubmitCycleTimeSum = 0.03841567039489746; ]
+05/31/24 14:57:20 ERROR: the following job(s) failed:
+05/31/24 14:57:20 ---------------------- Job ----------------------
+05/31/24 14:57:20       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0
+05/31/24 14:57:20            Noop: false
+05/31/24 14:57:20          NodeID: 1
+05/31/24 14:57:20     Node Status: STATUS_ERROR    
+05/31/24 14:57:20 Node return val: 1
+05/31/24 14:57:20           Error: Job proc (144567629.0.0) failed with status 1
+05/31/24 14:57:20 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+05/31/24 14:57:20  HTCondor Job ID: (144567629.0.0)
+05/31/24 14:57:20 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0 WAITING: 0 CHILDREN: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0
+05/31/24 14:57:20 ---------------------------------------	<END>
+05/31/24 14:57:20 Aborting DAG...
+05/31/24 14:57:20 Writing Rescue DAG to O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue004...
+05/31/24 14:57:20 Removing submitted jobs...
+05/31/24 14:57:20 Removing any/all submitted HTCondor jobs...
+05/31/24 14:57:20 Running: /usr/bin/condor_rm -const DAGManJobId==144567628 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+05/31/24 14:57:20 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+05/31/24 14:57:20 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+05/31/24 14:57:20 Note: 0 total job deferrals because of node category throttles
+05/31/24 14:57:20 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+05/31/24 14:57:20 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+05/31/24 14:57:20 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+05/31/24 14:57:20 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+05/31/24 14:57:20 Of 4 nodes total:
+05/31/24 14:57:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+05/31/24 14:57:20   ===     ===      ===     ===     ===        ===      ===      ===
+05/31/24 14:57:20     1       0        0       0       0          0        1        2
+05/31/24 14:57:20 0 job proc(s) currently held
+05/31/24 14:57:20 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0004603160055060136; EventCycleTimeCount = 95.0; EventCycleTimeMax = 0.03577804565429688; EventCycleTimeMin = 1.9073486328125E-05; EventCycleTimeStd = 0.003674374275605328; EventCycleTimeSum = 0.04373002052307129; LogProcessCycleTimeAvg = 0.000192721684773763; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002050399780273438; LogProcessCycleTimeMin = 0.00018310546875; LogProcessCycleTimeStd = 1.1214124590283E-05; LogProcessCycleTimeSum = 0.0005781650543212891; SleepCycleTimeAvg = 4.99440279006958; SleepCycleTimeCount = 95.0; SleepCycleTimeMax = 5.00584602355957; SleepCycleTimeMin = 4.003822803497314; SleepCycleTimeStd = 0.1027130487501405; SleepCycleTimeSum = 474.4682650566101; SubmitCycleTimeAvg = 0.0004001632332801819; SubmitCycleTimeCount = 96.0; SubmitCycleTimeMax = 0.03565502166748047; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.003636532440793076; SubmitCycleTimeSum = 0.03841567039489746; ]
+05/31/24 14:57:20 Wrote metrics file O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.metrics.
+05/31/24 14:57:20 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0004603160055060136; EventCycleTimeCount = 95.0; EventCycleTimeMax = 0.03577804565429688; EventCycleTimeMin = 1.9073486328125E-05; EventCycleTimeStd = 0.003674374275605328; EventCycleTimeSum = 0.04373002052307129; LogProcessCycleTimeAvg = 0.000192721684773763; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0002050399780273438; LogProcessCycleTimeMin = 0.00018310546875; LogProcessCycleTimeStd = 1.1214124590283E-05; LogProcessCycleTimeSum = 0.0005781650543212891; SleepCycleTimeAvg = 4.99440279006958; SleepCycleTimeCount = 95.0; SleepCycleTimeMax = 5.00584602355957; SleepCycleTimeMin = 4.003822803497314; SleepCycleTimeStd = 0.1027130487501405; SleepCycleTimeSum = 474.4682650566101; SubmitCycleTimeAvg = 0.0004001632332801819; SubmitCycleTimeCount = 96.0; SubmitCycleTimeMax = 0.03565502166748047; SubmitCycleTimeMin = 1.096725463867188E-05; SubmitCycleTimeStd = 0.003636532440793076; SubmitCycleTimeSum = 0.03841567039489746; ]
+05/31/24 14:57:20 **** condor_scheduniv_exec.144567628.0 (condor_DAGMAN) pid 739845 EXITING WITH STATUS 1
+06/03/24 09:33:14 ******************************************************
+06/03/24 09:33:14 ** condor_scheduniv_exec.144637257.0 (CONDOR_DAGMAN) STARTING UP
+06/03/24 09:33:14 ** /usr/bin/condor_dagman
+06/03/24 09:33:14 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+06/03/24 09:33:14 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+06/03/24 09:33:14 ** $CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $
+06/03/24 09:33:14 ** $CondorPlatform: x86_64_AlmaLinux8 $
+06/03/24 09:33:14 ** PID = 1992911
+06/03/24 09:33:14 ** Log last touched 5/31 14:57:20
+06/03/24 09:33:14 ******************************************************
+06/03/24 09:33:14 Using config source: /etc/condor/condor_config
+06/03/24 09:33:14 Using local config sources: 
+06/03/24 09:33:14    /etc/condor/config.d/00-htcondor-9.0.config
+06/03/24 09:33:14    /etc/condor/config.d/00-ldas
+06/03/24 09:33:14    /etc/condor/config.d/02-scheduler
+06/03/24 09:33:14    /etc/condor/config.d/10-security
+06/03/24 09:33:14    /etc/condor/config.d/10-stash-plugin.conf
+06/03/24 09:33:14    /etc/condor/config.d/15-dagman-default-append-vars
+06/03/24 09:33:14    /etc/condor/config.d/30-scratch-mount
+06/03/24 09:33:14    /etc/condor/config.d/40-vault-credmon.conf
+06/03/24 09:33:14    /etc/condor/config.d/50-transfer-limits
+06/03/24 09:33:14    /etc/condor/config.d/65-system-periodic-hold
+06/03/24 09:33:14    /etc/condor/config.d/93-dagman-use-direct
+06/03/24 09:33:14    /etc/condor/config.d/99-memory
+06/03/24 09:33:14    /etc/condor/config.d/99-request-disk
+06/03/24 09:33:14    /etc/condor/config.d/99-request-missing-units
+06/03/24 09:33:14    /etc/condor/config.d/99-shared-port-descriptor
+06/03/24 09:33:14    /etc/condor/config.d/99-transform
+06/03/24 09:33:14    /etc/condor/condor_config.local
+06/03/24 09:33:14 config Macros = 168, Sorted = 168, StringBytes = 7921, TablesBytes = 6216
+06/03/24 09:33:14 CLASSAD_CACHING is ENABLED
+06/03/24 09:33:14 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+06/03/24 09:33:14 DaemonCore: No command port requested.
+06/03/24 09:33:14 DAGMAN_USE_STRICT setting: 1
+06/03/24 09:33:14 DAGMAN_VERBOSITY setting: 3
+06/03/24 09:33:14 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/03/24 09:33:14 DAGMAN_DEBUG_CACHE_ENABLE setting: True
+06/03/24 09:33:14 DAGMAN_SUBMIT_DELAY setting: 0
+06/03/24 09:33:14 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/03/24 09:33:14 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/03/24 09:33:14 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+06/03/24 09:33:14 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+06/03/24 09:33:14 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/03/24 09:33:14 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+06/03/24 09:33:14 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/03/24 09:33:14 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+06/03/24 09:33:14 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/03/24 09:33:14 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/03/24 09:33:14 DAGMAN_RETRY_NODE_FIRST setting: False
+06/03/24 09:33:14 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/03/24 09:33:14 DAGMAN_MAX_JOBS_SUBMITTED setting: 12000
+06/03/24 09:33:14 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/03/24 09:33:14 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/03/24 09:33:14 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+06/03/24 09:33:14 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/03/24 09:33:14 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/03/24 09:33:14 DAGMAN_SUBMIT_DEPTH_FIRST setting: True
+06/03/24 09:33:14 DAGMAN_ALWAYS_RUN_POST setting: False
+06/03/24 09:33:14 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+06/03/24 09:33:14 DAGMAN_USE_DIRECT_SUBMIT setting: False
+06/03/24 09:33:14 DAGMAN_DEFAULT_APPEND_VARS setting: True
+06/03/24 09:33:14 DAGMAN_ABORT_DUPLICATES setting: True
+06/03/24 09:33:14 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/03/24 09:33:14 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/03/24 09:33:14 DAGMAN_AUTO_RESCUE setting: True
+06/03/24 09:33:14 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/03/24 09:33:14 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/03/24 09:33:14 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/03/24 09:33:14 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/03/24 09:33:14 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/03/24 09:33:14 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/03/24 09:33:14 ALL_DEBUG setting: 
+06/03/24 09:33:14 DAGMAN_DEBUG setting: 
+06/03/24 09:33:14 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/03/24 09:33:14 DAGMAN_REMOVE_NODE_JOBS setting: True
+06/03/24 09:33:14 DAGMAN will adjust edges after parsing
+06/03/24 09:33:14 Enabling log line cache for increased NFS performance.
+06/03/24 09:33:14 argv[0] == "condor_scheduniv_exec.144637257.0"
+06/03/24 09:33:14 argv[1] == "-Lockfile"
+06/03/24 09:33:14 argv[2] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock"
+06/03/24 09:33:14 argv[3] == "-Dag"
+06/03/24 09:33:14 argv[4] == "/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag"
+06/03/24 09:33:14 argv[5] == "-CsdVersion"
+06/03/24 09:33:14 argv[6] == "$CondorVersion: 23.6.2 2024-04-15 BuildID: 726967 PackageID: 23.6.2-1 GitSHA: 61fd87b2 $"
+06/03/24 09:33:14 argv[7] == "-dagman"
+06/03/24 09:33:14 argv[8] == "/usr/bin/condor_dagman"
+06/03/24 09:33:14 argv[9] == "-AutoRescue"
+06/03/24 09:33:14 argv[10] == "1"
+06/03/24 09:33:14 argv[11] == "-DoRescueFrom"
+06/03/24 09:33:14 argv[12] == "0"
+06/03/24 09:33:15 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/03/24 09:33:15 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/03/24 09:33:15 Workflow batch-id: <144637257.0>
+06/03/24 09:33:15 Workflow batch-name: <bbh.dag+144637257>
+06/03/24 09:33:15 Workflow accounting_group: <>
+06/03/24 09:33:15 Workflow accounting_group_user: <>
+06/03/24 09:33:15 Warning: failed to get attribute DAGNodeName
+06/03/24 09:33:15 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+06/03/24 09:33:15 Default node log file is: </home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log>
+06/03/24 09:33:15 DAG Lockfile will be written to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.lock
+06/03/24 09:33:15 DAG Input file is /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag
+06/03/24 09:33:15 Parsing 1 dagfiles
+06/03/24 09:33:15 Parsing /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag ...
+06/03/24 09:33:15 Adjusting edges
+06/03/24 09:33:15 Found rescue DAG number 4; running /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue004 in combination with normal DAG file
+06/03/24 09:33:15 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+06/03/24 09:33:15 USING RESCUE DAG /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue004
+06/03/24 09:33:15 Dag contains 4 total jobs
+06/03/24 09:33:15 Bootstrapping...
+06/03/24 09:33:15 Number of pre-completed nodes: 1
+06/03/24 09:33:15 MultiLogFiles: truncating log file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+06/03/24 09:33:15 DAG status: 0 (DAG_STATUS_OK)
+06/03/24 09:33:15 Of 4 nodes total:
+06/03/24 09:33:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/03/24 09:33:15   ===     ===      ===     ===     ===        ===      ===      ===
+06/03/24 09:33:15     1       0        0       0       1          2        0        0
+06/03/24 09:33:15 0 job proc(s) currently held
+06/03/24 09:33:15 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; ]
+06/03/24 09:33:15 Registering condor_event_timer...
+06/03/24 09:33:16 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job(s)...
+06/03/24 09:33:16 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+06/03/24 09:33:16 Masking the events recorded in the DAGMAN workflow log
+06/03/24 09:33:16 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/03/24 09:33:16 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a My.DAGManJobId=144637257 -a DAGManJobId=144637257 -batch-name bbh.dag+144637257 -batch-id 144637257.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw -a models=--models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift -a vt_models=--vt-models' 'mass:variable_qmin.parabola_m2min_allgammazeta' '--vt-models' 'redshift:gwpopulation.models.redshift.PowerLawRedshift DAG_STATUS=0 FAILED_COUNT=0 My.KeepClaimIdle=20 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/collection:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis.sub
+06/03/24 09:33:16 From submit: Submitting job(s).
+06/03/24 09:33:16 From submit: 1 job(s) submitted to cluster 144637258.
+06/03/24 09:33:16 	assigned HTCondor ID (144637258.0.0)
+06/03/24 09:33:16 Just submitted 1 job this cycle...
+06/03/24 09:33:16 DAG status: 0 (DAG_STATUS_OK)
+06/03/24 09:33:16 Of 4 nodes total:
+06/03/24 09:33:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/03/24 09:33:16   ===     ===      ===     ===     ===        ===      ===      ===
+06/03/24 09:33:16     1       0        1       0       0          2        0        0
+06/03/24 09:33:16 0 job proc(s) currently held
+06/03/24 09:33:16 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; SubmitCycleTimeAvg = 0.04747200012207031; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.04747200012207031; SubmitCycleTimeMin = 0.04747200012207031; SubmitCycleTimeStd = 0.04747200012207031; SubmitCycleTimeSum = 0.04747200012207031; ]
+06/03/24 09:33:21 Currently monitoring 1 HTCondor log file(s)
+06/03/24 09:33:21 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 from (144637258.0.0) to (144637258.0.0)
+06/03/24 09:33:21 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144637258.0.0) {06/03/24 09:33:16}
+06/03/24 09:33:21 Number of idle job procs: 1
+06/03/24 09:34:46 Currently monitoring 1 HTCondor log file(s)
+06/03/24 09:34:46 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144637258.0.0) {06/03/24 09:34:42}
+06/03/24 09:34:46 Number of idle job procs: 0
+06/03/24 09:44:47 601 seconds since last log event
+06/03/24 09:44:47 Pending DAG nodes:
+06/03/24 09:44:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 09:54:47 1201 seconds since last log event
+06/03/24 09:54:47 Pending DAG nodes:
+06/03/24 09:54:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 10:04:48 1802 seconds since last log event
+06/03/24 10:04:48 Pending DAG nodes:
+06/03/24 10:04:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 10:14:48 2402 seconds since last log event
+06/03/24 10:14:48 Pending DAG nodes:
+06/03/24 10:14:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 10:24:48 3002 seconds since last log event
+06/03/24 10:24:48 Pending DAG nodes:
+06/03/24 10:24:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 10:34:48 3602 seconds since last log event
+06/03/24 10:34:48 Pending DAG nodes:
+06/03/24 10:34:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 10:44:48 4202 seconds since last log event
+06/03/24 10:44:48 Pending DAG nodes:
+06/03/24 10:44:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 10:54:49 4803 seconds since last log event
+06/03/24 10:54:49 Pending DAG nodes:
+06/03/24 10:54:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 11:04:49 5403 seconds since last log event
+06/03/24 11:04:49 Pending DAG nodes:
+06/03/24 11:04:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 11:14:50 6004 seconds since last log event
+06/03/24 11:14:50 Pending DAG nodes:
+06/03/24 11:14:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 11:24:51 6605 seconds since last log event
+06/03/24 11:24:51 Pending DAG nodes:
+06/03/24 11:24:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 11:34:51 7205 seconds since last log event
+06/03/24 11:34:51 Pending DAG nodes:
+06/03/24 11:34:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 11:44:52 7806 seconds since last log event
+06/03/24 11:44:52 Pending DAG nodes:
+06/03/24 11:44:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 11:54:52 8406 seconds since last log event
+06/03/24 11:54:52 Pending DAG nodes:
+06/03/24 11:54:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 12:04:53 9007 seconds since last log event
+06/03/24 12:04:53 Pending DAG nodes:
+06/03/24 12:04:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 12:14:54 9608 seconds since last log event
+06/03/24 12:14:54 Pending DAG nodes:
+06/03/24 12:14:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 12:24:54 10208 seconds since last log event
+06/03/24 12:24:54 Pending DAG nodes:
+06/03/24 12:24:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 12:34:55 10809 seconds since last log event
+06/03/24 12:34:55 Pending DAG nodes:
+06/03/24 12:34:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 12:44:56 11410 seconds since last log event
+06/03/24 12:44:56 Pending DAG nodes:
+06/03/24 12:44:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 12:54:56 12010 seconds since last log event
+06/03/24 12:54:56 Pending DAG nodes:
+06/03/24 12:54:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 13:04:57 12611 seconds since last log event
+06/03/24 13:04:57 Pending DAG nodes:
+06/03/24 13:04:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 13:14:58 13212 seconds since last log event
+06/03/24 13:14:58 Pending DAG nodes:
+06/03/24 13:14:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 13:24:58 13812 seconds since last log event
+06/03/24 13:24:58 Pending DAG nodes:
+06/03/24 13:24:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 13:34:58 14412 seconds since last log event
+06/03/24 13:34:58 Pending DAG nodes:
+06/03/24 13:34:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 13:44:58 15012 seconds since last log event
+06/03/24 13:44:58 Pending DAG nodes:
+06/03/24 13:44:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 13:54:59 15613 seconds since last log event
+06/03/24 13:54:59 Pending DAG nodes:
+06/03/24 13:54:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 14:05:00 16214 seconds since last log event
+06/03/24 14:05:00 Pending DAG nodes:
+06/03/24 14:05:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 14:15:00 16814 seconds since last log event
+06/03/24 14:15:00 Pending DAG nodes:
+06/03/24 14:15:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 14:25:01 17415 seconds since last log event
+06/03/24 14:25:01 Pending DAG nodes:
+06/03/24 14:25:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 14:35:02 18016 seconds since last log event
+06/03/24 14:35:02 Pending DAG nodes:
+06/03/24 14:35:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 14:45:02 18616 seconds since last log event
+06/03/24 14:45:02 Pending DAG nodes:
+06/03/24 14:45:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 14:55:03 19217 seconds since last log event
+06/03/24 14:55:03 Pending DAG nodes:
+06/03/24 14:55:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 15:05:04 19818 seconds since last log event
+06/03/24 15:05:04 Pending DAG nodes:
+06/03/24 15:05:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 15:15:07 20421 seconds since last log event
+06/03/24 15:15:07 Pending DAG nodes:
+06/03/24 15:15:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 15:25:08 21022 seconds since last log event
+06/03/24 15:25:08 Pending DAG nodes:
+06/03/24 15:25:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 15:35:08 21622 seconds since last log event
+06/03/24 15:35:08 Pending DAG nodes:
+06/03/24 15:35:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 15:45:09 22223 seconds since last log event
+06/03/24 15:45:09 Pending DAG nodes:
+06/03/24 15:45:09   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 15:55:10 22824 seconds since last log event
+06/03/24 15:55:10 Pending DAG nodes:
+06/03/24 15:55:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 16:05:11 23425 seconds since last log event
+06/03/24 16:05:11 Pending DAG nodes:
+06/03/24 16:05:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 16:15:11 24025 seconds since last log event
+06/03/24 16:15:11 Pending DAG nodes:
+06/03/24 16:15:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 16:25:12 24626 seconds since last log event
+06/03/24 16:25:12 Pending DAG nodes:
+06/03/24 16:25:12   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 16:35:14 25228 seconds since last log event
+06/03/24 16:35:14 Pending DAG nodes:
+06/03/24 16:35:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 16:45:15 25829 seconds since last log event
+06/03/24 16:45:15 Pending DAG nodes:
+06/03/24 16:45:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 16:55:15 26429 seconds since last log event
+06/03/24 16:55:15 Pending DAG nodes:
+06/03/24 16:55:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 17:05:16 27030 seconds since last log event
+06/03/24 17:05:16 Pending DAG nodes:
+06/03/24 17:05:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 17:15:17 27631 seconds since last log event
+06/03/24 17:15:17 Pending DAG nodes:
+06/03/24 17:15:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 17:25:17 28231 seconds since last log event
+06/03/24 17:25:17 Pending DAG nodes:
+06/03/24 17:25:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 17:35:18 28832 seconds since last log event
+06/03/24 17:35:18 Pending DAG nodes:
+06/03/24 17:35:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 17:45:19 29433 seconds since last log event
+06/03/24 17:45:19 Pending DAG nodes:
+06/03/24 17:45:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 17:55:19 30033 seconds since last log event
+06/03/24 17:55:19 Pending DAG nodes:
+06/03/24 17:55:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 18:05:20 30634 seconds since last log event
+06/03/24 18:05:20 Pending DAG nodes:
+06/03/24 18:05:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 18:15:20 31234 seconds since last log event
+06/03/24 18:15:20 Pending DAG nodes:
+06/03/24 18:15:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 18:25:21 31835 seconds since last log event
+06/03/24 18:25:21 Pending DAG nodes:
+06/03/24 18:25:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 18:35:22 32436 seconds since last log event
+06/03/24 18:35:22 Pending DAG nodes:
+06/03/24 18:35:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 18:45:22 33036 seconds since last log event
+06/03/24 18:45:22 Pending DAG nodes:
+06/03/24 18:45:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 18:55:23 33637 seconds since last log event
+06/03/24 18:55:23 Pending DAG nodes:
+06/03/24 18:55:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 19:05:23 34237 seconds since last log event
+06/03/24 19:05:23 Pending DAG nodes:
+06/03/24 19:05:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 19:15:24 34838 seconds since last log event
+06/03/24 19:15:24 Pending DAG nodes:
+06/03/24 19:15:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 19:25:25 35439 seconds since last log event
+06/03/24 19:25:25 Pending DAG nodes:
+06/03/24 19:25:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 19:35:25 36039 seconds since last log event
+06/03/24 19:35:25 Pending DAG nodes:
+06/03/24 19:35:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 19:45:26 36640 seconds since last log event
+06/03/24 19:45:26 Pending DAG nodes:
+06/03/24 19:45:26   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 19:55:27 37241 seconds since last log event
+06/03/24 19:55:27 Pending DAG nodes:
+06/03/24 19:55:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 20:05:27 37841 seconds since last log event
+06/03/24 20:05:27 Pending DAG nodes:
+06/03/24 20:05:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 20:15:28 38442 seconds since last log event
+06/03/24 20:15:28 Pending DAG nodes:
+06/03/24 20:15:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 20:25:28 39042 seconds since last log event
+06/03/24 20:25:28 Pending DAG nodes:
+06/03/24 20:25:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 20:35:29 39643 seconds since last log event
+06/03/24 20:35:29 Pending DAG nodes:
+06/03/24 20:35:29   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 20:45:30 40244 seconds since last log event
+06/03/24 20:45:30 Pending DAG nodes:
+06/03/24 20:45:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 20:55:30 40844 seconds since last log event
+06/03/24 20:55:30 Pending DAG nodes:
+06/03/24 20:55:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 21:05:30 41444 seconds since last log event
+06/03/24 21:05:30 Pending DAG nodes:
+06/03/24 21:05:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 21:15:30 42044 seconds since last log event
+06/03/24 21:15:30 Pending DAG nodes:
+06/03/24 21:15:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 21:25:31 42645 seconds since last log event
+06/03/24 21:25:31 Pending DAG nodes:
+06/03/24 21:25:31   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 21:35:32 43246 seconds since last log event
+06/03/24 21:35:32 Pending DAG nodes:
+06/03/24 21:35:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 21:45:32 43846 seconds since last log event
+06/03/24 21:45:32 Pending DAG nodes:
+06/03/24 21:45:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 21:55:33 44447 seconds since last log event
+06/03/24 21:55:33 Pending DAG nodes:
+06/03/24 21:55:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 22:05:33 45047 seconds since last log event
+06/03/24 22:05:33 Pending DAG nodes:
+06/03/24 22:05:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 22:15:34 45648 seconds since last log event
+06/03/24 22:15:34 Pending DAG nodes:
+06/03/24 22:15:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 22:25:35 46249 seconds since last log event
+06/03/24 22:25:35 Pending DAG nodes:
+06/03/24 22:25:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 22:35:35 46849 seconds since last log event
+06/03/24 22:35:35 Pending DAG nodes:
+06/03/24 22:35:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 22:45:36 47450 seconds since last log event
+06/03/24 22:45:36 Pending DAG nodes:
+06/03/24 22:45:36   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 22:55:37 48051 seconds since last log event
+06/03/24 22:55:37 Pending DAG nodes:
+06/03/24 22:55:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 23:05:37 48651 seconds since last log event
+06/03/24 23:05:37 Pending DAG nodes:
+06/03/24 23:05:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 23:15:38 49252 seconds since last log event
+06/03/24 23:15:38 Pending DAG nodes:
+06/03/24 23:15:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 23:25:38 49852 seconds since last log event
+06/03/24 23:25:38 Pending DAG nodes:
+06/03/24 23:25:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 23:35:39 50453 seconds since last log event
+06/03/24 23:35:39 Pending DAG nodes:
+06/03/24 23:35:39   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 23:45:40 51054 seconds since last log event
+06/03/24 23:45:40 Pending DAG nodes:
+06/03/24 23:45:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/03/24 23:55:40 51654 seconds since last log event
+06/03/24 23:55:40 Pending DAG nodes:
+06/03/24 23:55:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 00:05:41 52255 seconds since last log event
+06/04/24 00:05:41 Pending DAG nodes:
+06/04/24 00:05:41   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 00:15:41 52855 seconds since last log event
+06/04/24 00:15:41 Pending DAG nodes:
+06/04/24 00:15:41   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 00:25:42 53456 seconds since last log event
+06/04/24 00:25:42 Pending DAG nodes:
+06/04/24 00:25:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 00:35:42 54056 seconds since last log event
+06/04/24 00:35:42 Pending DAG nodes:
+06/04/24 00:35:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 00:45:42 54656 seconds since last log event
+06/04/24 00:45:42 Pending DAG nodes:
+06/04/24 00:45:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 00:55:43 55257 seconds since last log event
+06/04/24 00:55:43 Pending DAG nodes:
+06/04/24 00:55:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 01:05:43 55857 seconds since last log event
+06/04/24 01:05:43 Pending DAG nodes:
+06/04/24 01:05:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 01:15:44 56458 seconds since last log event
+06/04/24 01:15:44 Pending DAG nodes:
+06/04/24 01:15:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 01:25:45 57059 seconds since last log event
+06/04/24 01:25:45 Pending DAG nodes:
+06/04/24 01:25:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 01:35:45 57659 seconds since last log event
+06/04/24 01:35:45 Pending DAG nodes:
+06/04/24 01:35:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 01:45:46 58260 seconds since last log event
+06/04/24 01:45:46 Pending DAG nodes:
+06/04/24 01:45:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 01:55:46 58860 seconds since last log event
+06/04/24 01:55:46 Pending DAG nodes:
+06/04/24 01:55:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 02:05:47 59461 seconds since last log event
+06/04/24 02:05:47 Pending DAG nodes:
+06/04/24 02:05:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 02:15:48 60062 seconds since last log event
+06/04/24 02:15:48 Pending DAG nodes:
+06/04/24 02:15:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 02:25:48 60662 seconds since last log event
+06/04/24 02:25:48 Pending DAG nodes:
+06/04/24 02:25:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 02:35:49 61263 seconds since last log event
+06/04/24 02:35:49 Pending DAG nodes:
+06/04/24 02:35:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 02:45:50 61864 seconds since last log event
+06/04/24 02:45:50 Pending DAG nodes:
+06/04/24 02:45:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 02:55:50 62464 seconds since last log event
+06/04/24 02:55:50 Pending DAG nodes:
+06/04/24 02:55:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 03:05:51 63065 seconds since last log event
+06/04/24 03:05:51 Pending DAG nodes:
+06/04/24 03:05:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 03:15:51 63665 seconds since last log event
+06/04/24 03:15:51 Pending DAG nodes:
+06/04/24 03:15:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 03:25:52 64266 seconds since last log event
+06/04/24 03:25:52 Pending DAG nodes:
+06/04/24 03:25:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 03:35:53 64867 seconds since last log event
+06/04/24 03:35:53 Pending DAG nodes:
+06/04/24 03:35:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 03:45:53 65467 seconds since last log event
+06/04/24 03:45:53 Pending DAG nodes:
+06/04/24 03:45:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 03:55:54 66068 seconds since last log event
+06/04/24 03:55:54 Pending DAG nodes:
+06/04/24 03:55:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 04:05:55 66669 seconds since last log event
+06/04/24 04:05:55 Pending DAG nodes:
+06/04/24 04:05:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 04:15:55 67269 seconds since last log event
+06/04/24 04:15:55 Pending DAG nodes:
+06/04/24 04:15:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 04:25:56 67870 seconds since last log event
+06/04/24 04:25:56 Pending DAG nodes:
+06/04/24 04:25:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 04:35:57 68471 seconds since last log event
+06/04/24 04:35:57 Pending DAG nodes:
+06/04/24 04:35:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 04:45:57 69071 seconds since last log event
+06/04/24 04:45:57 Pending DAG nodes:
+06/04/24 04:45:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 04:55:58 69672 seconds since last log event
+06/04/24 04:55:58 Pending DAG nodes:
+06/04/24 04:55:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 05:05:58 70272 seconds since last log event
+06/04/24 05:05:58 Pending DAG nodes:
+06/04/24 05:05:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 05:15:59 70873 seconds since last log event
+06/04/24 05:15:59 Pending DAG nodes:
+06/04/24 05:15:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 05:25:59 71473 seconds since last log event
+06/04/24 05:25:59 Pending DAG nodes:
+06/04/24 05:25:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 05:35:59 72073 seconds since last log event
+06/04/24 05:35:59 Pending DAG nodes:
+06/04/24 05:35:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 05:46:00 72674 seconds since last log event
+06/04/24 05:46:00 Pending DAG nodes:
+06/04/24 05:46:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 05:56:00 73274 seconds since last log event
+06/04/24 05:56:00 Pending DAG nodes:
+06/04/24 05:56:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 06:06:01 73875 seconds since last log event
+06/04/24 06:06:01 Pending DAG nodes:
+06/04/24 06:06:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 06:16:02 74476 seconds since last log event
+06/04/24 06:16:02 Pending DAG nodes:
+06/04/24 06:16:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 06:26:02 75076 seconds since last log event
+06/04/24 06:26:02 Pending DAG nodes:
+06/04/24 06:26:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 06:36:03 75677 seconds since last log event
+06/04/24 06:36:03 Pending DAG nodes:
+06/04/24 06:36:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 06:46:03 76277 seconds since last log event
+06/04/24 06:46:03 Pending DAG nodes:
+06/04/24 06:46:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 06:56:03 76877 seconds since last log event
+06/04/24 06:56:03 Pending DAG nodes:
+06/04/24 06:56:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 07:06:04 77478 seconds since last log event
+06/04/24 07:06:04 Pending DAG nodes:
+06/04/24 07:06:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 07:16:04 78078 seconds since last log event
+06/04/24 07:16:04 Pending DAG nodes:
+06/04/24 07:16:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 07:26:05 78679 seconds since last log event
+06/04/24 07:26:05 Pending DAG nodes:
+06/04/24 07:26:05   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 07:36:06 79280 seconds since last log event
+06/04/24 07:36:06 Pending DAG nodes:
+06/04/24 07:36:06   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 07:46:06 79880 seconds since last log event
+06/04/24 07:46:06 Pending DAG nodes:
+06/04/24 07:46:06   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 07:56:07 80481 seconds since last log event
+06/04/24 07:56:07 Pending DAG nodes:
+06/04/24 07:56:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0, HTCondor ID 144637258, status STATUS_SUBMITTED
+06/04/24 08:00:17 Currently monitoring 1 HTCondor log file(s)
+06/04/24 08:00:17 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 (144637258.0.0) {06/04/24 08:00:13}
+06/04/24 08:00:17 Number of idle job procs: 0
+06/04/24 08:00:17 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job proc (144637258.0.0) completed successfully.
+06/04/24 08:00:17 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 job completed
+06/04/24 08:00:17 DAG status: 0 (DAG_STATUS_OK)
+06/04/24 08:00:17 Of 4 nodes total:
+06/04/24 08:00:17  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/04/24 08:00:17   ===     ===      ===     ===     ===        ===      ===      ===
+06/04/24 08:00:17     2       0        0       0       2          0        0        0
+06/04/24 08:00:17 0 job proc(s) currently held
+06/04/24 08:00:17 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0009885798448673081; EventCycleTimeCount = 16145.0; EventCycleTimeMax = 11.48211097717285; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.09041011107917182; EventCycleTimeSum = 15.96062159538269; LogProcessCycleTimeAvg = 0.0002936522165934245; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.000203668690346092; LogProcessCycleTimeSum = 0.0008809566497802734; SleepCycleTimeAvg = 5.00498609807182; SleepCycleTimeCount = 16145.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.07233346998453904; SleepCycleTimeSum = 80805.50055336952; SubmitCycleTimeAvg = 0.0008338941276169438; SubmitCycleTimeCount = 16146.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.09036521726390638; SubmitCycleTimeSum = 13.46405458450317; ]
+06/04/24 08:00:22 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 job(s)...
+06/04/24 08:00:22 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+06/04/24 08:00:22 Masking the events recorded in the DAGMAN workflow log
+06/04/24 08:00:22 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/04/24 08:00:22 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 -a My.DAGManJobId=144637257 -a DAGManJobId=144637257 -batch-name bbh.dag+144637257 -batch-id 144637257.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw DAG_STATUS=0 FAILED_COUNT=0 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format.sub
+06/04/24 08:00:22 From submit: Submitting job(s).
+06/04/24 08:00:22 From submit: 1 job(s) submitted to cluster 144671308.
+06/04/24 08:00:22 	assigned HTCondor ID (144671308.0.0)
+06/04/24 08:00:22 Submitting HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 job(s)...
+06/04/24 08:00:22 Adding a DAGMan workflow log /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log
+06/04/24 08:00:22 Masking the events recorded in the DAGMAN workflow log
+06/04/24 08:00:22 Mask for workflow log is 0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36
+06/04/24 08:00:22 submitting: /usr/bin/condor_submit -a dag_node_name=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 -a My.DAGManJobId=144637257 -a DAGManJobId=144637257 -batch-name bbh.dag+144637257 -batch-id 144637257.0 -a submit_event_notes' '=' 'DAG' 'Node:' '/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 -a dagman_log=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.nodes.log -a My.DAGManNodesMask="0,1,2,4,5,7,8,9,10,11,12,13,16,17,24,27,35,36" JOB=/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 -a label=bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw DAG_STATUS=0 FAILED_COUNT=0 My.DAGParentNodeNames="/home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0" /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot.sub
+06/04/24 08:00:22 From submit: Submitting job(s).
+06/04/24 08:00:22 From submit: 1 job(s) submitted to cluster 144671309.
+06/04/24 08:00:22 	assigned HTCondor ID (144671309.0.0)
+06/04/24 08:00:22 Just submitted 2 jobs this cycle...
+06/04/24 08:00:22 DAG status: 0 (DAG_STATUS_OK)
+06/04/24 08:00:22 Of 4 nodes total:
+06/04/24 08:00:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/04/24 08:00:22   ===     ===      ===     ===     ===        ===      ===      ===
+06/04/24 08:00:22     2       0        2       0       0          0        0        0
+06/04/24 08:00:22 0 job proc(s) currently held
+06/04/24 08:00:22 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0009885607311513867; EventCycleTimeCount = 16146.0; EventCycleTimeMax = 11.48211097717285; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.09040731112693577; EventCycleTimeSum = 15.96130156517029; LogProcessCycleTimeAvg = 0.0002936522165934245; LogProcessCycleTimeCount = 3.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.000203668690346092; LogProcessCycleTimeSum = 0.0008809566497802734; SleepCycleTimeAvg = 5.004986105245181; SleepCycleTimeCount = 16146.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.07233122983578154; SleepCycleTimeSum = 80810.5056552887; SubmitCycleTimeAvg = 0.0008376532828851389; SubmitCycleTimeCount = 16147.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.090363681401194; SubmitCycleTimeSum = 13.52558755874634; ]
+06/04/24 08:00:27 Currently monitoring 1 HTCondor log file(s)
+06/04/24 08:00:27 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 from (144671308.0.0) to (144671308.0.0)
+06/04/24 08:00:27 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 (144671308.0.0) {06/04/24 08:00:22}
+06/04/24 08:00:27 Number of idle job procs: 1
+06/04/24 08:00:27 Reassigning the id of job /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 from (144671309.0.0) to (144671309.0.0)
+06/04/24 08:00:27 Event: ULOG_SUBMIT for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 (144671309.0.0) {06/04/24 08:00:22}
+06/04/24 08:00:27 Number of idle job procs: 2
+06/04/24 08:02:17 Currently monitoring 1 HTCondor log file(s)
+06/04/24 08:02:17 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 (144671308.0.0) {06/04/24 08:02:13}
+06/04/24 08:02:17 Number of idle job procs: 1
+06/04/24 08:02:17 Event: ULOG_EXECUTE for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 (144671309.0.0) {06/04/24 08:02:16}
+06/04/24 08:02:17 Number of idle job procs: 0
+06/04/24 08:03:22 Currently monitoring 1 HTCondor log file(s)
+06/04/24 08:03:22 Event: ULOG_JOB_TERMINATED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 (144671309.0.0) {06/04/24 08:03:19}
+06/04/24 08:03:22 Number of idle job procs: 0
+06/04/24 08:03:22 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 job proc (144671309.0.0) completed successfully.
+06/04/24 08:03:22 Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/plot:0 job completed
+06/04/24 08:03:22 DAG status: 0 (DAG_STATUS_OK)
+06/04/24 08:03:22 Of 4 nodes total:
+06/04/24 08:03:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/04/24 08:03:22   ===     ===      ===     ===     ===        ===      ===      ===
+06/04/24 08:03:22     3       0        1       0       0          0        0        0
+06/04/24 08:03:22 0 job proc(s) currently held
+06/04/24 08:03:22 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0009903776794469427; EventCycleTimeCount = 16182.0; EventCycleTimeMax = 11.48211097717285; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.09030795565111079; EventCycleTimeSum = 16.02629160881042; LogProcessCycleTimeAvg = 0.0002786715825398763; LogProcessCycleTimeCount = 6.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.0001331567586410998; LogProcessCycleTimeSum = 0.001672029495239258; SleepCycleTimeAvg = 5.00498622180711; SleepCycleTimeCount = 16182.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.07225072376194164; SleepCycleTimeSum = 80990.68704128265; SubmitCycleTimeAvg = 0.0008359096080169744; SubmitCycleTimeCount = 16183.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.09026311738791405; SubmitCycleTimeSum = 13.5275251865387; ]
+06/04/24 08:04:43 Currently monitoring 1 HTCondor log file(s)
+06/04/24 08:04:43 Event: ULOG_SHADOW_EXCEPTION for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 (144671308.0.0) {06/04/24 08:04:42}
+06/04/24 08:04:43 Number of idle job procs: 1
+06/04/24 08:04:43 Event: ULOG_JOB_HELD for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 (144671308.0.0) {06/04/24 08:04:42}
+06/04/24 08:04:43   Hold reason: Transfer output files failure at execution point slot1_1@node2240.cluster.ldas.cit while sending files to access point ldas-pcdev2. Details: Error from slot1_1@node2240.cluster.ldas.cit: STARTER at 10.14.9.240 failed to send file(s) to <10.14.0.160:9618>: |Error: reading from file /local/condor/execute/dir_3077557/O4a_parabolam2min_prod_allgammazeta/result/bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw_full_posterior.hdf5: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <10.14.9.240:33171>
+06/04/24 08:04:43 Number of idle job procs: 1
+06/04/24 08:04:43 DAG status: 0 (DAG_STATUS_OK)
+06/04/24 08:04:43 Of 4 nodes total:
+06/04/24 08:04:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/04/24 08:04:43   ===     ===      ===     ===     ===        ===      ===      ===
+06/04/24 08:04:43     3       0        1       0       0          0        0        0
+06/04/24 08:04:43 1 job proc(s) currently held
+06/04/24 08:04:43 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.0009895306131636335; EventCycleTimeCount = 16198.0; EventCycleTimeMax = 11.48211097717285; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.09026334408020605; EventCycleTimeSum = 16.02841687202454; LogProcessCycleTimeAvg = 0.0002630097525460379; LogProcessCycleTimeCount = 7.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.0001284237221380641; LogProcessCycleTimeSum = 0.001841068267822266; SleepCycleTimeAvg = 5.004986250528598; SleepCycleTimeCount = 16198.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.07221502991894115; SleepCycleTimeSum = 81070.76728606224; SubmitCycleTimeAvg = 0.0008351581907175199; SubmitCycleTimeCount = 16199.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.09021852979649803; SubmitCycleTimeSum = 13.52872753143311; ]
+06/04/24 08:14:43 600 seconds since last log event
+06/04/24 08:14:43 Pending DAG nodes:
+06/04/24 08:14:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 08:24:44 1201 seconds since last log event
+06/04/24 08:24:44 Pending DAG nodes:
+06/04/24 08:24:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 08:34:44 1801 seconds since last log event
+06/04/24 08:34:44 Pending DAG nodes:
+06/04/24 08:34:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 08:44:44 2401 seconds since last log event
+06/04/24 08:44:44 Pending DAG nodes:
+06/04/24 08:44:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 08:54:45 3002 seconds since last log event
+06/04/24 08:54:45 Pending DAG nodes:
+06/04/24 08:54:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 09:04:45 3602 seconds since last log event
+06/04/24 09:04:45 Pending DAG nodes:
+06/04/24 09:04:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 09:14:46 4203 seconds since last log event
+06/04/24 09:14:46 Pending DAG nodes:
+06/04/24 09:14:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 09:24:46 4803 seconds since last log event
+06/04/24 09:24:46 Pending DAG nodes:
+06/04/24 09:24:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 09:34:47 5404 seconds since last log event
+06/04/24 09:34:47 Pending DAG nodes:
+06/04/24 09:34:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 09:35:22 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/04/24 09:35:22 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+06/04/24 09:44:48 6005 seconds since last log event
+06/04/24 09:44:48 Pending DAG nodes:
+06/04/24 09:44:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 09:54:49 6606 seconds since last log event
+06/04/24 09:54:49 Pending DAG nodes:
+06/04/24 09:54:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 10:04:49 7206 seconds since last log event
+06/04/24 10:04:49 Pending DAG nodes:
+06/04/24 10:04:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 10:14:50 7807 seconds since last log event
+06/04/24 10:14:50 Pending DAG nodes:
+06/04/24 10:14:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 10:24:51 8408 seconds since last log event
+06/04/24 10:24:51 Pending DAG nodes:
+06/04/24 10:24:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 10:34:51 9008 seconds since last log event
+06/04/24 10:34:51 Pending DAG nodes:
+06/04/24 10:34:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 10:44:52 9609 seconds since last log event
+06/04/24 10:44:52 Pending DAG nodes:
+06/04/24 10:44:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 10:54:52 10209 seconds since last log event
+06/04/24 10:54:52 Pending DAG nodes:
+06/04/24 10:54:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 11:04:53 10810 seconds since last log event
+06/04/24 11:04:53 Pending DAG nodes:
+06/04/24 11:04:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 11:14:54 11411 seconds since last log event
+06/04/24 11:14:54 Pending DAG nodes:
+06/04/24 11:14:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 11:24:54 12011 seconds since last log event
+06/04/24 11:24:54 Pending DAG nodes:
+06/04/24 11:24:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 11:34:55 12612 seconds since last log event
+06/04/24 11:34:55 Pending DAG nodes:
+06/04/24 11:34:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 11:44:56 13213 seconds since last log event
+06/04/24 11:44:56 Pending DAG nodes:
+06/04/24 11:44:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 11:54:56 13813 seconds since last log event
+06/04/24 11:54:56 Pending DAG nodes:
+06/04/24 11:54:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 12:04:57 14414 seconds since last log event
+06/04/24 12:04:57 Pending DAG nodes:
+06/04/24 12:04:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 12:14:57 15014 seconds since last log event
+06/04/24 12:14:57 Pending DAG nodes:
+06/04/24 12:14:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 12:24:58 15615 seconds since last log event
+06/04/24 12:24:58 Pending DAG nodes:
+06/04/24 12:24:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 12:34:59 16216 seconds since last log event
+06/04/24 12:34:59 Pending DAG nodes:
+06/04/24 12:34:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 12:44:59 16816 seconds since last log event
+06/04/24 12:44:59 Pending DAG nodes:
+06/04/24 12:44:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 12:55:00 17417 seconds since last log event
+06/04/24 12:55:00 Pending DAG nodes:
+06/04/24 12:55:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 13:05:00 18017 seconds since last log event
+06/04/24 13:05:00 Pending DAG nodes:
+06/04/24 13:05:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 13:15:00 18617 seconds since last log event
+06/04/24 13:15:00 Pending DAG nodes:
+06/04/24 13:15:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 13:25:01 19218 seconds since last log event
+06/04/24 13:25:01 Pending DAG nodes:
+06/04/24 13:25:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 13:35:02 19819 seconds since last log event
+06/04/24 13:35:02 Pending DAG nodes:
+06/04/24 13:35:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 13:45:02 20419 seconds since last log event
+06/04/24 13:45:02 Pending DAG nodes:
+06/04/24 13:45:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 13:55:03 21020 seconds since last log event
+06/04/24 13:55:03 Pending DAG nodes:
+06/04/24 13:55:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 14:05:04 21621 seconds since last log event
+06/04/24 14:05:04 Pending DAG nodes:
+06/04/24 14:05:04   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 14:15:05 22222 seconds since last log event
+06/04/24 14:15:05 Pending DAG nodes:
+06/04/24 14:15:05   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 14:25:06 22823 seconds since last log event
+06/04/24 14:25:06 Pending DAG nodes:
+06/04/24 14:25:06   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 14:35:06 23423 seconds since last log event
+06/04/24 14:35:06 Pending DAG nodes:
+06/04/24 14:35:06   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 14:45:07 24024 seconds since last log event
+06/04/24 14:45:07 Pending DAG nodes:
+06/04/24 14:45:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 14:55:08 24625 seconds since last log event
+06/04/24 14:55:08 Pending DAG nodes:
+06/04/24 14:55:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 15:05:08 25225 seconds since last log event
+06/04/24 15:05:08 Pending DAG nodes:
+06/04/24 15:05:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 15:15:11 25828 seconds since last log event
+06/04/24 15:15:11 Pending DAG nodes:
+06/04/24 15:15:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 15:25:11 26428 seconds since last log event
+06/04/24 15:25:11 Pending DAG nodes:
+06/04/24 15:25:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 15:35:11 27028 seconds since last log event
+06/04/24 15:35:11 Pending DAG nodes:
+06/04/24 15:35:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 15:45:12 27629 seconds since last log event
+06/04/24 15:45:12 Pending DAG nodes:
+06/04/24 15:45:12   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 15:55:13 28230 seconds since last log event
+06/04/24 15:55:13 Pending DAG nodes:
+06/04/24 15:55:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 16:05:13 28830 seconds since last log event
+06/04/24 16:05:13 Pending DAG nodes:
+06/04/24 16:05:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 16:15:14 29431 seconds since last log event
+06/04/24 16:15:14 Pending DAG nodes:
+06/04/24 16:15:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 16:25:15 30032 seconds since last log event
+06/04/24 16:25:15 Pending DAG nodes:
+06/04/24 16:25:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 16:35:15 30632 seconds since last log event
+06/04/24 16:35:15 Pending DAG nodes:
+06/04/24 16:35:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 16:45:16 31233 seconds since last log event
+06/04/24 16:45:16 Pending DAG nodes:
+06/04/24 16:45:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 16:55:17 31834 seconds since last log event
+06/04/24 16:55:17 Pending DAG nodes:
+06/04/24 16:55:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 17:05:18 32435 seconds since last log event
+06/04/24 17:05:18 Pending DAG nodes:
+06/04/24 17:05:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 17:15:18 33035 seconds since last log event
+06/04/24 17:15:18 Pending DAG nodes:
+06/04/24 17:15:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 17:25:19 33636 seconds since last log event
+06/04/24 17:25:19 Pending DAG nodes:
+06/04/24 17:25:19   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 17:35:20 34237 seconds since last log event
+06/04/24 17:35:20 Pending DAG nodes:
+06/04/24 17:35:20   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 17:45:21 34838 seconds since last log event
+06/04/24 17:45:21 Pending DAG nodes:
+06/04/24 17:45:21   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 17:55:22 35439 seconds since last log event
+06/04/24 17:55:22 Pending DAG nodes:
+06/04/24 17:55:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 18:05:22 36039 seconds since last log event
+06/04/24 18:05:22 Pending DAG nodes:
+06/04/24 18:05:22   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 18:15:23 36640 seconds since last log event
+06/04/24 18:15:23 Pending DAG nodes:
+06/04/24 18:15:23   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 18:25:24 37241 seconds since last log event
+06/04/24 18:25:24 Pending DAG nodes:
+06/04/24 18:25:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 18:35:24 37841 seconds since last log event
+06/04/24 18:35:24 Pending DAG nodes:
+06/04/24 18:35:24   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 18:45:25 38442 seconds since last log event
+06/04/24 18:45:25 Pending DAG nodes:
+06/04/24 18:45:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 18:55:25 39042 seconds since last log event
+06/04/24 18:55:25 Pending DAG nodes:
+06/04/24 18:55:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 19:05:25 39642 seconds since last log event
+06/04/24 19:05:25 Pending DAG nodes:
+06/04/24 19:05:25   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 19:15:26 40243 seconds since last log event
+06/04/24 19:15:26 Pending DAG nodes:
+06/04/24 19:15:26   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 19:25:27 40844 seconds since last log event
+06/04/24 19:25:27 Pending DAG nodes:
+06/04/24 19:25:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 19:35:27 41444 seconds since last log event
+06/04/24 19:35:27 Pending DAG nodes:
+06/04/24 19:35:27   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 19:45:28 42045 seconds since last log event
+06/04/24 19:45:28 Pending DAG nodes:
+06/04/24 19:45:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 19:55:28 42645 seconds since last log event
+06/04/24 19:55:28 Pending DAG nodes:
+06/04/24 19:55:28   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 20:05:29 43246 seconds since last log event
+06/04/24 20:05:29 Pending DAG nodes:
+06/04/24 20:05:29   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 20:15:30 43847 seconds since last log event
+06/04/24 20:15:30 Pending DAG nodes:
+06/04/24 20:15:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 20:25:30 44447 seconds since last log event
+06/04/24 20:25:30 Pending DAG nodes:
+06/04/24 20:25:30   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 20:35:31 45048 seconds since last log event
+06/04/24 20:35:31 Pending DAG nodes:
+06/04/24 20:35:31   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 20:45:31 45648 seconds since last log event
+06/04/24 20:45:31 Pending DAG nodes:
+06/04/24 20:45:31   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 20:55:32 46249 seconds since last log event
+06/04/24 20:55:32 Pending DAG nodes:
+06/04/24 20:55:32   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 21:05:33 46850 seconds since last log event
+06/04/24 21:05:33 Pending DAG nodes:
+06/04/24 21:05:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 21:15:33 47450 seconds since last log event
+06/04/24 21:15:33 Pending DAG nodes:
+06/04/24 21:15:33   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 21:25:34 48051 seconds since last log event
+06/04/24 21:25:34 Pending DAG nodes:
+06/04/24 21:25:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 21:35:34 48651 seconds since last log event
+06/04/24 21:35:34 Pending DAG nodes:
+06/04/24 21:35:34   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 21:45:35 49252 seconds since last log event
+06/04/24 21:45:35 Pending DAG nodes:
+06/04/24 21:45:35   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 21:55:36 49853 seconds since last log event
+06/04/24 21:55:36 Pending DAG nodes:
+06/04/24 21:55:36   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 22:05:36 50453 seconds since last log event
+06/04/24 22:05:36 Pending DAG nodes:
+06/04/24 22:05:36   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 22:15:37 51054 seconds since last log event
+06/04/24 22:15:37 Pending DAG nodes:
+06/04/24 22:15:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 22:25:37 51654 seconds since last log event
+06/04/24 22:25:37 Pending DAG nodes:
+06/04/24 22:25:37   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 22:35:38 52255 seconds since last log event
+06/04/24 22:35:38 Pending DAG nodes:
+06/04/24 22:35:38   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 22:45:39 52856 seconds since last log event
+06/04/24 22:45:39 Pending DAG nodes:
+06/04/24 22:45:39   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 22:55:39 53456 seconds since last log event
+06/04/24 22:55:39 Pending DAG nodes:
+06/04/24 22:55:39   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 23:05:40 54057 seconds since last log event
+06/04/24 23:05:40 Pending DAG nodes:
+06/04/24 23:05:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 23:15:40 54657 seconds since last log event
+06/04/24 23:15:40 Pending DAG nodes:
+06/04/24 23:15:40   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 23:25:41 55258 seconds since last log event
+06/04/24 23:25:41 Pending DAG nodes:
+06/04/24 23:25:41   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 23:35:42 55859 seconds since last log event
+06/04/24 23:35:42 Pending DAG nodes:
+06/04/24 23:35:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 23:45:42 56459 seconds since last log event
+06/04/24 23:45:42 Pending DAG nodes:
+06/04/24 23:45:42   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/04/24 23:55:43 57060 seconds since last log event
+06/04/24 23:55:43 Pending DAG nodes:
+06/04/24 23:55:43   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 00:05:44 57661 seconds since last log event
+06/05/24 00:05:44 Pending DAG nodes:
+06/05/24 00:05:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 00:15:44 58261 seconds since last log event
+06/05/24 00:15:44 Pending DAG nodes:
+06/05/24 00:15:44   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 00:25:45 58862 seconds since last log event
+06/05/24 00:25:45 Pending DAG nodes:
+06/05/24 00:25:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 00:35:45 59462 seconds since last log event
+06/05/24 00:35:45 Pending DAG nodes:
+06/05/24 00:35:45   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 00:45:46 60063 seconds since last log event
+06/05/24 00:45:46 Pending DAG nodes:
+06/05/24 00:45:46   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 00:55:47 60664 seconds since last log event
+06/05/24 00:55:47 Pending DAG nodes:
+06/05/24 00:55:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 01:05:47 61264 seconds since last log event
+06/05/24 01:05:47 Pending DAG nodes:
+06/05/24 01:05:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 01:15:47 61864 seconds since last log event
+06/05/24 01:15:47 Pending DAG nodes:
+06/05/24 01:15:47   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 01:25:48 62465 seconds since last log event
+06/05/24 01:25:48 Pending DAG nodes:
+06/05/24 01:25:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 01:35:48 63065 seconds since last log event
+06/05/24 01:35:48 Pending DAG nodes:
+06/05/24 01:35:48   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 01:45:49 63666 seconds since last log event
+06/05/24 01:45:49 Pending DAG nodes:
+06/05/24 01:45:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 01:55:49 64266 seconds since last log event
+06/05/24 01:55:49 Pending DAG nodes:
+06/05/24 01:55:49   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 02:05:50 64867 seconds since last log event
+06/05/24 02:05:50 Pending DAG nodes:
+06/05/24 02:05:50   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 02:15:51 65468 seconds since last log event
+06/05/24 02:15:51 Pending DAG nodes:
+06/05/24 02:15:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 02:25:51 66068 seconds since last log event
+06/05/24 02:25:51 Pending DAG nodes:
+06/05/24 02:25:51   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 02:35:52 66669 seconds since last log event
+06/05/24 02:35:52 Pending DAG nodes:
+06/05/24 02:35:52   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 02:45:53 67270 seconds since last log event
+06/05/24 02:45:53 Pending DAG nodes:
+06/05/24 02:45:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 02:55:53 67870 seconds since last log event
+06/05/24 02:55:53 Pending DAG nodes:
+06/05/24 02:55:53   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 03:05:54 68471 seconds since last log event
+06/05/24 03:05:54 Pending DAG nodes:
+06/05/24 03:05:54   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 03:15:55 69072 seconds since last log event
+06/05/24 03:15:55 Pending DAG nodes:
+06/05/24 03:15:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 03:25:55 69672 seconds since last log event
+06/05/24 03:25:55 Pending DAG nodes:
+06/05/24 03:25:55   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 03:35:56 70273 seconds since last log event
+06/05/24 03:35:56 Pending DAG nodes:
+06/05/24 03:35:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 03:45:56 70873 seconds since last log event
+06/05/24 03:45:56 Pending DAG nodes:
+06/05/24 03:45:56   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 03:55:57 71474 seconds since last log event
+06/05/24 03:55:57 Pending DAG nodes:
+06/05/24 03:55:57   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 04:05:58 72075 seconds since last log event
+06/05/24 04:05:58 Pending DAG nodes:
+06/05/24 04:05:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 04:15:58 72675 seconds since last log event
+06/05/24 04:15:58 Pending DAG nodes:
+06/05/24 04:15:58   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 04:25:59 73276 seconds since last log event
+06/05/24 04:25:59 Pending DAG nodes:
+06/05/24 04:25:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 04:35:59 73876 seconds since last log event
+06/05/24 04:35:59 Pending DAG nodes:
+06/05/24 04:35:59   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 04:46:00 74477 seconds since last log event
+06/05/24 04:46:00 Pending DAG nodes:
+06/05/24 04:46:00   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 04:56:01 75078 seconds since last log event
+06/05/24 04:56:01 Pending DAG nodes:
+06/05/24 04:56:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 05:06:01 75678 seconds since last log event
+06/05/24 05:06:01 Pending DAG nodes:
+06/05/24 05:06:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 05:16:01 76278 seconds since last log event
+06/05/24 05:16:01 Pending DAG nodes:
+06/05/24 05:16:01   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 05:26:02 76879 seconds since last log event
+06/05/24 05:26:02 Pending DAG nodes:
+06/05/24 05:26:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 05:36:02 77479 seconds since last log event
+06/05/24 05:36:02 Pending DAG nodes:
+06/05/24 05:36:02   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 05:46:03 78080 seconds since last log event
+06/05/24 05:46:03 Pending DAG nodes:
+06/05/24 05:46:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 05:56:03 78680 seconds since last log event
+06/05/24 05:56:03 Pending DAG nodes:
+06/05/24 05:56:03   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 06:06:07 79284 seconds since last log event
+06/05/24 06:06:07 Pending DAG nodes:
+06/05/24 06:06:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 06:16:07 79884 seconds since last log event
+06/05/24 06:16:07 Pending DAG nodes:
+06/05/24 06:16:07   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 06:26:08 80485 seconds since last log event
+06/05/24 06:26:08 Pending DAG nodes:
+06/05/24 06:26:08   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 06:36:09 81086 seconds since last log event
+06/05/24 06:36:09 Pending DAG nodes:
+06/05/24 06:36:09   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 06:46:09 81686 seconds since last log event
+06/05/24 06:46:09 Pending DAG nodes:
+06/05/24 06:46:09   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 06:56:10 82287 seconds since last log event
+06/05/24 06:56:10 Pending DAG nodes:
+06/05/24 06:56:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 07:06:10 82887 seconds since last log event
+06/05/24 07:06:10 Pending DAG nodes:
+06/05/24 07:06:10   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 07:16:11 83488 seconds since last log event
+06/05/24 07:16:11 Pending DAG nodes:
+06/05/24 07:16:11   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 07:26:12 84089 seconds since last log event
+06/05/24 07:26:12 Pending DAG nodes:
+06/05/24 07:26:12   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 07:36:12 84689 seconds since last log event
+06/05/24 07:36:12 Pending DAG nodes:
+06/05/24 07:36:12   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 07:46:13 85290 seconds since last log event
+06/05/24 07:46:13 Pending DAG nodes:
+06/05/24 07:46:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 07:56:13 85890 seconds since last log event
+06/05/24 07:56:13 Pending DAG nodes:
+06/05/24 07:56:13   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 08:06:14 86491 seconds since last log event
+06/05/24 08:06:14 Pending DAG nodes:
+06/05/24 08:06:14   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 08:16:15 87092 seconds since last log event
+06/05/24 08:16:15 Pending DAG nodes:
+06/05/24 08:16:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 08:26:15 87692 seconds since last log event
+06/05/24 08:26:15 Pending DAG nodes:
+06/05/24 08:26:15   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 08:36:16 88293 seconds since last log event
+06/05/24 08:36:16 Pending DAG nodes:
+06/05/24 08:36:16   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 08:46:17 88894 seconds since last log event
+06/05/24 08:46:17 Pending DAG nodes:
+06/05/24 08:46:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 08:56:17 89494 seconds since last log event
+06/05/24 08:56:17 Pending DAG nodes:
+06/05/24 08:56:17   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 09:06:18 90095 seconds since last log event
+06/05/24 09:06:18 Pending DAG nodes:
+06/05/24 09:06:18   Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0, HTCondor ID 144671308, status STATUS_SUBMITTED
+06/05/24 09:09:23 Currently monitoring 1 HTCondor log file(s)
+06/05/24 09:09:23 Event: ULOG_JOB_ABORTED for HTCondor Node /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0 (144671308.0.0) {06/05/24 09:09:22}
+06/05/24 09:09:23 Number of idle job procs: 0
+06/05/24 09:09:23 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/05/24 09:09:23 Of 4 nodes total:
+06/05/24 09:09:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/05/24 09:09:23   ===     ===      ===     ===     ===        ===      ===      ===
+06/05/24 09:09:23     3       0        0       0       0          0        1        0
+06/05/24 09:09:23 0 job proc(s) currently held
+06/05/24 09:09:23 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001053064108291879; EventCycleTimeCount = 34233.0; EventCycleTimeMax = 12.90339803695679; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.0934490916727746; EventCycleTimeSum = 36.04954361915588; LogProcessCycleTimeAvg = 0.0002933740615844727; LogProcessCycleTimeCount = 8.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.0001466713650094445; LogProcessCycleTimeSum = 0.002346992492675781; SleepCycleTimeAvg = 5.004852240800099; SleepCycleTimeCount = 34233.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.05358143351597474; SleepCycleTimeSum = 171331.1067593098; SubmitCycleTimeAvg = 0.0004575198837590495; SubmitCycleTimeCount = 34234.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.06206307530680288; SubmitCycleTimeSum = 15.6627357006073; ]
+06/05/24 09:09:23 ERROR: the following job(s) failed:
+06/05/24 09:09:23 ---------------------- Job ----------------------
+06/05/24 09:09:23       Node Name: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format:0
+06/05/24 09:09:23            Noop: false
+06/05/24 09:09:23          NodeID: 3
+06/05/24 09:09:23     Node Status: STATUS_ERROR    
+06/05/24 09:09:23 Node return val: -1002
+06/05/24 09:09:23           Error: HTCondor reported ULOG_JOB_ABORTED event for job proc (144671308.0.0)
+06/05/24 09:09:23 Job Submit File: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/common_format.sub
+06/05/24 09:09:23  HTCondor Job ID: (144671308.0.0)
+06/05/24 09:09:23 PARENTS: /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/analysis:0 WAITING: 0 CHILDREN: 
+06/05/24 09:09:23 ---------------------------------------	<END>
+06/05/24 09:09:23 Aborting DAG...
+06/05/24 09:09:23 Writing Rescue DAG to /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.rescue005...
+06/05/24 09:09:23 Removing submitted jobs...
+06/05/24 09:09:23 Removing any/all submitted HTCondor jobs...
+06/05/24 09:09:23 Running: /usr/bin/condor_rm -const DAGManJobId==144637257 -reason DAG' 'Abort:' 'DAG' 'is' 'exiting' 'and' 'writing' 'rescue' 'file.
+06/05/24 09:09:23 Note: 0 total job deferrals because of -MaxJobs limit (12000)
+06/05/24 09:09:23 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/05/24 09:09:23 Note: 0 total job deferrals because of node category throttles
+06/05/24 09:09:23 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/05/24 09:09:23 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/05/24 09:09:23 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+06/05/24 09:09:23 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+06/05/24 09:09:23 Of 4 nodes total:
+06/05/24 09:09:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+06/05/24 09:09:23   ===     ===      ===     ===     ===        ===      ===      ===
+06/05/24 09:09:23     3       0        0       0       0          0        1        0
+06/05/24 09:09:23 0 job proc(s) currently held
+06/05/24 09:09:23 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001053064108291879; EventCycleTimeCount = 34233.0; EventCycleTimeMax = 12.90339803695679; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.0934490916727746; EventCycleTimeSum = 36.04954361915588; LogProcessCycleTimeAvg = 0.0002933740615844727; LogProcessCycleTimeCount = 8.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.0001466713650094445; LogProcessCycleTimeSum = 0.002346992492675781; SleepCycleTimeAvg = 5.004852240800099; SleepCycleTimeCount = 34233.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.05358143351597474; SleepCycleTimeSum = 171331.1067593098; SubmitCycleTimeAvg = 0.0004575198837590495; SubmitCycleTimeCount = 34234.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.06206307530680288; SubmitCycleTimeSum = 15.6627357006073; ]
+06/05/24 09:09:23 Wrote metrics file /home/storm.colloms/O4a_population/variable_qmin_inference/O4a_parabolam2min_prod_allgammazeta/submit/bbh.dag.metrics.
+06/05/24 09:09:23 DAGMan Runtime Statistics: [ EventCycleTimeAvg = 0.001053064108291879; EventCycleTimeCount = 34233.0; EventCycleTimeMax = 12.90339803695679; EventCycleTimeMin = 1.001358032226562E-05; EventCycleTimeStd = 0.0934490916727746; EventCycleTimeSum = 36.04954361915588; LogProcessCycleTimeAvg = 0.0002933740615844727; LogProcessCycleTimeCount = 8.0; LogProcessCycleTimeMax = 0.0005278587341308594; LogProcessCycleTimeMin = 0.0001580715179443359; LogProcessCycleTimeStd = 0.0001466713650094445; LogProcessCycleTimeSum = 0.002346992492675781; SleepCycleTimeAvg = 5.004852240800099; SleepCycleTimeCount = 34233.0; SleepCycleTimeMax = 13.74796605110168; SleepCycleTimeMin = 4.003520965576172; SleepCycleTimeStd = 0.05358143351597474; SleepCycleTimeSum = 171331.1067593098; SubmitCycleTimeAvg = 0.0004575198837590495; SubmitCycleTimeCount = 34234.0; SubmitCycleTimeMax = 11.4820990562439; SubmitCycleTimeMin = 4.76837158203125E-06; SubmitCycleTimeStd = 0.06206307530680288; SubmitCycleTimeSum = 15.6627357006073; ]
+06/05/24 09:09:23 **** condor_scheduniv_exec.144637257.0 (condor_DAGMAN) pid 1992911 EXITING WITH STATUS 1

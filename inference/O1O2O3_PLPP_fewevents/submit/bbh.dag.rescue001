@@ -1,0 +1,12 @@
+# Rescue DAG file, created after running
+#   the /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP_fewevents/submit/bbh.dag DAG file
+# Created 6/20/2024 16:31:02 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 4
+# Nodes premarked DONE: 2
+# Nodes that failed: 0
+#   <ENDLIST>
+
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP_fewevents/submit/collection:0
+DONE /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_PLPP_fewevents/submit/analysis:0

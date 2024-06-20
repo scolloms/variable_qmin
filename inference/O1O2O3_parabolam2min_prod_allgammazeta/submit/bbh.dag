@@ -1,0 +1,15 @@
+# BEGIN META
+# END META
+# BEGIN NODES AND EDGES
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/collection:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/collection.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/collection:0 label="bbh"
+PARENT /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/collection:0 CHILD /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/analysis:0
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/analysis:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/analysis.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/analysis:0 label="bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw" models="--models mass:variable_qmin.parabola_m2min_allgammazeta --models redshift:gwpopulation.models.redshift.PowerLawRedshift" vt_models="--vt-models mass:variable_qmin.parabola_m2min_allgammazeta --vt-models redshift:gwpopulation.models.redshift.PowerLawRedshift"
+PARENT /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/analysis:0 CHILD /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/plot:0
+PARENT /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/analysis:0 CHILD /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/common_format:0
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/plot.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/plot:0 label="bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw"
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/common_format:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/common_format.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_parabolam2min_prod_allgammazeta/submit/common_format:0 label="bbh_mass_parabola_m2min_allgammazeta_redshift_powerlaw"
+# END NODES AND EDGES

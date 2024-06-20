@@ -1,0 +1,13 @@
+# Rescue DAG file, created after running
+#   the /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/bbh.dag DAG file
+# Created 5/7/2024 02:40:55 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 5
+# Nodes premarked DONE: 3
+# Nodes that failed: 2
+#   /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/common_format:0,/home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/summary:0,<ENDLIST>
+
+DONE /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/collection:0
+DONE /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/analysis:0
+DONE /home/storm.colloms/O4a_population/test_gwpopulationpipe/O4a_variablem2min_nestlenlive50/submit/plot:0

@@ -1,0 +1,15 @@
+# BEGIN META
+# END META
+# BEGIN NODES AND EDGES
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/collection:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/collection.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/collection:0 label="bbh"
+PARENT /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/collection:0 CHILD /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/analysis:0
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/analysis:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/analysis.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/analysis:0 label="bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw" models="--models mass:variable_qmin.two_component_primary_mass_ratio_powerlaw_m2min --models redshift:gwpopulation.models.redshift.PowerLawRedshift" vt_models="--vt-models mass:variable_qmin.two_component_primary_mass_ratio_powerlaw_m2min --vt-models redshift:gwpopulation.models.redshift.PowerLawRedshift"
+PARENT /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/analysis:0 CHILD /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/common_format:0
+PARENT /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/analysis:0 CHILD /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/plot:0
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/common_format:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/common_format.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/common_format:0 label="bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw"
+JOB /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/plot:0 /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/plot.sub
+VARS /home/storm.colloms/O4a_population/variable_qmin_inference/O1O2O3_powerlawm2min_prod_gammamax35/submit/plot:0 label="bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw"
+# END NODES AND EDGES
