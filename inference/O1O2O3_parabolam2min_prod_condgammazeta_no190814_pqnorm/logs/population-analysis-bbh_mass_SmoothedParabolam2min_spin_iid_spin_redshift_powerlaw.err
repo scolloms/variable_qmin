@@ -814,3 +814,1247 @@
 /home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
   warnings.warn('The sampling was stopped short due to'
 08:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+09:20 bilby INFO    : Loaded 69 posteriors
+09:20 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+09:20 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+09:20 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+09:20 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:20 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:20 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+09:20 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+09:20 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:20 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:20 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+09:20 bilby INFO    : Identified keys: zeta, mpp, alpha, delta_m, mmin, gamma, beta, lam, mmax, sigpp, gaussian_mass_maximum, xi_spin, beta_chi, mu_chi, sigma_chi, sigma_spin, amax, alpha_chi, lamb
+09:20 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+09:20 bilby INFO    : Analysis priors:
+09:20 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+09:20 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+09:20 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+09:20 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+09:20 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+09:20 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+09:20 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+09:20 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+09:20 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+09:20 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+09:20 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+09:20 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+09:20 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+09:20 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+09:20 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+09:20 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:20 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:20 bilby INFO    : amax=1.0
+09:20 bilby INFO    : gaussian_mass_maximum=100.0
+09:20 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+09:20 bilby INFO    : Analysis likelihood noise evidence: nan
+09:20 bilby INFO    : Single likelihood evaluation took nan s
+09:21 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14d9c0b5dd50>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+09:21 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+09:21 bilby INFO    : Using dynesty version 2.1.3
+09:21 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+09:21 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+09:21 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+09:21 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:36 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+14:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+14:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+14:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+14:57 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+14:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+14:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+20:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+20:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:57 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+20:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+23:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+23:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+23:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:54 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+23:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+04:47 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+07:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+07:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+07:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+07:17 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+07:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+07:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+07:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:24 bilby INFO    : Loaded 69 posteriors
+09:24 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+09:24 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+09:24 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+09:24 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:24 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:24 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+09:24 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+09:24 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+09:24 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+09:24 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+09:24 bilby INFO    : Identified keys: gaussian_mass_maximum, sigpp, mmax, zeta, gamma, mmin, delta_m, mpp, lam, beta, alpha, beta_chi, amax, mu_chi, sigma_chi, xi_spin, alpha_chi, sigma_spin, lamb
+09:24 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+09:24 bilby INFO    : Analysis priors:
+09:24 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+09:24 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+09:24 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+09:24 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+09:24 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+09:24 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+09:24 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+09:24 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+09:24 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+09:24 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+09:24 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+09:24 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+09:24 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+09:24 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+09:24 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+09:24 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:24 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+09:24 bilby INFO    : amax=1.0
+09:24 bilby INFO    : gaussian_mass_maximum=100.0
+09:24 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+09:24 bilby INFO    : Analysis likelihood noise evidence: nan
+09:24 bilby INFO    : Single likelihood evaluation took nan s
+09:24 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14be74999150>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+09:24 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+09:24 bilby INFO    : Using dynesty version 2.1.3
+09:24 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+09:24 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+09:24 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+09:24 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+10:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:30 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:37 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:14 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+16:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:15 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+23:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:43 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+11:26 bilby INFO    : Loaded 69 posteriors
+11:26 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+11:26 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+11:26 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+11:26 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+11:26 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+11:26 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+11:26 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+11:26 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+11:26 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+11:26 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+11:26 bilby INFO    : Identified keys: mmax, gamma, beta, lam, mmin, mpp, sigpp, zeta, alpha, delta_m, gaussian_mass_maximum, beta_chi, alpha_chi, sigma_chi, xi_spin, amax, mu_chi, sigma_spin, lamb
+11:26 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+11:26 bilby INFO    : Analysis priors:
+11:26 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+11:26 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+11:26 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+11:26 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+11:26 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+11:26 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+11:26 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+11:26 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+11:26 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+11:26 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+11:26 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+11:26 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+11:26 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+11:26 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+11:26 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+11:26 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+11:26 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+11:26 bilby INFO    : amax=1.0
+11:26 bilby INFO    : gaussian_mass_maximum=100.0
+11:26 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+11:26 bilby INFO    : Analysis likelihood noise evidence: nan
+11:26 bilby INFO    : Single likelihood evaluation took nan s
+11:26 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14d1db10a350>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+11:26 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+11:26 bilby INFO    : Using dynesty version 2.1.3
+11:26 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+11:26 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+11:26 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+11:26 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:35 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+13:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:53 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+15:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:30 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:56 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+22:56 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+22:56 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:56 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+22:56 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:56 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+02:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+02:39 bilby WARNING : Failed to create dynesty state plot at checkpoint
+02:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+02:39 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+02:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+02:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+06:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+13:09 bilby INFO    : Loaded 69 posteriors
+13:09 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+13:09 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+13:09 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+13:09 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+13:09 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+13:09 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+13:09 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+13:09 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+13:09 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+13:09 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+13:09 bilby INFO    : Identified keys: gaussian_mass_maximum, beta, zeta, lam, sigpp, delta_m, gamma, alpha, mmax, mpp, mmin, beta_chi, xi_spin, sigma_spin, mu_chi, sigma_chi, alpha_chi, amax, lamb
+13:10 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+13:10 bilby INFO    : Analysis priors:
+13:10 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+13:10 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+13:10 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+13:10 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+13:10 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+13:10 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+13:10 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+13:10 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+13:10 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+13:10 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+13:10 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+13:10 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+13:10 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+13:10 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+13:10 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+13:10 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+13:10 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+13:10 bilby INFO    : amax=1.0
+13:10 bilby INFO    : gaussian_mass_maximum=100.0
+13:10 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+13:10 bilby INFO    : Analysis likelihood noise evidence: nan
+13:10 bilby INFO    : Single likelihood evaluation took nan s
+13:10 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14b712507f70>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+13:10 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+13:10 bilby INFO    : Using dynesty version 2.1.3
+13:10 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+13:10 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+13:10 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+13:10 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+16:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:39 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+23:33 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:34 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+03:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+03:34 bilby WARNING : Failed to create dynesty state plot at checkpoint
+03:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+03:34 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+03:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+03:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+04:49 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+06:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:38 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:04 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+23:38 bilby INFO    : Loaded 69 posteriors
+23:38 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+23:38 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+23:38 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+23:38 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+23:38 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+23:38 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+23:38 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+23:38 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+23:38 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+23:38 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+23:38 bilby INFO    : Identified keys: alpha, lam, mmax, gamma, zeta, mpp, delta_m, mmin, gaussian_mass_maximum, sigpp, beta, sigma_spin, sigma_chi, mu_chi, xi_spin, alpha_chi, amax, beta_chi, lamb
+23:38 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+23:38 bilby INFO    : Analysis priors:
+23:38 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+23:38 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+23:38 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+23:38 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+23:38 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+23:38 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+23:38 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+23:38 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+23:38 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+23:38 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+23:38 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+23:38 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+23:38 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+23:38 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+23:38 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+23:38 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+23:38 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+23:38 bilby INFO    : amax=1.0
+23:38 bilby INFO    : gaussian_mass_maximum=100.0
+23:38 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+23:38 bilby INFO    : Analysis likelihood noise evidence: nan
+23:38 bilby INFO    : Single likelihood evaluation took nan s
+23:38 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14ae0bd73d00>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+23:38 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+23:38 bilby INFO    : Using dynesty version 2.1.3
+23:38 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+23:38 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+23:38 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+23:38 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:50 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+04:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+06:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+10:01 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+13:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:36 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+17:36 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+17:36 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:36 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+17:36 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:58 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:40 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+20:40 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+20:40 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:40 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+20:40 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+02:38 bilby INFO    : Loaded 69 posteriors
+02:38 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+02:38 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+02:38 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+02:38 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+02:38 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+02:38 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+02:38 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+02:38 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+02:38 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+02:38 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+02:38 bilby INFO    : Identified keys: zeta, delta_m, gamma, beta, lam, mmin, mmax, mpp, sigpp, gaussian_mass_maximum, alpha, alpha_chi, sigma_chi, xi_spin, amax, beta_chi, sigma_spin, mu_chi, lamb
+02:38 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+02:38 bilby INFO    : Analysis priors:
+02:38 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+02:38 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+02:38 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+02:38 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+02:38 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+02:38 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+02:38 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+02:38 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+02:38 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+02:38 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+02:38 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+02:38 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+02:38 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+02:38 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+02:38 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+02:38 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+02:38 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+02:38 bilby INFO    : amax=1.0
+02:38 bilby INFO    : gaussian_mass_maximum=100.0
+02:38 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+02:38 bilby INFO    : Analysis likelihood noise evidence: nan
+02:38 bilby INFO    : Single likelihood evaluation took nan s
+02:38 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x154aee38bb80>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+02:38 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+02:38 bilby INFO    : Using dynesty version 2.1.3
+02:38 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+02:38 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+02:38 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+02:38 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+04:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:31 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+06:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+09:46 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+09:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+09:46 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+09:46 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+09:46 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+09:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:30 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+15:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+23:34 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:26 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+04:02 bilby INFO    : Loaded 69 posteriors
+04:02 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+04:02 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+04:02 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+04:02 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+04:02 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+04:02 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+04:02 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+04:02 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+04:02 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+04:02 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+04:02 bilby INFO    : Identified keys: alpha, beta, gamma, mmax, delta_m, mmin, lam, mpp, gaussian_mass_maximum, sigpp, zeta, sigma_chi, beta_chi, mu_chi, alpha_chi, sigma_spin, amax, xi_spin, lamb
+04:02 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+04:02 bilby INFO    : Analysis priors:
+04:02 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+04:02 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+04:02 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+04:02 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+04:02 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+04:02 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+04:02 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+04:02 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+04:02 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+04:02 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+04:02 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+04:02 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+04:02 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+04:02 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+04:02 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+04:02 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+04:02 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+04:02 bilby INFO    : amax=1.0
+04:02 bilby INFO    : gaussian_mass_maximum=100.0
+04:02 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+04:02 bilby INFO    : Analysis likelihood noise evidence: nan
+04:02 bilby INFO    : Single likelihood evaluation took nan s
+04:02 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x149a3c47e4a0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+04:02 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+04:02 bilby INFO    : Using dynesty version 2.1.3
+04:02 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+04:02 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+04:02 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+04:02 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:21 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:42 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:30 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:07 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:48 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:30 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+19:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:30 bilby WARNING : Failed to create dynesty state plot at checkpoint
+19:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:30 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+19:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:56 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:14 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+04:54 bilby INFO    : Loaded 69 posteriors
+04:54 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+04:54 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+04:54 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+04:54 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+04:54 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+04:54 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+04:54 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+04:54 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+04:54 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+04:54 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+04:54 bilby INFO    : Identified keys: mmax, mmin, beta, zeta, delta_m, gaussian_mass_maximum, gamma, lam, sigpp, mpp, alpha, alpha_chi, amax, sigma_spin, sigma_chi, mu_chi, xi_spin, beta_chi, lamb
+04:54 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+04:54 bilby INFO    : Analysis priors:
+04:54 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+04:54 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+04:54 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+04:54 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+04:54 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+04:54 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+04:54 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+04:54 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+04:54 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+04:54 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+04:54 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+04:54 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+04:54 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+04:54 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+04:54 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+04:54 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+04:54 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+04:54 bilby INFO    : amax=1.0
+04:54 bilby INFO    : gaussian_mass_maximum=100.0
+04:54 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+04:54 bilby INFO    : Analysis likelihood noise evidence: nan
+04:54 bilby INFO    : Single likelihood evaluation took nan s
+04:54 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x151158b91d80>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+04:54 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+04:54 bilby INFO    : Using dynesty version 2.1.3
+04:54 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+04:54 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+04:54 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+04:54 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+06:49 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:36 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+10:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+10:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:48 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:38 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+13:28 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+15:11 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+16:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:09 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:19 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:18 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:24 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+23:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:03 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:14 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:55 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:20 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+06:02 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:07 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+08:46 bilby INFO    : Loaded 69 posteriors
+08:46 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+08:46 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+08:46 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+08:46 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:46 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:46 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+08:46 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+08:46 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:46 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:46 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+08:46 bilby INFO    : Identified keys: gamma, zeta, mpp, lam, alpha, sigpp, gaussian_mass_maximum, mmin, beta, delta_m, mmax, amax, sigma_chi, mu_chi, sigma_spin, alpha_chi, beta_chi, xi_spin, lamb
+08:46 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+08:46 bilby INFO    : Analysis priors:
+08:46 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+08:46 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+08:46 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+08:46 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+08:46 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+08:46 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+08:46 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+08:46 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+08:46 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+08:46 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+08:46 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+08:46 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+08:46 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:46 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:46 bilby INFO    : amax=1.0
+08:46 bilby INFO    : gaussian_mass_maximum=100.0
+08:46 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+08:46 bilby INFO    : Analysis likelihood noise evidence: nan
+08:46 bilby INFO    : Single likelihood evaluation took nan s
+08:46 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x148d5e4e6980>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+08:46 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+08:46 bilby INFO    : Using dynesty version 2.1.3
+08:46 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+08:46 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+08:46 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+08:46 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:46 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+10:28 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+11:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:54 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+13:45 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:29 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+15:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+15:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+16:33 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+17:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:28 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:57 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+20:48 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+23:35 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:25 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+01:27 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:22 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:17 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+04:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+05:13 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+07:06 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+08:05 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+08:53 bilby INFO    : Loaded 69 posteriors
+08:53 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+08:53 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+08:53 bilby INFO    : Using iid_spin from gwpopulation.models.spin.
+08:53 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:53 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:53 bilby INFO    : Using SmoothedParabolam2min from variable_qmin.
+08:53 bilby INFO    : Created variable_qmin.SmoothedParabolam2min with arguments {}
+08:53 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
+08:53 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
+08:53 bilby INFO    : Loading VT data from O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/data/injections.pkl.
+08:53 bilby INFO    : Identified keys: sigpp, mmin, delta_m, mmax, gaussian_mass_maximum, beta, lam, mpp, gamma, zeta, alpha, mu_chi, xi_spin, sigma_chi, sigma_spin, alpha_chi, amax, beta_chi, lamb
+08:53 bilby INFO    : Running for label 'bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw', output will be saved to 'O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result'
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+08:53 bilby INFO    : Analysis priors:
+08:53 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
+08:53 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
+08:53 bilby INFO    : gamma=ConditionalUniform(condition_func='variable_qmin.gamma_CondPrior', name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None, minimum=-1, maximum=1)
+08:53 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
+08:53 bilby INFO    : mmin=Uniform(minimum=2, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
+08:53 bilby INFO    : zeta=ConditionalUniform(condition_func='variable_qmin.zeta_CondPrior', name=None, latex_label=None, unit=None, boundary=None, minimum=0, maximum=0.017094017094)
+08:53 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
+08:53 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
+08:53 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
+08:53 bilby INFO    : delta_m=Uniform(minimum=0, maximum=10, name='delta_m', latex_label='$\\delta_{m}$', unit=None, boundary=None)
+08:53 bilby INFO    : mu_chi=Uniform(minimum=0, maximum=1, name='mu_chi', latex_label='$\\mu_{\\chi}$', unit=None, boundary=None)
+08:53 bilby INFO    : sigma_chi=Uniform(minimum=0.005, maximum=0.25, name='sigma_chi', latex_label='$\\sigma^{2}_{\\chi}$', unit=None, boundary=None)
+08:53 bilby INFO    : xi_spin=Uniform(minimum=0, maximum=1, name='xi_spin', latex_label='$\\zeta$', unit=None, boundary=None)
+08:53 bilby INFO    : sigma_spin=Uniform(minimum=0.1, maximum=4.0, name='sigma_t', latex_label='$\\sigma_t$', unit=None, boundary=None)
+08:53 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
+08:53 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:53 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
+08:53 bilby INFO    : amax=1.0
+08:53 bilby INFO    : gaussian_mass_maximum=100.0
+08:53 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
+08:53 bilby INFO    : Analysis likelihood noise evidence: nan
+08:53 bilby INFO    : Single likelihood evaluation took nan s
+08:53 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14807a18d660>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+08:53 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+08:53 bilby INFO    : Using dynesty version 2.1.3
+08:53 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
+08:53 bilby INFO    : Reading resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+08:53 bilby WARNING : The resume file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
+08:53 bilby INFO    : Generating initial points from the prior
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+09:58 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+10:58 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+12:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+13:07 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+14:23 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+15:44 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+15:44 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:44 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+15:44 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+16:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+18:12 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+19:38 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+21:00 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+22:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:16 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+00:41 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+02:35 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+03:32 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/sampler.py:756: UserWarning: The sampling was stopped short due to maxiter/maxcall limit the delta(log(z)) criterion is not achieved; posterior may be poorly sampled
+  warnings.warn('The sampling was stopped short due to'
+04:59 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+05:08 bilby INFO    : Run interrupted by signal 15: checkpoint and exit on 130
+05:08 bilby INFO    : Written checkpoint file O1O2O3_parabolam2min_prod_condgammazeta_no190814_pqnorm/result/bbh_mass_SmoothedParabolam2min_spin_iid_spin_redshift_powerlaw_resume.pickle
+Traceback (most recent call last):
+  File "/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/dynesty/dynesty.py", line 910, in __call__
+    return self.func(np.asarray(x).copy(), *self.args, **self.kwargs)
+  File "/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/bilby/core/sampler/dynesty.py", line 53, in _log_likelihood_wrapper
+    return _sampling_convenience_dump.likelihood.log_likelihood_ratio()
+  File "/home/storm.colloms/.local/lib/python3.10/site-packages/gwpopulation/experimental/jax.py", line 61, in log_likelihood_ratio
+    np.nan_to_num(self.likelihood_func(self.parameters, **self.kwargs))
+  File "/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/bilby/core/sampler/dynesty.py", line 783, in write_current_state_and_exit
+    super(Dynesty, self).write_current_state_and_exit(signum=signum, frame=frame)
+  File "/home/storm.colloms/.conda/envs/O4apop-jax/lib/python3.10/site-packages/bilby/core/sampler/base_sampler.py", line 749, in write_current_state_and_exit
+    sys.exit(self.exit_code)
+SystemExit: 130
