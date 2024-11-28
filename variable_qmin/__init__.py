@@ -390,7 +390,7 @@ class SmoothedPowerlawm2min(BaseSmoothedMassDistribution):
         
         try:
             if self.cache:
-                p_q /= self.norm_p_q(beta=beta, mmin=mmin, delta_m=delta_m)
+                p_q /= self.norm_p_q(beta=beta, mmax=mmax, mmin=mmin, delta_m=delta_m, gamma=gamma)
             else:
                 self._cache_q_norms(dataset["mass_1"])
                 p_q /= self.norm_p_q(beta=beta, mmax=mmax, mmin=mmin, delta_m=delta_m, gamma=gamma)
@@ -423,7 +423,7 @@ class SmoothedPowerlawm2min(BaseSmoothedMassDistribution):
         from gwpopulation.models.interped import _setup_interpolant
 
         self._q_interpolant = _setup_interpolant(
-            self.m1s, masses, kind="cubic", backend=xp
+            self.m1s, masses, kind="linear", backend=xp
         )
 
 
@@ -522,5 +522,5 @@ class SmoothedParabolam2min(BaseSmoothedMassDistribution):
         from gwpopulation.models.interped import _setup_interpolant
 
         self._q_interpolant = _setup_interpolant(
-            self.m1s, masses, kind="cubic", backend=xp
+            self.m1s, masses, kind="linear", backend=xp
         )
