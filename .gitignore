@@ -1,3 +1,13 @@
+#non-paper folders and experimental runs
+O4a_prod
+O1O2O3*ipynb
+test*
+variable_qmin/O4a*
+inference/*
+*condprior.ipynb
+Untitled.ipynb
+parabola_prior_percentiles
+
 #results files etc
 *.h5
 *.hdf5

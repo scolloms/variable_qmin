@@ -300,6 +300,12 @@ def smoothing(masses, mmin, mmax, delta_m):
     else:
         return xp.ones(masses.shape)
 
+def zeta_CondUpperBound(reference_params,gamma,mmax,mmin):
+    
+    mmax_condition = (1.-gamma)/(mmax-mmin)
+    
+    return dict(minimum=0, maximum=mmax_condition)
+
 def zeta_CondPrior(reference_params,gamma,mmax,mmin):
     
     min_zeta = ((-gamma)/(mmax-mmin))-(mmin/((mmax-mmin)**2))
