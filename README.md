@@ -1,20 +1,8 @@
-# gwpopulation-additional-models
-Repository for dumping additional models for use with gwpopulation that I don't want to add to the main package.
+# Variable minimum secondary mass models for use in `gwpopulation_pipe`
 
-This is also intended as a template for downstream users to implement models and provide a minimal packaging example.
+This codebase contains the model codes to allow a minimum secondary mass, and therefore mass ratio, that is variable with primary mass. These models are pip installable as custom models to be used with `gwpopulation_pipe`.
 
-## How do I use this as a template?
+Two model variations, a Power law minimum secondary mass and a Parabola minimum secondary mass, are defined by `SmoothedPowerlawm2min` and `SmoothedParabolam2min` classes  in `variable_qmin/__init__.py` respectively. 
+This file also contains the functions defining the conditional priors on the hyperparameters used in the Parabola model.
 
-- Create a copy of this repository using the "Use this template" button on GitHub.
-- Go through `setup.cfg`, `pyproject.toml` and update to match your package name.
-- Replace the `gwpopulation_additional_models` directory with one matching your package name. Make sure to include the `__init__.py` file for packaging.
-- Add your model to this new directory.
-- If you use `gwpopulation.utils.xp` or `gwpopulation.utils.scs` in your model, you will need to update the `[options.entry_points]` in `setup.cfg`.
-- Update `requirements.txt` to add any additional packages you need.
-- Write meaningful unit tests in the `tests` directory, these will run automatically via GitHub actions.
-- If you want to release the package to `pypi`, you need to set your access token using [a secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions). Versions can then be pushed to pypi by creating a tag and release. The version of the code is automatically set using `setuptools_scm`.
-
-## Why should I use this template?
-
-This template is set up to automate packaging and accessing the `GWPopulation` backend.
-This is intended for users who are looking to share their models as published packages, which is [always a good idea](https://pythonpackaging.info/01-Introduction.html).
+These models were used in 'Can Big Black Holes Merge with the Smallest Black Holes?' (Colloms, Doctor, and Berry 2025) with GWTC-3 observations.
