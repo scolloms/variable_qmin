@@ -1,3 +1,0 @@
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-21:31 bilby INFO    : Making mass plot
