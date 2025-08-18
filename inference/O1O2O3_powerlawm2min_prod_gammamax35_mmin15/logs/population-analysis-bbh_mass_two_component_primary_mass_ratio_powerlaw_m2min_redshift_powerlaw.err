@@ -1,87 +1,0 @@
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-15:11 bilby INFO    : Loaded 84 posteriors
-15:11 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
-15:11 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-15:11 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
-15:11 bilby INFO    : Using two_component_primary_mass_ratio_powerlaw_m2min from variable_qmin.
-15:11 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-15:11 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
-15:11 bilby INFO    : Loading VT data from O1O2O3_powerlawm2min_prod_gammamax35_mmin15/data/injections.pkl.
-15:11 bilby INFO    : Identified keys: gaussian_mass_maximum, sigpp, alpha, beta, lam, mpp, mmax, mmin, gamma, lamb
-15:11 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw', output will be saved to 'O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result'
-15:11 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
-15:11 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
-15:11 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
-  warnings.warn("Setuptools is replacing distutils.")
-15:11 bilby INFO    : Analysis priors:
-15:11 bilby INFO    : alpha=Uniform(minimum=1, maximum=5, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
-15:11 bilby INFO    : beta=Uniform(minimum=-2, maximum=4, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
-15:11 bilby INFO    : gamma=Uniform(minimum=1, maximum=35, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
-15:11 bilby INFO    : mmax=Uniform(minimum=82, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
-15:11 bilby INFO    : mmin=Uniform(minimum=1.5, maximum=6, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
-15:11 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
-15:11 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
-15:11 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
-15:11 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
-15:11 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
-15:11 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
-15:11 bilby INFO    : gaussian_mass_maximum=100.0
-15:11 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
-15:11 bilby INFO    : Analysis likelihood noise evidence: nan
-15:11 bilby INFO    : Single likelihood evaluation took 2.441e-02 s
-15:11 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 5, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14c3e8576a10>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
-15:11 bilby INFO    : Checkpoint every check_point_delta_t = 600s
-15:11 bilby INFO    : Using dynesty version 2.1.2
-15:11 bilby INFO    : Using the bilby-implemented act-walk sampling tracking the autocorrelation function and thinning by 2 with maximum length 10000
-15:11 bilby INFO    : Reading resume file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-15:11 bilby WARNING : The resume file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle is corrupted or the version of bilby has changed between runs. This resume file will be ignored.
-15:11 bilby INFO    : Generating initial points from the prior
-15:21 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-15:33 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-15:43 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-15:54 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-16:04 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-16:14 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-16:25 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-16:36 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-16:47 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-16:59 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-17:10 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-17:21 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-17:38 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-17:49 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-18:00 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-18:10 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-18:22 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-18:33 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-18:44 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-18:55 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-19:05 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-19:16 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-19:26 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-19:40 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-19:53 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:04 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:14 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:25 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:35 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:47 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:57 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:57 bilby INFO    : Written checkpoint file O1O2O3_powerlawm2min_prod_gammamax35_mmin15/result/bbh_mass_two_component_primary_mass_ratio_powerlaw_m2min_redshift_powerlaw_resume.pickle
-20:58 bilby INFO    : Rejection sampling nested samples to obtain 2526 posterior samples
-20:58 bilby INFO    : Sampling time: 5:44:52.472271
-20:58 bilby INFO    : Summary of results:
-nsamples: 2526
-ln_noise_evidence:    nan
-ln_evidence:    nan +/-  0.180
-ln_bayes_factor: -211.640 +/-  0.180
-
-20:58 bilby INFO    : Computing rate posterior
-20:58 bilby INFO    : Computing n effectives
-20:58 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
-20:58 bilby INFO    : Generating extra statistics
-20:59 bilby INFO    : Resampling single event posteriors
-  0%|          | 0/2526 [00:00<?, ?it/s]  5%|▌         | 134/2526 [00:00<00:01, 1336.96it/s] 11%|█         | 268/2526 [00:00<00:02, 1100.05it/s] 15%|█▌        | 381/2526 [00:00<00:02, 925.82it/s]  19%|█▉        | 477/2526 [00:00<00:02, 863.84it/s] 22%|██▏       | 566/2526 [00:00<00:02, 829.94it/s] 26%|██▌       | 650/2526 [00:00<00:02, 809.03it/s] 29%|██▉       | 732/2526 [00:00<00:02, 794.98it/s] 32%|███▏      | 812/2526 [00:00<00:02, 785.33it/s] 35%|███▌      | 891/2526 [00:01<00:02, 778.60it/s] 38%|███▊      | 969/2526 [00:01<00:02, 773.82it/s] 41%|████▏     | 1047/2526 [00:01<00:01, 770.44it/s] 44%|████▍     | 1124/2526 [00:01<00:01, 768.01it/s] 48%|████▊     | 1201/2526 [00:01<00:01, 766.41it/s] 51%|█████     | 1278/2526 [00:01<00:01, 765.24it/s] 54%|█████▎    | 1355/2526 [00:01<00:01, 764.47it/s] 57%|█████▋    | 1432/2526 [00:01<00:01, 763.82it/s] 60%|█████▉    | 1509/2526 [00:01<00:01, 763.45it/s] 63%|██████▎   | 1586/2526 [00:01<00:01, 763.11it/s] 66%|██████▌   | 1663/2526 [00:02<00:01, 762.95it/s] 69%|██████▉   | 1740/2526 [00:02<00:01, 762.84it/s] 72%|███████▏  | 1817/2526 [00:02<00:00, 762.78it/s] 75%|███████▍  | 1894/2526 [00:02<00:00, 762.73it/s] 78%|███████▊  | 1971/2526 [00:02<00:00, 762.59it/s] 81%|████████  | 2048/2526 [00:02<00:00, 762.60it/s] 84%|████████▍ | 2125/2526 [00:02<00:00, 762.55it/s] 87%|████████▋ | 2202/2526 [00:02<00:00, 762.57it/s] 90%|█████████ | 2279/2526 [00:02<00:00, 762.53it/s] 93%|█████████▎| 2356/2526 [00:02<00:00, 762.45it/s] 96%|█████████▋| 2433/2526 [00:03<00:00, 762.54it/s] 99%|█████████▉| 2510/2526 [00:03<00:00, 762.53it/s]100%|██████████| 2526/2526 [00:03<00:00, 789.44it/s]
-20:59 bilby INFO    : Resampling done, sum of weights for events are 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.1 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.1

@@ -2,11 +2,13 @@
 O4a_prod
 O1O2O3*ipynb
 test*
+tests/*
 variable_qmin/O4a*
-inference/*
+inference/
 *condprior.ipynb
 Untitled.ipynb
 parabola_prior_percentiles
+*.ipynb
 
 #results files etc
 *.h5

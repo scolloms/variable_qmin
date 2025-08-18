@@ -1,326 +1,0 @@
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-12:20 bilby INFO    : Loaded 158 posteriors
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_1238705/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
-    model = load_model(args)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
-    _model = getattr(import_module(module), function)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'variable_qmin'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-12:28 bilby INFO    : Loaded 158 posteriors
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_4079515/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
-    model = load_model(args)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
-    _model = getattr(import_module(module), function)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'variable_qmin'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_2977668/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
-    set_backend(args.backend)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 117, in set_backend
-    _set_in_module(module, "xp", xp)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 100, in _set_in_module
-    setattr(import_module(module, package=package), name, value)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'gwpopulation_flexible_models'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_2925152/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
-    set_backend(args.backend)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 117, in set_backend
-    _set_in_module(module, "xp", xp)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 100, in _set_in_module
-    setattr(import_module(module, package=package), name, value)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'gwpopulation_flexible_models'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_1877031/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
-    set_backend(args.backend)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 117, in set_backend
-    _set_in_module(module, "xp", xp)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 100, in _set_in_module
-    setattr(import_module(module, package=package), name, value)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'gwpopulation_flexible_models'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-08:35 bilby INFO    : Loaded 158 posteriors
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_1393763/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
-    model = load_model(args)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
-    _model = getattr(import_module(module), function)
-AttributeError: module 'variable_qmin' has no attribute 'two_component_primary_mass_ratio_variable_qmin'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_3707963/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 408, in main
-    set_backend(args.backend)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 117, in set_backend
-    _set_in_module(module, "xp", xp)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/backend.py", line 100, in _set_in_module
-    setattr(import_module(module, package=package), name, value)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'gwpopulation_flexible_models'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-08:48 bilby INFO    : Loaded 158 posteriors
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_3708009/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
-    model = load_model(args)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 185, in _load_model
-    _model = getattr(import_module(module), function)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1001, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'variable_qmin.variable_qmin.variable_qmin'; 'variable_qmin.variable_qmin' is not a package
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-08:56 bilby INFO    : Loaded 158 posteriors
-08:56 bilby INFO    : Using two_component_primary_mass_ratio_variable_qmin from variable_qmin.variable_qmin.
-08:56 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-08:56 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
-08:56 bilby INFO    : Using two_component_primary_mass_ratio_variable_qmin from variable_qmin.variable_qmin.
-08:56 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-08:56 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
-08:56 bilby INFO    : Loading VT data from O4a_variablem2min/data/injections.pkl.
-08:56 bilby INFO    : Identified keys: zeta, beta, gamma, alpha, lam, mpp, sigpp, mmin, mmax, gaussian_mass_maximum, lamb
-08:56 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_variable_qmin_redshift_powerlaw', output will be saved to 'O4a_variablem2min/result'
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
-  warnings.warn("Setuptools is replacing distutils.")
-08:56 bilby INFO    : Analysis priors:
-08:56 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
-08:56 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
-08:56 bilby INFO    : gamma=Uniform(minimum=0, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
-08:56 bilby INFO    : zeta=Uniform(minimum=0, maximum=0.017094017094, name='zeta', latex_label='$\\zeta_{q}$', unit=None, boundary=None)
-08:56 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
-08:56 bilby INFO    : mmin=Uniform(minimum=2, maximum=3.5, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
-08:56 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
-08:56 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
-08:56 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
-08:56 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
-08:56 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
-08:56 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
-08:56 bilby INFO    : gaussian_mass_maximum=100.0
-08:56 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.experimental.jax.JittedLikelihood'>
-08:56 bilby INFO    : Analysis likelihood noise evidence: nan
-08:56 bilby INFO    : Single likelihood evaluation took 2.745e-04 s
-jax.errors.SimplifiedTraceback: For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_3258367/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 543, in main
-    result = run_sampler(
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/bilby/core/sampler/__init__.py", line 190, in run_sampler
-    sampler = sampler_class(
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/bilby/core/sampler/base_sampler.py", line 254, in __init__
-    self._verify_use_ratio()
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/bilby/core/sampler/base_sampler.py", line 471, in _verify_use_ratio
-    ratio_is_nan = np.isnan(self.likelihood.log_likelihood_ratio())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/experimental/jax.py", line 61, in log_likelihood_ratio
-    np.nan_to_num(self.likelihood_func(self.parameters, **self.kwargs))
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/experimental/jax.py", line 12, in generic_bilby_likelihood_function
-    return likelihood.log_likelihood_ratio()
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py", line 143, in log_likelihood_ratio
-    ln_l, variance = self.ln_likelihood_and_variance()
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py", line 133, in ln_likelihood_and_variance
-    ln_bayes_factors, variances = self._compute_per_event_ln_bayes_factors()
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py", line 160, in _compute_per_event_ln_bayes_factors
-    weights = self.hyper_prior.prob(self.data) / self.sampling_prior
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/experimental/jax.py", line 40, in prob
-    new_probability = function(data, **self._get_function_parameters(function))
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/variable_qmin/variable_qmin.py", line 48, in two_component_primary_mass_ratio_variable_qmin
-    if zeta > (1-gamma)/(mmax-mmin):
-jax.errors.TracerBoolConversionError: Attempted boolean conversion of traced array with shape bool[]..
-The error occurred while tracing the function generic_bilby_likelihood_function at /home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/experimental/jax.py:9 for jit. This concrete value was not available in Python because it depends on the values of the arguments parameters['gamma'], parameters['mmax'], parameters['mmin'], and parameters['zeta'].
-See https://jax.readthedocs.io/en/latest/errors.html#jax.errors.TracerBoolConversionError
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-12:03 bilby INFO    : Loaded 158 posteriors
-12:03 bilby INFO    : Using two_component_primary_mass_ratio_variable_qmin from variable_qmin.variable_qmin.
-12:03 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-Traceback (most recent call last):
-  File "/local/condor/execute/dir_3668422/gwpopulation_pipe_analysis", line 8, in <module>
-    sys.exit(main())
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 432, in main
-    model = load_model(args)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in load_model
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 138, in <listcomp>
-    model = cls([_load_model(model, args) for model in args.models.values()])
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation_pipe/data_analysis.py", line 200, in _load_model
-    _model = _model(**kwargs)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/models/redshift.py", line 24, in __init__
-    self.zs = xp.asarray(self.zs_)
-  File "/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/cupy/_creation/from_data.py", line 88, in asarray
-    return _core.array(a, dtype, False, order, blocking=blocking)
-  File "cupy/_core/core.pyx", line 2379, in cupy._core.core.array
-  File "cupy/_core/core.pyx", line 2406, in cupy._core.core.array
-  File "cupy/_core/core.pyx", line 2548, in cupy._core.core._array_default
-  File "cupy/_core/core.pyx", line 132, in cupy._core.core.ndarray.__new__
-  File "cupy/_core/core.pyx", line 220, in cupy._core.core._ndarray_base._init
-  File "cupy/cuda/memory.pyx", line 738, in cupy.cuda.memory.alloc
-  File "cupy/cuda/memory.pyx", line 1424, in cupy.cuda.memory.MemoryPool.malloc
-  File "cupy/cuda/memory.pyx", line 1444, in cupy.cuda.memory.MemoryPool.malloc
-  File "cupy/cuda/device.pyx", line 40, in cupy.cuda.device.get_device_id
-  File "cupy_backends/cuda/api/runtime.pyx", line 202, in cupy_backends.cuda.api.runtime.getDevice
-  File "cupy_backends/cuda/api/runtime.pyx", line 146, in cupy_backends.cuda.api.runtime.check_status
-cupy_backends.cuda.api.runtime.CUDARuntimeError: cudaErrorInsufficientDriver: CUDA driver version is insufficient for CUDA runtime version
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
-  from pandas.core.computation.check import NUMEXPR_INSTALLED
-12:14 bilby INFO    : Loaded 158 posteriors
-12:14 bilby INFO    : Using two_component_primary_mass_ratio_variable_qmin from variable_qmin.variable_qmin.
-12:14 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-12:14 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
-12:14 bilby INFO    : Using two_component_primary_mass_ratio_variable_qmin from variable_qmin.variable_qmin.
-12:14 bilby INFO    : Using PowerLawRedshift from gwpopulation.models.redshift.
-12:14 bilby INFO    : Created gwpopulation.models.redshift.PowerLawRedshift with arguments {'z_max': 1.9}
-12:14 bilby INFO    : Loading VT data from O4a_variablem2min/data/injections.pkl.
-12:14 bilby INFO    : Identified keys: mmin, mpp, alpha, lam, sigpp, beta, zeta, gaussian_mass_maximum, gamma, mmax, lamb
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:164: RuntimeWarning: invalid value encountered in divide
-  variance = (square_expectation - expectation**2) / (
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:167: RuntimeWarning: divide by zero encountered in log
-  return xp.log(expectation), variance
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:173: RuntimeWarning: divide by zero encountered in log
-  total_selection = -self.n_posteriors * xp.log(selection)
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:175: RuntimeWarning: invalid value encountered in divide
-  total_variance = self.n_posteriors**2 * xp.divide(
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:138: RuntimeWarning: invalid value encountered in scalar add
-  ln_l += selection
-12:14 bilby INFO    : Running for label 'bbh_mass_two_component_primary_mass_ratio_variable_qmin_redshift_powerlaw', output will be saved to 'O4a_variablem2min/result'
-12:14 bilby WARNING : Parameter amax_2 has no default prior and is set to 1, this will not be sampled and may cause an error.
-12:14 bilby WARNING : Parameter amax_1 has no default prior and is set to 1, this will not be sampled and may cause an error.
-12:14 bilby WARNING : Parameter amax has no default prior and is set to 1, this will not be sampled and may cause an error.
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
-  warnings.warn("Setuptools is replacing distutils.")
-12:14 bilby INFO    : Analysis priors:
-12:14 bilby INFO    : alpha=Uniform(minimum=-4, maximum=12, name='alpha', latex_label='$\\alpha$', unit=None, boundary=None)
-12:14 bilby INFO    : beta=Uniform(minimum=-2, maximum=7, name='beta', latex_label='$\\beta_{q}$', unit=None, boundary=None)
-12:14 bilby INFO    : gamma=Uniform(minimum=0, maximum=1, name='gamma', latex_label='$\\gamma_{q}$', unit=None, boundary=None)
-12:14 bilby INFO    : zeta=Uniform(minimum=0, maximum=0.017094017094, name='zeta', latex_label='$\\zeta_{q}$', unit=None, boundary=None)
-12:14 bilby INFO    : mmax=Uniform(minimum=62, maximum=100, name='mmax', latex_label='$m_{\\max}$', unit=None, boundary=None)
-12:14 bilby INFO    : mmin=Uniform(minimum=2, maximum=3.5, name='mmin', latex_label='$m_{\\min}$', unit=None, boundary=None)
-12:14 bilby INFO    : lam=Uniform(minimum=0, maximum=1, name='lambda', latex_label='$\\lambda_{m}$', unit=None, boundary=None)
-12:14 bilby INFO    : mpp=Uniform(minimum=20, maximum=50, name='mpp', latex_label='$\\mu_{m}$', unit=None, boundary=None)
-12:14 bilby INFO    : sigpp=Uniform(minimum=1, maximum=10, name='sigpp', latex_label='$\\sigma_{m}$', unit=None, boundary=None)
-12:14 bilby INFO    : lamb=Uniform(minimum=-2, maximum=8, name='lamb', latex_label='$\\lambda_z$', unit=None, boundary=None)
-12:14 bilby INFO    : alpha_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
-12:14 bilby INFO    : beta_chi=Constraint(minimum=1, maximum=100000.0, name=None, latex_label=None, unit=None)
-12:14 bilby INFO    : gaussian_mass_maximum=100.0
-12:14 bilby INFO    : Analysis likelihood class: <class 'gwpopulation.hyperpe.HyperparameterLikelihood'>
-12:14 bilby INFO    : Analysis likelihood noise evidence: nan
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:164: RuntimeWarning: invalid value encountered in divide
-  variance = (square_expectation - expectation**2) / (
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:167: RuntimeWarning: divide by zero encountered in log
-  return xp.log(expectation), variance
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:173: RuntimeWarning: divide by zero encountered in log
-  total_selection = -self.n_posteriors * xp.log(selection)
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:175: RuntimeWarning: invalid value encountered in divide
-  total_variance = self.n_posteriors**2 * xp.divide(
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:138: RuntimeWarning: invalid value encountered in scalar add
-  ln_l += selection
-12:14 bilby INFO    : Single likelihood evaluation took 1.307e-01 s
-12:14 bilby WARNING : Supplied argument 'nact' not an argument of 'Nestle', removing.
-12:14 bilby INFO    : Using sampler Nestle with kwargs {'method': 'multi', 'npoints': 50, 'update_interval': None, 'npdim': None, 'maxiter': None, 'maxcall': None, 'dlogz': None, 'decline_factor': None, 'rstate': None, 'callback': <function print_progress at 0x14d3f09f6950>, 'steps': 5, 'enlarge': 1.2}
-/home/storm.colloms/.conda/envs/O4apop/lib/python3.10/site-packages/gwpopulation/hyperpe.py:164: RuntimeWarning: divide by zero encountered in divide
-  variance = (square_expectation - expectation**2) / (
-12:27 bilby INFO    : Sampling time: 0:12:35.154259
-12:27 bilby INFO    : Summary of results:
-nsamples: 1578
-ln_noise_evidence:    nan
-ln_evidence:    nan +/-  0.731
-ln_bayes_factor: -629.134 +/-  0.731
-
-12:27 bilby INFO    : Computing rate posterior
-12:29 bilby INFO    : Computing n effectives
-12:29 bilby INFO    : Likelihood has no method 'per_event_bayes_factors_and_n_effective' skipping n_effective calculation.
-12:29 bilby INFO    : Generating extra statistics
-12:31 bilby INFO    : Resampling single event posteriors
-  0%|          | 0/1578 [00:00<?, ?it/s]  2%|▏         | 30/1578 [00:00<00:05, 294.55it/s]  5%|▍         | 78/1578 [00:00<00:03, 399.32it/s]  8%|▊         | 125/1578 [00:00<00:03, 427.98it/s] 11%|█         | 169/1578 [00:00<00:03, 432.57it/s] 14%|█▎        | 216/1578 [00:00<00:03, 445.04it/s] 17%|█▋        | 265/1578 [00:00<00:02, 457.38it/s] 20%|█▉        | 313/1578 [00:00<00:02, 463.67it/s] 23%|██▎       | 361/1578 [00:00<00:02, 467.19it/s] 26%|██▌       | 409/1578 [00:00<00:02, 470.69it/s] 29%|██▉       | 457/1578 [00:01<00:02, 471.59it/s] 32%|███▏      | 505/1578 [00:01<00:02, 470.41it/s] 35%|███▌      | 553/1578 [00:01<00:02, 469.25it/s] 38%|███▊      | 601/1578 [00:01<00:02, 469.83it/s] 41%|████      | 649/1578 [00:01<00:01, 469.48it/s] 44%|████▍     | 697/1578 [00:01<00:01, 470.08it/s] 47%|████▋     | 745/1578 [00:01<00:01, 469.63it/s] 50%|█████     | 792/1578 [00:01<00:01, 467.62it/s] 53%|█████▎    | 839/1578 [00:01<00:01, 464.42it/s] 56%|█████▌    | 887/1578 [00:01<00:01, 466.36it/s] 59%|█████▉    | 935/1578 [00:02<00:01, 470.23it/s] 62%|██████▏   | 983/1578 [00:02<00:01, 470.81it/s] 65%|██████▌   | 1031/1578 [00:02<00:01, 462.57it/s] 68%|██████▊   | 1078/1578 [00:02<00:01, 460.61it/s] 71%|███████▏  | 1125/1578 [00:02<00:00, 458.27it/s] 74%|███████▍  | 1171/1578 [00:02<00:00, 455.37it/s] 77%|███████▋  | 1217/1578 [00:02<00:00, 447.66it/s] 80%|███████▉  | 1262/1578 [00:02<00:00, 446.07it/s] 83%|████████▎ | 1307/1578 [00:02<00:00, 445.38it/s] 86%|████████▌ | 1353/1578 [00:02<00:00, 447.72it/s] 89%|████████▊ | 1398/1578 [00:03<00:00, 448.20it/s] 91%|█████████▏| 1443/1578 [00:03<00:00, 446.68it/s] 94%|█████████▍| 1488/1578 [00:03<00:00, 437.66it/s] 97%|█████████▋| 1532/1578 [00:03<00:00, 435.30it/s]100%|█████████▉| 1577/1578 [00:03<00:00, 437.75it/s]100%|██████████| 1578/1578 [00:03<00:00, 453.60it/s]
-12:31 bilby INFO    : Resampling done, sum of weights for events are 0.0 0.1 0.2 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.0 0.1 0.0 0.1 0.0 0.0 0.0 0.0 0.1 0.1 0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.0 0.8 0.2 0.1 0.5 1.0 0.0 0.6 0.1 0.1 0.1 0.0 0.1 0.1 0.0 0.1 0.1 1.1 1.9 0.1 0.1 0.0 0.6 0.9 1.2 0.0 0.1 1.0 0.0 1.1 0.1 0.6 0.1 0.5 0.0 0.0 0.0 0.0 0.0 1.1 0.0 0.0 0.1 0.0 0.1 0.0 0.1 0.0 0.2 0.0 0.1 0.1 0.0 0.5 0.1 0.0 0.2 0.0 0.0 0.0 0.1 1.6 0.0 0.0 1.0 0.0 0.1 0.0 0.0 0.0 0.0 0.2 0.0 0.5 0.7 14.4 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.8 0.0 0.0 0.1 0.1 0.0 0.0 0.1 0.1 0.0 0.0 0.1 0.0 0.1 0.0 0.0 0.1 0.5 0.0 0.0 0.0 0.5 0.1 0.1 0.0 0.8 0.1 0.0 0.4 0.1 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.1 0.0 0.1
